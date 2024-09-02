@@ -20,15 +20,6 @@ library(fplr)
 library(dplyr)
 
 
-
-
-
-
-
-
-
-
-
 #---------- Downloading Team Fixtures ---------
 # Downloading fixtures table
 df_fixtures <- data.frame(fpl_get_fixtures()) 
@@ -78,13 +69,6 @@ Fixtures <- Fixtures %>% rename(`Match ID` = match_id,
                                 `Away Team Score` = score_team_a_team_a,
                                 `Home Team Score` = score_team_h_team_h
                                 )
-
-
-
-
-
-
-
 
 
 #---------- Creating Player Info Table ----------
@@ -138,15 +122,6 @@ rm(`Team Info`)
 `Player Info`$Position[`Player Info`$Position == 2] <- "Defender"
 `Player Info`$Position[`Player Info`$Position == 3] <- "Midfielder"
 `Player Info`$Position[`Player Info`$Position == 4] <- "Forward"
-
-
-
-
-
-
-
-
-
 
 
 #---------- Downloading Player Data ---------
@@ -256,19 +231,6 @@ rm(df, df_1)
                                                  `XG Conceded` = expected_goals_conceded)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #--------- Downloading Premier League Table ----------
 
 html <- read_html("https://www.bbc.co.uk/sport/football/premier-league/table")
@@ -286,16 +248,16 @@ Standings <- Standings %>% rename(`Goals For` = Goals.For,
                                   `Goal Difference` = Goal.Difference)
 
 rm(df_standings, html)
+
+
 #---------- Writing to CSV ----------
 # Setting folder to save into
 
 # Writing data frames to csv
 write.csv(Standings, "Standings.csv", row.names =  FALSE)
 write.csv(Fixtures, "Fixtures.csv", row.names = FALSE)
-write.csv(`Player Historic Season Stats`, "Player Historic Season Stats.csv", row.names = FALSE)
-write.csv(`Player Current Season Stats`, "Player Current Season Stats.csv", row.names = FALSE)
-write.csv(`Player Info`, "Player Info.csv", row.names = FALSE)
+write.csv(`Player Historic Season Stats`, "Player_Historic_Season_Stats.csv", row.names = FALSE)
+write.csv(`Player Current Season Stats`, "Player_Current_Season_Stats.csv", row.names = FALSE)
+write.csv(`Player Info`, "Player_Info.csv", row.names = FALSE)
 
 #---------- END OF SCRIPT ----------
-
-
