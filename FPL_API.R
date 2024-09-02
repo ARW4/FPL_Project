@@ -150,7 +150,7 @@ rm(`Team Info`)
 IDs <- data.frame(`id` = fpl_get_player_all()[["id"]])
 
 # Only keeping 10 top IDs from table
-IDs <- head(IDs, 10)
+#IDs <- head(IDs, 10)
 
 # Creating empty data frames to then fill in loop 
 `Player Current Season Stats` <- data.frame()
