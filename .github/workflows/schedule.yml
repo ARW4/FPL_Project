@@ -1,8 +1,7 @@
 name: schedule
 
 on:
-  schedule:
-    - cron: "*/15 * * * *"
+  workflow_dispatch:
 
 jobs:
   import-data:
