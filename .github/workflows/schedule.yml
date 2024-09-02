@@ -1,4 +1,4 @@
-name: FPL API Script
+name: schedule
 
 on:
   schedule:
