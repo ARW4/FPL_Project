@@ -1,8 +1,8 @@
 name: schedule
 
 on:
-  push:
-    branches: [run-action]
+  schedule:
+    - cron: "*/15 * * * *"
 
 jobs:
   import-data:
