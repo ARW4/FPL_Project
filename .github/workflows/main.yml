@@ -1,0 +1,32 @@
+name: FPL API Script
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install R dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y r-base
+
+      - name: Run FPL API script and save CSV
+        run: |
+          Rscript FPL API.R
+          # Assuming your R script generates a CSV file named "output.csv"
+          mv output.csv .
+
+      - name: Add and commit changes
+        run: |
+          git add output.csv
+          git commit -m "Added FPL API output CSV"
+
+      - name: Push changes
+        run: |
+          git push
