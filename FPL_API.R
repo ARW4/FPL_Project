@@ -146,8 +146,10 @@ for (id in IDs$id) {
   # Downloading player detailed table
   player_detailed <- fpl_get_player_detailed(player_id = id)
   
-  # Extracting fixtures table
+  # Extracting History table
   player_detailed <- player_detailed$history %>% as.data.frame()
+
+  if (nrow(player_detailed) > 0) {
   
   # Creates new column with player ID
   player_detailed[,"Player ID"] <- id
@@ -157,6 +159,7 @@ for (id in IDs$id) {
   
   # Update progress bar
   pb_1$tick()
+  }
 }
 
 rm(pb_1, player_detailed)
