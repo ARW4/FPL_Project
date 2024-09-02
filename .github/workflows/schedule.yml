@@ -2,7 +2,7 @@ name: FPL API Script
 
 on:
   schedule:
-    - cron: "06 12 * * *"
+    - cron: "35 12 * * *"
 
 jobs:
   import-data:
