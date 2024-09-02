@@ -2,7 +2,7 @@ name: FPL API Script
 
 on:
   schedule:
-    - cron: "47 11 * * *"
+    - cron: "49 11 * * *"
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
 
       - name: Run FPL API script and save CSV
         run: |
-          Rscript FPL API.R
+          Rscript FPL_API.R
           mv Standings.csv .
 
       - name: Add and commit changes
