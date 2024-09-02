@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Upload CSV to Google Sheets
-        uses: actions/google-sheets@v1
+        uses: actions/google-sheets
         with:
           spreadsheetId: 1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc
           sheetName: Standings.csv
