@@ -2,27 +2,13 @@
 rm(list = ls())
 cat("\014")
 
-# install.packages(c("gargle","progress","dplyr","fplr","googlesheets4"))
 library(conflicted)
 conflict_prefer("filter", "dplyr")
 conflict_prefer("lag", "dplyr")
-
-library(rvest)
 library(tidyverse)
 library(progress)
 library(fplr)
 library(dplyr)
-
-#library(googlesheets4)
-#library(gargle)
-
-
-
-
-
-
-
-
 
 
 #---------- Downloading Team Fixtures ---------
@@ -76,13 +62,6 @@ Fixtures <- Fixtures %>% rename(`Match ID` = match_id,
                                 )
 
 
-
-
-
-
-
-
-
 #---------- Creating Player Info Table ----------
 `Player Info` <- data.frame(fpl_get_player_all())
 `Team Info` <- data.frame(fpl_get_teams())
@@ -134,15 +113,6 @@ rm(`Team Info`)
 `Player Info`$Position[`Player Info`$Position == 2] <- "Defender"
 `Player Info`$Position[`Player Info`$Position == 3] <- "Midfielder"
 `Player Info`$Position[`Player Info`$Position == 4] <- "Forward"
-
-
-
-
-
-
-
-
-
 
 
 #---------- Downloading Player Data ---------
@@ -252,19 +222,6 @@ rm(df, df_1)
                                                  `XG Conceded` = expected_goals_conceded)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #--------- Downloading Premier League Table ----------
 
 html <- read_html("https://www.bbc.co.uk/sport/football/premier-league/table")
@@ -282,6 +239,8 @@ Standings <- Standings %>% rename(`Goals For` = Goals.For,
                                   `Goal Difference` = Goal.Difference)
 
 rm(df_standings, html)
+
+
 #---------- Writing to CSV ----------
 # Setting folder to save into
 setwd("/Users/alexwood/Documents/FPL Data Project/Data Frames")
