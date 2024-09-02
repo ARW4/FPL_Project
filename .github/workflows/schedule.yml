@@ -2,7 +2,7 @@ name: FPL API Script
 
 on:
   schedule:
-    - cron: "35 12 * * *"
+    - cron: "03 13 * * *"
 
 jobs:
   import-data:
@@ -16,6 +16,7 @@ jobs:
         uses : r-lib/actions/setup-r-dependencies@v2
         with:
           packages: 
+            any::conflicted
             any::tidyverse
             any::progress
             any::fplr
