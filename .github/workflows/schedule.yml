@@ -2,30 +2,35 @@ name: FPL API Script
 
 on:
   schedule:
-    - cron: "49 11 * * *"
+    - cron: "06 12 * * *"
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  import-data:
+    runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name : Set up R
+        uses: r-lib/actions/setup-r@v2
 
-      - name: Install R dependencies
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y r-base
+      - name : Install packages
+        uses : r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: 
+            any::tidyverse
+            any::progress
+            any::fplr
+            any::dplyr
 
-      - name: Run FPL API script and save CSV
-        run: |
-          Rscript FPL_API.R
-          mv Standings.csv .
+      - name : Check out repository
+        uses : actions/checkout@v3
 
-      - name: Add and commit changes
-        run: |
-          git add output.csv
-          git commit -m "Added FPL API output CSV"
+      - name: Import data
+        run : Rscript -e 'source("FPL_API.R")'
 
-      - name: Push changes
+      - name: Commit results
         run: |
-          git push
+            git config --local user.email "actions@github.com"
+            git config --local user.name "GitHub Actions"
+            git add survey_data.rds
+            git commit -m 'Data updated' || echo "No changes to commit"
+            git push origin || echo "No changes to commit"
