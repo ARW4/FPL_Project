@@ -1,0 +1,17 @@
+name: Upload CSV to Google Sheets
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upload_csv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Upload CSV to Google Sheets
+        uses: actions/google-sheets@v1
+        with:
+          spreadsheetId: 1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc
+          sheetName: Standings.csv
+          csvFile: Standings.csv
+          serviceAccount: ${{ secrets.CLIENT_SECRET }}
