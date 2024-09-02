@@ -1,0 +1,7 @@
+"total_points","was_home","minutes","goals_scored","assists","clean_sheets","goals_conceded","own_goals","penalties_saved","penalties_missed","yellow_cards","red_cards","saves","bonus","bps","influence","creativity","threat","ict_index","starts","expected_goals","expected_assists","expected_goal_involvements","expected_goals_conceded","transfers_in","transfers_out","Player ID","xG","xA","Matchday","Date","Away Team","Home Team","Away Team Strength","Home Team Strength","Away Team Score","Home Team Score"
+0,TRUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",0,0,1,"0.00","0.00",1,2024-08-17,"Wolves","Arsenal",3,5,0,2
+0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",84,874,1,"0.00","0.00",2,2024-08-24,"Arsenal","Aston Villa",5,3,2,0
+0,TRUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",355,634,1,"0.00","0.00",3,2024-08-31,"Brighton","Arsenal",3,5,1,1
+0,TRUE,5,0,0,0,0,0,0,0,1,0,0,0,1,0.2,0.8,0,0.1,0,"0.00","0.00","0.00","0.15",0,0,2,"0.00","0.00",1,2024-08-17,"Wolves","Arsenal",3,5,0,2
+0,FALSE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",12170,66145,2,"0.00","0.00",2,2024-08-24,"Arsenal","Aston Villa",5,3,2,0
+0,TRUE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",3238,75821,2,"0.00","0.00",3,2024-08-31,"Brighton","Arsenal",3,5,1,1
