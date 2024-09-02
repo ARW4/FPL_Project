@@ -1,4 +1,4 @@
-# FPL Data Pipeline Project
+## FPL Data Pipeline Project
 ![](https://fantasy.premierleague.com/img/share/facebook-share.png)
 
 **An FPL data project using R, Github Actions and Tableau**
