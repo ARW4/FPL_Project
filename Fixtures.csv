@@ -89,46 +89,46 @@
 86,9,FALSE,2024-10-27,"Spurs","Crystal Palace",3,3,NA,NA
 90,9,FALSE,2024-10-27,"Man Utd","West Ham",3,3,NA,NA
 81,9,FALSE,2024-10-27,"Liverpool","Arsenal",4,5,NA,NA
+96,10,FALSE,2024-11-02,"Arsenal","Newcastle",5,4,NA,NA
 91,10,FALSE,2024-11-02,"Man City","Bournemouth",5,3,NA,NA
-92,10,FALSE,2024-11-02,"Brentford","Fulham",3,3,NA,NA
 93,10,FALSE,2024-11-02,"Leicester","Ipswich",2,2,NA,NA
 94,10,FALSE,2024-11-02,"Brighton","Liverpool",3,4,NA,NA
-95,10,FALSE,2024-11-02,"Chelsea","Man Utd",3,3,NA,NA
-96,10,FALSE,2024-11-02,"Arsenal","Newcastle",5,4,NA,NA
 97,10,FALSE,2024-11-02,"West Ham","Nott'm Forest",3,3,NA,NA
 98,10,FALSE,2024-11-02,"Everton","Southampton",3,2,NA,NA
-99,10,FALSE,2024-11-02,"Aston Villa","Spurs",3,3,NA,NA
 100,10,FALSE,2024-11-02,"Crystal Palace","Wolves",3,3,NA,NA
+99,10,FALSE,2024-11-03,"Aston Villa","Spurs",3,3,NA,NA
+95,10,FALSE,2024-11-03,"Chelsea","Man Utd",3,3,NA,NA
+92,10,FALSE,2024-11-04,"Brentford","Fulham",3,3,NA,NA
 101,11,FALSE,2024-11-09,"Bournemouth","Brentford",3,3,NA,NA
-102,11,FALSE,2024-11-09,"Man City","Brighton",5,3,NA,NA
-103,11,FALSE,2024-11-09,"Arsenal","Chelsea",5,3,NA,NA
 104,11,FALSE,2024-11-09,"Fulham","Crystal Palace",3,3,NA,NA
-105,11,FALSE,2024-11-09,"Aston Villa","Liverpool",3,4,NA,NA
-106,11,FALSE,2024-11-09,"Leicester","Man Utd",2,3,NA,NA
-107,11,FALSE,2024-11-09,"Newcastle","Nott'm Forest",4,3,NA,NA
-108,11,FALSE,2024-11-09,"Ipswich","Spurs",2,3,NA,NA
 109,11,FALSE,2024-11-09,"Everton","West Ham",3,3,NA,NA
 110,11,FALSE,2024-11-09,"Southampton","Wolves",2,3,NA,NA
+102,11,FALSE,2024-11-09,"Man City","Brighton",5,3,NA,NA
+105,11,FALSE,2024-11-09,"Aston Villa","Liverpool",3,4,NA,NA
+106,11,FALSE,2024-11-10,"Leicester","Man Utd",2,3,NA,NA
+107,11,FALSE,2024-11-10,"Newcastle","Nott'm Forest",4,3,NA,NA
+108,11,FALSE,2024-11-10,"Ipswich","Spurs",2,3,NA,NA
+103,11,FALSE,2024-11-10,"Arsenal","Chelsea",5,3,NA,NA
+117,12,FALSE,2024-11-23,"Chelsea","Leicester",3,2,NA,NA
 111,12,FALSE,2024-11-23,"Nott'm Forest","Arsenal",3,5,NA,NA
 112,12,FALSE,2024-11-23,"Crystal Palace","Aston Villa",3,3,NA,NA
 113,12,FALSE,2024-11-23,"Brighton","Bournemouth",3,3,NA,NA
 114,12,FALSE,2024-11-23,"Brentford","Everton",3,3,NA,NA
 115,12,FALSE,2024-11-23,"Wolves","Fulham",3,3,NA,NA
-116,12,FALSE,2024-11-23,"Man Utd","Ipswich",3,2,NA,NA
-117,12,FALSE,2024-11-23,"Chelsea","Leicester",3,2,NA,NA
 118,12,FALSE,2024-11-23,"Spurs","Man City",3,5,NA,NA
-119,12,FALSE,2024-11-23,"West Ham","Newcastle",3,4,NA,NA
-120,12,FALSE,2024-11-23,"Liverpool","Southampton",4,2,NA,NA
+120,12,FALSE,2024-11-24,"Liverpool","Southampton",4,2,NA,NA
+116,12,FALSE,2024-11-24,"Man Utd","Ipswich",3,2,NA,NA
+119,12,FALSE,2024-11-25,"West Ham","Newcastle",3,4,NA,NA
+122,13,FALSE,2024-11-29,"Southampton","Brighton",2,3,NA,NA
 121,13,FALSE,2024-11-30,"Leicester","Brentford",2,3,NA,NA
-122,13,FALSE,2024-11-30,"Southampton","Brighton",2,3,NA,NA
-123,13,FALSE,2024-11-30,"Aston Villa","Chelsea",3,3,NA,NA
 124,13,FALSE,2024-11-30,"Newcastle","Crystal Palace",4,3,NA,NA
-125,13,FALSE,2024-11-30,"Man City","Liverpool",5,4,NA,NA
-126,13,FALSE,2024-11-30,"Everton","Man Utd",3,3,NA,NA
 127,13,FALSE,2024-11-30,"Ipswich","Nott'm Forest",2,3,NA,NA
-128,13,FALSE,2024-11-30,"Fulham","Spurs",3,3,NA,NA
-129,13,FALSE,2024-11-30,"Arsenal","West Ham",5,3,NA,NA
 130,13,FALSE,2024-11-30,"Bournemouth","Wolves",3,3,NA,NA
+129,13,FALSE,2024-11-30,"Arsenal","West Ham",5,3,NA,NA
+123,13,FALSE,2024-12-01,"Aston Villa","Chelsea",3,3,NA,NA
+126,13,FALSE,2024-12-01,"Everton","Man Utd",3,3,NA,NA
+128,13,FALSE,2024-12-01,"Fulham","Spurs",3,3,NA,NA
+125,13,FALSE,2024-12-01,"Man City","Liverpool",5,4,NA,NA
 131,14,FALSE,2024-12-03,"Man Utd","Arsenal",3,5,NA,NA
 132,14,FALSE,2024-12-03,"Brentford","Aston Villa",3,3,NA,NA
 133,14,FALSE,2024-12-03,"Spurs","Bournemouth",3,3,NA,NA
