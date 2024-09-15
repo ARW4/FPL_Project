@@ -1,21 +1,21 @@
 "Position","Team","Played","Won","Drawn","Lost","Goals For","Goals Against","Goal Difference","Points"
-1,"Manchester City",3,3,0,0,9,2,7,9
-2,"Liverpool",3,3,0,0,7,0,7,9
-3,"Brighton & Hove Albion",3,2,1,0,6,2,4,7
-4,"Arsenal",3,2,1,0,5,1,4,7
-5,"Newcastle United",3,2,1,0,4,2,2,7
-6,"Brentford",3,2,0,1,5,4,1,6
-7,"Aston Villa",3,2,0,1,4,4,0,6
-8,"AFC Bournemouth",3,1,2,0,5,4,1,5
-9,"Nottingham Forest",3,1,2,0,3,2,1,5
-10,"Tottenham Hotspur",3,1,1,1,6,3,3,4
-11,"Chelsea",3,1,1,1,7,5,2,4
-12,"Fulham",3,1,1,1,3,3,0,4
-13,"West Ham United",3,1,0,2,4,5,-1,3
-14,"Manchester United",3,1,0,2,2,5,-3,3
-15,"Leicester City",3,0,1,2,3,5,-2,1
-16,"Crystal Palace",3,0,1,2,2,5,-3,1
-17,"Ipswich Town",3,0,1,2,2,7,-5,1
+1,"Manchester City",4,4,0,0,11,3,8,12
+2,"Liverpool",4,3,0,1,7,1,6,9
+3,"Aston Villa",4,3,0,1,7,6,1,9
+4,"Brighton & Hove Albion",4,2,2,0,6,2,4,8
+5,"Nottingham Forest",4,2,2,0,4,2,2,8
+6,"Arsenal",3,2,1,0,5,1,4,7
+7,"Chelsea",4,2,1,1,8,5,3,7
+8,"Newcastle United",3,2,1,0,4,2,2,7
+9,"Brentford",4,2,0,2,6,6,0,6
+10,"Manchester United",4,2,0,2,5,5,0,6
+11,"AFC Bournemouth",4,1,2,1,5,5,0,5
+12,"Fulham",4,1,2,1,4,4,0,5
+13,"Tottenham Hotspur",3,1,1,1,6,3,3,4
+14,"West Ham United",4,1,1,2,5,6,-1,4
+15,"Leicester City",4,0,2,2,5,7,-2,2
+16,"Crystal Palace",4,0,2,2,4,7,-3,2
+17,"Ipswich Town",4,0,2,2,2,7,-5,2
 18,"Wolverhampton Wanderers",3,0,1,2,3,9,-6,1
-19,"Southampton",3,0,0,3,1,5,-4,0
-20,"Everton",3,0,0,3,2,10,-8,0
+19,"Southampton",4,0,0,4,1,8,-7,0
+20,"Everton",4,0,0,4,4,13,-9,0
