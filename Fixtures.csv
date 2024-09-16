@@ -37,8 +37,8 @@
 37,4,TRUE,2024-09-14,"Brentford","Man City",3,5,1,2
 31,4,TRUE,2024-09-14,"Everton","Aston Villa",3,3,2,3
 32,4,TRUE,2024-09-14,"Chelsea","Bournemouth",3,3,1,0
-39,4,FALSE,2024-09-15,"Arsenal","Spurs",5,3,NA,NA
-40,4,FALSE,2024-09-15,"Newcastle","Wolves",4,3,NA,NA
+39,4,TRUE,2024-09-15,"Arsenal","Spurs",5,3,1,0
+40,4,TRUE,2024-09-15,"Newcastle","Wolves",4,3,2,1
 50,5,FALSE,2024-09-21,"Chelsea","West Ham",3,3,NA,NA
 41,5,FALSE,2024-09-21,"Wolves","Aston Villa",3,3,NA,NA
 44,5,FALSE,2024-09-21,"Newcastle","Fulham",4,3,NA,NA
