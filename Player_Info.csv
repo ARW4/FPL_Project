@@ -1,26 +1,26 @@
 "Player ID","First Name","Second Name","Team","Position","Current Cost","Total Points","Bonus Points","Selected %","Goals Scored","Assists","Minutes","Clean Sheets","Goals Conceded","Own Goals","Penalties Saveed","Penalties Missed","Yellow Cards","Red Cards","Saves","Starts","xG","xA","xG Involvements","xG Conceded","Corners and Indirect Freekicks Order","Direct Freekicks Order","Penalties Order","Form"
 1,"Fábio","Ferreira Vieira","Arsenal","Midfielder",5.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 2,"Gabriel","Fernando de Jesus","Arsenal","Forward",6.8,1,0,0.9,0,0,15,0,0,0,0,0,1,0,0,0,"0.00","0.00","0.00","0.28",NA,NA,NA,0.3
-3,"Gabriel","dos Santos Magalhães","Arsenal","Defender",6,29,4,12.9,1,0,360,3,1,0,0,0,1,0,0,4,"0.51","0.05","0.56","4.32",NA,NA,NA,7.7
-4,"Kai","Havertz","Arsenal","Forward",8.1,24,5,17.2,2,1,360,3,1,0,0,0,0,0,0,4,"1.57","0.12","1.69","4.32",NA,NA,3,4
+3,"Gabriel","dos Santos Magalhães","Arsenal","Defender",6,29,4,13.2,1,0,360,3,1,0,0,0,1,0,0,4,"0.51","0.05","0.56","4.32",NA,NA,NA,7.7
+4,"Kai","Havertz","Arsenal","Forward",8.1,24,5,17,2,1,360,3,1,0,0,0,0,0,0,4,"1.57","0.12","1.69","4.32",NA,NA,3,4
 5,"Karl","Hein","Arsenal","Goalkeeper",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 6,"Jurriën","Timber","Arsenal","Defender",5.5,13,0,1.2,0,0,268,2,1,0,0,0,2,0,0,3,"0.07","0.05","0.12","3.56",NA,NA,NA,4
 7,"Jorge Luiz","Frello Filho","Arsenal","Midfielder",4.9,2,0,0.3,0,0,90,1,0,0,0,0,1,0,0,1,"0.00","0.00","0.00","0.74",NA,NA,NA,0.7
 8,"Jakub","Kiwior","Arsenal","Defender",4.9,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 9,"Gabriel","Martinelli Silva","Arsenal","Midfielder",6.9,10,0,1.9,0,0,249,3,0,0,0,0,0,0,0,3,"0.25","0.74","0.99","2.85",NA,NA,NA,2.3
 12,"Ethan","Nwaneri","Arsenal","Midfielder",4.5,1,0,0.3,0,0,4,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.09",NA,NA,NA,0.3
-13,"Martin","Ødegaard","Arsenal","Midfielder",8.3,7,0,5.9,0,0,253,2,1,0,0,0,1,0,0,3,"0.46","0.74","1.20","2.93",3,1,2,1.3
-15,"David","Raya Martin","Arsenal","Goalkeeper",5.5,29,6,28,0,0,360,3,1,0,0,0,1,0,14,4,"0.00","0.01","0.01","4.32",NA,NA,NA,7
-16,"Declan","Rice","Arsenal","Midfielder",6.3,3,0,3,0,0,222,2,1,0,0,0,1,1,0,3,"0.19","0.19","0.38","1.68",2,2,NA,0
-17,"Bukayo","Saka","Arsenal","Midfielder",10,31,4,29.3,1,4,341,3,1,0,0,0,1,0,0,4,"1.40","1.02","2.42","4.05",1,NA,1,6.3
-18,"William","Saliba","Arsenal","Defender",6,19,0,36.1,0,0,360,3,1,0,0,0,1,0,0,4,"0.00","0.03","0.03","4.32",NA,NA,NA,4.3
+13,"Martin","Ødegaard","Arsenal","Midfielder",8.3,7,0,5.4,0,0,253,2,1,0,0,0,1,0,0,3,"0.46","0.74","1.20","2.93",3,1,2,1.3
+15,"David","Raya Martin","Arsenal","Goalkeeper",5.5,29,6,28.4,0,0,360,3,1,0,0,0,1,0,14,4,"0.00","0.01","0.01","4.32",NA,NA,NA,7
+16,"Declan","Rice","Arsenal","Midfielder",6.3,3,0,2.9,0,0,222,2,1,0,0,0,1,1,0,3,"0.19","0.19","0.38","1.68",2,2,NA,0
+17,"Bukayo","Saka","Arsenal","Midfielder",10,31,4,28.8,1,4,341,3,1,0,0,0,1,0,0,4,"1.40","1.02","2.42","4.05",1,NA,1,6.3
+18,"William","Saliba","Arsenal","Defender",6,19,0,35.7,0,0,360,3,1,0,0,0,1,0,0,4,"0.00","0.03","0.03","4.32",NA,NA,NA,4.3
 20,"Thomas","Partey","Arsenal","Midfielder",5,18,3,1.5,1,0,360,3,1,0,0,0,1,0,0,4,"0.16","0.21","0.37","4.32",NA,NA,NA,5
 21,"Kieran","Tierney","Arsenal","Defender",4.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 22,"Tomiyasu","Takehiro","Arsenal","Defender",4.8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 23,"Leandro","Trossard","Arsenal","Midfielder",6.9,12,1,1.8,1,0,172,1,1,0,0,0,0,0,0,2,"0.26","0.13","0.39","1.85",4,NA,NA,3.7
-24,"Benjamin","White","Arsenal","Defender",6.5,20,0,8.2,0,0,360,3,1,0,0,0,0,0,0,4,"0.11","0.09","0.20","4.32",NA,NA,NA,4.7
-25,"Oleksandr","Zinchenko","Arsenal","Defender",4.9,7,0,2,0,0,78,1,0,0,0,0,0,0,0,1,"0.00","0.04","0.04","0.60",NA,NA,NA,0.3
-73,"Norberto","Murara Neto","Arsenal","Goalkeeper",4.4,7,0,1.6,0,0,180,0,2,0,0,0,0,0,11,2,"0.00","0.00","0.00","2.91",NA,NA,NA,1
+24,"Benjamin","White","Arsenal","Defender",6.5,20,0,8.1,0,0,360,3,1,0,0,0,0,0,0,4,"0.11","0.09","0.20","4.32",NA,NA,NA,4.7
+25,"Oleksandr","Zinchenko","Arsenal","Defender",4.9,7,0,1.9,0,0,78,1,0,0,0,0,0,0,0,1,"0.00","0.04","0.04","0.60",NA,NA,NA,0.3
+73,"Norberto","Murara Neto","Arsenal","Goalkeeper",4.4,7,0,1.5,0,0,180,0,2,0,0,0,0,0,11,2,"0.00","0.00","0.00","2.91",NA,NA,NA,1
 186,"Raheem","Sterling","Arsenal","Midfielder",6.8,1,0,1.2,0,0,10,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.13",NA,NA,NA,0.3
 578,"Riccardo","Calafiori","Arsenal","Defender",5.8,2,0,1.3,0,0,42,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","1.05",NA,NA,NA,0.7
 597,"Myles","Lewis-Skelly","Arsenal","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
@@ -34,41 +34,41 @@
 29,"Ross","Barkley","Aston Villa","Midfielder",5.3,6,0,0.5,0,1,87,0,2,0,0,0,0,0,0,0,"0.05","0.10","0.15","0.89",NA,NA,NA,2
 30,"Enzo","Barrenechea","Aston Villa","Midfielder",4.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 31,"Emiliano","Buendía Stati","Aston Villa","Midfielder",5.4,1,0,0.1,0,0,6,0,0,0,0,0,0,0,0,0,"0.00","0.01","0.01","0.09",NA,NA,NA,0.3
-32,"Matty","Cash","Aston Villa","Defender",4.4,3,0,1.5,0,0,96,0,1,0,0,0,0,0,0,2,"0.00","0.01","0.01","1.53",NA,NA,NA,0.3
-33,"Leander","Dendoncker","Aston Villa","Midfielder",4.5,0,0,0.6,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+32,"Matty","Cash","Aston Villa","Defender",4.4,3,0,1.4,0,0,96,0,1,0,0,0,0,0,0,2,"0.00","0.01","0.01","1.53",NA,NA,NA,0.3
+33,"Leander","Dendoncker","Aston Villa","Midfielder",4.5,0,0,0.5,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 34,"Moussa","Diaby","Aston Villa","Midfielder",6.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 35,"Diego Carlos","Santos Silva","Aston Villa","Defender",4.5,0,0,0.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-36,"Lucas","Digne","Aston Villa","Defender",4.6,15,2,7.2,0,2,306,0,5,0,0,0,0,0,0,4,"0.00","0.94","0.94","3.00",4,2,NA,4.3
+36,"Lucas","Digne","Aston Villa","Defender",4.6,15,2,7.8,0,2,306,0,5,0,0,0,0,0,0,4,"0.00","0.94","0.94","3.00",4,2,NA,4.3
 37,"Lewis","Dobbin","Aston Villa","Midfielder",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-38,"Jhon","Durán","Aston Villa","Forward",6.1,20,5,3,3,0,103,0,3,0,0,0,1,0,0,0,"1.04","0.14","1.18","2.19",NA,NA,NA,4.7
+38,"Jhon","Durán","Aston Villa","Forward",6.1,20,5,3.7,3,0,103,0,3,0,0,0,1,0,0,0,"1.04","0.14","1.18","2.19",NA,NA,NA,4.7
 39,"Joe","Gauci","Aston Villa","Goalkeeper",4,0,0,0.9,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 40,"Kortney","Hause","Aston Villa","Defender",4,0,0,0.7,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 41,"Samuel","Iling-Junior","Aston Villa","Midfielder",5.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 42,"Boubacar","Kamara","Aston Villa","Midfielder",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 43,"Kaine","Kesler-Hayden","Aston Villa","Defender",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-44,"Ezri","Konsa Ngoyo","Aston Villa","Defender",4.5,6,0,13.1,0,0,360,0,6,0,0,0,0,0,0,4,"0.07","0.03","0.10","4.68",NA,NA,NA,1.3
+44,"Ezri","Konsa Ngoyo","Aston Villa","Defender",4.5,6,0,13,0,0,360,0,6,0,0,0,0,0,0,4,"0.07","0.03","0.10","4.68",NA,NA,NA,1.3
 45,"Ian","Maatsen","Aston Villa","Defender",4.9,4,0,2.4,0,0,62,0,1,0,0,0,0,0,0,0,"0.01","0.53","0.54","1.72",NA,NA,NA,1
 46,"Filip","Marschall","Aston Villa","Goalkeeper",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-47,"Emiliano","Martínez Romero","Aston Villa","Goalkeeper",5,6,0,13,0,0,360,0,6,0,0,0,1,0,7,4,"0.00","0.00","0.00","4.68",NA,NA,NA,1
+47,"Emiliano","Martínez Romero","Aston Villa","Goalkeeper",5,6,0,13.3,0,0,360,0,6,0,0,0,1,0,7,4,"0.00","0.00","0.00","4.68",NA,NA,NA,1
 48,"John","McGinn","Aston Villa","Midfielder",5.4,8,0,1.7,0,0,304,1,4,0,0,0,1,0,0,4,"0.48","0.35","0.83","2.90",NA,3,NA,2
 49,"Tyrone","Mings","Aston Villa","Defender",4.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-50,"Kosta","Nedeljković","Aston Villa","Defender",4,3,0,1.9,0,0,93,0,2,0,0,0,0,0,0,0,"0.00","0.02","0.02","1.84",NA,NA,NA,0.7
+50,"Kosta","Nedeljković","Aston Villa","Defender",4,3,0,1.8,0,0,93,0,2,0,0,0,0,0,0,0,"0.00","0.02","0.02","1.84",NA,NA,NA,0.7
 51,"Robin","Olsen","Aston Villa","Goalkeeper",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 52,"Pau","Torres","Aston Villa","Defender",4.5,6,0,2.3,0,0,360,0,6,0,0,0,0,0,0,4,"0.00","0.06","0.06","4.68",NA,NA,NA,1.3
 53,"Jacob","Ramsey","Aston Villa","Midfielder",5.5,9,0,0.4,0,1,184,0,5,0,0,0,0,0,0,1,"0.41","0.76","1.17","2.75",NA,NA,NA,1.7
-54,"Morgan","Rogers","Aston Villa","Midfielder",5.1,8,0,15.8,0,0,360,0,6,0,0,0,0,0,0,4,"0.55","0.39","0.94","4.68",NA,NA,NA,2
+54,"Morgan","Rogers","Aston Villa","Midfielder",5.1,8,0,15.9,0,0,360,0,6,0,0,0,0,0,0,4,"0.55","0.39","0.94","4.68",NA,NA,NA,2
 55,"Viljami","Sinisalo","Aston Villa","Goalkeeper",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 56,"Lino","da Cruz Sousa","Aston Villa","Defender",4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 57,"Youri","Tielemans","Aston Villa","Midfielder",5.5,12,2,1.3,0,1,360,0,6,0,0,0,1,0,0,4,"0.18","1.00","1.18","4.68",2,NA,NA,1.7
-58,"Ollie","Watkins","Aston Villa","Forward",8.9,22,3,25.3,2,1,268,2,3,0,0,0,0,0,0,4,"2.76","0.08","2.84","2.62",NA,NA,2,6.7
-233,"Amadou","Onana","Aston Villa","Midfielder",5.1,21,5,11.8,2,0,271,1,4,0,0,0,2,0,0,4,"1.11","0.08","1.19","3.79",NA,NA,NA,3.7
+58,"Ollie","Watkins","Aston Villa","Forward",9,22,3,27.6,2,1,268,2,3,0,0,0,0,0,0,4,"2.76","0.08","2.84","2.62",NA,NA,2,6.7
+233,"Amadou","Onana","Aston Villa","Midfielder",5.2,21,5,12.1,2,0,271,1,4,0,0,0,2,0,0,4,"1.11","0.08","1.19","3.79",NA,NA,NA,3.7
 569,"Jaden","Philogene","Aston Villa","Midfielder",5.3,1,0,0.1,0,0,17,0,0,0,0,0,1,0,0,0,"0.07","0.01","0.08","1.15",NA,NA,NA,0.3
 598,"Lamare","Bogarde","Aston Villa","Defender",4,2,0,0.4,0,0,168,0,3,0,0,0,1,0,0,2,"0.00","0.08","0.08","1.30",NA,NA,NA,0.7
 640,"Sil","Swinkels","Aston Villa","Defender",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 641,"Oliwier","Zych","Aston Villa","Goalkeeper",4,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 656,"Kadan","Young","Aston Villa","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 59,"Max","Aarons","Bournemouth","Defender",4.4,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-60,"Tyler","Adams","Bournemouth","Midfielder",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+60,"Tyler","Adams","Bournemouth","Midfielder",4.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 61,"Jaidon","Anthony","Bournemouth","Midfielder",4.5,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 62,"David","Brooks","Bournemouth","Midfielder",4.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 63,"Ryan","Christie","Bournemouth","Midfielder",4.9,7,0,0.2,0,0,222,2,2,0,0,0,2,0,0,3,"0.08","0.12","0.20","2.71",4,NA,NA,2
@@ -77,7 +77,7 @@
 66,"Romain","Faivre","Bournemouth","Midfielder",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 67,"Hamed","Traorè","Bournemouth","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 68,"James","Hill","Bournemouth","Defender",4,0,0,0.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-69,"Daniel","Jebbison","Bournemouth","Forward",4.5,2,0,2.9,0,0,26,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.34",NA,NA,NA,0.3
+69,"Daniel","Jebbison","Bournemouth","Forward",4.5,2,0,2.8,0,0,26,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.34",NA,NA,NA,0.3
 70,"Milos","Kerkez","Bournemouth","Defender",4.5,6,0,0.4,0,0,335,0,5,0,0,0,1,0,0,4,"0.08","0.08","0.16","5.40",NA,NA,NA,1.7
 71,"Justin","Kluivert","Bournemouth","Midfielder",5.4,10,0,0.3,0,1,261,2,2,0,0,0,2,0,0,3,"0.43","0.44","0.87","3.31",NA,4,2,3.3
 72,"Chris","Mepham","Bournemouth","Defender",4.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
@@ -86,11 +86,11 @@
 76,"Philip","Billing","Bournemouth","Midfielder",4.8,2,0,0.1,0,0,21,0,1,0,0,0,0,0,0,0,"0.00","0.09","0.09","0.58",NA,1,NA,0.3
 77,"Alex","Scott","Bournemouth","Midfielder",4.9,5,0,0,0,0,134,0,3,0,0,0,0,0,0,1,"0.02","0.03","0.05","2.96",3,3,NA,1
 78,"Antoine","Semenyo","Bournemouth","Midfielder",5.6,20,1,6.1,2,1,360,0,5,0,0,0,2,0,0,4,"1.31","1.33","2.64","5.66",NA,NA,NA,4
-79,"Marcos","Senesi","Bournemouth","Defender",4.9,3,0,0.7,0,0,256,0,4,0,0,0,2,0,0,3,"0.00","0.09","0.09","4.28",NA,NA,NA,1
+79,"Marcos","Senesi","Bournemouth","Defender",4.9,3,0,0.6,0,0,256,0,4,0,0,0,2,0,0,3,"0.00","0.09","0.09","4.28",NA,NA,NA,1
 80,"Luis","Sinisterra","Bournemouth","Midfielder",5,15,2,0.5,1,1,128,0,3,0,0,0,0,0,0,1,"0.65","0.31","0.96","2.63",NA,NA,NA,4.3
 81,"Adam","Smith","Bournemouth","Defender",4.5,9,0,0.2,0,0,153,1,1,0,0,0,1,0,0,2,"0.00","0.01","0.01","1.63",NA,NA,NA,2.3
 83,"Marcus","Tavernier","Bournemouth","Midfielder",5.5,16,2,0.3,1,0,346,1,4,0,0,0,0,0,0,4,"2.02","0.64","2.66","5.31",2,2,NA,4.7
-84,"Mark","Travers","Bournemouth","Goalkeeper",4.4,2,0,0.2,0,0,90,0,1,0,0,0,0,0,2,1,"0.00","0.00","0.00","0.78",NA,NA,NA,0.7
+84,"Mark","Travers","Bournemouth","Goalkeeper",4.4,2,0,0.1,0,0,90,0,1,0,0,0,0,0,2,1,"0.00","0.00","0.00","0.78",NA,NA,NA,0.7
 85,"Illia","Zabarnyi","Bournemouth","Defender",4.5,7,0,0.4,0,0,360,0,5,0,0,0,0,0,0,4,"0.19","0.04","0.23","5.66",NA,NA,NA,1.7
 152,"Kepa","Arrizabalaga","Bournemouth","Goalkeeper",4.5,3,0,0.5,0,0,90,0,2,0,0,0,0,0,6,1,"0.00","0.00","0.00","1.97",NA,NA,NA,1
 580,"Dean","Huijsen","Bournemouth","Defender",4.5,3,0,0.1,0,0,103,0,1,0,0,0,0,0,0,1,"0.00","0.01","0.01","1.38",NA,NA,NA,0.3
@@ -110,7 +110,7 @@
 96,"Kim","Ji-soo","Brentford","Defender",4,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 97,"Yunus Emre","Konak","Brentford","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 98,"Keane","Lewis-Potter","Brentford","Midfielder",5,6,0,0.1,0,0,186,0,4,0,0,0,0,0,0,2,"0.08","0.06","0.14","5.36",NA,NA,NA,1.7
-99,"Bryan","Mbeumo","Brentford","Midfielder",7.1,26,5,9.1,3,0,359,0,6,0,0,0,2,0,0,4,"1.12","1.26","2.38","7.56",1,2,2,5.7
+99,"Bryan","Mbeumo","Brentford","Midfielder",7.1,26,5,9.7,3,0,359,0,6,0,0,0,2,0,0,4,"1.12","1.26","2.38","7.56",1,2,2,5.7
 100,"Ben","Mee","Brentford","Defender",4.4,1,0,0.6,0,0,1,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 101,"Christian","Nørgaard","Brentford","Midfielder",4.9,7,0,0.1,0,0,360,0,6,0,0,0,1,0,0,4,"0.37","0.07","0.44","7.56",NA,NA,NA,1.7
 102,"Frank","Onyeka","Brentford","Midfielder",4.9,2,0,0,0,0,23,0,0,0,0,0,0,0,0,0,"0.00","0.02","0.02","0.69",NA,NA,NA,0.3
@@ -119,9 +119,9 @@
 105,"Mads","Roerslev Rasmussen","Brentford","Defender",4.5,5,0,0.1,0,0,249,0,4,0,0,0,0,0,0,2,"0.01","0.18","0.19","5.61",NA,NA,NA,1
 106,"Kevin","Schade","Brentford","Midfielder",5.4,10,0,0.1,0,1,209,1,1,0,0,0,0,0,0,2,"0.36","0.03","0.39","3.16",NA,NA,NA,2.7
 107,"Igor Thiago","Nascimento Rodrigues","Brentford","Forward",5.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-108,"Ivan","Toney","Brentford","Forward",7.3,0,0,1.8,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-109,"Hákon","Valdimarsson","Brentford","Goalkeeper",4,0,0,3.9,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-110,"Yoane","Wissa","Brentford","Forward",6.1,28,7,6.4,3,1,290,0,6,0,0,0,1,0,0,4,"2.43","0.27","2.70","5.38",NA,NA,4,5.7
+108,"Ivan","Toney","Brentford","Forward",7.3,0,0,1.7,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+109,"Hákon","Valdimarsson","Brentford","Goalkeeper",4,0,0,3.8,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+110,"Yoane","Wissa","Brentford","Forward",6.1,28,7,5.3,3,1,290,0,6,0,0,0,1,0,0,4,"2.43","0.27","2.70","5.38",NA,NA,4,5.7
 111,"Yehor","Yarmoliuk","Brentford","Midfielder",4.5,1,0,2.3,0,0,6,0,0,0,0,0,0,0,0,0,"0.04","0.00","0.04","0.00",NA,NA,NA,0.3
 112,"Mathias","Jorgensen","Brentford","Defender",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 314,"Fábio","Freitas Gouveia Carvalho","Brentford","Midfielder",4.8,4,0,0.9,0,0,56,0,2,0,0,0,0,0,0,0,"0.08","0.01","0.09","2.73",NA,NA,NA,1
@@ -129,13 +129,13 @@
 602,"Ryan","Trevitt","Brentford","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 634,"Gustavo","Nunes Fernandes Gomes","Brentford","Midfielder",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 649,"Jayden","Meghoma","Brentford","Defender",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-113,"Simon","Adingra","Brighton","Midfielder",5.5,12,0,1,1,1,73,0,0,0,0,0,0,0,0,0,"0.29","0.63","0.92","0.45",NA,NA,NA,2
+113,"Simon","Adingra","Brighton","Midfielder",5.5,12,0,0.9,1,1,73,0,0,0,0,0,0,0,0,0,"0.29","0.63","0.92","0.45",NA,NA,NA,2
 114,"Benicio","Baker-Boaitey","Brighton","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 115,"Carlos","Baleba","Brighton","Midfielder",5,6,0,0.1,0,0,197,1,1,0,0,0,0,0,0,2,"0.38","0.07","0.45","2.53",NA,NA,NA,2
-116,"Valentín","Barco","Brighton","Defender",4,0,0,9.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+116,"Valentín","Barco","Brighton","Defender",4,0,0,9.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 118,"Amario","Cozier-Duberry","Brighton","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 119,"Mahmoud","Dahoud","Brighton","Midfielder",4.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-120,"Lewis","Dunk","Brighton","Defender",4.6,16,0,8.2,0,0,345,2,2,0,0,0,0,0,0,4,"0.16","0.25","0.41","4.31",NA,2,NA,3.3
+120,"Lewis","Dunk","Brighton","Defender",4.6,16,0,8.3,0,0,345,2,2,0,0,0,0,0,0,4,"0.16","0.25","0.41","4.31",NA,2,NA,3.3
 121,"Julio","Enciso","Brighton","Midfielder",5.4,3,0,0.1,0,0,39,0,0,0,0,0,0,0,0,0,"0.08","0.12","0.20","0.24",2,NA,NA,1
 122,"Pervis","Estupiñán","Brighton","Defender",5,1,0,0.5,0,0,18,0,0,0,0,0,0,0,0,0,"0.04","0.07","0.11","0.94",NA,NA,NA,0.3
 123,"Evan","Ferguson","Brighton","Forward",5.5,1,0,0.2,0,0,5,0,0,0,0,0,0,0,0,0,"0.06","0.00","0.06","0.00",NA,NA,NA,0.3
@@ -144,27 +144,27 @@
 126,"Jack","Hinshelwood","Brighton","Midfielder",5,9,0,0.1,0,0,336,2,2,0,0,0,1,0,0,4,"0.20","0.45","0.65","4.17",NA,NA,NA,2
 127,"Ibrahim","Osman","Brighton","Midfielder",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 128,"Igor Julio","dos Santos de Paulo","Brighton","Defender",4.4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-129,"João Pedro","Junqueira de Jesus","Brighton","Forward",5.7,18,5,30.7,2,0,261,1,2,0,0,0,1,0,0,3,"0.88","0.26","1.14","3.96",NA,NA,1,5.3
+129,"João Pedro","Junqueira de Jesus","Brighton","Forward",5.7,18,5,29.3,2,0,261,1,2,0,0,0,1,0,0,3,"0.88","0.26","1.14","3.96",NA,NA,1,5.3
 130,"Kacper","Kozłowski","Brighton","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 131,"Tariq","Lamptey","Brighton","Defender",4.5,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 132,"Solly","March","Brighton","Midfielder",6.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 133,"Adrian","Mazilu","Brighton","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 134,"James","Milner","Brighton","Midfielder",5,5,0,0.1,0,0,169,1,1,0,0,0,1,0,0,3,"0.16","0.15","0.31","1.98",1,NA,NA,1
 135,"Yankuba","Minteh","Brighton","Midfielder",5.5,12,0,2.5,0,2,272,1,2,0,0,0,2,0,0,4,"0.48","1.10","1.58","2.91",3,NA,NA,2.7
-136,"Mitoma","Kaoru","Brighton","Midfielder",6.7,19,1,10.4,1,1,351,2,2,0,0,0,0,0,0,4,"1.66","0.78","2.44","4.20",NA,NA,NA,3.7
-137,"Jakub","Moder","Brighton","Midfielder",4.5,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+136,"Mitoma","Kaoru","Brighton","Midfielder",6.7,19,1,10.5,1,1,351,2,2,0,0,0,0,0,0,4,"1.66","0.78","2.44","4.20",NA,NA,NA,3.7
+137,"Jakub","Moder","Brighton","Midfielder",4.4,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 138,"Mark","O’Mahony","Brighton","Forward",4.5,0,0,0.5,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 139,"Odeluga","Offiah","Brighton","Defender",4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 140,"Cameron","Peupion","Brighton","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 141,"Jeremy","Sarmiento Morante","Brighton","Midfielder",4.9,1,0,0,0,0,8,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-142,"Jason","Steele","Brighton","Goalkeeper",4.5,9,1,2.3,0,0,180,1,1,0,0,0,0,0,3,2,"0.00","0.00","0.00","1.88",NA,NA,NA,0.7
+142,"Jason","Steele","Brighton","Goalkeeper",4.5,9,1,2.2,0,0,180,1,1,0,0,0,0,0,3,2,"0.00","0.00","0.00","1.88",NA,NA,NA,0.7
 143,"Deniz","Undav","Brighton","Forward",5.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 144,"Jan Paul","van Hecke","Brighton","Defender",4.5,15,0,0.8,0,0,360,2,2,0,0,0,1,0,0,4,"0.05","0.08","0.13","4.31",NA,NA,NA,3
-145,"Joël","Veltman","Brighton","Defender",4.5,19,4,3.4,0,0,341,2,2,0,0,0,1,0,0,4,"0.05","0.48","0.53","3.36",NA,NA,NA,3.7
-146,"Bart","Verbruggen","Brighton","Goalkeeper",4.5,9,0,2,0,0,180,1,1,0,0,0,1,0,7,2,"0.00","0.00","0.00","2.43",NA,NA,NA,3
+145,"Joël","Veltman","Brighton","Defender",4.5,19,4,3.6,0,0,341,2,2,0,0,0,1,0,0,4,"0.05","0.48","0.53","3.36",NA,NA,NA,3.7
+146,"Bart","Verbruggen","Brighton","Goalkeeper",4.5,9,0,2.2,0,0,180,1,1,0,0,0,1,0,7,2,"0.00","0.00","0.00","2.43",NA,NA,NA,3
 147,"Adam","Webster","Brighton","Defender",4.4,1,0,0.1,0,0,14,0,0,0,0,0,0,0,0,0,"0.00","0.02","0.02","0.00",NA,NA,NA,0
-148,"Danny","Welbeck","Brighton","Forward",5.7,25,6,18.3,2,1,336,2,2,0,0,0,0,0,0,4,"1.59","0.20","1.79","4.20",NA,3,3,4.3
-149,"Mats","Wieffer","Brighton","Midfielder",5,6,0,0.1,0,1,90,1,0,0,0,0,0,0,0,1,"0.00","0.02","0.02","0.45",NA,NA,NA,0
+148,"Danny","Welbeck","Brighton","Forward",5.8,25,6,18.9,2,1,336,2,2,0,0,0,0,0,0,4,"1.59","0.20","1.79","4.20",NA,3,3,4.3
+149,"Mats","Wieffer","Brighton","Midfielder",4.9,6,0,0.1,0,1,90,1,0,0,0,0,0,0,0,1,"0.00","0.02","0.02","0.45",NA,NA,NA,0
 595,"Brajan","Gruda","Brighton","Midfielder",5.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 600,"Yasin","Ayari","Brighton","Midfielder",5,7,0,0,0,0,165,1,1,0,0,0,0,0,0,1,"0.52","0.39","0.91","2.32",NA,NA,NA,2
 601,"Andrew","Moran","Brighton","Midfielder",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
@@ -177,42 +177,42 @@
 153,"Benoît","Badiashile","Chelsea","Defender",4.4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 154,"Lucas","Bergström","Chelsea","Goalkeeper",4,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 155,"Marcus","Bettinelli","Chelsea","Goalkeeper",4,0,0,0.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-157,"Moisés","Caicedo Corozo","Chelsea","Midfielder",4.9,8,0,0.6,0,0,345,1,5,0,0,0,1,0,0,4,"0.05","0.21","0.26","4.79",NA,NA,NA,2.3
+157,"Moisés","Caicedo Corozo","Chelsea","Midfielder",4.9,8,0,0.7,0,0,345,1,5,0,0,0,1,0,0,4,"0.05","0.21","0.26","4.79",NA,NA,NA,2.3
 158,"Cesare","Casadei","Chelsea","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 160,"Ben","Chilwell","Chelsea","Defender",4.8,0,0,0.6,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 161,"Carney","Chukwuemeka","Chelsea","Midfielder",4.9,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-162,"Levi","Colwill","Chelsea","Defender",4.5,9,0,1.5,0,0,360,1,5,0,0,0,1,0,0,4,"0.18","0.17","0.35","4.91",NA,NA,NA,2.7
-163,"Marc","Cucurella Saseta","Chelsea","Defender",5,9,0,6,0,0,341,1,4,0,0,0,2,0,0,4,"0.00","0.24","0.24","4.71",NA,NA,NA,2.3
+162,"Levi","Colwill","Chelsea","Defender",4.5,9,0,1.6,0,0,360,1,5,0,0,0,1,0,0,4,"0.18","0.17","0.35","4.91",NA,NA,NA,2.7
+163,"Marc","Cucurella Saseta","Chelsea","Defender",5,9,0,6.1,0,0,341,1,4,0,0,0,2,0,0,4,"0.00","0.24","0.24","4.71",NA,NA,NA,2.3
 164,"David Datro","Fofana","Chelsea","Forward",5.4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 165,"Deivid Washington","de Souza Eugênio","Chelsea","Forward",5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 166,"Kiernan","Dewsbury-Hall","Chelsea","Midfielder",5.8,2,0,0.2,0,0,38,0,1,0,0,0,0,0,0,0,"0.00","0.01","0.01","0.23",NA,NA,NA,0.3
 167,"Axel","Disasi","Chelsea","Defender",4.4,6,0,0.4,0,0,61,1,0,0,0,0,0,0,0,1,"0.00","0.00","0.00","1.55",NA,NA,NA,2
-168,"Enzo","Fernández","Chelsea","Midfielder",5,6,0,1.6,0,0,270,0,5,0,0,0,0,0,0,3,"0.22","0.20","0.42","3.13",1,5,4,1.3
+168,"Enzo","Fernández","Chelsea","Midfielder",5,6,0,1.5,0,0,270,0,5,0,0,0,0,0,0,3,"0.22","0.20","0.42","3.13",1,5,4,1.3
 169,"Conor","Gallagher","Chelsea","Midfielder",5.9,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 170,"Alfie","Gilchrist","Chelsea","Defender",4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-171,"Malo","Gusto","Chelsea","Defender",4.9,3,0,1.9,0,0,253,0,5,0,0,0,1,0,0,3,"0.03","0.11","0.14","2.82",NA,NA,NA,0.7
+171,"Malo","Gusto","Chelsea","Defender",4.9,3,0,1.7,0,0,253,0,5,0,0,0,1,0,0,3,"0.03","0.11","0.14","2.82",NA,NA,NA,0.7
 172,"Reece","James","Chelsea","Defender",5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",4,2,NA,0
 173,"Omari","Kellyman","Chelsea","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-174,"Roméo","Lavia","Chelsea","Midfielder",4.5,2,0,1,0,0,65,0,1,0,0,0,0,0,0,1,"0.00","0.18","0.18","0.66",NA,NA,NA,0
+174,"Roméo","Lavia","Chelsea","Midfielder",4.5,2,0,0.9,0,0,65,0,1,0,0,0,0,0,0,1,"0.00","0.18","0.18","0.66",NA,NA,NA,0
 175,"Romelu","Lukaku Bolingoli","Chelsea","Forward",6.3,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 176,"Malang","Sarr","Chelsea","Defender",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-177,"Noni","Madueke","Chelsea","Midfielder",6.6,25,3,12.3,3,0,235,1,3,0,0,0,0,0,0,3,"1.24","0.15","1.39","3.72",NA,NA,3,8.3
+177,"Noni","Madueke","Chelsea","Midfielder",6.6,25,3,12.2,3,0,235,1,3,0,0,0,0,0,0,3,"1.24","0.15","1.39","3.72",NA,NA,3,8.3
 178,"Marc","Guiu Paz","Chelsea","Forward",5,1,0,0.7,0,0,24,0,1,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.11",NA,NA,NA,0
 179,"Mykhailo","Mudryk","Chelsea","Midfielder",6.3,2,0,0.3,0,0,61,0,2,0,0,0,0,0,0,1,"0.00","0.16","0.16","2.06",NA,NA,NA,0.7
-180,"Nicolas","Jackson","Chelsea","Forward",7.6,19,2,6.8,2,1,300,1,4,0,0,0,2,0,0,4,"2.29","0.08","2.37","4.45",NA,NA,NA,5.7
+180,"Nicolas","Jackson","Chelsea","Forward",7.6,19,2,7,2,1,300,1,4,0,0,0,2,0,0,4,"2.29","0.08","2.37","4.45",NA,NA,NA,5.7
 181,"Christopher","Nkunku","Chelsea","Midfielder",6.2,10,1,4.8,1,0,79,0,1,0,0,0,0,0,0,1,"0.45","0.10","0.55","1.19",NA,NA,2,3
-182,"Cole","Palmer","Chelsea","Midfielder",10.6,28,4,39.6,1,4,352,1,5,0,0,0,2,0,0,4,"0.85","1.07","1.92","4.79",2,1,1,8.7
-183,"Đorđe","Petrović","Chelsea","Goalkeeper",4.4,0,0,0.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+182,"Cole","Palmer","Chelsea","Midfielder",10.6,28,4,39.7,1,4,352,1,5,0,0,0,2,0,0,4,"0.85","1.07","1.92","4.79",2,1,1,8.7
+183,"Đorđe","Petrović","Chelsea","Goalkeeper",4.4,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 184,"Renato","Palma Veiga","Chelsea","Midfielder",4.5,4,0,0.3,0,0,107,1,1,0,0,0,1,0,0,1,"0.04","0.01","0.05","1.98",NA,NA,NA,1
-185,"Robert","Sánchez","Chelsea","Goalkeeper",4.5,20,3,5.6,0,0,360,1,5,0,1,0,1,0,14,4,"0.00","0.00","0.00","4.91",NA,NA,NA,6
+185,"Robert","Sánchez","Chelsea","Goalkeeper",4.6,20,3,6.4,0,0,360,1,5,0,1,0,1,0,14,4,"0.00","0.00","0.00","4.91",NA,NA,NA,6
 187,"Tosin","Adarabioyo","Chelsea","Defender",4.4,1,0,0.2,0,0,28,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.22",NA,NA,NA,0.3
 189,"Wesley","Fofana","Chelsea","Defender",4.5,10,2,0.7,0,0,360,1,5,0,0,0,2,0,0,4,"0.04","0.08","0.12","4.91",NA,NA,NA,3
-386,"Jadon","Sancho","Chelsea","Midfielder",6.3,3,0,0.7,0,1,45,0,0,0,0,0,1,0,0,0,"0.00","0.14","0.14","0.48",NA,NA,NA,1
+386,"Jadon","Sancho","Chelsea","Midfielder",6.3,3,0,0.8,0,1,45,0,0,0,0,0,1,0,0,0,"0.00","0.14","0.14","0.48",NA,NA,NA,1
 560,"Pedro","Lomba Neto","Chelsea","Midfielder",6.4,6,0,0.8,0,1,179,0,2,0,0,0,1,0,0,2,"0.04","0.26","0.30","1.70",3,NA,NA,1.7
 575,"Caleb","Wiley","Chelsea","Defender",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-581,"Filip","Jørgensen","Chelsea","Goalkeeper",4.4,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-621,"João","Félix Sequeira","Chelsea","Midfielder",6.5,7,0,1,1,0,83,0,0,0,0,0,1,0,0,0,"0.22","0.04","0.26","0.65",NA,NA,NA,2.3
-11,"Eddie","Nketiah","Crystal Palace","Forward",5.9,2,0,0.9,0,0,90,0,2,0,0,0,0,0,0,1,"0.34","0.23","0.57","1.23",NA,NA,NA,0.7
+581,"Filip","Jørgensen","Chelsea","Goalkeeper",4.4,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+621,"João","Félix Sequeira","Chelsea","Midfielder",6.4,7,0,0.9,1,0,83,0,0,0,0,0,1,0,0,0,"0.22","0.04","0.26","0.65",NA,NA,NA,2.3
+11,"Eddie","Nketiah","Crystal Palace","Forward",5.9,2,0,1,0,0,90,0,2,0,0,0,0,0,0,1,"0.34","0.23","0.57","1.23",NA,NA,NA,0.7
 159,"Trevoh","Chalobah","Crystal Palace","Defender",4.4,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 190,"Naouirou","Ahamada","Crystal Palace","Midfielder",4.5,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 193,"Cheick","Doucouré","Crystal Palace","Midfielder",4.9,6,0,0.1,0,1,91,0,1,0,0,0,0,0,0,1,"0.04","0.01","0.05","1.31",NA,NA,NA,1.7
@@ -220,24 +220,24 @@
 195,"Chadi","Riad Dnanou","Crystal Palace","Defender",4.4,1,0,0.1,0,0,90,0,2,0,0,0,0,0,0,1,"0.00","0.02","0.02","1.39",NA,NA,NA,0.3
 196,"Nathaniel","Clyne","Crystal Palace","Defender",4.4,3,0,0.1,0,0,153,0,3,0,0,0,0,0,0,2,"0.00","0.02","0.02","3.49",NA,NA,NA,1
 197,"Malcolm","Ebiowei","Crystal Palace","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-199,"Eberechi","Eze","Crystal Palace","Midfielder",6.9,16,3,25.3,1,0,360,0,7,0,0,0,0,0,0,4,"1.51","0.62","2.13","6.48",1,1,2,4.7
-200,"Marc","Guéhi","Crystal Palace","Defender",4.5,4,0,5.7,0,0,360,0,7,0,0,0,1,0,0,4,"0.00","0.10","0.10","6.48",NA,NA,NA,1.3
-201,"Dean","Henderson","Crystal Palace","Goalkeeper",4.5,8,0,13.8,0,0,360,0,7,0,0,0,0,0,12,4,"0.00","0.00","0.00","6.48",NA,NA,NA,2
+199,"Eberechi","Eze","Crystal Palace","Midfielder",6.9,16,3,24.9,1,0,360,0,7,0,0,0,0,0,0,4,"1.51","0.62","2.13","6.48",1,1,2,4.7
+200,"Marc","Guéhi","Crystal Palace","Defender",4.5,4,0,5.6,0,0,360,0,7,0,0,0,1,0,0,4,"0.00","0.10","0.10","6.48",NA,NA,NA,1.3
+201,"Dean","Henderson","Crystal Palace","Goalkeeper",4.5,8,0,13.5,0,0,360,0,7,0,0,0,0,0,12,4,"0.00","0.00","0.00","6.48",NA,NA,NA,2
 202,"Rob","Holding","Crystal Palace","Defender",4.4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 203,"Will","Hughes","Crystal Palace","Midfielder",4.9,3,0,0,0,0,177,0,4,0,0,0,1,0,0,2,"0.00","0.08","0.08","3.79",5,NA,NA,0.3
-205,"Daichi","Kamada","Crystal Palace","Midfielder",5.3,5,0,0.3,0,0,209,0,4,0,0,0,1,0,0,2,"0.21","0.13","0.34","3.19",NA,NA,NA,1.3
+205,"Daichi","Kamada","Crystal Palace","Midfielder",5.3,5,0,0.2,0,0,209,0,4,0,0,0,1,0,0,2,"0.21","0.13","0.34","3.19",NA,NA,NA,1.3
 206,"Jefferson","Lerma Solís","Crystal Palace","Midfielder",4.9,3,0,0.1,0,0,78,1,1,0,0,0,1,0,0,1,"0.02","0.33","0.35","1.78",NA,NA,NA,0.7
-207,"Jean-Philippe","Mateta","Crystal Palace","Forward",7.4,18,3,4.5,2,0,293,0,6,0,0,0,0,0,0,4,"1.68","0.25","1.93","4.99",NA,NA,1,5.7
+207,"Jean-Philippe","Mateta","Crystal Palace","Forward",7.4,18,3,4.7,2,0,293,0,6,0,0,0,0,0,0,4,"1.68","0.25","1.93","4.99",NA,NA,1,5.7
 208,"Matheus","França de Oliveira","Crystal Palace","Midfielder",4.4,0,0,0.8,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 209,"Remi","Matthews","Crystal Palace","Goalkeeper",4,0,0,0.9,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 210,"Tyrick","Mitchell","Crystal Palace","Defender",4.9,8,0,1.7,0,1,358,0,7,0,0,0,0,0,0,4,"0.24","0.77","1.01","6.48",NA,NA,NA,2.3
-211,"Daniel","Muñoz","Crystal Palace","Defender",5,7,0,3.2,0,1,350,0,7,0,0,0,1,0,0,4,"0.15","0.32","0.47","6.47",NA,NA,NA,1
+211,"Daniel","Muñoz","Crystal Palace","Defender",4.9,7,0,3.1,0,1,350,0,7,0,0,0,1,0,0,4,"0.15","0.32","0.47","6.47",NA,NA,NA,1
 212,"David","Ozoh","Crystal Palace","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 213,"Jesurun","Rak-Sakyi","Crystal Palace","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 214,"Jeffrey","Schlupp","Crystal Palace","Midfielder",4.9,3,0,0.1,0,0,12,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.55",NA,NA,NA,1
 215,"Joel","Ward","Crystal Palace","Defender",4.4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 216,"Adam","Wharton","Crystal Palace","Midfielder",4.9,8,0,0.4,0,0,343,0,6,0,0,0,0,0,0,4,"0.13","0.34","0.47","5.53",4,NA,NA,2
-445,"Matt","Turner","Crystal Palace","Goalkeeper",4,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+445,"Matt","Turner","Crystal Palace","Goalkeeper",4,0,0,15.8,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 585,"Ismaïla","Sarr","Crystal Palace","Midfielder",5.9,7,0,0.2,0,1,55,0,1,0,0,0,0,0,0,0,"0.18","0.62","0.80","0.78",NA,NA,NA,2
 644,"Franco","Umeh-Chibueze","Crystal Palace","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 645,"Justin","Devenny","Crystal Palace","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
@@ -248,7 +248,7 @@
 217,"Abdoulaye","Doucouré","Everton","Midfielder",5.3,4,0,0.3,0,0,125,0,7,0,0,0,0,0,0,2,"0.21","0.02","0.23","4.33",NA,NA,NA,0.7
 218,"Norberto Bercique","Gomes Betuncal","Everton","Forward",5,4,0,0.8,0,0,43,0,4,0,0,0,0,0,0,0,"0.00","0.00","0.00","1.85",NA,NA,NA,1
 219,"Jarrad","Branthwaite","Everton","Defender",4.9,0,0,0.8,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-220,"Dominic","Calvert-Lewin","Everton","Forward",5.9,22,3,3.2,2,1,323,0,9,0,0,0,0,0,0,4,"1.12","0.41","1.53","6.66",NA,NA,1,6.7
+220,"Dominic","Calvert-Lewin","Everton","Forward",5.9,22,3,3.6,2,1,323,0,9,0,0,0,0,0,0,4,"1.12","0.41","1.53","6.66",NA,NA,1,6.7
 221,"Séamus","Coleman","Everton","Defender",4.4,1,0,0,0,0,90,0,3,0,0,0,0,0,0,1,"0.62","0.01","0.63","2.22",NA,NA,NA,0.3
 222,"Idrissa","Gueye","Everton","Midfielder",4.9,8,0,0.1,0,0,333,0,12,0,0,0,0,0,0,4,"0.20","0.08","0.28","7.48",NA,NA,NA,2
 223,"James","Garner","Everton","Midfielder",5,2,0,0,0,0,64,0,3,0,0,0,0,0,0,0,"0.00","0.05","0.05","1.75",3,2,NA,0.7
@@ -256,15 +256,15 @@
 225,"Mason","Holgate","Everton","Defender",4,1,0,0.4,0,0,5,0,1,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.07",NA,NA,NA,0
 226,"Tim","Iroegbunam","Everton","Midfielder",4.5,6,0,1.4,0,0,350,0,13,0,0,0,2,0,0,4,"0.21","0.08","0.29","7.89",NA,NA,NA,1.3
 227,"João","Neves Virgínia","Everton","Goalkeeper",4,0,0,0.5,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-228,"Michael","Keane","Everton","Defender",4,8,0,5.6,1,0,360,0,13,0,0,0,1,0,0,4,"0.26","0.02","0.28","8.20",NA,NA,NA,2.3
-229,"Neal","Maupay","Everton","Forward",4.9,0,0,0.7,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-230,"Dwight","McNeil","Everton","Midfielder",5.4,22,3,1.6,1,2,360,0,13,0,0,0,0,0,0,4,"0.11","2.42","2.52","8.20",1,NA,NA,6.7
-231,"Vitalii","Mykolenko","Everton","Defender",4.4,3,0,5,0,0,295,0,10,0,0,0,0,0,0,4,"0.00","0.06","0.06","6.45",NA,NA,NA,0.7
+228,"Michael","Keane","Everton","Defender",4,8,0,5.5,1,0,360,0,13,0,0,0,1,0,0,4,"0.26","0.02","0.28","8.20",NA,NA,NA,2.3
+229,"Neal","Maupay","Everton","Forward",4.9,0,0,0.6,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+230,"Dwight","McNeil","Everton","Midfielder",5.4,22,3,2.2,1,2,360,0,13,0,0,0,0,0,0,4,"0.11","2.42","2.52","8.20",1,NA,NA,6.7
+231,"Vitalii","Mykolenko","Everton","Defender",4.4,3,0,4.7,0,0,295,0,10,0,0,0,0,0,0,4,"0.00","0.06","0.06","6.45",NA,NA,NA,0.7
 232,"Iliman","Ndiaye","Everton","Forward",5.4,5,0,0.3,0,0,222,1,6,0,0,0,1,0,0,2,"0.30","0.07","0.37","3.56",NA,NA,NA,1.3
 234,"Nathan","Patterson","Everton","Defender",4.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-235,"Jordan","Pickford","Everton","Goalkeeper",4.9,6,0,9.4,0,0,360,0,13,0,0,0,0,0,13,4,"0.00","0.03","0.03","8.20",NA,NA,NA,1.7
-236,"James","Tarkowski","Everton","Defender",4.9,2,0,1.2,0,0,360,0,13,0,0,0,1,0,0,4,"0.37","0.23","0.60","8.20",NA,NA,NA,0.7
-237,"Youssef","Ramalho Chermiti","Everton","Forward",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+235,"Jordan","Pickford","Everton","Goalkeeper",4.9,6,0,9.3,0,0,360,0,13,0,0,0,0,0,13,4,"0.00","0.03","0.03","8.20",NA,NA,NA,1.7
+236,"James","Tarkowski","Everton","Defender",4.9,2,0,1.1,0,0,360,0,13,0,0,0,1,0,0,4,"0.37","0.23","0.60","8.20",NA,NA,NA,0.7
+237,"Youssef","Ramalho Chermiti","Everton","Forward",4.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 238,"Ashley","Young","Everton","Defender",4.5,-2,0,0.1,0,0,155,0,6,0,0,0,1,1,0,2,"0.00","0.18","0.18","3.35",NA,1,NA,0
 577,"Jesper","Lindstrøm","Everton","Midfielder",5.3,2,0,0.1,0,0,42,0,2,0,0,0,0,0,0,0,"0.04","0.01","0.05","1.08",NA,NA,NA,0.7
 582,"Jake","O'Brien","Everton","Defender",4.8,0,0,0.2,0,0,26,0,1,0,0,0,1,0,0,0,"0.00","0.00","0.00","0.72",NA,NA,NA,0
@@ -274,22 +274,22 @@
 627,"Roman","Dixon","Everton","Defender",4,0,0,0.1,0,0,90,0,4,0,0,0,0,0,0,1,"0.00","0.00","0.00","2.43",NA,NA,NA,0
 651,"Orel","Mangala","Everton","Midfielder",5,1,0,0,0,0,26,0,1,0,0,0,0,0,0,0,"0.09","0.00","0.09","0.72",NA,NA,NA,1
 10,"Reiss","Nelson","Fulham","Midfielder",5,1,0,0.1,0,0,26,0,1,0,0,0,1,0,0,0,"0.08","0.01","0.09","0.35",NA,NA,NA,0.3
-19,"Emile","Smith Rowe","Fulham","Midfielder",5.7,22,4,26.9,1,1,274,2,2,0,0,0,0,0,0,4,"0.92","0.70","1.62","2.62",NA,NA,NA,6.3
-191,"Joachim","Andersen","Fulham","Defender",4.4,2,0,11,0,0,180,0,3,0,0,0,1,0,0,2,"0.05","0.03","0.08","2.35",NA,NA,NA,0.7
-239,"Adama","Traoré","Fulham","Midfielder",5,19,3,3.5,1,1,325,1,3,0,0,0,1,0,0,4,"1.02","0.79","1.81","3.12",NA,NA,NA,5.3
-240,"Andreas","Hoelgebaum Pereira","Fulham","Midfielder",5.4,8,0,2.4,0,0,346,1,3,0,0,0,1,0,0,4,"0.27","1.04","1.31","3.04",1,1,2,2.3
+19,"Emile","Smith Rowe","Fulham","Midfielder",5.7,22,4,27.2,1,1,274,2,2,0,0,0,0,0,0,4,"0.92","0.70","1.62","2.62",NA,NA,NA,6.3
+191,"Joachim","Andersen","Fulham","Defender",4.4,2,0,10.7,0,0,180,0,3,0,0,0,1,0,0,2,"0.05","0.03","0.08","2.35",NA,NA,NA,0.7
+239,"Adama","Traoré","Fulham","Midfielder",5,19,3,3.6,1,1,325,1,3,0,0,0,1,0,0,4,"1.02","0.79","1.81","3.12",NA,NA,NA,5.3
+240,"Andreas","Hoelgebaum Pereira","Fulham","Midfielder",5.4,8,0,2.3,0,0,346,1,3,0,0,0,1,0,0,4,"0.27","1.04","1.31","3.04",1,1,2,2.3
 241,"Calvin","Bassey","Fulham","Defender",4.5,7,0,0.4,0,0,360,0,4,0,0,0,1,0,0,4,"0.18","0.03","0.21","4.25",NA,NA,NA,2
 242,"Steven","Benda","Fulham","Goalkeeper",4,0,0,0.5,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 243,"Tom","Cairney","Fulham","Midfielder",4.9,2,0,0,0,0,67,0,2,0,0,0,2,0,0,0,"0.00","0.18","0.18","1.63",NA,NA,NA,0.7
-244,"Timothy","Castagne","Fulham","Defender",4.3,0,0,1.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+244,"Timothy","Castagne","Fulham","Defender",4.3,0,0,1.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 245,"Issa","Diop","Fulham","Defender",4.5,6,0,0.3,0,0,270,0,3,0,0,0,0,0,0,3,"0.17","0.02","0.19","3.49",NA,NA,NA,1.3
 246,"Luke","Harris","Fulham","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-247,"Alex","Iwobi","Fulham","Midfielder",5.5,15,1,1.2,1,0,331,1,3,0,0,0,0,0,0,4,"0.32","0.73","1.05","3.82",NA,NA,NA,4.3
-248,"Bernd","Leno","Fulham","Goalkeeper",5,11,0,2.8,0,0,360,0,4,0,0,0,0,0,12,4,"0.00","0.00","0.00","4.25",NA,NA,NA,2.7
+247,"Alex","Iwobi","Fulham","Midfielder",5.5,15,1,1.1,1,0,331,1,3,0,0,0,0,0,0,4,"0.32","0.73","1.05","3.82",NA,NA,NA,4.3
+248,"Bernd","Leno","Fulham","Goalkeeper",5,11,0,2.7,0,0,360,0,4,0,0,0,0,0,12,4,"0.00","0.00","0.00","4.25",NA,NA,NA,2.7
 249,"Saša","Lukić","Fulham","Midfielder",5,7,0,0.1,0,0,331,1,3,0,0,0,2,0,0,4,"0.00","0.06","0.06","3.16",NA,NA,3,1.7
 250,"Kevin","Mbabu","Fulham","Defender",4,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-251,"Rodrigo","Muniz Carvalho","Fulham","Forward",6,7,0,6.4,0,0,251,1,3,0,0,0,0,0,0,3,"1.03","0.02","1.05","2.72",NA,NA,NA,1.7
-252,"Raúl","Jiménez","Fulham","Forward",5.4,12,3,0.6,1,0,105,1,1,0,0,0,0,0,0,1,"0.30","0.04","0.34","1.53",NA,NA,1,3.7
+251,"Rodrigo","Muniz Carvalho","Fulham","Forward",6,7,0,5.7,0,0,251,1,3,0,0,0,0,0,0,3,"1.03","0.02","1.05","2.72",NA,NA,NA,1.7
+252,"Raúl","Jiménez","Fulham","Forward",5.4,12,3,0.7,1,0,105,1,1,0,0,0,0,0,0,1,"0.30","0.04","0.34","1.53",NA,NA,1,3.7
 253,"Tim","Ream","Fulham","Defender",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 254,"Harrison","Reed","Fulham","Midfielder",4.9,4,0,0,0,0,12,0,1,0,0,0,0,0,0,0,"0.00","0.09","0.09","1.22",NA,NA,NA,1
 255,"Antonee","Robinson","Fulham","Defender",4.7,15,2,17.5,0,2,360,0,4,0,0,0,1,0,0,4,"0.00","0.36","0.36","4.25",NA,NA,NA,4.3
@@ -309,34 +309,34 @@
 264,"Wes","Burns","Ipswich","Midfielder",4.9,1,0,0,0,0,114,0,0,0,0,0,1,0,0,2,"0.00","0.01","0.01","1.68",NA,NA,NA,0.3
 265,"Conor","Chaplin","Ipswich","Midfielder",5.3,5,0,0.2,0,0,72,0,1,0,0,0,0,0,0,1,"0.00","0.02","0.02","1.70",NA,2,NA,1
 266,"Harry","Clarke","Ipswich","Defender",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-267,"Leif","Davis","Ipswich","Defender",4.5,14,2,1.9,0,1,360,1,7,0,0,0,0,0,0,4,"0.07","0.48","0.55","8.60",1,4,NA,4.3
-268,"Liam","Delap","Ipswich","Forward",5.5,12,1,1.1,1,0,293,0,6,0,0,0,0,0,0,4,"0.42","0.01","0.43","7.49",NA,NA,NA,3.3
+267,"Leif","Davis","Ipswich","Defender",4.5,14,2,2,0,1,360,1,7,0,0,0,0,0,0,4,"0.07","0.48","0.55","8.60",1,4,NA,4.3
+268,"Liam","Delap","Ipswich","Forward",5.5,12,1,1.2,1,0,293,0,6,0,0,0,0,0,0,4,"0.42","0.01","0.43","7.49",NA,NA,NA,3.3
 269,"George","Edmundson","Ipswich","Defender",4,1,0,0.1,0,0,1,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0.3
-270,"Jacob","Greaves","Ipswich","Defender",4,9,0,2.1,0,0,360,1,7,0,0,0,0,0,0,4,"0.12","0.00","0.12","8.60",NA,NA,NA,2.7
+270,"Jacob","Greaves","Ipswich","Defender",4,9,0,2.3,0,0,360,1,7,0,0,0,0,0,0,4,"0.12","0.00","0.12","8.60",NA,NA,NA,2.7
 271,"Marcus","Myers-Harness","Ipswich","Midfielder",4.9,2,0,0,0,0,43,0,2,0,0,0,0,0,0,0,"0.00","0.05","0.05","1.36",NA,NA,NA,0.3
 272,"George","Hirst","Ipswich","Forward",5.4,1,0,0,0,0,31,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.44",NA,NA,1,0.3
 273,"Cameron","Humphreys","Ipswich","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 274,"Omari","Giraud-Hutchinson","Ipswich","Midfielder",5.4,7,0,0.4,0,0,352,1,7,0,0,0,2,0,0,4,"0.36","0.04","0.40","8.35",NA,3,NA,2
-275,"Ben","Johnson","Ipswich","Defender",4,3,0,3.9,0,1,123,0,6,0,0,0,0,0,0,1,"0.00","0.20","0.20","5.53",NA,NA,NA,1
-276,"Freddie","Ladapo","Ipswich","Forward",4.5,0,0,1.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+275,"Ben","Johnson","Ipswich","Defender",4,3,0,3.8,0,1,123,0,6,0,0,0,0,0,0,1,"0.00","0.20","0.20","5.53",NA,NA,NA,1
+276,"Freddie","Ladapo","Ipswich","Forward",4.5,0,0,1.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 277,"Massimo","Luongo","Ipswich","Midfielder",4.5,5,0,0.6,0,0,141,0,4,0,0,0,0,0,0,2,"0.00","0.00","0.00","4.90",NA,NA,NA,1
 278,"Sam","Morsy","Ipswich","Midfielder",4.9,6,0,0.2,0,0,353,1,7,0,0,0,3,0,0,4,"0.00","0.34","0.34","8.35",2,NA,NA,1.3
 279,"Corrie","Ndaba","Ipswich","Defender",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 280,"Cieran","Slicker","Ipswich","Goalkeeper",4,0,0,0.8,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 281,"Jack","Taylor","Ipswich","Midfielder",4.9,2,0,0,0,0,43,0,2,0,0,0,0,0,0,0,"0.02","0.01","0.03","1.36",NA,NA,NA,0.3
-282,"Axel","Tuanzebe","Ipswich","Defender",4,9,0,2.2,0,0,341,1,7,0,0,0,0,0,0,4,"0.07","0.02","0.09","8.02",NA,NA,NA,2.7
+282,"Axel","Tuanzebe","Ipswich","Defender",4,9,0,2.4,0,0,341,1,7,0,0,0,0,0,0,4,"0.07","0.02","0.09","8.02",NA,NA,NA,2.7
 283,"Christian","Walton","Ipswich","Goalkeeper",4.5,2,0,0.2,0,0,90,0,2,0,0,0,0,0,3,1,"0.00","0.00","0.00","2.65",NA,NA,NA,0
 284,"Luke","Woolfenden","Ipswich","Defender",4,2,0,1.8,0,0,270,0,7,0,0,0,1,0,0,3,"0.03","0.00","0.03","6.94",NA,NA,NA,0.7
 359,"Kalvin","Phillips","Ipswich","Midfielder",5,4,0,0.1,0,0,159,1,1,0,0,0,1,0,0,2,"0.00","0.04","0.04","2.53",NA,NA,NA,1.3
-568,"Arijanet","Muric","Ipswich","Goalkeeper",4.4,14,3,0.6,0,0,270,1,5,0,0,0,0,0,10,3,"0.00","0.00","0.00","5.95",NA,NA,NA,4.7
+568,"Arijanet","Muric","Ipswich","Goalkeeper",4.4,14,3,0.7,0,0,270,1,5,0,0,0,0,0,10,3,"0.00","0.00","0.00","5.95",NA,NA,NA,4.7
 583,"Conor","Townsend","Ipswich","Defender",4,0,0,0.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 611,"Sam","Szmodics","Ipswich","Midfielder",6,10,0,0.4,1,0,225,0,4,0,0,0,1,0,0,3,"0.29","0.03","0.32","5.90",NA,NA,NA,3
 619,"Jens","Cajuste","Ipswich","Midfielder",4.5,1,0,0,0,0,20,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.07",NA,NA,NA,0.3
-630,"Dara","O'Shea","Ipswich","Defender",4,7,1,0.3,0,0,90,1,0,0,0,0,0,0,0,1,"0.06","0.00","0.06","1.66",NA,NA,NA,3.5
+630,"Dara","O'Shea","Ipswich","Defender",4,7,1,0.4,0,0,90,1,0,0,0,0,0,0,0,1,"0.06","0.00","0.06","1.66",NA,NA,NA,3.5
 631,"Jack","Clarke","Ipswich","Midfielder",5.5,2,0,0,0,0,40,0,0,0,0,0,0,0,0,0,"0.11","0.01","0.12","0.48",NA,NA,NA,1
 632,"Chiedozie","Ogbene","Ipswich","Midfielder",5,3,0,0,0,0,118,0,1,0,0,0,0,0,0,1,"0.00","0.02","0.02","1.39",NA,NA,NA,1.5
 117,"Facundo","Buonanotte","Leicester","Midfielder",5,13,0,0.3,1,1,170,0,3,0,0,0,0,0,0,2,"0.17","0.38","0.55","2.81",3,NA,NA,3.7
-192,"Jordan","Ayew","Leicester","Midfielder",5.4,4,0,0.3,0,0,195,0,5,0,0,0,2,0,0,2,"0.69","0.10","0.79","4.19",NA,2,NA,1.3
+192,"Jordan","Ayew","Leicester","Midfielder",5.3,4,0,0.3,0,0,195,0,5,0,0,0,2,0,0,2,"0.69","0.10","0.79","4.19",NA,2,NA,1.3
 198,"Odsonne","Edouard","Leicester","Forward",5.4,3,0,0.4,0,0,115,0,2,0,0,0,0,0,0,1,"0.39","0.03","0.42","2.12",NA,NA,NA,0.7
 285,"Boubakary","Soumaré","Leicester","Midfielder",4.5,1,0,0.2,0,0,11,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.25",NA,NA,NA,0
 286,"Tom","Cannon","Leicester","Forward",4.5,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
@@ -344,7 +344,7 @@
 288,"Conor","Coady","Leicester","Defender",4,0,0,0.3,0,0,7,0,1,0,0,0,1,0,0,0,"0.00","0.00","0.00","0.99",NA,NA,NA,0
 289,"Patson","Daka","Leicester","Forward",4.9,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,2,0
 290,"Bobby","De Cordova-Reid","Leicester","Midfielder",5.4,5,0,0.1,0,0,148,0,2,0,0,0,0,0,0,2,"0.08","0.04","0.12","2.61",NA,NA,NA,1
-291,"Wout","Faes","Leicester","Defender",4.1,10,0,12.8,1,0,360,0,7,0,0,0,1,0,0,4,"0.33","0.01","0.34","7.11",NA,NA,NA,3
+291,"Wout","Faes","Leicester","Defender",4.1,10,0,13,1,0,360,0,7,0,0,0,1,0,0,4,"0.33","0.01","0.34","7.11",NA,NA,NA,3
 292,"Michael","Golding","Leicester","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 293,"Mads","Hermansen","Leicester","Goalkeeper",4.5,8,0,0.5,0,0,360,0,7,0,0,0,0,0,14,4,"0.00","0.00","0.00","7.11",NA,NA,NA,1.7
 294,"Daniel","Iversen","Leicester","Goalkeeper",4,0,0,0.7,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
@@ -353,28 +353,28 @@
 297,"Wanya","Marçal-Madivádua","Leicester","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 298,"Stephy","Mavididi","Leicester","Midfielder",5.3,10,0,0.3,1,0,124,0,1,0,0,0,0,0,0,1,"0.41","0.60","1.01","1.75",1,1,3,3
 299,"Kasey","McAteer","Leicester","Midfielder",4.9,3,0,0,0,0,10,0,0,0,0,0,0,0,0,0,"0.02","0.00","0.02","0.20",NA,NA,NA,0.7
-300,"Wilfred","Ndidi","Leicester","Midfielder",5,17,1,0.4,0,3,343,0,6,0,0,0,1,0,0,4,"0.16","0.82","0.98","6.07",NA,NA,NA,5
+300,"Wilfred","Ndidi","Leicester","Midfielder",5,17,1,0.5,0,3,343,0,6,0,0,0,1,0,0,4,"0.16","0.82","0.98","6.07",NA,NA,NA,5
 301,"Caleb","Okoli","Leicester","Defender",4,1,0,0.2,0,0,180,0,4,0,0,0,1,0,0,2,"0.06","0.01","0.07","4.09",NA,NA,NA,0.3
 302,"Ricardo","Barbosa Pereira","Leicester","Defender",4.4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 303,"Harry","Souttar","Leicester","Defender",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 304,"Jakub","Stolarczyk","Leicester","Goalkeeper",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 305,"Luke","Thomas","Leicester","Defender",4,0,0,0.5,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-306,"Jamie","Vardy","Leicester","Forward",5.7,19,4,9.2,2,0,328,0,7,0,0,0,1,0,0,4,"1.44","0.07","1.51","6.82",NA,NA,1,3.7
+306,"Jamie","Vardy","Leicester","Forward",5.7,19,4,10.9,2,0,328,0,7,0,0,0,1,0,0,4,"1.44","0.07","1.51","6.82",NA,NA,1,3.7
 307,"Jannik","Vestergaard","Leicester","Defender",4,2,0,2.9,0,0,180,0,3,0,0,0,1,0,0,2,"0.01","0.00","0.01","3.01",NA,NA,NA,0
-308,"Danny","Ward","Leicester","Goalkeeper",4,0,0,2.5,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-309,"Harry","Winks","Leicester","Midfielder",4.5,7,0,15.1,0,0,360,0,7,0,0,0,1,0,0,4,"0.00","0.25","0.25","7.11",2,NA,NA,1.7
+308,"Danny","Ward","Leicester","Goalkeeper",4,0,0,2.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+309,"Harry","Winks","Leicester","Midfielder",4.5,7,0,15.2,0,0,360,0,7,0,0,0,1,0,0,4,"0.00","0.25","0.25","7.11",2,NA,NA,1.7
 501,"Oliver","Skipp","Leicester","Midfielder",4.9,4,0,0,0,0,176,0,4,0,0,0,1,0,0,2,"0.05","0.20","0.25","4.05",NA,NA,NA,1.3
 570,"Abdul","Fatawu","Leicester","Midfielder",5.5,13,3,0.6,0,1,265,0,6,0,0,0,0,0,0,3,"0.12","0.61","0.73","5.64",NA,NA,NA,1.7
 606,"Will","Alves","Leicester","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 616,"Ben","Nelson","Leicester","Defender",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 635,"Bilal","El Khannouss","Leicester","Midfielder",5,1,0,0,0,0,22,0,0,0,0,0,0,0,0,0,"0.03","0.01","0.04","0.09",NA,NA,NA,0.5
-310,"Alisson","Ramses Becker","Liverpool","Goalkeeper",5.5,23,2,14,0,0,360,3,1,0,0,0,0,0,9,4,"0.00","0.00","0.00","2.61",NA,NA,NA,5.3
-311,"Trent","Alexander-Arnold","Liverpool","Defender",7,21,2,31.7,0,0,312,3,1,0,0,0,1,0,0,4,"0.18","1.87","2.05","2.04",1,1,NA,4.3
+310,"Alisson","Ramses Becker","Liverpool","Goalkeeper",5.5,23,2,12.9,0,0,360,3,1,0,0,0,0,0,9,4,"0.00","0.00","0.00","2.61",NA,NA,NA,5.3
+311,"Trent","Alexander-Arnold","Liverpool","Defender",7.1,21,2,31.8,0,0,312,3,1,0,0,0,1,0,0,4,"0.18","1.87","2.05","2.04",1,1,NA,4.3
 312,"Stefan","Bajčetić Maquieira","Liverpool","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 313,"Conor","Bradley","Liverpool","Defender",4.8,4,0,0.4,0,0,75,0,1,0,0,0,0,0,0,0,"0.24","0.15","0.39","0.87",NA,NA,NA,1
 315,"Bobby","Clark","Liverpool","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-316,"Darwin","Núñez Ribeiro","Liverpool","Forward",7.2,3,0,2.4,0,0,62,0,1,0,0,0,0,0,0,0,"0.15","0.00","0.15","0.83",NA,NA,3,1
-317,"Diogo","Teixeira da Silva","Liverpool","Midfielder",7.6,18,0,16.6,1,1,283,3,0,0,0,0,0,0,0,4,"1.91","0.11","2.02","1.74",NA,NA,NA,3.3
+316,"Darwin","Núñez Ribeiro","Liverpool","Forward",7.2,3,0,2.3,0,0,62,0,1,0,0,0,0,0,0,0,"0.15","0.00","0.15","0.83",NA,NA,3,1
+317,"Diogo","Teixeira da Silva","Liverpool","Midfielder",7.6,18,0,16.2,1,1,283,3,0,0,0,0,0,0,0,4,"1.91","0.11","2.02","1.74",NA,NA,NA,3.3
 318,"Ben","Doak","Liverpool","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 319,"Harvey","Elliott","Liverpool","Midfielder",5.2,1,0,0.4,0,0,7,0,0,0,0,0,0,0,0,0,"0.00","0.02","0.02","0.00",6,NA,NA,0.3
 320,"Endo","Wataru","Liverpool","Midfielder",4.9,1,0,0.2,0,0,1,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0.3
@@ -382,33 +382,33 @@
 322,"Joe","Gomez","Liverpool","Defender",4.9,0,0,0.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 323,"Ryan","Gravenberch","Liverpool","Midfielder",5,9,0,0.6,0,0,360,3,1,0,0,0,2,0,0,4,"0.04","0.56","0.60","2.61",NA,NA,NA,2
 324,"Curtis","Jones","Liverpool","Midfielder",5.3,1,0,0.1,0,0,15,0,0,0,0,0,0,0,0,0,"0.00","0.01","0.01","0.20",NA,NA,NA,0.3
-325,"Caoimhin","Kelleher","Liverpool","Goalkeeper",4.4,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-326,"Ibrahima","Konaté","Liverpool","Defender",5.1,16,1,5.8,0,0,299,2,1,0,0,0,0,0,0,3,"0.23","0.04","0.27","2.12",NA,NA,NA,5
-327,"Luis","Díaz","Liverpool","Midfielder",7.8,35,5,22.6,3,1,286,4,0,0,0,0,0,0,0,4,"2.04","0.59","2.63","1.44",NA,NA,NA,10.7
-328,"Mohamed","Salah","Liverpool","Midfielder",12.7,43,8,46.7,3,3,352,3,1,0,0,0,0,0,0,4,"1.83","1.16","2.99","2.61",NA,4,2,9.7
+325,"Caoimhin","Kelleher","Liverpool","Goalkeeper",4.4,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+326,"Ibrahima","Konaté","Liverpool","Defender",5.1,16,1,6.1,0,0,299,2,1,0,0,0,0,0,0,3,"0.23","0.04","0.27","2.12",NA,NA,NA,5
+327,"Luis","Díaz","Liverpool","Midfielder",7.8,35,5,23.6,3,1,286,4,0,0,0,0,0,0,0,4,"2.04","0.59","2.63","1.44",NA,NA,NA,10.7
+328,"Mohamed","Salah","Liverpool","Midfielder",12.7,43,8,47.3,3,3,352,3,1,0,0,0,0,0,0,4,"1.83","1.16","2.99","2.61",NA,4,2,9.7
 329,"Alexis","Mac Allister","Liverpool","Midfielder",6.4,10,0,2,0,0,329,3,0,0,0,0,0,0,0,4,"0.16","0.81","0.97","2.31",5,NA,NA,2.3
 330,"James","McConnell","Liverpool","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 331,"Tyler","Morton","Liverpool","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 332,"Nathaniel","Phillips","Liverpool","Defender",4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-333,"Jarell","Quansah","Liverpool","Defender",4.2,1,0,2,0,0,45,0,0,0,0,0,0,0,0,1,"0.00","0.00","0.00","0.31",NA,NA,NA,0
+333,"Jarell","Quansah","Liverpool","Defender",4.2,1,0,1.9,0,0,45,0,0,0,0,0,0,0,0,1,"0.00","0.00","0.00","0.31",NA,NA,NA,0
 334,"Rhys","Williams","Liverpool","Defender",4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 335,"Andrew","Robertson","Liverpool","Defender",6,19,0,7.8,0,0,324,3,1,0,0,0,1,0,0,4,"0.30","0.48","0.78","2.36",2,NA,NA,4.3
-336,"Dominik","Szoboszlai","Liverpool","Midfielder",6.5,16,1,2.5,0,2,360,3,1,0,0,0,2,0,0,4,"0.40","0.88","1.28","2.61",4,2,NA,3
+336,"Dominik","Szoboszlai","Liverpool","Midfielder",6.5,16,1,2.6,0,2,360,3,1,0,0,0,2,0,0,4,"0.40","0.88","1.28","2.61",4,2,NA,3
 337,"Konstantinos","Tsimikas","Liverpool","Defender",4.7,3,0,0.2,0,0,33,0,0,0,0,0,0,0,0,0,"0.00","0.01","0.01","0.26",3,NA,NA,0.7
-339,"Virgil","van Dijk","Liverpool","Defender",6,20,1,14.7,0,0,360,3,1,0,0,0,1,0,0,4,"0.16","0.07","0.23","2.61",NA,3,NA,4.7
+339,"Virgil","van Dijk","Liverpool","Defender",6,20,1,14.9,0,0,360,3,1,0,0,0,1,0,0,4,"0.16","0.07","0.23","2.61",NA,3,NA,4.7
 636,"Federico","Chiesa","Liverpool","Midfielder",7,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-340,"Manuel","Akanji","Man City","Defender",5.5,11,0,5.5,0,0,360,1,3,0,0,0,1,0,0,4,"0.00","0.28","0.28","2.99",NA,NA,NA,1.7
+340,"Manuel","Akanji","Man City","Defender",5.5,11,0,5.4,0,0,360,1,3,0,0,0,1,0,0,4,"0.00","0.28","0.28","2.99",NA,NA,NA,1.7
 341,"Nathan","Aké","Man City","Defender",5.3,1,0,1.3,0,0,2,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.09",NA,NA,NA,0.3
-342,"Bernardo","Veiga de Carvalho e Silva","Man City","Midfielder",6.6,16,2,6.1,0,2,276,1,2,0,0,0,0,0,0,3,"0.53","0.77","1.30","2.07",4,NA,NA,3.3
+342,"Bernardo","Veiga de Carvalho e Silva","Man City","Midfielder",6.6,16,2,5.9,0,2,276,1,2,0,0,0,0,0,0,3,"0.53","0.77","1.30","2.07",4,NA,NA,3.3
 343,"Oscar","Bobb","Man City","Midfielder",4.8,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 344,"Scott","Carson","Man City","Goalkeeper",4,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-345,"Kevin","De Bruyne","Man City","Midfielder",9.6,18,2,10.5,1,1,356,1,3,0,0,0,1,0,0,4,"1.21","2.17","3.38","2.90",1,1,4,5
-346,"Jérémy","Doku","Man City","Midfielder",6.5,7,0,3.2,0,0,227,1,2,0,0,0,0,0,0,3,"0.18","0.76","0.94","1.59",NA,NA,NA,1.3
+345,"Kevin","De Bruyne","Man City","Midfielder",9.6,18,2,9.5,1,1,356,1,3,0,0,0,1,0,0,4,"1.21","2.17","3.38","2.90",1,1,4,5
+346,"Jérémy","Doku","Man City","Midfielder",6.5,7,0,3,0,0,227,1,2,0,0,0,0,0,0,3,"0.18","0.76","0.94","1.59",NA,NA,NA,1.3
 347,"Ederson","Santana de Moraes","Man City","Goalkeeper",5.5,19,2,8.1,0,1,360,1,3,0,0,0,0,0,10,4,"0.00","0.01","0.01","2.99",NA,NA,NA,3.7
-348,"Phil","Foden","Man City","Midfielder",9.3,1,0,5.7,0,0,45,0,0,0,0,0,0,0,0,0,"0.00","0.01","0.01","0.72",3,NA,NA,0
+348,"Phil","Foden","Man City","Midfielder",9.3,1,0,5.6,0,0,45,0,0,0,0,0,0,0,0,0,"0.00","0.01","0.01","0.72",3,NA,NA,0
 349,"Jack","Grealish","Man City","Midfielder",6.4,4,0,0.2,0,0,173,0,2,0,0,0,1,0,0,2,"0.48","0.40","0.88","1.43",NA,NA,NA,1.3
-350,"Joško","Gvardiol","Man City","Defender",6,12,1,25.6,0,0,312,1,2,0,0,0,0,0,0,3,"0.13","0.65","0.78","1.98",NA,NA,NA,1.7
-351,"Erling","Haaland","Man City","Forward",15.2,54,11,69.7,9,0,359,1,3,0,0,0,1,0,0,4,"4.88","0.16","5.04","2.99",NA,3,1,15.7
+350,"Joško","Gvardiol","Man City","Defender",6,12,1,24.8,0,0,312,1,2,0,0,0,0,0,0,3,"0.13","0.65","0.78","1.98",NA,NA,NA,1.7
+351,"Erling","Haaland","Man City","Forward",15.3,54,11,70.2,9,0,359,1,3,0,0,0,1,0,0,4,"4.88","0.16","5.04","2.99",NA,3,1,15.7
 352,"Julián","Álvarez","Man City","Forward",7,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 353,"João","Cavaco Cancelo","Man City","Defender",5.3,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 354,"Mateo","Kovačić","Man City","Midfielder",5.5,14,3,1.5,1,0,274,1,3,0,0,0,1,0,0,4,"0.13","0.21","0.34","2.95",NA,NA,NA,1
@@ -417,19 +417,19 @@
 357,"James","McAtee","Man City","Midfielder",4.8,1,0,0.1,0,0,1,0,0,0,0,0,0,0,0,0,"0.00","0.02","0.02","0.00",NA,NA,NA,0.3
 358,"Stefan","Ortega Moreno","Man City","Goalkeeper",5.4,0,0,0.6,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 360,"Rodrigo 'Rodri'","Hernandez","Man City","Midfielder",6.4,1,0,1.9,0,0,45,0,0,0,0,0,0,0,0,0,"0.00","0.08","0.08","0.04",NA,NA,NA,0.3
-361,"Rúben","Gato Alves Dias","Man City","Defender",5.5,8,0,4.4,0,0,276,1,2,1,0,0,1,0,0,3,"0.28","0.07","0.35","2.07",NA,NA,NA,0.7
+361,"Rúben","Gato Alves Dias","Man City","Defender",5.5,8,0,4.3,0,0,276,1,2,1,0,0,1,0,0,3,"0.28","0.07","0.35","2.07",NA,NA,NA,0.7
 362,"John","Stones","Man City","Defender",5.4,2,0,1.6,0,0,123,0,1,0,0,0,1,0,0,1,"0.00","0.04","0.04","0.92",NA,NA,NA,0.7
-363,"Kyle","Walker","Man City","Defender",5.3,3,0,5.3,0,0,92,0,1,0,0,0,0,0,0,1,"0.03","0.14","0.17","1.05",NA,NA,NA,1
+363,"Kyle","Walker","Man City","Defender",5.3,3,0,5.2,0,0,92,0,1,0,0,0,0,0,0,1,"0.03","0.14","0.17","1.05",NA,NA,NA,1
 571,"Sávio 'Savinho'","Moreira de Oliveira","Man City","Midfielder",6.5,11,1,1.3,0,2,205,0,2,0,0,0,1,0,0,3,"0.74","0.47","1.21","1.55",2,NA,NA,3.3
 607,"Nico","O'Reilly","Man City","Midfielder",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 625,"Ilkay","Gündogan","Man City","Midfielder",6.5,4,0,0.3,0,0,131,0,1,0,0,0,0,0,0,1,"0.08","0.35","0.43","1.40",NA,NA,NA,1.3
 626,"Issa","Kaboré","Man City","Defender",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-364,"Amad","Diallo","Man Utd","Midfielder",5,16,0,4.8,1,1,260,2,1,0,0,0,1,0,0,3,"0.38","0.73","1.11","3.25",2,NA,NA,4.3
+364,"Amad","Diallo","Man Utd","Midfielder",5,16,0,4.9,1,1,260,2,1,0,0,0,1,0,0,3,"0.38","0.73","1.11","3.25",2,NA,NA,4.3
 365,"Antony Matheus","dos Santos","Man Utd","Midfielder",5.8,1,0,0.2,0,0,1,0,1,0,0,0,0,0,0,0,"0.00","0.05","0.05","0.60",NA,NA,NA,0.3
-366,"Bruno","Borges Fernandes","Man Utd","Midfielder",8.4,12,0,11.3,0,1,348,2,4,0,0,0,1,0,0,4,"1.50","1.18","2.68","4.79",1,1,1,3
+366,"Bruno","Borges Fernandes","Man Utd","Midfielder",8.3,12,0,11.2,0,1,348,2,4,0,0,0,1,0,0,4,"1.50","1.18","2.68","4.79",1,1,1,3
 367,"Altay","Bayindir","Man Utd","Goalkeeper",4.4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 368,"Carlos Henrique","Casimiro","Man Utd","Midfielder",4.9,7,0,0.5,0,0,228,1,4,0,0,0,0,0,0,3,"0.26","0.57","0.83","3.23",NA,NA,NA,1.3
-369,"Diogo","Dalot Teixeira","Man Utd","Defender",5,20,3,8.3,0,1,360,2,5,0,0,0,0,0,0,4,"0.02","0.57","0.59","5.38",NA,NA,NA,4.3
+369,"Diogo","Dalot Teixeira","Man Utd","Defender",5,20,3,8.5,0,1,360,2,5,0,0,0,0,0,0,4,"0.02","0.57","0.59","5.38",NA,NA,NA,4.3
 370,"Christian","Eriksen","Man Utd","Midfielder",5.4,3,0,0.2,0,0,76,1,0,0,0,0,1,0,0,1,"0.00","0.36","0.36","1.54",3,4,NA,1
 371,"Jonny","Evans","Man Utd","Defender",4.4,2,0,0.1,0,0,22,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.06",NA,NA,NA,0.3
 372,"Alejandro","Garnacho","Man Utd","Midfielder",6.4,13,0,10.9,1,1,139,0,4,0,0,0,0,0,0,1,"1.70","0.29","1.99","2.29",NA,NA,NA,3
@@ -438,57 +438,57 @@
 375,"Rasmus","Højlund","Man Utd","Forward",6.9,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 376,"Victor","Lindelöf","Man Utd","Defender",4.4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 377,"Harry","Maguire","Man Utd","Defender",5,8,0,0.7,0,0,195,1,1,0,0,0,2,0,0,2,"0.04","0.02","0.06","2.30",NA,NA,NA,1
-378,"Kobbie","Mainoo","Man Utd","Midfielder",5.4,7,0,4.4,0,0,353,2,5,0,0,0,3,0,0,4,"0.08","0.19","0.27","5.32",NA,NA,NA,1.3
+378,"Kobbie","Mainoo","Man Utd","Midfielder",5.4,7,0,4.3,0,0,353,2,5,0,0,0,3,0,0,4,"0.08","0.19","0.27","5.32",NA,NA,NA,1.3
 379,"Tyrell","Malacia","Man Utd","Defender",4.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 380,"Lisandro","Martínez","Man Utd","Defender",4.5,14,1,5.1,0,0,346,2,5,0,0,0,1,0,0,4,"0.34","0.22","0.56","5.38",NA,NA,NA,2.3
 381,"Scott","McTominay","Man Utd","Midfielder",4.9,2,0,0.3,0,0,17,0,1,0,0,0,0,0,0,0,"0.07","0.00","0.07","0.66",NA,NA,NA,0.3
 382,"Mason","Mount","Man Utd","Midfielder",6.3,3,0,0.1,0,0,105,1,1,0,0,0,1,0,0,2,"0.39","0.03","0.42","1.02",NA,NA,NA,0.3
-383,"André","Onana","Man Utd","Goalkeeper",5,21,1,5.3,0,0,360,2,5,0,1,0,0,0,7,4,"0.00","0.00","0.00","5.38",NA,NA,NA,5
+383,"André","Onana","Man Utd","Goalkeeper",5,21,1,5.5,0,0,360,2,5,0,1,0,0,0,7,4,"0.00","0.00","0.00","5.38",NA,NA,NA,5
 384,"Facundo","Pellistri Rebollo","Man Utd","Midfielder",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-385,"Marcus","Rashford","Man Utd","Midfielder",6.9,15,0,3.4,1,0,316,2,4,0,0,0,0,0,0,4,"0.40","0.72","1.12","4.62",NA,2,3,4
+385,"Marcus","Rashford","Man Utd","Midfielder",6.9,15,0,3.8,1,0,316,2,4,0,0,0,0,0,0,4,"0.40","0.72","1.12","4.62",NA,2,3,4
 387,"Luke","Shaw","Man Utd","Defender",4.9,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",4,NA,NA,0
-389,"Joshua","Zirkzee","Man Utd","Forward",7,12,3,3.7,1,0,249,1,4,0,0,0,1,0,0,2,"2.09","0.08","2.17","3.93",NA,NA,NA,1.3
+389,"Joshua","Zirkzee","Man Utd","Forward",7,12,3,3.6,1,0,249,1,4,0,0,0,1,0,0,2,"2.09","0.08","2.17","3.93",NA,NA,NA,1.3
 572,"Leny","Yoro","Man Utd","Defender",4.4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-593,"Matthijs","de Ligt","Man Utd","Defender",5,17,3,4.1,1,0,174,1,4,0,0,0,1,0,0,2,"0.41","0.00","0.41","3.08",NA,NA,NA,5.3
-594,"Noussair","Mazraoui","Man Utd","Defender",4.5,19,2,14.5,0,1,333,2,5,0,0,0,0,0,0,4,"0.20","0.39","0.59","5.32",NA,NA,NA,3.7
+593,"Matthijs","de Ligt","Man Utd","Defender",5,17,3,4.3,1,0,174,1,4,0,0,0,1,0,0,2,"0.41","0.00","0.41","3.08",NA,NA,NA,5.3
+594,"Noussair","Mazraoui","Man Utd","Defender",4.6,19,2,14.8,0,1,333,2,5,0,0,0,0,0,0,4,"0.20","0.39","0.59","5.32",NA,NA,NA,3.7
 613,"Toby","Collyer","Man Utd","Midfielder",4.5,1,0,0.1,0,0,45,0,1,0,0,0,0,0,0,0,"0.00","0.01","0.01","1.03",NA,NA,NA,0.3
 648,"Ethan","Wheatley","Man Utd","Forward",4.5,0,0,1.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 652,"Manuel","Ugarte","Man Utd","Midfielder",5,1,0,0.1,0,0,17,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,1
 390,"Alex","Murphy","Newcastle","Defender",4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-391,"Miguel","Almirón Rejala","Newcastle","Midfielder",5.8,2,0,0.6,0,0,2,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.08",NA,NA,NA,0.7
-392,"Harvey","Barnes","Newcastle","Midfielder",6.4,23,5,1.6,2,1,157,0,1,0,0,0,0,0,0,1,"0.59","0.52","1.11","2.87",NA,NA,NA,7.3
-393,"Sven","Botman","Newcastle","Defender",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-394,"Bruno","Guimarães Rodriguez Moura","Newcastle","Midfielder",6.4,13,2,2.4,0,1,356,1,3,0,0,0,1,0,0,4,"0.13","0.33","0.46","6.13",4,NA,NA,3.3
-395,"Dan","Burn","Newcastle","Defender",4.5,7,0,13.4,0,0,360,1,3,1,0,0,3,0,0,4,"0.33","0.09","0.42","6.25",NA,NA,NA,0.7
-396,"Martin","Dúbravka","Newcastle","Goalkeeper",4.3,0,0,0.8,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-398,"Anthony","Gordon","Newcastle","Midfielder",7.4,17,3,16,1,0,337,1,3,0,0,0,0,0,0,4,"0.83","0.89","1.72","5.73",2,NA,3,4.7
-399,"Lewis","Hall","Newcastle","Defender",4.4,9,0,2.9,0,0,202,1,1,0,0,0,1,0,0,2,"0.00","0.16","0.16","3.01",3,NA,NA,1.3
+391,"Miguel","Almirón Rejala","Newcastle","Midfielder",5.7,2,0,0.5,0,0,2,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.08",NA,NA,NA,0.7
+392,"Harvey","Barnes","Newcastle","Midfielder",6.4,23,5,1.9,2,1,157,0,1,0,0,0,0,0,0,1,"0.59","0.52","1.11","2.87",NA,NA,NA,7.3
+393,"Sven","Botman","Newcastle","Defender",4.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+394,"Bruno","Guimarães Rodriguez Moura","Newcastle","Midfielder",6.4,13,2,2.3,0,1,356,1,3,0,0,0,1,0,0,4,"0.13","0.33","0.46","6.13",4,NA,NA,3.3
+395,"Dan","Burn","Newcastle","Defender",4.5,7,0,13.2,0,0,360,1,3,1,0,0,3,0,0,4,"0.33","0.09","0.42","6.25",NA,NA,NA,0.7
+396,"Martin","Dúbravka","Newcastle","Goalkeeper",4.3,0,0,0.7,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+398,"Anthony","Gordon","Newcastle","Midfielder",7.4,17,3,15.6,1,0,337,1,3,0,0,0,0,0,0,4,"0.83","0.89","1.72","5.73",2,NA,3,4.7
+399,"Lewis","Hall","Newcastle","Defender",4.4,9,0,2.8,0,0,202,1,1,0,0,0,1,0,0,2,"0.00","0.16","0.16","3.01",3,NA,NA,1.3
 400,"Isaac","Hayden","Newcastle","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-401,"Alexander","Isak","Newcastle","Forward",8.4,17,3,36.5,1,1,315,1,3,0,0,0,0,0,0,4,"1.32","0.28","1.60","5.89",NA,NA,2,4
-402,"Jacob","Murphy","Newcastle","Midfielder",5.3,7,0,0.8,0,1,205,0,2,0,0,0,1,0,0,3,"0.19","0.88","1.07","2.62",NA,NA,NA,2
-403,"Joelinton Cássio","Apolinário de Lira","Newcastle","Midfielder",6,13,3,2.3,1,0,315,1,3,0,0,0,3,0,0,4,"0.29","0.06","0.35","5.89",NA,NA,NA,0.7
+401,"Alexander","Isak","Newcastle","Forward",8.4,17,3,32.4,1,1,315,1,3,0,0,0,0,0,0,4,"1.32","0.28","1.60","5.89",NA,NA,2,4
+402,"Jacob","Murphy","Newcastle","Midfielder",5.3,7,0,0.7,0,1,205,0,2,0,0,0,1,0,0,3,"0.19","0.88","1.07","2.62",NA,NA,NA,2
+403,"Joelinton Cássio","Apolinário de Lira","Newcastle","Midfielder",6,13,3,2.2,1,0,315,1,3,0,0,0,3,0,0,4,"0.29","0.06","0.35","5.89",NA,NA,NA,0.7
 404,"Lloyd","Kelly","Newcastle","Defender",4.5,8,0,0.2,0,1,158,0,2,0,0,0,1,0,0,2,"0.19","0.10","0.29","3.36",NA,NA,NA,2.3
 405,"Emil","Krafth","Newcastle","Defender",4.5,10,0,0.2,0,0,240,1,2,0,0,0,0,0,0,2,"0.04","0.03","0.07","5.07",NA,NA,NA,1.3
 406,"Garang","Kuol","Newcastle","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 407,"Jamaal","Lascelles","Newcastle","Defender",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 408,"Jamal","Lewis","Newcastle","Defender",4,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-409,"Tino","Livramento","Newcastle","Defender",4.5,12,1,3,0,0,300,1,3,0,0,0,0,0,0,4,"0.00","0.01","0.01","5.03",NA,NA,NA,1.7
+409,"Tino","Livramento","Newcastle","Defender",4.5,12,1,2.9,0,0,300,1,3,0,0,0,0,0,0,4,"0.00","0.01","0.01","5.03",NA,NA,NA,1.7
 410,"Sean","Longstaff","Newcastle","Midfielder",4.9,7,0,0.8,0,0,271,1,3,0,0,0,1,0,0,4,"0.00","0.03","0.03","5.20",NA,NA,NA,1.3
 411,"Lewis","Miley","Newcastle","Midfielder",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 412,"Odysseas","Vlachodimos","Newcastle","Goalkeeper",4.4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-413,"Nick","Pope","Newcastle","Goalkeeper",5,19,2,8.9,0,0,360,1,3,0,0,0,0,0,16,4,"0.00","0.00","0.00","6.25",NA,NA,NA,3.3
+413,"Nick","Pope","Newcastle","Goalkeeper",5,19,2,9,0,0,360,1,3,0,0,0,0,0,16,4,"0.00","0.00","0.00","6.25",NA,NA,NA,3.3
 414,"John","Ruddy","Newcastle","Goalkeeper",4,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 415,"Fabian","Schär","Newcastle","Defender",5.4,6,0,1.1,1,0,117,0,1,0,0,0,0,1,0,2,"0.14","0.01","0.15","1.19",NA,2,NA,2.7
 416,"Matt","Targett","Newcastle","Defender",4,0,0,0.5,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 417,"Sandro","Tonali","Newcastle","Midfielder",5.5,2,0,0.3,0,0,67,0,0,0,0,0,0,0,0,0,"0.44","0.03","0.47","0.64",NA,NA,NA,0.7
-418,"Kieran","Trippier","Newcastle","Defender",5.8,2,0,6.6,0,0,58,0,0,0,0,0,0,0,0,0,"0.00","0.04","0.04","1.22",1,1,NA,0.7
+418,"Kieran","Trippier","Newcastle","Defender",5.8,2,0,6.4,0,0,58,0,0,0,0,0,0,0,0,0,"0.00","0.04","0.04","1.22",1,1,NA,0.7
 419,"Joe","White","Newcastle","Midfielder",4.5,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-420,"Joe","Willock","Newcastle","Midfielder",4.8,5,0,0.1,0,1,65,0,0,0,0,0,0,0,0,0,"0.16","0.10","0.26","0.79",NA,NA,NA,1.7
+420,"Joe","Willock","Newcastle","Midfielder",4.8,5,0,0.2,0,1,65,0,0,0,0,0,0,0,0,0,"0.16","0.10","0.26","0.79",NA,NA,NA,1.7
 421,"Callum","Wilson","Newcastle","Forward",6.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,1,0
 574,"Miodrag","Pivaš","Newcastle","Defender",4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 590,"William","Osula","Newcastle","Forward",5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 26,"Álex","Moreno Lopera","Nott'm Forest","Defender",4.4,6,1,0.5,0,0,79,1,0,0,0,0,1,0,0,1,"0.00","0.01","0.01","0.85",NA,NA,NA,2
-422,"Ola","Aina","Nott'm Forest","Defender",4.4,20,5,3.8,0,0,323,2,1,0,0,0,0,0,0,4,"0.03","0.23","0.26","2.37",NA,NA,NA,6.3
+422,"Ola","Aina","Nott'm Forest","Defender",4.5,20,5,4.6,0,0,323,2,1,0,0,0,0,0,0,4,"0.03","0.23","0.26","2.37",NA,NA,NA,6.3
 423,"Elliot","Anderson","Nott'm Forest","Midfielder",5,13,2,0.2,0,1,242,2,2,0,0,0,1,0,0,3,"0.10","0.12","0.22","2.20",2,NA,NA,4
 424,"Taiwo","Awoniyi","Nott'm Forest","Forward",5.8,3,0,0.4,0,0,34,0,1,0,0,0,0,0,0,0,"0.12","0.03","0.15","0.60",NA,NA,NA,0.7
 425,"Willy","Boly","Nott'm Forest","Defender",4.4,3,0,0.2,0,0,91,0,1,0,0,0,0,0,0,1,"0.07","0.00","0.07","1.22",NA,NA,NA,0.3
@@ -499,7 +499,7 @@
 430,"Emmanuel","Dennis","Nott'm Forest","Forward",4.9,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 431,"Nicolás","Domínguez","Nott'm Forest","Midfielder",4.9,2,0,0,0,0,104,0,1,0,0,0,1,0,0,1,"0.12","0.10","0.22","1.41",NA,NA,NA,0.3
 432,"Anthony","Elanga","Nott'm Forest","Midfielder",5.3,9,0,1.2,0,1,262,1,1,0,0,0,1,0,0,3,"0.49","0.47","0.96","1.62",1,NA,NA,2.7
-433,"Morgan","Gibbs-White","Nott'm Forest","Midfielder",6.5,16,2,3.5,1,0,350,2,2,0,0,0,1,0,0,4,"0.72","0.84","1.56","2.95",NA,1,1,4.7
+433,"Morgan","Gibbs-White","Nott'm Forest","Midfielder",6.4,16,2,3.5,1,0,350,2,2,0,0,0,1,0,0,4,"0.72","0.84","1.56","2.95",NA,1,1,4.7
 434,"Callum","Hudson-Odoi","Nott'm Forest","Midfielder",5.4,15,1,2.3,1,0,276,2,1,0,0,0,0,0,0,3,"0.33","0.61","0.94","1.68",4,NA,NA,4
 435,"Alex","Mighten","Nott'm Forest","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 436,"Murillo","Santiago Costa dos Santos","Nott'm Forest","Defender",4.5,17,1,0.7,0,0,360,2,2,0,0,0,0,0,0,4,"0.00","0.12","0.12","3.04",NA,NA,NA,5
@@ -508,26 +508,26 @@
 439,"Lewis","O'Brien","Nott'm Forest","Midfielder",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 440,"Andrew","Omobamidele","Nott'm Forest","Defender",4.4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 441,"Jonathan","Panzo","Nott'm Forest","Defender",4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-442,"Ibrahim","Sangaré","Nott'm Forest","Midfielder",4.5,4,0,2.3,0,0,212,1,2,0,0,0,2,0,0,3,"0.02","0.06","0.08","1.98",NA,NA,NA,0.7
-443,"Matz","Sels","Nott'm Forest","Goalkeeper",4.5,20,3,2.2,0,0,360,2,2,0,0,0,1,0,10,4,"0.00","0.00","0.00","3.04",NA,NA,NA,5.7
+442,"Ibrahim","Sangaré","Nott'm Forest","Midfielder",4.5,4,0,2.1,0,0,212,1,2,0,0,0,2,0,0,3,"0.02","0.06","0.08","1.98",NA,NA,NA,0.7
+443,"Matz","Sels","Nott'm Forest","Goalkeeper",4.5,20,3,2.3,0,0,360,2,2,0,0,0,1,0,10,4,"0.00","0.00","0.00","3.04",NA,NA,NA,5.7
 444,"Harry","Toffolo","Nott'm Forest","Defender",4.4,1,0,0.1,0,0,36,0,1,0,0,0,0,0,0,0,"0.02","0.01","0.03","0.67",3,NA,NA,0
-446,"Hwang","Ui-jo","Nott'm Forest","Forward",4.5,0,0,2.8,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-447,"Chris","Wood","Nott'm Forest","Forward",6.1,21,6,7.1,2,0,315,3,1,0,0,0,1,0,0,4,"1.55","0.13","1.68","2.36",NA,NA,NA,4
+446,"Hwang","Ui-jo","Nott'm Forest","Forward",4.5,0,0,2.7,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+447,"Chris","Wood","Nott'm Forest","Forward",6.1,21,6,7.4,2,0,315,3,1,0,0,0,1,0,0,4,"1.55","0.13","1.68","2.36",NA,NA,NA,4
 448,"Joe","Worrall","Nott'm Forest","Defender",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 449,"Ryan","Yates","Nott'm Forest","Midfielder",5,11,2,0.2,0,1,221,1,1,0,0,0,1,0,0,1,"0.26","0.05","0.31","2.00",NA,NA,NA,1.3
-531,"James","Ward-Prowse","Nott'm Forest","Midfielder",6.3,4,0,1,0,0,106,1,1,0,0,0,0,0,0,1,"0.00","0.01","0.01","1.21",NA,NA,NA,1
+531,"James","Ward-Prowse","Nott'm Forest","Midfielder",6.3,4,0,0.9,0,0,106,1,1,0,0,0,0,0,0,1,"0.00","0.01","0.01","1.21",NA,NA,NA,1
 573,"Nikola","Milenković","Nott'm Forest","Defender",4.5,14,0,0.3,0,0,270,2,1,0,0,0,0,0,0,3,"0.98","0.02","1.00","1.82",NA,NA,NA,4.7
 596,"João Pedro","Ferreira Silva","Nott'm Forest","Midfielder",6,3,0,0.1,0,0,11,0,0,0,0,0,0,0,0,0,"0.00","0.03","0.03","0.10",NA,NA,NA,1
 620,"Ramón","Sosa","Nott'm Forest","Midfielder",5.5,1,0,0,0,0,10,0,0,0,0,0,0,0,0,0,"0.09","0.06","0.15","0.03",NA,NA,NA,0.3
 653,"Felipe","Rodrigues da Silva","Nott'm Forest","Defender",4.5,1,0,0,0,0,9,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.09",NA,NA,NA,1
-14,"Aaron","Ramsdale","Southampton","Goalkeeper",4.4,5,0,1.9,0,0,180,0,6,0,0,0,0,0,11,2,"0.00","0.00","0.00","5.45",NA,NA,NA,1.7
+14,"Aaron","Ramsdale","Southampton","Goalkeeper",4.4,5,0,2,0,0,180,0,6,0,0,0,0,0,11,2,"0.00","0.00","0.00","5.45",NA,NA,NA,1.7
 27,"Cameron","Archer","Southampton","Forward",5,3,0,1.7,0,0,143,0,4,0,0,1,0,0,0,1,"1.02","0.02","1.04","3.97",NA,NA,2,0.7
 188,"Lesley","Ugochukwu","Southampton","Midfielder",4.5,2,0,0.4,0,0,63,0,2,0,0,0,0,0,0,1,"0.21","0.01","0.22","1.85",NA,NA,NA,0.7
 397,"Ryan","Fraser","Southampton","Midfielder",4.9,1,0,0,0,0,26,0,1,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.82",NA,NA,NA,0.3
 450,"Carlos","Alcaraz Durán","Southampton","Midfielder",4.9,1,0,0,0,0,9,0,0,0,0,0,0,0,0,0,"0.07","0.03","0.10","0.00",NA,NA,NA,0
 451,"Samuel","Amo-Ameyaw","Southampton","Midfielder",4.5,1,0,0.1,0,0,9,0,0,0,0,0,0,0,0,0,"0.02","0.13","0.15","0.00",NA,NA,NA,0
 452,"Joe","Aribo","Southampton","Midfielder",5,6,0,0.1,0,0,225,0,5,0,0,0,0,0,0,3,"0.53","0.49","1.02","5.10",NA,NA,NA,1.3
-453,"Adam","Armstrong","Southampton","Forward",5.4,4,0,1.1,0,0,205,0,3,0,0,0,1,0,0,3,"0.78","0.14","0.92","3.36",NA,NA,1,0.7
+453,"Adam","Armstrong","Southampton","Forward",5.4,4,0,1,0,0,205,0,3,0,0,0,1,0,0,3,"0.78","0.14","0.92","3.36",NA,NA,1,0.7
 454,"Gavin","Bazunu","Southampton","Goalkeeper",4.4,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 455,"Jan","Bednarek","Southampton","Defender",4,5,0,3.3,0,0,350,0,8,0,0,0,1,0,0,4,"0.00","0.06","0.06","8.15",NA,NA,NA,1
 456,"Armel","Bella-Kotchap","Southampton","Defender",4,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
@@ -535,7 +535,7 @@
 458,"Shea","Charles","Southampton","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 459,"Samuel","Edozie","Southampton","Midfielder",4.9,1,0,0,0,0,64,0,0,0,0,0,1,0,0,0,"0.00","0.15","0.15","0.31",NA,NA,NA,0.3
 460,"Ronnie","Edwards","Southampton","Defender",4,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-461,"Taylor","Harwood-Bellis","Southampton","Defender",4,4,0,10.7,0,0,229,0,4,0,0,0,2,0,0,3,"0.00","0.07","0.07","4.49",NA,NA,NA,1
+461,"Taylor","Harwood-Bellis","Southampton","Defender",4,4,0,10.6,0,0,229,0,4,0,0,0,2,0,0,3,"0.00","0.07","0.07","4.49",NA,NA,NA,1
 462,"Kamaldeen","Sulemana","Southampton","Midfielder",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 463,"Adam","Lallana","Southampton","Midfielder",5,5,0,0,0,1,35,0,1,0,0,0,0,0,0,0,"0.07","0.06","0.13","1.01",NA,NA,NA,1.7
 464,"Juan","Larios López","Southampton","Defender",4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
@@ -546,18 +546,18 @@
 469,"Alex","McCarthy","Southampton","Goalkeeper",4.5,6,0,0.2,0,0,180,0,2,0,0,0,0,0,7,2,"0.00","0.00","0.00","2.70",NA,NA,NA,1.3
 470,"Paul","Onuachu","Southampton","Forward",5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 471,"Will","Smallbone","Southampton","Midfielder",5,5,0,0,0,0,218,0,3,0,0,0,0,0,0,3,"0.31","0.54","0.85","3.67",2,1,NA,1
-472,"Jack","Stephens","Southampton","Defender",4,2,0,0.9,0,0,348,0,8,0,0,0,1,1,0,4,"0.23","0.10","0.33","7.38",NA,NA,NA,0.3
-473,"Ross","Stewart","Southampton","Forward",4.5,1,0,1.6,0,0,28,0,1,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.82",NA,NA,NA,0.3
+472,"Jack","Stephens","Southampton","Defender",4,2,0,0.8,0,0,348,0,8,0,0,0,1,1,0,4,"0.23","0.10","0.33","7.38",NA,NA,NA,0.3
+473,"Ross","Stewart","Southampton","Forward",4.5,1,0,1.9,0,0,28,0,1,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.82",NA,NA,NA,0.3
 474,"Sugawara","Yukinari","Southampton","Defender",4.5,11,0,0.3,1,0,296,0,8,0,0,0,0,0,0,4,"0.24","0.79","1.03","7.84",NA,NA,NA,3.3
-475,"Charlie","Taylor","Southampton","Defender",4,1,0,4.4,0,0,14,0,0,0,0,0,0,0,0,0,"0.00","0.01","0.01","0.19",NA,NA,NA,0.3
+475,"Charlie","Taylor","Southampton","Defender",4,1,0,4.3,0,0,14,0,0,0,0,0,0,0,0,0,"0.00","0.01","0.01","0.19",NA,NA,NA,0.3
 476,"Kyle","Walker-Peters","Southampton","Defender",4.5,6,0,0.5,0,0,350,0,8,0,0,0,0,0,0,4,"0.20","0.17","0.37","8.15",NA,NA,NA,1.3
 477,"Nathan","Wood-Gordon","Southampton","Defender",4,0,0,1.5,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 515,"Maxwel","Cornet","Southampton","Midfielder",4.9,0,0,0,0,0,26,0,1,0,0,0,1,0,0,0,"0.00","0.00","0.00","0.82",NA,NA,NA,0
 518,"Flynn","Downes","Southampton","Midfielder",4.9,7,0,0.1,0,0,360,0,8,0,0,0,1,0,0,4,"0.20","0.51","0.71","8.15",NA,NA,NA,1.7
 584,"Ben","Brereton Díaz","Southampton","Midfielder",5.4,7,0,0.5,0,0,313,0,7,0,0,0,1,0,0,4,"0.50","0.12","0.62","7.33",NA,NA,NA,2
-608,"Tyler","Dibling","Southampton","Midfielder",4.5,5,0,0.3,0,0,122,0,4,0,0,0,0,0,0,1,"0.08","0.20","0.28","3.42",NA,NA,NA,1.3
+608,"Tyler","Dibling","Southampton","Midfielder",4.5,5,0,0.4,0,0,122,0,4,0,0,0,0,0,0,1,"0.08","0.20","0.28","3.42",NA,NA,NA,1.3
 623,"Mateus Gonçalo","Espanha Fernandes","Southampton","Midfielder",5,4,0,0,0,0,139,0,4,0,0,0,0,0,0,1,"0.18","0.10","0.28","3.90",NA,NA,NA,1.3
-82,"Dominic","Solanke-Mitchell","Spurs","Forward",7.5,4,0,7.1,0,0,180,0,2,0,0,0,0,0,0,2,"0.51","0.18","0.69","1.75",NA,NA,NA,0.7
+82,"Dominic","Solanke-Mitchell","Spurs","Forward",7.5,4,0,7.6,0,0,180,0,2,0,0,0,0,0,0,2,"0.51","0.18","0.69","1.75",NA,NA,NA,0.7
 478,"Ashley","Phillips","Spurs","Defender",4,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 479,"Brandon","Austin","Spurs","Goalkeeper",4,0,0,0.5,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 480,"Rodrigo","Bentancur","Spurs","Midfielder",5,2,0,0.2,0,0,152,0,2,0,0,0,3,0,0,2,"0.27","0.10","0.37","1.63",NA,NA,NA,0.3
@@ -575,38 +575,38 @@
 492,"Dejan","Kulusevski","Spurs","Midfielder",6.3,10,0,1.6,0,1,257,1,3,0,0,0,1,0,0,3,"0.24","0.50","0.74","3.42",3,NA,NA,3
 493,"Giovani","Lo Celso","Spurs","Midfielder",4.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 494,"James","Maddison","Spurs","Midfielder",7.5,14,0,4.2,0,2,316,1,4,0,0,0,1,0,0,4,"0.50","1.78","2.28","4.20",1,2,2,3
-495,"Pedro","Porro","Spurs","Defender",5.5,18,1,33.9,1,0,360,1,4,0,0,0,0,0,0,4,"0.33","0.67","1.00","4.26",NA,1,NA,3
+495,"Pedro","Porro","Spurs","Defender",5.6,18,1,34.1,1,0,360,1,4,0,0,0,0,0,0,4,"0.33","0.67","1.00","4.26",NA,1,NA,3
 496,"Sergio","Reguilón","Spurs","Defender",4.4,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 497,"Richarlison","de Andrade","Spurs","Forward",6.9,2,0,0.5,0,0,25,0,0,0,0,0,0,0,0,0,"0.19","0.00","0.19","0.06",NA,NA,2,0.3
-498,"Cristian","Romero","Spurs","Defender",5.1,19,2,10.2,1,0,360,1,4,0,0,0,0,0,0,4,"0.66","0.38","1.04","4.32",NA,NA,NA,5.7
+498,"Cristian","Romero","Spurs","Defender",5.1,19,2,10.4,1,0,360,1,4,0,0,0,0,0,0,4,"0.66","0.38","1.04","4.32",NA,NA,NA,5.7
 499,"Pape Matar","Sarr","Spurs","Midfielder",4.9,4,0,0.2,0,0,167,0,2,0,0,0,1,0,0,2,"0.13","0.13","0.26","1.39",NA,NA,NA,0.7
 500,"Dane","Scarlett","Spurs","Forward",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 502,"Manor","Solomon","Spurs","Midfielder",5.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-503,"Son","Heung-min","Spurs","Midfielder",10,23,4,8.8,2,0,360,1,4,0,0,0,0,0,0,4,"1.31","0.66","1.97","4.26",NA,NA,1,7
+503,"Son","Heung-min","Spurs","Midfielder",10,23,4,9,2,0,360,1,4,0,0,0,0,0,0,4,"1.31","0.66","1.97","4.26",NA,NA,1,7
 504,"Djed","Spence","Spurs","Defender",4.4,2,0,0.1,0,0,18,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.06",NA,NA,NA,0.3
 505,"Destiny","Udogie","Spurs","Defender",5,10,0,3.4,0,0,342,1,4,0,0,0,1,0,0,4,"0.00","0.12","0.12","4.32",NA,NA,NA,2.7
 506,"Micky","van de Ven","Spurs","Defender",4.5,12,0,7.2,0,1,270,1,2,0,0,0,1,0,0,3,"0.02","0.08","0.10","2.75",NA,NA,NA,3.3
 507,"Alejo","Véliz","Spurs","Forward",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-508,"Guglielmo","Vicario","Spurs","Goalkeeper",5,11,0,3.7,0,0,360,1,4,0,0,0,1,0,7,4,"0.00","0.00","0.00","4.32",NA,NA,NA,3
+508,"Guglielmo","Vicario","Spurs","Goalkeeper",5,11,0,3.8,0,0,360,1,4,0,0,0,1,0,7,4,"0.00","0.00","0.00","4.32",NA,NA,NA,3
 509,"Timo","Werner","Spurs","Midfielder",6.3,3,0,0.2,0,0,38,0,1,0,0,0,0,0,0,0,"0.00","0.04","0.04","1.06",NA,NA,NA,0.7
 510,"Alfie","Whiteman","Spurs","Goalkeeper",4,0,0,1.6,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-609,"Will","Lankshear","Spurs","Forward",4.5,0,0,1.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+609,"Will","Lankshear","Spurs","Forward",4.5,0,0,1.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 610,"Mikey","Moore","Spurs","Midfielder",4.5,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 612,"Wilson","Odobert","Spurs","Midfielder",5.5,6,0,0.1,0,0,160,1,1,0,0,0,0,0,0,2,"0.42","0.08","0.50","1.63",NA,NA,NA,2
 388,"Aaron","Wan-Bissaka","West Ham","Defender",4.5,4,0,1.8,0,0,208,0,4,0,0,0,0,0,0,2,"0.00","0.08","0.08","5.10",NA,NA,NA,1.3
 511,"Edson","Álvarez Velázquez","West Ham","Midfielder",5,4,0,0.1,0,0,169,0,3,0,0,0,1,0,0,2,"0.01","0.24","0.25","3.65",NA,NA,NA,1.3
 512,"Michail","Antonio","West Ham","Forward",5.5,7,0,1.4,0,0,248,1,4,0,0,0,0,0,0,4,"0.84","0.01","0.85","5.57",NA,NA,NA,1.7
 513,"Alphonse","Areola","West Ham","Goalkeeper",4.5,11,0,8,0,0,315,1,5,0,0,0,0,0,10,4,"0.00","0.00","0.00","6.63",NA,NA,NA,3.3
-514,"Jarrod","Bowen","West Ham","Midfielder",7.5,20,0,6.2,1,2,337,1,5,0,0,0,0,0,0,4,"0.46","0.63","1.09","7.43",2,NA,4,6
+514,"Jarrod","Bowen","West Ham","Midfielder",7.5,20,0,6.3,1,2,337,1,5,0,0,0,0,0,0,4,"0.46","0.63","1.09","7.43",2,NA,4,6
 516,"Vladimír","Coufal","West Ham","Defender",4.5,9,0,0.8,0,0,198,1,3,0,0,0,0,0,0,2,"0.02","0.10","0.12","4.19",NA,NA,NA,2.7
 517,"Aaron","Cresswell","West Ham","Defender",4,1,0,1.8,0,0,1,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.03",3,NA,NA,0.3
 519,"George","Earthy","West Ham","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 520,"Emerson","Palmieri dos Santos","West Ham","Defender",4.5,8,0,0.6,0,0,304,1,5,0,0,0,1,0,0,4,"0.04","0.14","0.18","6.45",NA,NA,NA,2.3
-521,"Łukasz","Fabiański","West Ham","Goalkeeper",4,1,0,15.3,0,0,45,0,1,0,0,0,0,0,2,0,"0.00","0.00","0.00","1.29",NA,NA,NA,0.3
-522,"Wes","Foderingham","West Ham","Goalkeeper",4.5,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-523,"Danny","Ings","West Ham","Forward",5,9,3,1.6,1,0,13,0,0,0,0,0,0,0,0,0,"0.50","0.00","0.50","0.24",NA,NA,NA,2.7
+521,"Łukasz","Fabiański","West Ham","Goalkeeper",4,1,0,15.4,0,0,45,0,1,0,0,0,0,0,2,0,"0.00","0.00","0.00","1.29",NA,NA,NA,0.3
+522,"Wes","Foderingham","West Ham","Goalkeeper",4.4,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+523,"Danny","Ings","West Ham","Forward",5,9,3,1.7,1,0,13,0,0,0,0,0,0,0,0,0,"0.50","0.00","0.50","0.24",NA,NA,NA,2.7
 524,"Max","Kilman","West Ham","Defender",4.5,15,3,3,0,1,360,1,6,0,0,0,1,0,0,4,"0.28","0.08","0.36","7.92",NA,NA,NA,4.7
-525,"Mohammed","Kudus","West Ham","Midfielder",6.4,9,0,5.4,0,0,357,1,6,0,0,0,0,0,0,4,"0.30","0.73","1.03","7.89",NA,NA,NA,2.3
+525,"Mohammed","Kudus","West Ham","Midfielder",6.4,9,0,5.2,0,0,357,1,6,0,0,0,0,0,0,4,"0.30","0.73","1.03","7.89",NA,NA,NA,2.3
 526,"Luis Guilherme","Lira dos Santos","West Ham","Midfielder",4.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 527,"Lucas","Tolentino Coelho de Lima","West Ham","Midfielder",6,12,0,2,1,0,298,1,4,0,0,0,1,0,0,3,"0.94","0.20","1.14","6.87",NA,1,1,2
 528,"Konstantinos","Mavropanos","West Ham","Defender",4.5,12,2,0.2,0,0,360,1,6,0,0,0,0,0,0,4,"0.11","0.01","0.12","7.92",NA,NA,NA,3.7
@@ -616,25 +616,25 @@
 576,"Andy","Irving","West Ham","Midfielder",4.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 587,"Crysencio","Summerville","West Ham","Midfielder",5.8,3,0,0.5,0,0,66,0,1,0,0,0,0,0,0,0,"0.06","0.18","0.24","1.25",NA,NA,NA,0.7
 588,"Guido","Rodríguez","West Ham","Midfielder",5,7,0,0.1,0,0,333,1,6,0,0,0,2,0,0,4,"0.05","0.04","0.09","7.17",NA,NA,NA,1.7
-589,"Niclas","Füllkrug","West Ham","Forward",6.8,3,0,1.6,0,0,63,0,2,0,0,0,0,0,0,0,"0.25","0.09","0.34","1.59",NA,NA,NA,0.7
+589,"Niclas","Füllkrug","West Ham","Forward",6.8,3,0,1.5,0,0,63,0,2,0,0,0,0,0,0,0,"0.25","0.09","0.34","1.59",NA,NA,NA,0.7
 591,"Jean-Clair","Todibo","West Ham","Defender",4.4,2,0,0.4,0,0,7,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.10",NA,NA,NA,0.3
 643,"Kaelan","Casey","West Ham","Defender",4,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 654,"Carlos","Soler","West Ham","Midfielder",5,0,0,0,0,0,20,0,0,0,0,0,1,0,0,0,"0.00","0.00","0.00","0.68",NA,NA,NA,0
 204,"Sam","Johnstone","Wolves","Goalkeeper",4.4,5,0,0.5,0,0,180,0,3,0,0,0,0,0,8,2,"0.00","0.00","0.00","2.25",NA,NA,NA,1.7
-533,"Rayan","Aït-Nouri","Wolves","Defender",4.5,4,0,2,0,1,294,0,10,0,0,0,2,0,0,4,"0.42","0.23","0.65","3.67",NA,NA,NA,1
+533,"Rayan","Aït-Nouri","Wolves","Defender",4.5,4,0,1.9,0,1,294,0,10,0,0,0,2,0,0,4,"0.42","0.23","0.65","3.67",NA,NA,NA,1
 534,"Boubacar","Traoré","Wolves","Midfielder",4.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 535,"Jean-Ricner","Bellegarde","Wolves","Midfielder",5,12,0,0.1,1,0,267,1,7,0,0,0,1,0,0,4,"0.21","0.02","0.23","3.63",NA,1,NA,3.7
 536,"Daniel","Bentley","Wolves","Goalkeeper",4,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 537,"Francisco Jorge","Tomás Oliveira","Wolves","Midfielder",4.5,1,0,0.2,0,0,6,0,0,0,0,0,0,0,0,0,"0.00","0.05","0.05","0.00",NA,NA,NA,0
 538,"Tawanda","Chirewa","Wolves","Midfielder",4.5,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-539,"Leon","Chiwome","Wolves","Forward",4.5,0,0,1.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+539,"Leon","Chiwome","Wolves","Forward",4.5,0,0,1.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 540,"Luke","Cundle","Wolves","Midfielder",4.5,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 541,"Matheus","Santos Carneiro Da Cunha","Wolves","Forward",6.5,11,0,2.3,1,0,280,0,9,0,0,0,0,0,0,3,"1.41","0.58","1.99","3.74",NA,3,3,3.3
 542,"Craig","Dawson","Wolves","Defender",4.5,5,0,0.2,0,0,209,0,4,0,0,0,0,0,0,2,"0.00","0.04","0.04","2.57",NA,NA,NA,1.3
 543,"Matt","Doherty","Wolves","Defender",4.5,2,0,0.2,0,0,208,0,9,0,0,0,0,0,0,2,"0.08","0.08","0.16","3.61",NA,NA,NA,0.3
 544,"Tommy","Doyle","Wolves","Midfielder",4.9,3,0,0,0,0,44,0,1,0,0,0,0,0,0,0,"0.04","0.06","0.10","1.14",2,4,NA,1
 545,"Fábio","Silva","Wolves","Forward",5,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
-546,"Nathan","Fraser","Wolves","Forward",4.5,0,0,3.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
+546,"Nathan","Fraser","Wolves","Forward",4.5,0,0,3.3,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 547,"Enso","González","Wolves","Midfielder",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 548,"Gonçalo Manuel","Ganchinho Guedes","Wolves","Midfielder",5.4,2,0,0.1,0,0,19,0,0,0,0,0,0,0,0,0,"0.00","0.01","0.01","0.73",NA,NA,NA,0.7
 549,"Hugo","Bueno López","Wolves","Defender",4.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
@@ -642,7 +642,7 @@
 551,"Joe","Hodge","Wolves","Midfielder",4.5,0,0,0.4,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 552,"Ki-Jana","Hoever","Wolves","Defender",4,0,0,0.2,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 553,"João Victor","Gomes da Silva","Wolves","Midfielder",4.9,5,0,0.1,0,0,322,0,11,0,0,0,2,0,0,4,"0.13","0.07","0.20","4.37",NA,NA,NA,1.3
-554,"José","Malheiro de Sá","Wolves","Goalkeeper",4.5,1,0,1.9,0,0,180,0,8,0,0,0,0,0,6,2,"0.00","0.01","0.01","2.80",NA,NA,NA,-0.3
+554,"José","Malheiro de Sá","Wolves","Goalkeeper",4.4,1,0,1.8,0,0,180,0,8,0,0,0,0,0,6,2,"0.00","0.01","0.01","2.80",NA,NA,NA,-0.3
 555,"Saša","Kalajdžić","Wolves","Forward",4.9,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 556,"Tom","King","Wolves","Goalkeeper",4,0,0,1.5,0,0,0,0,0,0,0,0,0,0,0,0,"0.00","0.00","0.00","0.00",NA,NA,NA,0
 557,"Mario","Lemina","Wolves","Midfielder",5,19,4,0.3,1,1,359,0,11,0,0,0,1,0,0,4,"0.51","0.33","0.84","5.05",NA,NA,NA,5.7
