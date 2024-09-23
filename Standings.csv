@@ -1,13 +1,13 @@
 "Position","Team","Played","Won","Drawn","Lost","Goals For","Goals Against","Goal Difference","Points"
-1,"Liverpool",5,4,0,1,10,1,9,12
-2,"Manchester City",4,4,0,0,11,3,8,12
+1,"Manchester City",5,4,1,0,13,5,8,13
+2,"Liverpool",5,4,0,1,10,1,9,12
 3,"Aston Villa",5,4,0,1,10,7,3,12
-4,"Chelsea",5,3,1,1,11,5,6,10
-5,"Arsenal",4,3,1,0,6,1,5,10
+4,"Arsenal",5,3,2,0,8,3,5,11
+5,"Chelsea",5,3,1,1,11,5,6,10
 6,"Newcastle United",5,3,1,1,7,6,1,10
-7,"Brighton & Hove Albion",4,2,2,0,6,2,4,8
-8,"Fulham",5,2,2,1,7,5,2,8
-9,"Nottingham Forest",4,2,2,0,4,2,2,8
+7,"Brighton & Hove Albion",5,2,3,0,8,4,4,9
+8,"Nottingham Forest",5,2,3,0,6,4,2,9
+9,"Fulham",5,2,2,1,7,5,2,8
 10,"Tottenham Hotspur",5,2,1,2,9,5,4,7
 11,"Manchester United",5,2,1,2,5,5,0,7
 12,"Brentford",5,2,0,3,7,9,-2,6
