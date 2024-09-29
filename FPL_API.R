@@ -2,8 +2,6 @@
 rm(list = ls())
 cat("\014")
 
-start <- Sys.time()
-
 #---------- Downloading/Loading Packages ----------
 #install.packages(c("httr","jsonlite","tidyverse","rvest","conflicted","progress"))
 library(conflicted)
@@ -286,5 +284,10 @@ Player_Historic_Stats <- Player_Historic_Stats %>% rename(Season = season_name, 
 
 Player_Historic_Stats <- subset(Player_Historic_Stats, select = -c(element_code))
 
-# Add function call
-print( Sys.time() - start )
+#--------- Saving to CSV ----------
+
+write.csv(Fixtures, "Fixtures.csv", row.names =  FALSE)
+write.csv(Player_Gameweek_Stats, "Player_Gameweek_Stats.csv", row.names =  FALSE)
+write.csv(Player_Historic_Stats, "Player_Historic_Stats.csv", row.names =  FALSE)
+write.csv(Player_Info, "Player_Info.csv", row.names =  FALSE)
+write.csv(Standings, "Standings.csv", row.names =  FALSE)
