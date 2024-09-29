@@ -1,266 +1,290 @@
-#---------- Setting Up Environment ---------
-#rm(list = ls())
-#cat("\014")
+#--------- Clearing Environment & Console ---------
+rm(list = ls())
+cat("\014")
 
-#install.packages(c("conflicted","tidyverse","progress","remotes","dplyr"))
-#install.packages("remotes")
-# remotes::install_github("ewenme/fplr")
-# install.packages("htmltools")
-#install.packages("rvest")
+start <- Sys.time()
 
-library(rvest)
-library(remotes)
+#---------- Downloading/Loading Packages ----------
+#install.packages(c("httr","jsonlite","tidyverse","rvest","conflicted","progress"))
 library(conflicted)
-conflict_prefer("filter", "dplyr")
-conflict_prefer("lag", "dplyr")
-
+library(httr)
+library(jsonlite)
+conflict_prefer("filter","dplyr")
+conflict_prefer("lag","dplyr")
 library(tidyverse)
 library(progress)
-library(fplr)
-library(dplyr)
+library(rvest)
 
+#---------- Team Info ----------
 
-#---------- Downloading Team Fixtures ---------
-# Downloading fixtures table
-df_fixtures <- data.frame(fpl_get_fixtures()) 
+# A GET call to the FPL API
+res = VERB("GET", url = "https://fantasy.premierleague.com/api/bootstrap-static/")
 
-# Pivoting team id
-df_fixtures <- pivot_longer(df_fixtures, cols = c(team_a, team_h), names_to = "team_type", values_to = "team")
-df_fixtures <- pivot_longer(df_fixtures, cols = c(team_a_score, team_h_score), names_to = "team_score", values_to = "score")
+# converts the response of the API call into text
+res2 <- content(res, "text", encoding = "UTF-8")
 
-# keeping only relevant columns
-df_fixtures <- subset(df_fixtures, select = c(id, code, event, finished, kickoff_time,
-                                              team_type, team, team_a_difficulty, team_h_difficulty,
-                                              team_score, score))
+# Converts the text response from JSON
+item <- fromJSON(res2)
 
-# renaming columns for join
-df_fixtures <- df_fixtures %>% rename( match_id = id, id = team)
+# Creating a data frame with the parsed JSON data
+Teams <- data.frame(item$teams)
 
-# Downloading teams table
-df_teams <- data.frame(fpl_get_teams())
+# Removing objects from environment
+rm(res, res2, item)
 
-# Joining teams table and fixtures table together on id
-Fixtures <- inner_join(df_fixtures, df_teams, join_by( id == id))
-
-# Tidying Environment
-rm(df_fixtures, df_teams)
-
-# keeping only relevant columns
-Fixtures <- subset(Fixtures, select = c(match_id, team_type, name, event, finished, kickoff_time, strength, team_score, score))
-
-# Find and replace
-Fixtures <- Fixtures %>% mutate(team_score = gsub("_score", "", team_score))
-
-# Keeping only one row for each match and team
-Fixtures <- Fixtures[Fixtures$team_score == Fixtures$team_type,]
-
-# Pivoting fields
-Fixtures <- pivot_wider(Fixtures, names_from = c(team_type, team_score) , values_from = c(name, strength, score))
+# Selecting which fields to keep
+Teams <- subset(Teams, select = c(id, name, short_name, strength))
 
 # Renaming fields
-Fixtures <- Fixtures %>% rename(`Match ID` = match_id,
-                                Matchday = event,
-                                Finished = finished,
-                                Date = kickoff_time,
-                                `Away Team` = name_team_a_team_a,
-                                `Home Team` = name_team_h_team_h,
-                                `Away Team Strength` = strength_team_a_team_a,
-                                `Home Team Strength` = strength_team_h_team_h,
-                                `Away Team Score` = score_team_a_team_a,
-                                `Home Team Score` = score_team_h_team_h
-                                )
+Teams <- Teams %>% rename (`Team ID` = id,
+                           Team = name,
+                           Abbreviation = short_name,
+                           `Team Strength` = strength)
+
+# Renames the values within the fields so that they can be mapped to other tables later on
+Teams <- Teams %>% mutate(Team = case_when(
+                                    Team == "Arsenal" ~ "Arsenal",
+                                    Team == "Aston Villa" ~ "Aston Villa",
+                                    Team == "Bournemouth" ~ "AFC Bournemouth",
+                                    Team == "Brentford" ~ "Brentford",
+                                    Team == "Brighton" ~ "Brighton & Hove Albion",
+                                    Team == "Chelsea" ~ "Chelsea",
+                                    Team == "Crystal Palace" ~ "Crystal Palace",
+                                    Team == "Everton" ~ "Everton",
+                                    Team == "Fulham" ~ "Fulham",
+                                    Team == "Ipswich" ~ "Ipswich Town",
+                                    Team == "Leicester" ~ "Leicester City",
+                                    Team == "Liverpool" ~ "Liverpool",
+                                    Team == "Man City" ~ "Manchester City",
+                                    Team == "Man Utd" ~ "Manchester United",
+                                    Team == "Newcastle" ~ "Newcastle United",
+                                    Team == "Nott'm Forest" ~ "Nottingham Forest",
+                                    Team == "Southampton" ~ "Southampton",
+                                    Team == "Spurs" ~ "Tottenham Hotspur",
+                                    Team == "West Ham" ~ "West Ham United",
+                                    Team == "Wolves" ~ "Wolverhampton Wanderers"
+))
 
 
-#---------- Creating Player Info Table ----------
-`Player Info` <- data.frame(fpl_get_player_all())
-`Team Info` <- data.frame(fpl_get_teams())
-`Team Info` <- subset(`Team Info`, select = c(name, id))
-`Player Info` <- inner_join(`Player Info`, `Team Info`, join_by(team == id))
+#---------- Fixtures (df) ----------
 
-`Player Info` <- subset(`Player Info`, select = c(id, first_name, second_name, name, element_type, now_cost, total_points, bonus, selected_by_percent, 
-                                                  goals_scored, assists, minutes, clean_sheets, goals_conceded, own_goals,
-                                                  penalties_saved, penalties_missed, yellow_cards, red_cards, saves, starts, expected_goals, expected_assists,
-                                                  expected_goal_involvements, expected_goals_conceded, corners_and_indirect_freekicks_order, direct_freekicks_order,
-                                                  penalties_order, form))
+# A GET call to the FPL API
+res = VERB("GET", url = "https://fantasy.premierleague.com/api/fixtures/")
 
-`Player Info` <- `Player Info` %>% rename (`First Name` = first_name, 
-                                           `Player ID` = id,
-                                           `Second Name` = second_name, 
-                                           Team = name, 
-                                           Position = element_type, 
-                                           `Current Cost` = now_cost, 
-                                           `Total Points` = total_points, 
-                                           `Bonus Points` = bonus, 
-                                           `Selected %` = selected_by_percent, 
-                                           `Goals Scored` = goals_scored, 
-                                           Assists = assists,
-                                           Minutes = minutes, 
-                                           `Clean Sheets` = clean_sheets, 
-                                           `Goals Conceded` = goals_conceded, 
-                                           `Own Goals` = own_goals,
-                                           `Penalties Saveed` = penalties_saved, 
-                                           `Penalties Missed` = penalties_missed, 
-                                           `Yellow Cards` = yellow_cards, 
-                                           `Red Cards` = red_cards, 
-                                           Saves = saves, 
-                                           Starts = starts, 
-                                           xG = expected_goals, 
-                                           xA = expected_assists,
-                                           `xG Involvements` = expected_goal_involvements, 
-                                           `xG Conceded` = expected_goals_conceded, 
-                                           `Corners and Indirect Freekicks Order` = corners_and_indirect_freekicks_order, 
-                                           `Direct Freekicks Order` = direct_freekicks_order,
-                                           `Penalties Order` = penalties_order, 
-                                           Form = form
-                                           
-)
+# converts the response of the API call into text
+res2 <- content(res, "text", encoding = "UTF-8")
 
-rm(`Team Info`)
+# Converts the text response from JSON
+item <- fromJSON(res2)
 
-# Replace numerical values with textual descriptions
-`Player Info`$Position[`Player Info`$Position == 1] <- "Goalkeeper"
-`Player Info`$Position[`Player Info`$Position == 2] <- "Defender"
-`Player Info`$Position[`Player Info`$Position == 3] <- "Midfielder"
-`Player Info`$Position[`Player Info`$Position == 4] <- "Forward"
+# Creating a data frame with the parsed JSON data
+Fixtures <- data.frame(item)
 
+# Removing objects from environment
+rm(res, res2, item)
 
-#---------- Downloading Player Data ---------
-# Downloading data for all players
-IDs <- data.frame(`id` = fpl_get_player_all()[["id"]])
+# Joining tables so that instead of TEAM ID's we have the actual team names
+Fixtures <- left_join(Fixtures,Teams, join_by(team_a == `Team ID`))
 
-# Only keeping 2 top IDs from table
-#IDs <- head(IDs, 2)
+Fixtures <- Fixtures %>% rename(`Away Team` = Team)
 
-# Creating empty data frames to then fill in loop 
-`Player Current Season Stats` <- data.frame()
-`Player Historic Season Stats` <- data.frame()
+Fixtures <- left_join(Fixtures,Teams, join_by(team_h == `Team ID`))
 
-# Creating progress bar
-pb_1 <- progress_bar$new( total = nrow(IDs))
+Fixtures <- Fixtures %>% rename(`Home Team` = Team)
 
-# Creating loop
-for (id in IDs$id) {
-  
-  id <- IDs$id[id]
-  
-  # Downloading player detailed table
-  player_detailed <- fpl_get_player_detailed(player_id = id)
-  
-  # Extracting History table
-  player_detailed <- player_detailed$history %>% as.data.frame()
-
-  if (nrow(player_detailed) > 0) {
-  
-  # Creates new column with player ID
-  player_detailed[,"Player ID"] <- id
-  
-  # Union new rows onto table
-  `Player Current Season Stats` <- rbind(`Player Current Season Stats`, player_detailed)
-  
-  # Update progress bar
-  pb_1$tick()
-  }
-}
-
-rm(pb_1, player_detailed)
-
-# Creating progress bar
-pb_2 <- progress_bar$new( total = nrow(IDs))
-
-# Creating loop
-for (id in IDs$id) {
-  
-  # Downloading player detail table
-  player_detailed <- fpl_get_player_detailed(player_id = id)
-  
-  # Extracting history table
-  player_history_past <- player_detailed$history_past %>% as.data.frame()
-  
-  # if no data then skip adding player id in column
-  if (nrow(player_history_past) > 0) {
-    
-      player_history_past[, "Player ID"] <- id
-      
-      `Player Historic Season Stats` <- rbind(`Player Historic Season Stats`, player_history_past)
-  }
-  
-  # Updating progress bar
-  pb_2$tick()
-}
-
-rm(pb_2, player_detailed, player_history_past,id,IDs)
-
-
-df <- left_join(`Player Current Season Stats`, `Player Info`, join_by(`Player ID` == `Player ID`))
-df_1 <- left_join(df, Fixtures, join_by( fixture == `Match ID`))
-
-`Player Current Season Stats` <- subset(df_1, select = c(total_points, was_home, minutes, goals_scored,
-                                                         assists, clean_sheets, goals_conceded, own_goals, penalties_saved, penalties_missed,
-                                                         yellow_cards, red_cards, saves, bonus, bps, influence, creativity, threat, ict_index, 
-                                                         starts, expected_goals, expected_assists, expected_goal_involvements, expected_goals_conceded, 
-                                                         transfers_in, transfers_out, `Player ID`, xG, xA, Matchday, Date, `Away Team`, `Home Team`, 
-                                                         `Away Team Strength`, `Home Team Strength`, `Away Team Score`, `Home Team Score`)
-)
-
-rm(df, df_1)
-
-# Only keeping need columns for Player History table
-`Player Historic Season Stats` <- subset(`Player Historic Season Stats`, select = c(`Player ID`, season_name, start_cost, end_cost, starts, minutes, total_points, bonus, 
-                                                        expected_goals, goals_scored, expected_assists, assists, yellow_cards, red_cards, 
-                                                        penalties_missed, clean_sheets, goals_conceded, own_goals, penalties_saved,saves, 
-                                                        expected_goal_involvements, expected_goals_conceded))
+# Keeping only relevent fields
+Fixtures <- subset(Fixtures, select = c(id, event,finished, kickoff_time,`Home Team` , `Away Team`, team_h_score, team_a_score, team_h_difficulty, team_a_difficulty))
 
 # Renaming fields
-`Player Historic Season Stats` <- `Player Historic Season Stats` %>% rename (Season = season_name, 
-                                                 `Start Cost` = start_cost, 
-                                                 `End Cost` = end_cost, 
-                                                 `Total Points` = total_points, 
-                                                 Minutes = minutes, 
-                                                 `Goals Scored` = goals_scored, 
-                                                 Assists = assists, 
-                                                 `Clean Sheets` = clean_sheets, 
-                                                 `Goals Conceded` = goals_conceded, 
-                                                 `Own Goals` = own_goals, 
-                                                 `Penalties Saved` = penalties_saved, 
-                                                 `Penalties Missed` = penalties_missed, 
-                                                 `Yellow Cards` = yellow_cards, 
-                                                 `Red Cards` = red_cards, 
-                                                 Saves = saves, 
-                                                 `Bonus Points` = bonus, 
-                                                 Starts = starts, 
-                                                 xG = expected_goals, 
-                                                 xA = expected_assists,
-                                                 `XG Involvements` = expected_goal_involvements, 
-                                                 `XG Conceded` = expected_goals_conceded)
+Fixtures <- Fixtures %>% rename (Matchday = event,
+                                 Finished = finished,
+                                 `Match ID` = id,
+                                 `Kick-off Time` = kickoff_time,
+                                 `Away team Score` = team_a_score,
+                                 `Home Team Score` = team_h_score,
+                                 `Difficulty For Home Team` = team_h_difficulty,
+                                 `Difficulty For Away Team` = team_a_difficulty)
 
+# Extracting only the date from the Kick-off Time field
+Fixtures$`Kick-off Time` = substr(Fixtures$`Kick-off Time`,1,10)
 
-#--------- Downloading Premier League Table ----------
-
+#---------- Standings (df) ---------
+# Webscraping the data from the URL provided
 html <- read_html("https://www.bbc.co.uk/sport/football/premier-league/table")
 
-df_standings <- data.frame(
+# Creating a data frame from the data web scraped. In this case the html element is a table.
+Standings <- data.frame(
   html %>% 
     html_element("table") %>% 
     html_table()
 )
 
-Standings <- subset(df_standings, select = c(Position, Team, Played, Won, Drawn, Lost, Goals.For, Goals.Against, Goal.Difference, Points))
+# Removing obejects from environment
+rm(html)
 
+# Joining tables based on team names
+Standings <- left_join(Standings, Teams, join_by( Team == Team))
+
+# Keeping only relevent fields
+Standings <- subset(Standings, select = c(Position, Team, Abbreviation, `Team Strength`, Played, Won, Drawn, Lost, Goals.For, Goals.Against, Goal.Difference, Points))
+
+# Renaming Columns
 Standings <- Standings %>% rename(`Goals For` = Goals.For,
                                   `Goals Against` = Goals.Against,
-                                  `Goal Difference` = Goal.Difference)
+                                  `Goal Difference` = Goal.Difference
+                                  )
 
-rm(df_standings, html)
+rm(Teams)
 
+#---------- Player_Info (df) ----------
 
-#---------- Writing to CSV ----------
-# Setting folder to save into
+# A GET call to the FPL API
+res = VERB("GET", url = "https://fantasy.premierleague.com/api/bootstrap-static/")
 
-# Writing data frames to csv
-write.csv(Standings, "Standings.csv", row.names =  FALSE)
-write.csv(Fixtures, "Fixtures.csv", row.names = FALSE)
-write.csv(`Player Historic Season Stats`, "Player_Historic_Season_Stats.csv", row.names = FALSE)
-write.csv(`Player Current Season Stats`, "Player_Current_Season_Stats.csv", row.names = FALSE)
-write.csv(`Player Info`, "Player_Info.csv", row.names = FALSE)
+# converts the response of the API call into text
+res2 <- content(res, "text", encoding = "UTF-8")
 
-#---------- END OF SCRIPT ----------
+# Converts the text response from JSON
+item <- fromJSON(res2)
+
+# Creating a data frame with the parsed JSON data
+Player_Info <- data.frame(item$elements)
+
+# Removing objects from the environment
+rm(res, res2, item)
+
+# Keeping only relevent fields
+Player_Info <- subset(Player_Info, select = c(id, web_name, element_type, team,  now_cost, total_points, form, photo, 
+                                                  chance_of_playing_next_round,chance_of_playing_this_round, dreamteam_count, in_dreamteam, news, news_added, 
+                                                  selected_by_percent,transfers_in, transfers_in_event, transfers_out, transfers_out_event, minutes,
+                                                  goals_scored, assists, clean_sheets, goals_conceded, own_goals, penalties_saved, penalties_missed, yellow_cards,
+                                                  red_cards, saves, bonus, starts, expected_goals, expected_assists, expected_goal_involvements, expected_goals_conceded,
+                                                  corners_and_indirect_freekicks_order, direct_freekicks_order, penalties_order)
+                                                  )
+
+# Renaming fields
+Player_Info <- Player_Info %>% rename(`Player ID` = id, Name = web_name, Position = element_type, Team = team, `Current Cost` = now_cost, `Total Points` = total_points,
+                                          Form = form, Photo = photo, `Chance of playing next round` = chance_of_playing_next_round, 
+                                          `Chance of playing this round` = chance_of_playing_this_round, `Dreamteam Count` = dreamteam_count,
+                                          `In Dreamteam` = in_dreamteam, News = news, `News Added` = news_added, `Selected By Percent` = selected_by_percent, 
+                                          `Total Transfers In` = transfers_in, `Gameweek transfers in` = transfers_in_event, `Total Transfers Out` = transfers_out,
+                                          `Gameweek transfers out` = transfers_out_event, `Total minutes played` = minutes, `Goals Scored`= goals_scored,
+                                          Assists = assists, `Clean Sheets` = clean_sheets, `Goals Conceded` = goals_conceded, `Own Goals` = own_goals,
+                                          `Penalties Saved` = penalties_saved, `Penalties Missed` = penalties_missed, `Yellow Cards` = yellow_cards,
+                                          `Red Cards` = red_cards, Saves = saves, `Total bonus points` = bonus, xG = expected_goals, xAssists = expected_assists,
+                                          `xG Involvements` = expected_goal_involvements, `xG Conceded` = expected_goals_conceded, 
+                                          `Corners & Indirect freekicks order` = corners_and_indirect_freekicks_order, `Direct freekicks order` = direct_freekicks_order,
+                                          `Penalties Order` = penalties_order)
+
+#---------- Player_Gameweek_Stats (df) ----------
+
+# Creating a data frame only containing completed matchday IDs
+IDs <- subset(Player_Info, select = 'Player ID')
+IDs <- IDs %>% rename(id = `Player ID`)
+
+# Creating an empty data frames
+Player_Gameweeks_data_frames <- list()
+
+pb_1 <- progress_bar$new(total = nrow(IDs))
+
+for (id in IDs$id) {
+  
+  # Creates a url that changes the value id based on the loop
+  url <- paste0("https://fantasy.premierleague.com/api/element-summary/",id,"//")
+  
+  # A GET call to the FPL API using the url constructed
+  res = VERB("GET", url = url)
+  
+  # converts the response of the API call into text
+  res2 <- content(res, "text", encoding = "UTF-8")
+
+  # Converts the text response from JSON
+  item <- fromJSON(res2)
+  
+  # Creating a data frame with the parsed JSON data
+  df <- data.frame(item$history)
+  
+  # creating a new column
+  df[,"Player_ID"] <- id
+  
+  # Creates a new data frame with the gameweek data and labels it accordingly
+  Player_Gameweeks_data_frames[[id]] <- df
+  
+  # Combining all the individual data frames created into one
+  `Player_Gameweek_Stats` <- bind_rows(Player_Gameweeks_data_frames)
+  
+  pb_1$tick()
+}
+
+# Removing objects from the environment
+rm(df,IDs,item,pb_1,Player_Gameweeks_data_frames,res,id,res2,url)
+
+# Renaming fields
+Player_Gameweek_Stats <- Player_Gameweek_Stats %>% rename(Fixture = fixture, `Opponent Team` = opponent_team, `Total Points` = total_points,
+                                                          Gameweek = round, Minutes = minutes, `Goals Scored` = goals_scored, Assists = assists,
+                                                          `Clean Sheets` = clean_sheets, `Goals Conceded` = goals_conceded, `Own goals` = own_goals,
+                                                          `Penalties Saved` = penalties_saved,`Penalties Missed` = penalties_missed, `Yellow Cards` = yellow_cards,
+                                                          `Red Cards` = red_cards, Saves = saves, Bonus = bonus, Influence = influence, Creativity = creativity,
+                                                          Threat = threat, `ICT Threat` = ict_index, Starts = starts, xG = expected_goals, xA = expected_assists,
+                                                          `xG Involvements` = expected_goal_involvements, `xG Conceded` = expected_goals_conceded, Value = value,
+                                                          `Transfer Balance` = transfers_balance, Selected = selected, `Transfers In` = transfers_in,
+                                                          `Transfers Out` = transfers_out, `Player ID` = Player_ID)
+
+Player_Gameweek_Stats <- subset(Player_Gameweek_Stats, select = -c(was_home, team_h_score, team_a_score))
+
+#---------- Player_Historic_Stats (df) ----------
+
+# Creating a data frame only containing completed matchday IDs
+IDs <- subset(Player_Info, select = 'Player ID')
+IDs <- IDs %>% rename(id = `Player ID`)
+
+# Creating an empty data frames
+Player_Gameweeks_data_frames <- list()
+
+for (id in IDs$id) {
+  
+  # Creates a url that changes the value id based on the loop
+  url <- paste0("https://fantasy.premierleague.com/api/element-summary/",id,"//")
+  
+  # A GET call to the FPL API using the url constructed
+  res = VERB("GET", url = url)
+  
+  # converts the response of the API call into text
+  res2 <- content(res, "text", encoding = "UTF-8")
+  
+  # Converts the text response from JSON
+  item <- fromJSON(res2)
+  
+  # Creating a data frame with the parsed JSON data
+  df <- data.frame(item$history_past)
+  
+  # Error handling, Only proceeds if there is data for the player id
+  if (nrow(df) > 0) {
+  
+  # creating a new column
+  df[,"Player_ID"] <- id
+  
+  # Creates a new data frame with the game week data and labels it accordingly
+  Player_Gameweeks_data_frames[[id]] <- df
+  
+  # Combining all the individual data frames created into one
+  `Player_Historic_Stats` <- bind_rows(Player_Gameweeks_data_frames)
+  
+  }
+}
+
+# Removing objects from the environment
+rm(df,IDs,item,Player_Gameweeks_data_frames,res,id,res2,url)
+
+# Renaming fields
+Player_Historic_Stats <- Player_Historic_Stats %>% rename(Season = season_name, `Start Cost` = start_cost, `End Cost` = end_cost, `Total Points` = total_points,
+                                      Minutes = minutes, `Goals Scored` = goals_scored, Assists = assists, `Clean Sheets` = clean_sheets, 
+                                      `Goals Conceded` = goals_conceded, `Own Goals` = own_goals, `Penalties Saved` = penalties_saved, `Yellow cards` = yellow_cards,
+                                      `Red Cards` = red_cards, Saves = saves, `Bonus Points` = bonus, Influence = influence, Creativity = creativity, Threat = threat,
+                                      `ICT Index` = ict_index, Starts = starts, xG = expected_goals, xA = expected_assists, `xG Involvements` = expected_goal_involvements,
+                                      `xG Conceded` = expected_goals_conceded, `Player ID` = Player_ID)
+
+Player_Historic_Stats <- subset(Player_Historic_Stats, select = -c(element_code))
+
+# Add function call
+print( Sys.time() - start )
