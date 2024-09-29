@@ -49,13 +49,13 @@
 43,5,TRUE,2024-09-21,"Man Utd","Crystal Palace",3,3,0,0
 42,5,TRUE,2024-09-22,"Nott'm Forest","Brighton",3,3,2,2
 47,5,TRUE,2024-09-22,"Arsenal","Man City",5,5,2,2
-58,6,FALSE,2024-09-28,"Man City","Newcastle",5,4,NA,NA
-51,6,FALSE,2024-09-28,"Leicester","Arsenal",2,5,NA,NA
-53,6,FALSE,2024-09-28,"West Ham","Brentford",3,3,NA,NA
-54,6,FALSE,2024-09-28,"Brighton","Chelsea",3,3,NA,NA
-55,6,FALSE,2024-09-28,"Crystal Palace","Everton",3,3,NA,NA
-59,6,FALSE,2024-09-28,"Fulham","Nott'm Forest",3,3,NA,NA
-60,6,FALSE,2024-09-28,"Liverpool","Wolves",4,3,NA,NA
+58,6,TRUE,2024-09-28,"Man City","Newcastle",5,4,1,1
+51,6,TRUE,2024-09-28,"Leicester","Arsenal",2,5,2,4
+53,6,TRUE,2024-09-28,"West Ham","Brentford",3,3,1,1
+54,6,TRUE,2024-09-28,"Brighton","Chelsea",3,3,2,4
+55,6,TRUE,2024-09-28,"Crystal Palace","Everton",3,3,1,2
+59,6,TRUE,2024-09-28,"Fulham","Nott'm Forest",3,3,1,0
+60,6,TRUE,2024-09-28,"Liverpool","Wolves",4,3,2,1
 56,6,FALSE,2024-09-29,"Aston Villa","Ipswich",3,2,NA,NA
 57,6,FALSE,2024-09-29,"Spurs","Man Utd",3,3,NA,NA
 52,6,FALSE,2024-09-30,"Southampton","Bournemouth",2,3,NA,NA
