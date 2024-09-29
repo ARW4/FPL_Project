@@ -19,8 +19,8 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add Standings.csv
-          git add Player_Current_Season_Stats.csv
-          git add Player_Historic_Season_Stats.csv
+          git add Player_Gameweek_Stats.csv
+          git add Player_Historic_Stats.csv
           git add Player_Info.csv
           git add Fixtures.csv
           git commit -m 'Data updated' || echo "No changes to commit"
