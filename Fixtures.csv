@@ -66,9 +66,9 @@
 69,7,TRUE,"2024-10-05","Manchester City","Fulham",3,2,2,5
 70,7,TRUE,"2024-10-05","West Ham United","Ipswich Town",4,1,2,2
 67,7,TRUE,"2024-10-05","Everton","Newcastle United",0,0,3,3
-62,7,FALSE,"2024-10-06","Aston Villa","Manchester United",NA,NA,3,4
-65,7,FALSE,"2024-10-06","Chelsea","Nottingham Forest",NA,NA,2,4
-64,7,FALSE,"2024-10-06","Brighton & Hove Albion","Tottenham Hotspur",NA,NA,3,2
+62,7,TRUE,"2024-10-06","Aston Villa","Manchester United",0,0,3,4
+65,7,TRUE,"2024-10-06","Chelsea","Nottingham Forest",1,1,2,4
+64,7,TRUE,"2024-10-06","Brighton & Hove Albion","Tottenham Hotspur",3,2,3,2
 79,8,FALSE,"2024-10-19","Tottenham Hotspur","West Ham United",NA,NA,2,4
 72,8,FALSE,"2024-10-19","Fulham","Aston Villa",NA,NA,3,3
 73,8,FALSE,"2024-10-19","Ipswich Town","Everton",NA,NA,2,2
