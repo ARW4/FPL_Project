@@ -78,7 +78,7 @@
 71,8,TRUE,"2024-10-19","AFC Bournemouth","Arsenal",2,0,5,3
 80,8,TRUE,"2024-10-20","Wolverhampton Wanderers","Manchester City",1,2,5,2
 74,8,TRUE,"2024-10-20","Liverpool","Chelsea",2,1,4,5
-77,8,FALSE,"2024-10-21","Nottingham Forest","Crystal Palace",NA,NA,2,2
+77,8,TRUE,"2024-10-21","Nottingham Forest","Crystal Palace",1,0,2,2
 88,9,FALSE,"2024-10-25","Leicester City","Nottingham Forest",NA,NA,3,2
 82,9,FALSE,"2024-10-26","Aston Villa","AFC Bournemouth",NA,NA,2,4
 83,9,FALSE,"2024-10-26","Brentford","Ipswich Town",NA,NA,2,3
@@ -162,12 +162,12 @@
 161,17,FALSE,"2024-12-21","Aston Villa","Manchester City",NA,NA,5,4
 162,17,FALSE,"2024-12-21","Brentford","Nottingham Forest",NA,NA,3,3
 166,17,FALSE,"2024-12-21","Ipswich Town","Newcastle United",NA,NA,3,2
-167,17,FALSE,"2024-12-21","Leicester City","Wolverhampton Wanderers",NA,NA,2,2
 168,17,FALSE,"2024-12-21","Manchester United","AFC Bournemouth",NA,NA,2,3
 170,17,FALSE,"2024-12-21","West Ham United","Brighton & Hove Albion",NA,NA,2,2
 163,17,FALSE,"2024-12-21","Crystal Palace","Arsenal",NA,NA,5,2
 164,17,FALSE,"2024-12-22","Everton","Chelsea",NA,NA,4,2
 165,17,FALSE,"2024-12-22","Fulham","Southampton",NA,NA,2,3
+167,17,FALSE,"2024-12-22","Leicester City","Wolverhampton Wanderers",NA,NA,2,2
 169,17,FALSE,"2024-12-22","Tottenham Hotspur","Liverpool",NA,NA,5,4
 176,18,FALSE,"2024-12-26","Manchester City","Everton",NA,NA,2,5
 172,18,FALSE,"2024-12-26","AFC Bournemouth","Crystal Palace",NA,NA,2,3
