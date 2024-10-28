@@ -38,6 +38,8 @@ The below table shows the packages that were used for this project and a breif n
 ### Example of API Call
 ### Example of looping through API Call
 ### Webscraping example
+Using the rvest package made it very easy to webscrape the premier league standings data. 
+The first line of code is simply creating an object called html that includes the URL with the data. The next code creates a data frame title "Standings" from the table of data within the html retrieved from the download.
 ````r
 # Webscraping the data from the URL provided
 html <- read_html("https://www.bbc.co.uk/sport/football/premier-league/table")
