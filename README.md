@@ -13,9 +13,10 @@ My main source of information regarding the API was [https://www.game-change.co.
 Using the link a list of endpoints can be found with the data that is included in each endpoint. For the purpose of this project I did not use any endpoints that gave data regarding specific leagues or users teams.
 
 The base URL is bootstrap-static/ and using the endpoints in the table returns you the fields stated in the table.
-| End Point Used | Fields |
+| End Point Used | Fields | Notes |
 | ---- | ---- |
-| bootsrap-static/|Code<br>draw<br> |
+| bootsrap-static/|code<br>draw<br>form<br>id<br>loss<br>name<br>played<br>points<br>position<br>short_name<br>strength<br>team_division<br>unavailable<br>win<br>strength_overall_home<br>strength_overall_away<br>strength_attack_home<br>strength_attack_away<br>strength_defence_away<br>strength_defence_away<br>pulse_id|Many of the fields in this endpoint do not update. Hence the need for webscrapping the premier league standings table|
+|fixtures/|code<br>event<br>finished<br>finished_provisional<br>id<br>kickoff_time<br>minutes<br>provisional_start_time<br>started<br>team_a<br>team_a_score<br>team_h<br>team_h_score<br>stats<br>team_h_difficulty<br>team_a_difficulty<br>pulse_id|
 |||
 
 ## R Script ®️
