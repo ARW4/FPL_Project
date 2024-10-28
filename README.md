@@ -25,8 +25,8 @@ The API that returns data regarding the current league standings was not success
 After looking through a few options the website that gave the data in the kindest format was the bbc webiste (https://www.bbc.co.uk/sport/football/premier-league/table)
 
 ## R Script ®️
-### R Environment
 ### R Packages
+The below table shows the packages that were used for this project and a breif note on the purpose and use that the packages had.
 | R Package | Useage |
 |---- |---- | 
 | conflicted | Used to resolve conflicts from functions between packages |
@@ -38,6 +38,17 @@ After looking through a few options the website that gave the data in the kindes
 ### Example of API Call
 ### Example of looping through API Call
 ### Webscraping example
+````r
+# Webscraping the data from the URL provided
+html <- read_html("https://www.bbc.co.uk/sport/football/premier-league/table")
+
+# Creating a data frame from the data web scraped. In this case the html element is a table.
+Standings <- data.frame(
+  html %>% 
+    html_element("table") %>% 
+    html_table()
+)
+````
 
 ## Github actions 🎬
 In order to have the r script run automatically on a schedule I decided to use Github Actions. A YAML file is needed to create workflows. 
