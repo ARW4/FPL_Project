@@ -45,11 +45,11 @@ res = VERB("GET", url = "https://fantasy.premierleague.com/api/fixtures/")
 ````r
 res2 <- content(res, "text", encoding = "UTF-8")
 ````
-Converts the response from JSON
+3 - Converts the response from JSON
 ````r
 item <- fromJSON(res2)
 ````
-Creates a data frame with the parsed JSON Data
+4 - Creates a data frame with the parsed JSON Data
 ````r
 Fixtures <- data.frame(item)
 ````
