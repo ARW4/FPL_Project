@@ -7,6 +7,7 @@
 Diagram of data pipeline
 
 ## API & Webscrapping 🛜
+### API
 It was chalolanging to find the documentation for the FPL API however i was able to find information through others that have already connect to it. 
 My main source of information regarding the API was [https://www.game-change.co.uk/2023/02/10/a-complete-guide-to-the-fantasy-premier-league-fpl-api/#google_vignette.](https://www.oliverlooney.com/blogs/FPL-APIs-Explained)
 
@@ -19,13 +20,17 @@ The base URL is bootstrap-static/ and using the endpoints in the table returns y
 |bootstrap-static/|used to get an overview of teams and player info.|
 |fixtures/|returns all the data regarding all completed and future matches.|
 
+### Webscraping
+The API that returns data regarding the current league standings was not successfully giving updated data. Given this situation I decided to retrieve the premier league standings table through webscraping in R.
+After looking through a few options the website that gave the data in the kindest format was the bbc webiste (https://www.bbc.co.uk/sport/football/premier-league/table)
+
 ## R Script ®️
 
 ## Github actions 🎬
-In order to have the r script run automatically on a schedule I decided to use Github Actions. A YAML file is needed to create workflows.
+In order to have the r script run automatically on a schedule I decided to use Github Actions. A YAML file is needed to create workflows. 
 
 Firstly a virtual machine is started and installs R and all the packages needed for the R Script to run.
-specifying "runs-on: ubunto-latest" means that the virtual machine is running linux. Linus is the cheapest opperating system to run actions on and is more than adequate for the purpose of running the r script.
+specifying "runs-on: ubunto-latest" means that the virtual machine is running linux. Linus is the cheapest opperating system to run actions on and is more than adequate for the purpose of running the r script. the YAML code then also states the schedule on which the workflow will run. The worfklow hence runs at 5:30 am everyday.
 ````yaml
 name: schedule
 
