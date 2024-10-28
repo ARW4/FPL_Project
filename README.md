@@ -55,7 +55,7 @@ Fixtures <- data.frame(item)
 ````
 
 ### Example of looping through API Call
-The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using their player id. In order to download the data for all players possible it was neccessary to create a loop.
+The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using their player id. In order to download the data for all players possible it was neccessary to create a loop.<br>
 1 - Using a pre-existing data frame that contained all the player IDs to create a new data frame
 ````r
 # Creating a data frame only containing completed matchday IDs
