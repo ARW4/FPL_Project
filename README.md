@@ -37,6 +37,52 @@ The below table shows the packages that were used for this project and a breif n
 | rvest | Used for webscraping data |
 ### Example of API Call
 ### Example of looping through API Call
+The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using their player id. In order to download the data for all players possible it was neccessary to create a loop.
+1 - Using a pre-existing data frame that contained all the player IDs to create a new data frame
+````r
+# Creating a data frame only containing completed matchday IDs
+IDs <- subset(Player_Info, select = 'Player ID')
+IDs <- IDs %>% rename(id = `Player ID`)
+````
+2 - Creating an empty data frame that we will append all the nex data frames created for each player
+````r
+# Creating an empty data frames
+Player_Gameweeks_data_frames <- list()
+````
+3 - Constructing the looping api call, during the loop I found that calling historic data for all players was not possible as there were some players that where new to the league as of the current season. These players would return no data and cause the loop to fail 
+````R
+for (id in IDs$id) {
+  
+  # Creates a url that changes the value id based on the loop
+  url <- paste0("https://fantasy.premierleague.com/api/element-summary/",id,"//")
+  
+  # A GET call to the FPL API using the url constructed
+  res = VERB("GET", url = url)
+  
+  # converts the response of the API call into text
+  res2 <- content(res, "text", encoding = "UTF-8")
+  
+  # Converts the text response from JSON
+  item <- fromJSON(res2)
+  
+  # Creating a data frame with the parsed JSON data
+  df <- data.frame(item$history_past)
+  
+  # Error handling, Only proceeds if there is data for the player id
+  if (nrow(df) > 0) {
+    
+    # creating a new column
+    df[,"Player_ID"] <- id
+    
+    # Creates a new data frame with the game week data and labels it accordingly
+    Player_Gameweeks_data_frames[[id]] <- df
+    
+    # Combining all the individual data frames created into one
+    `Player_Historic_Stats` <- bind_rows(Player_Gameweeks_data_frames)
+    
+  }
+}
+````
 ### Webscraping example
 Using the rvest package made it very easy to webscrape the premier league standings data. 
 The first line of code is simply creating an object called html that includes the URL with the data. The next code creates a data frame title "Standings" from the table of data within the html retrieved from the download.
