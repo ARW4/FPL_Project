@@ -15,7 +15,7 @@ Using the link a list of endpoints can be found with the data that is included i
 The base URL is bootstrap-static/ and using the endpoints in the table returns you the fields stated in the table.
 | End Point Used | Fields |
 | ---- | ---- |
-| bootsrap-static/| |
+| bootsrap-static/|Code<br>draw<br> |
 |||
 
 ## R Script ®️
