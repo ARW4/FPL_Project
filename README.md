@@ -14,9 +14,12 @@ Using the link a list of endpoints can be found with the data that is included i
 
 ## R Script ®️
 
-## GIthub actions 🎬
+## Github actions 🎬
+In order to have the r script run automatically on a schedule I decided to use Github Actions. A YAML file is needed to create workflows.
 
-````yml
+Firstly a virtual machine is started and installs R and all the packages needed for the R Script to run.
+specifying "runs-on: ubunto-latest" means that the virtual machine is running linux. Linus is the cheapest opperating system to run actions on and is more than adequate for the purpose of running the r script.
+````yaml
 name: schedule
 
 on:
@@ -30,10 +33,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: r-lib/actions/setup-r@v2
       - uses: r-lib/actions/setup-renv@v2
-      
+````
+Following on from loading the virtual machine up is the need to run R script saved in the repository
+````yaml
       - name: FPL Code
         run : Rscript -e 'source("FPL_API.R")'
-
+````
+The r script creates csv files that need to be saved back to the repository before the virtual machine uninstalls and closes. The YAML code only updates the csv if there is an update from the file already saved in the repository
+````yaml
       - name: Commit results
         run: |
           git config --local user.email "actions@github.com"
