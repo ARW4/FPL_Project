@@ -37,19 +37,23 @@ The below table shows the packages that were used for this project and a breif n
 | rvest | Used for webscraping data |
 ### Example of API Call
 To extract data from the endpoints the foollwing structure of r code was used.
-1 - Using the endpoint to make a "GET" API call. 
+
+Using the endpoint to make a "GET" API call. 
 ````r
 res = VERB("GET", url = "https://fantasy.premierleague.com/api/fixtures/")
 ````
-2 - Converts the reponse of the API call into json
+
+Converts the reponse of the API call into json
 ````r
 res2 <- content(res, "text", encoding = "UTF-8")
 ````
-3 - Converts the response from JSON
+
+Converts the response from JSON
 ````r
 item <- fromJSON(res2)
 ````
-4 - Creates a data frame with the parsed JSON Data
+
+Creates a data frame with the parsed JSON Data
 ````r
 Fixtures <- data.frame(item)
 ````
