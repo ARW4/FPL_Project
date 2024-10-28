@@ -57,6 +57,7 @@ Creates a data frame with the parsed JSON Data
 ````r
 Fixtures <- data.frame(item)
 ````
+This structure of making the API Call and converting the downloaded data into a data frame is used for all calls made in the project.
 
 ### Example of looping through API Call
 The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using their player id. In order to download the data for all players possible it was neccessary to create a loop.<br>
