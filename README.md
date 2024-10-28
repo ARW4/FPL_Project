@@ -35,7 +35,7 @@ The below table shows the packages that were used for this project and a breif n
 | tidyverse | collection of packages that help with transforming data |
 | progress | Creates a progress bar, used when looping through API calls |
 | rvest | Used for webscraping data |
-### Example of API Call
+### API call
 To extract data from the endpoints the foollwing structure of r code was used.
 
 Using the endpoint to make a "GET" API call. 
@@ -59,7 +59,7 @@ Fixtures <- data.frame(item)
 ````
 This structure of making the API Call and converting the downloaded data into a data frame is used for all calls made in the project.
 
-### Example of looping through API Call
+### Looping API call
 The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using their player id. In order to download the data for all players possible it was neccessary to create a loop.<br>
 1 - Using a pre-existing data frame that contained all the player IDs to create a new data frame
 ````r
@@ -108,7 +108,7 @@ for (id in IDs$id) {
   }
 }
 ````
-### Webscraping example
+### Webscraping
 Using the rvest package made it very easy to webscrape the premier league standings data. 
 The first line of code is simply creating an object called html that includes the URL with the data. The next code creates a data frame title "Standings" from the table of data within the html retrieved from the download.
 ````r
