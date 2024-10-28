@@ -36,6 +36,24 @@ The below table shows the packages that were used for this project and a breif n
 | progress | Creates a progress bar, used when looping through API calls |
 | rvest | Used for webscraping data |
 ### Example of API Call
+To extract data from the endpoints the foollwing structure of r code was used.
+1 - Using the endpoint to make a "GET" API call. 
+````r
+res = VERB("GET", url = "https://fantasy.premierleague.com/api/fixtures/")
+````
+2 - Converts the reponse of the API call into json
+````r
+res2 <- content(res, "text", encoding = "UTF-8")
+````
+Converts the response from JSON
+````r
+item <- fromJSON(res2)
+````
+Creates a data frame with the parsed JSON Data
+````r
+Fixtures <- data.frame(item)
+````
+
 ### Example of looping through API Call
 The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using their player id. In order to download the data for all players possible it was neccessary to create a loop.
 1 - Using a pre-existing data frame that contained all the player IDs to create a new data frame
@@ -49,7 +67,9 @@ IDs <- IDs %>% rename(id = `Player ID`)
 # Creating an empty data frames
 Player_Gameweeks_data_frames <- list()
 ````
-3 - Constructing the looping api call, during the loop I found that calling historic data for all players was not possible as there were some players that where new to the league as of the current season. These players would return no data and cause the loop to fail. Hence there was the need for error handelling. This can be seen on line 
+3 - Constructing the looping api call, during the loop I found that calling historic data for all players was not possible as there were some players that where new to the league as of the current season. These players would return no data and cause the loop to fail. Hence there was the need for error handelling. This can be seen below with the syntax: if (nrow(df) > 0) 
+This now only appends a data frame if there is more than 0 rows of data, solving the problem.
+Within the loop new data frames are being appended to the empty data frames created in step 1.
 ````r
 for (id in IDs$id) {
   
