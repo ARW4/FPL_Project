@@ -25,8 +25,8 @@ The API that returns data regarding the current league standings was not success
 After looking through a few options the website that gave the data in the kindest format was the bbc webiste (https://www.bbc.co.uk/sport/football/premier-league/table)
 
 ## R Script ®️
-# R Environment
-# R Packages
+### R Environment
+### R Packages
 | R Package | Useage |
 |---- |---- | 
 | conflicted | Used to resolve conflicts from functions between packages |
@@ -35,9 +35,9 @@ After looking through a few options the website that gave the data in the kindes
 | tidyverse | collection of packages that help with transforming data |
 | progress | Creates a progress bar, used when looping through API calls |
 | rvest | Used for webscraping data |
-# Example of API Call
-# Example of looping through API Call
-# Webscraping example
+### Example of API Call
+### Example of looping through API Call
+### Webscraping example
 
 ## Github actions 🎬
 In order to have the r script run automatically on a schedule I decided to use Github Actions. A YAML file is needed to create workflows. 
