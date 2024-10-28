@@ -16,4 +16,35 @@ Using the link a list of endpoints can be found with the data that is included i
 
 ## GIthub actions 🎬
 
+````yml
+name: schedule
+
+on:
+  schedule:
+  - cron : "30 5 * * *"
+
+jobs:
+  import-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-renv@v2
+      
+      - name: FPL Code
+        run : Rscript -e 'source("FPL_API.R")'
+
+      - name: Commit results
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add Standings.csv
+          git add Player_Gameweek_Stats.csv
+          git add Player_Historic_Stats.csv
+          git add Player_Info.csv
+          git add Fixtures.csv
+          git commit -m 'Data updated' || echo "No changes to commit"
+          git push origin || echo "No changes to commit"
+````
+
 ## Tableau Dashboard 📊
