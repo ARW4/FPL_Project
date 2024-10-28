@@ -49,7 +49,7 @@ IDs <- IDs %>% rename(id = `Player ID`)
 # Creating an empty data frames
 Player_Gameweeks_data_frames <- list()
 ````
-3 - Constructing the looping api call, during the loop I found that calling historic data for all players was not possible as there were some players that where new to the league as of the current season. These players would return no data and cause the loop to fail 
+3 - Constructing the looping api call, during the loop I found that calling historic data for all players was not possible as there were some players that where new to the league as of the current season. These players would return no data and cause the loop to fail. Hence there was the need for error handelling. This can be seen on line 
 ````R
 for (id in IDs$id) {
   
