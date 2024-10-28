@@ -125,9 +125,10 @@ Standings <- data.frame(
 
 ## Github actions 🎬
 In order to have the r script run automatically on a schedule I decided to use Github Actions. A YAML file is needed to create workflows. 
-
-Firstly a virtual machine is started and installs R and all the packages needed for the R Script to run.
-specifying "runs-on: ubunto-latest" means that the virtual machine is running linux. Linus is the cheapest opperating system to run actions on and is more than adequate for the purpose of running the r script. the YAML code then also states the schedule on which the workflow will run. The worfklow hence runs at 5:30 am everyday.
+- Firstly a virtual machine is started and installs R and all the packages needed for the R Script to run.
+- Specifying "runs-on: ubunto-latest" means that the virtual machine is running linux. Linus is the cheapest opperating system to run actions on and is more than adequate for the purpose of running the r script.
+- The YAML code then also states the schedule on which the workflow will run. The worfklow hence runs at 5:30 am everyday.
+- "Steps: uses" specifies to set up r using the renv file in the repository
 ````yaml
 name: schedule
 
@@ -164,3 +165,4 @@ The r script creates csv files that need to be saved back to the repository befo
 ````
 
 ## Tableau Dashboard 📊
+The dashboard that I created using the data can be found [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard-Draft/FPL-DataPipeline)
