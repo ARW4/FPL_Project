@@ -15,7 +15,9 @@ Using the link a list of endpoints can be found with the data that is included i
 The base URL is bootstrap-static/ and using the endpoints in the table returns you the fields stated in the table.
 | End Point Used | Notes |
 |---- |---- |
-|a|a|
+|element-summary/"{id}"//|used to retrieve data on players throughout the current and previous season.<br>Data for current season is at the matchday level, whilst data for historic seasons is aggregated to the season level.|
+|bootstrap-static/|used to get an overview of teams and player info.|
+|fixtures/|returns all the data regarding all completed and future matches.|
 
 ## R Script ®️
 
