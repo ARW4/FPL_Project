@@ -105,13 +105,30 @@ Fixtures <- Fixtures %>% rename (Matchday = event,
 # Extracting only the date from the Kick-off Time field
 Fixtures$`Kick-off Time` = substr(Fixtures$`Kick-off Time`,1,10)
 
-# Pivotting the data so that each team has a row for every fixture
+# Pivotting the Fixtures Table so that each row is unique by the combination of Match ID and Team
 Fixtures <- Fixtures %>% 
   pivot_longer(cols = c(`Home Team`, `Away Team`), 
                names_to = "Team_Type", 
-               values_to = "Team") %>%
-  mutate(Team_Type = str_remove(Team_Type, " Team")) %>%
-  rename(`Home or Away` = Team_Type )
+               values_to = "Team")
+
+# Joining the fixtures table to itself so that we can get the oppositon team for each row.
+# There is also renaming of fields and removing columns that happenes after the join
+Fixtures <- inner_join(Fixtures,Fixtures, join_by( `Match ID` == `Match ID`),relationship = "many-to-many") %>%
+  filter(Team.x == Team.y) %>%
+  rename(Opponent = Team.y,
+         Team = Team.x,
+         `Home or Away` = Team_Type.x,
+         Matchday = Matchday.x,
+         Finished = Finished.x,
+         `Kick-off Time` = `Kick-off Time.x`,
+         `Home Team Score` = `Home Team Score.x`,
+         `Away Team Score` = `Away Team Score.x`,
+         `Difficulty For Home Team` = `Difficulty For Home Team.x`,
+         `Difficulty For Away Team` = `Difficulty For Away Team.x`)%>%
+  select(-Matchday.y, -Team_Type.y, -Finished.y, -`Difficulty For Home Team.y`,-`Difficulty For Away Team.y`,-`Home Team Score.y`,-`Away Team Score.y`,-`Kick-off Time.y`)
+
+# Cleaning the column of Home or Away
+Fixtures$`Home or Away` <- str_remove_all(Fixtures$`Home or Away`," Team")
 
 #---------- Standings (df) ---------
 # Webscraping the data from the URL provided
