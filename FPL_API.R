@@ -97,7 +97,7 @@ Fixtures <- Fixtures %>% rename (Matchday = event,
                                  Finished = finished,
                                  `Match ID` = id,
                                  `Kick-off Time` = kickoff_time,
-                                 `Away team Score` = team_a_score,
+                                 `Away Team Score` = team_a_score,
                                  `Home Team Score` = team_h_score,
                                  `Difficulty For Home Team` = team_h_difficulty,
                                  `Difficulty For Away Team` = team_a_difficulty)
@@ -315,7 +315,6 @@ Player_Historic_Stats <- subset(Player_Historic_Stats, select = -c(element_code)
 #--------- Saving to CSV ----------
 
 write.csv(Fixtures, "Fixtures.csv", row.names =  FALSE)
-write.csv(Teams, "Teams.csv", row.names =  FALSE)
 write.csv(Player_Gameweek_Stats, "Player_Gameweek_Stats.csv", row.names =  FALSE)
 write.csv(Player_Historic_Stats, "Player_Historic_Stats.csv", row.names =  FALSE)
 write.csv(Player_Info, "Player_Info.csv", row.names =  FALSE)
