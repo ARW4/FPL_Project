@@ -1,8 +1,7 @@
 name: schedule
 
 on:
- schedule:
-  - cron : "30 5 * * *"
+ workflow_dispatch:
 
 jobs:
   import-data:
@@ -24,5 +23,6 @@ jobs:
           git add Player_Historic_Stats.csv
           git add Player_Info.csv
           git add Fixtures.csv
+          git add Teams.csv
           git commit -m 'Data updated' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
