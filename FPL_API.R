@@ -105,6 +105,14 @@ Fixtures <- Fixtures %>% rename (Matchday = event,
 # Extracting only the date from the Kick-off Time field
 Fixtures$`Kick-off Time` = substr(Fixtures$`Kick-off Time`,1,10)
 
+# Pivotting the data so that each team has a row for every fixture
+Fixtures <- Fixtures %>% 
+  pivot_longer(cols = c(`Home Team`, `Away Team`), 
+               names_to = "Team_Type", 
+               values_to = "Team") %>%
+  mutate(Team_Type = str_remove(Team_Type, " Team")) %>%
+  rename(`Home or Away` = Team_Type )
+
 #---------- Standings (df) ---------
 # Webscraping the data from the URL provided
 html <- read_html("https://www.bbc.co.uk/sport/football/premier-league/table")
