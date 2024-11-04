@@ -324,3 +324,9 @@ Historic_Seasons <- Historic_Seasons %>% rename(Season = season_name, `Start Cos
 # Removing fields
 Historic_Seasons <- subset(Historic_Seasons, select = -c(element_code))
 
+#---------- Creating CSV files ----------
+write.csv(Fixtures, "Fixtures.csv", row.names =  FALSE)
+write.csv(Gameweek, "Gameweek.csv", row.names =  FALSE)
+write.csv(Historic_Seasons, "Historic_Seasons.csv", row.names =  FALSE)
+write.csv(Player, "Player.csv", row.names =  FALSE)
+write.csv(Standings, "Standings.csv", row.names =  FALSE)
