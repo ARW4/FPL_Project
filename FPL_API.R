@@ -180,13 +180,13 @@ Player <- data.frame(item$elements)
 rm(res, res2, item)
 
 # Keeping only relevent fields
-Player <- subset(Player, select = c(id, first_name, second_name, element_type, team,  now_cost, form, photo, 
+Player <- subset(Player, select = c(id, first_name, second_name, element_type, team,  now_cost, form, photo, selected_by_percent,
                                     chance_of_playing_next_round,chance_of_playing_this_round, dreamteam_count, in_dreamteam, news, news_added, 
                                     corners_and_indirect_freekicks_order, direct_freekicks_order, penalties_order)
 )
 
 # Renaming fields
-Player <- Player %>% rename(`Player ID` = id, `First Name` = first_name, `Second Name` = second_name, Position = element_type, `Team ID` = team,
+Player <- Player %>% rename(`Player ID` = id, `First Name` = first_name, `Second Name` = second_name, Position = element_type, `Selected %` = selected_by_percent,`Team ID` = team,
                             `Current Cost` = now_cost, Form = form, Photo = photo, `Chance of playing next round` = chance_of_playing_next_round,
                             `Chance of playing this round` = chance_of_playing_this_round, `Dreamteam Count` = dreamteam_count, `In Dreamteam` = in_dreamteam,
                             News = news, `News Added` = news_added, `Corners & Indirect freekicks order` = corners_and_indirect_freekicks_order,
