@@ -1,7 +1,7 @@
 name: schedule
 
 on:
-Workflow_dispatch:
+  workflow_dispatch
 
 jobs:
   import-data:
