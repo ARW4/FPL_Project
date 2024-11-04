@@ -26,9 +26,6 @@ item <- fromJSON(res2)
 # Creating a data frame with the parsed JSON data
 Teams <- data.frame(item$teams)
 
-# Removing objects from environment
-rm(res, res2, item)
-
 # Selecting which fields to keep
 Teams <- subset(Teams, select = c(id, name, short_name, strength))
 
@@ -61,6 +58,35 @@ Teams <- Teams %>% mutate(Team = case_when(
   Team == "West Ham" ~ "West Ham United",
   Team == "Wolves" ~ "Wolverhampton Wanderers"
 ))
+
+# Removing objects from environment
+rm(item,res,res2)
+
+#---------- Standings (df) ---------
+# Webscraping the data from the URL provided
+html <- read_html("https://www.bbc.co.uk/sport/football/premier-league/table")
+
+# Creating a data frame from the data web scraped. In this case the html element is a table.
+Standings <- data.frame(
+  html %>% 
+    html_element("table") %>% 
+    html_table()
+)
+
+# Removing obejects from environment
+rm(html)
+
+# Joining tables based on team names
+Standings <- left_join(Standings, Teams, join_by( Team == Team))
+
+# Keeping only relevent fields
+Standings <- subset(Standings, select = c(Position, Team, Abbreviation, `Team Strength`, Played, Won, Drawn, Lost, Goals.For, Goals.Against, Goal.Difference, Points, `Team ID`))
+
+# Renaming Columns
+Standings <- Standings %>% rename(`Goals For` = Goals.For,
+                                  `Goals Against` = Goals.Against,
+                                  `Goal Difference` = Goal.Difference
+)
 
 
 #---------- Fixtures (df) ----------
@@ -114,7 +140,7 @@ Fixtures <- Fixtures %>%
 # Joining the fixtures table to itself so that we can get the oppositon team for each row.
 # There is also renaming of fields and removing columns that happenes after the join
 Fixtures <- inner_join(Fixtures,Fixtures, join_by( `Match ID` == `Match ID`),relationship = "many-to-many") %>%
-  filter(Team.x == Team.y) %>%
+  filter(Team.x != Team.y) %>%
   rename(Opponent = Team.y,
          Team = Team.x,
          `Home or Away` = Team_Type.x,
@@ -130,31 +156,11 @@ Fixtures <- inner_join(Fixtures,Fixtures, join_by( `Match ID` == `Match ID`),rel
 # Cleaning the column of Home or Away
 Fixtures$`Home or Away` <- str_remove_all(Fixtures$`Home or Away`," Team")
 
-#---------- Standings (df) ---------
-# Webscraping the data from the URL provided
-html <- read_html("https://www.bbc.co.uk/sport/football/premier-league/table")
+df <- subset(Teams, select = c(`Team ID`, Team))
 
-# Creating a data frame from the data web scraped. In this case the html element is a table.
-Standings <- data.frame(
-  html %>% 
-    html_element("table") %>% 
-    html_table()
-)
+Fixtures <- inner_join(Fixtures, df, join_by(Team == Team))
 
-# Removing obejects from environment
-rm(html)
-
-# Joining tables based on team names
-Standings <- left_join(Standings, Teams, join_by( Team == Team))
-
-# Keeping only relevent fields
-Standings <- subset(Standings, select = c(Position, Team, Abbreviation, `Team Strength`, Played, Won, Drawn, Lost, Goals.For, Goals.Against, Goal.Difference, Points))
-
-# Renaming Columns
-Standings <- Standings %>% rename(`Goals For` = Goals.For,
-                                  `Goals Against` = Goals.Against,
-                                  `Goal Difference` = Goal.Difference
-)
+rm(df, Teams)
 
 #---------- Player_Info (df) ----------
 
@@ -168,44 +174,48 @@ res2 <- content(res, "text", encoding = "UTF-8")
 item <- fromJSON(res2)
 
 # Creating a data frame with the parsed JSON data
-Player_Info <- data.frame(item$elements)
+Player <- data.frame(item$elements)
 
 # Removing objects from the environment
 rm(res, res2, item)
 
 # Keeping only relevent fields
-Player_Info <- subset(Player_Info, select = c(id, web_name, element_type, team,  now_cost, total_points, form, photo, 
-                                              chance_of_playing_next_round,chance_of_playing_this_round, dreamteam_count, in_dreamteam, news, news_added, 
-                                              selected_by_percent,transfers_in, transfers_in_event, transfers_out, transfers_out_event, minutes,
-                                              goals_scored, assists, clean_sheets, goals_conceded, own_goals, penalties_saved, penalties_missed, yellow_cards,
-                                              red_cards, saves, bonus, starts, expected_goals, expected_assists, expected_goal_involvements, expected_goals_conceded,
-                                              corners_and_indirect_freekicks_order, direct_freekicks_order, penalties_order)
+Player <- subset(Player, select = c(id, first_name, second_name, element_type, team,  now_cost, form, photo, 
+                                    chance_of_playing_next_round,chance_of_playing_this_round, dreamteam_count, in_dreamteam, news, news_added, 
+                                    corners_and_indirect_freekicks_order, direct_freekicks_order, penalties_order)
 )
 
 # Renaming fields
-Player_Info <- Player_Info %>% rename(`Player ID` = id, Name = web_name, Position = element_type, `Team ID` = team, `Current Cost` = now_cost, `Total Points` = total_points,
-                                      Form = form, Photo = photo, `Chance of playing next round` = chance_of_playing_next_round, 
-                                      `Chance of playing this round` = chance_of_playing_this_round, `Dreamteam Count` = dreamteam_count,
-                                      `In Dreamteam` = in_dreamteam, News = news, `News Added` = news_added, `Selected By Percent` = selected_by_percent, 
-                                      `Total Transfers In` = transfers_in, `Gameweek transfers in` = transfers_in_event, `Total Transfers Out` = transfers_out,
-                                      `Gameweek transfers out` = transfers_out_event, `Total minutes played` = minutes, `Goals Scored`= goals_scored,
-                                      Assists = assists, `Clean Sheets` = clean_sheets, `Goals Conceded` = goals_conceded, `Own Goals` = own_goals,
-                                      `Penalties Saved` = penalties_saved, `Penalties Missed` = penalties_missed, `Yellow Cards` = yellow_cards,
-                                      `Red Cards` = red_cards, Saves = saves, `Total bonus points` = bonus, xG = expected_goals, xAssists = expected_assists,
-                                      `xG Involvements` = expected_goal_involvements, `xG Conceded` = expected_goals_conceded, 
-                                      `Corners & Indirect freekicks order` = corners_and_indirect_freekicks_order, `Direct freekicks order` = direct_freekicks_order,
-                                      `Penalties Order` = penalties_order)
+Player <- Player %>% rename(`Player ID` = id, `First Name` = first_name, `Second Name` = second_name, Position = element_type, `Team ID` = team,
+                            `Current Cost` = now_cost, Form = form, Photo = photo, `Chance of playing next round` = chance_of_playing_next_round,
+                            `Chance of playing this round` = chance_of_playing_this_round, `Dreamteam Count` = dreamteam_count, `In Dreamteam` = in_dreamteam,
+                            News = news, `News Added` = news_added, `Corners & Indirect freekicks order` = corners_and_indirect_freekicks_order,
+                            `Direct freekicks order` = direct_freekicks_order,`Penalties Order` = penalties_order)
 
-# Joining team names to team IDs
-Player_Info <- left_join(Player_Info, Teams, join_by(`Team ID` == `Team ID`))
+# A GET call to the FPL API
+res = VERB("GET", url = "https://fantasy.premierleague.com/api/bootstrap-static/")
 
-# Removing Team ID Field from data frame
-Player_Info <- subset(Player_Info, select = -`Team ID`)
+# converts the response of the API call into text
+res2 <- content(res, "text", encoding = "UTF-8")
+
+# Converts the text response from JSON
+item <- fromJSON(res2)
+
+# Creating a data frame with the parsed JSON data
+Element <- data.frame(item$element_types) %>%
+  select(id , singular_name)
+
+Player <- inner_join(Player, Element, join_by( Position == id)) %>%
+  select(-Position)
+
+Player <- Player %>% rename(Position = singular_name)#
+
+rm(Element)
+
 
 #---------- Player_Gameweek_Stats (df) ----------
-
 # Creating a data frame only containing completed matchday IDs
-IDs <- subset(Player_Info, select = 'Player ID')
+IDs <- subset(Player, select = 'Player ID')
 IDs <- IDs %>% rename(id = `Player ID`)
 
 # Creating an empty data frames
@@ -237,7 +247,7 @@ for (id in IDs$id) {
   Player_Gameweeks_data_frames[[id]] <- df
   
   # Combining all the individual data frames created into one
-  `Player_Gameweek_Stats` <- bind_rows(Player_Gameweeks_data_frames)
+  `Gameweek` <- bind_rows(Player_Gameweeks_data_frames)
   
   pb_1$tick()
 }
@@ -246,22 +256,23 @@ for (id in IDs$id) {
 rm(df,IDs,item,pb_1,Player_Gameweeks_data_frames,res,id,res2,url)
 
 # Renaming fields
-Player_Gameweek_Stats <- Player_Gameweek_Stats %>% rename(Fixture = fixture, `Opponent Team` = opponent_team, `Total Points` = total_points,
-                                                          Gameweek = round, Minutes = minutes, `Goals Scored` = goals_scored, Assists = assists,
-                                                          `Clean Sheets` = clean_sheets, `Goals Conceded` = goals_conceded, `Own goals` = own_goals,
-                                                          `Penalties Saved` = penalties_saved,`Penalties Missed` = penalties_missed, `Yellow Cards` = yellow_cards,
-                                                          `Red Cards` = red_cards, Saves = saves, Bonus = bonus, Influence = influence, Creativity = creativity,
-                                                          Threat = threat, `ICT Threat` = ict_index, Starts = starts, xG = expected_goals, xA = expected_assists,
-                                                          `xG Involvements` = expected_goal_involvements, `xG Conceded` = expected_goals_conceded, Value = value,
-                                                          `Transfer Balance` = transfers_balance, Selected = selected, `Transfers In` = transfers_in,
-                                                          `Transfers Out` = transfers_out, `Player ID` = Player_ID)
+Gameweek <- Gameweek %>% rename(Fixture = fixture, `Opponent Team` = opponent_team, `Total Points` = total_points,
+                                Gameweek = round, Minutes = minutes, `Goals Scored` = goals_scored, Assists = assists,
+                                `Clean Sheets` = clean_sheets, `Goals Conceded` = goals_conceded, `Own goals` = own_goals,
+                                `Penalties Saved` = penalties_saved,`Penalties Missed` = penalties_missed, `Yellow Cards` = yellow_cards,
+                                `Red Cards` = red_cards, Saves = saves, Bonus = bonus, Influence = influence, Creativity = creativity,
+                                Threat = threat, `ICT Threat` = ict_index, Starts = starts, xG = expected_goals, xA = expected_assists,
+                                `xG Involvements` = expected_goal_involvements, `xG Conceded` = expected_goals_conceded, Value = value,
+                                `Transfer Balance` = transfers_balance, Selected = selected, `Transfers In` = transfers_in,
+                                `Transfers Out` = transfers_out, `Player ID` = Player_ID, `Kick-off Time` = kickoff_time)
 
-Player_Gameweek_Stats <- subset(Player_Gameweek_Stats, select = -c(was_home, team_h_score, team_a_score))
+Gameweek <- subset(Gameweek, select = -c(was_home, team_h_score, team_a_score, element, Fixture))
+
 
 #---------- Player_Historic_Stats (df) ----------
 
 # Creating a data frame only containing completed matchday IDs
-IDs <- subset(Player_Info, select = 'Player ID')
+IDs <- subset(Player, select = 'Player ID')
 IDs <- IDs %>% rename(id = `Player ID`)
 
 # Creating an empty data frames
@@ -294,7 +305,7 @@ for (id in IDs$id) {
     Player_Gameweeks_data_frames[[id]] <- df
     
     # Combining all the individual data frames created into one
-    `Player_Historic_Stats` <- bind_rows(Player_Gameweeks_data_frames)
+    Historic_Seasons <- bind_rows(Player_Gameweeks_data_frames)
     
   }
 }
@@ -303,19 +314,13 @@ for (id in IDs$id) {
 rm(df,IDs,item,Player_Gameweeks_data_frames,res,id,res2,url)
 
 # Renaming fields
-Player_Historic_Stats <- Player_Historic_Stats %>% rename(Season = season_name, `Start Cost` = start_cost, `End Cost` = end_cost, `Total Points` = total_points,
-                                                          Minutes = minutes, `Goals Scored` = goals_scored, Assists = assists, `Clean Sheets` = clean_sheets, 
-                                                          `Goals Conceded` = goals_conceded, `Own Goals` = own_goals, `Penalties Saved` = penalties_saved, `Yellow cards` = yellow_cards,
-                                                          `Red Cards` = red_cards, Saves = saves, `Bonus Points` = bonus, Influence = influence, Creativity = creativity, Threat = threat,
-                                                          `ICT Index` = ict_index, Starts = starts, xG = expected_goals, xA = expected_assists, `xG Involvements` = expected_goal_involvements,
-                                                          `xG Conceded` = expected_goals_conceded, `Player ID` = Player_ID)
+Historic_Seasons <- Historic_Seasons %>% rename(Season = season_name, `Start Cost` = start_cost, `End Cost` = end_cost, `Total Points` = total_points,
+                                                Minutes = minutes, `Goals Scored` = goals_scored, Assists = assists, `Clean Sheets` = clean_sheets, 
+                                                `Goals Conceded` = goals_conceded, `Own Goals` = own_goals, `Penalties Saved` = penalties_saved, `Yellow cards` = yellow_cards,
+                                                `Red Cards` = red_cards, Saves = saves, `Bonus Points` = bonus, Influence = influence, Creativity = creativity, Threat = threat,
+                                                `ICT Index` = ict_index, Starts = starts, xG = expected_goals, xA = expected_assists, `xG Involvements` = expected_goal_involvements,
+                                                `xG Conceded` = expected_goals_conceded, `Player ID` = Player_ID)
 
-Player_Historic_Stats <- subset(Player_Historic_Stats, select = -c(element_code))
+# Removing fields
+Historic_Seasons <- subset(Historic_Seasons, select = -c(element_code))
 
-#--------- Saving to CSV ----------
-
-write.csv(Fixtures, "Fixtures.csv", row.names =  FALSE)
-write.csv(Player_Gameweek_Stats, "Player_Gameweek_Stats.csv", row.names =  FALSE)
-write.csv(Player_Historic_Stats, "Player_Historic_Stats.csv", row.names =  FALSE)
-write.csv(Player_Info, "Player_Info.csv", row.names =  FALSE)
-write.csv(Standings, "Standings.csv", row.names =  FALSE)
