@@ -199,18 +199,18 @@
 95,10,TRUE,"2024-11-03",1,1,4,3,"Away","Chelsea","Manchester United",6
 92,10,TRUE,"2024-11-04",2,1,2,3,"Home","Fulham","Brentford",9
 92,10,TRUE,"2024-11-04",2,1,2,3,"Away","Brentford","Fulham",4
-101,11,FALSE,"2024-11-09",NA,NA,2,3,"Home","Brentford","AFC Bournemouth",4
-101,11,FALSE,"2024-11-09",NA,NA,2,3,"Away","AFC Bournemouth","Brentford",3
-104,11,FALSE,"2024-11-09",NA,NA,2,2,"Home","Crystal Palace","Fulham",7
-104,11,FALSE,"2024-11-09",NA,NA,2,2,"Away","Fulham","Crystal Palace",9
-109,11,FALSE,"2024-11-09",NA,NA,2,2,"Home","West Ham United","Everton",19
-109,11,FALSE,"2024-11-09",NA,NA,2,2,"Away","Everton","West Ham United",8
-110,11,FALSE,"2024-11-09",NA,NA,2,2,"Home","Wolverhampton Wanderers","Southampton",20
-110,11,FALSE,"2024-11-09",NA,NA,2,2,"Away","Southampton","Wolverhampton Wanderers",17
-102,11,FALSE,"2024-11-09",NA,NA,5,3,"Home","Brighton & Hove Albion","Manchester City",5
-102,11,FALSE,"2024-11-09",NA,NA,5,3,"Away","Manchester City","Brighton & Hove Albion",13
-105,11,FALSE,"2024-11-09",NA,NA,3,5,"Home","Liverpool","Aston Villa",12
-105,11,FALSE,"2024-11-09",NA,NA,3,5,"Away","Aston Villa","Liverpool",2
+101,11,TRUE,"2024-11-09",3,2,2,3,"Home","Brentford","AFC Bournemouth",4
+101,11,TRUE,"2024-11-09",3,2,2,3,"Away","AFC Bournemouth","Brentford",3
+104,11,TRUE,"2024-11-09",0,2,2,2,"Home","Crystal Palace","Fulham",7
+104,11,TRUE,"2024-11-09",0,2,2,2,"Away","Fulham","Crystal Palace",9
+109,11,TRUE,"2024-11-09",0,0,2,2,"Home","West Ham United","Everton",19
+109,11,TRUE,"2024-11-09",0,0,2,2,"Away","Everton","West Ham United",8
+110,11,TRUE,"2024-11-09",2,0,2,2,"Home","Wolverhampton Wanderers","Southampton",20
+110,11,TRUE,"2024-11-09",2,0,2,2,"Away","Southampton","Wolverhampton Wanderers",17
+102,11,TRUE,"2024-11-09",2,1,5,3,"Home","Brighton & Hove Albion","Manchester City",5
+102,11,TRUE,"2024-11-09",2,1,5,3,"Away","Manchester City","Brighton & Hove Albion",13
+105,11,TRUE,"2024-11-09",2,0,3,5,"Home","Liverpool","Aston Villa",12
+105,11,TRUE,"2024-11-09",2,0,3,5,"Away","Aston Villa","Liverpool",2
 106,11,FALSE,"2024-11-10",NA,NA,2,3,"Home","Manchester United","Leicester City",14
 106,11,FALSE,"2024-11-10",NA,NA,2,3,"Away","Leicester City","Manchester United",11
 107,11,FALSE,"2024-11-10",NA,NA,3,2,"Home","Nottingham Forest","Newcastle United",16
