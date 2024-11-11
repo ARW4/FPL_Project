@@ -218,6 +218,7 @@ rm(Element)
 # Creating a data frame only containing completed matchday IDs
 IDs <- subset(Player, select = 'Player ID')
 IDs <- IDs %>% rename(id = `Player ID`)
+IDs <- head(IDs)
 
 # Creating an empty data frames
 Player_Gameweeks_data_frames <- list()
@@ -275,6 +276,7 @@ Gameweek <- subset(Gameweek, select = -c(was_home, team_h_score, team_a_score, e
 # Creating a data frame only containing completed matchday IDs
 IDs <- subset(Player, select = 'Player ID')
 IDs <- IDs %>% rename(id = `Player ID`)
+IDs <- head(IDs)
 
 # Creating an empty data frames
 Player_Gameweeks_data_frames <- list()
@@ -370,18 +372,13 @@ rm(auth_provider_x509_cert_url,auth_uri,client_email,client_id,client_x509_cert_
 # Converting the list of values into JSON, Preety and Auto_unbox - TRUE to match format needed
 json_string <- toJSON(json_string, pretty = TRUE ,auto_unbox = TRUE)
 
-# writeLines(json_string, "my_data.json")
-
 # Authenticating google service account using JSON string
 # gs4_auth(path = json_string)
+
+
 gs4_auth(
-  email = gargle::gargle_oauth_email(),
   path = json_string,
-  subject = NULL,
-  scopes = NULL,
-  cache = gargle::gargle_oauth_cache(),
-  use_oob = gargle::gargle_oob_default(),
-  token = NULL
+  scopes = c("https://www.googleapis.com/auth/spreadsheets")
 )
 
 #----------- Uploading to googlesheets ----------
