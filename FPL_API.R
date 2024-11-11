@@ -334,7 +334,7 @@ write.csv(Standings, "Standings.csv", row.names =  FALSE)
 
 #---------- Autheticating Google Sheets ----------
 # Calling in private key through environment variable and formatting JSON string
-env_private_key <- gsub("\\\\", "*", Sys.getenv("env_private_key"))
+env_private_key <- gsub("\\\\", "*", Sys.getenv("PRIVATE_KEY"))
 env_private_key <- gsub("\\*n","\n",env_private_key)
 
 # Creating values needed for JSON String
