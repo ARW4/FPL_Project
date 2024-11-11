@@ -12,6 +12,7 @@ conflict_prefer("lag","dplyr")
 library(tidyverse)
 library(progress)
 library(rvest)
+library(googlesheets4)
 
 #---------- Team Info ----------
 # A GET call to the FPL API
