@@ -13,7 +13,7 @@ jobs:
       
       - name: FPL Code
         run : 
-          Rscript -e 'source("FPL_API.R", env_private_key = Sys.getenv("PRIVATE_KEY")'
+          Rscript -e 'source("FPL_API.R")'
 
       - name: Commit results
         run: |
