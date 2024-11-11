@@ -373,7 +373,16 @@ json_string <- toJSON(json_string, pretty = TRUE ,auto_unbox = TRUE)
 # writeLines(json_string, "my_data.json")
 
 # Authenticating google service account using JSON string
-gs4_auth(path = json_string)
+# gs4_auth(path = json_string)
+gs4_auth(
+  email = gargle::gargle_oauth_email(),
+  path = json_string,
+  subject = NULL,
+  scopes = NULL,
+  cache = gargle::gargle_oauth_cache(),
+  use_oob = gargle::gargle_oob_default(),
+  token = NULL
+)
 
 #----------- Uploading to googlesheets ----------
 
