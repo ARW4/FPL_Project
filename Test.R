@@ -1,7 +1,7 @@
 library(dplyr)
 Key <- Sys.getenv("env_private_key")
-Key <- substr(key, 1,30)
+Key <- substr(Key, 1,30)
 
-Key <- data_frame(key) 
+Key <- data_frame(Key) 
 
 write.csv(Key, file = "Key.csv")
