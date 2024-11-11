@@ -10,13 +10,15 @@ jobs:
       - uses: actions/checkout@v4
       - uses: r-lib/actions/setup-r@v2
       - uses: r-lib/actions/setup-renv@v2
-      
+
+      - name: Load private key
+        env : 
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          
       - name: FPL Code
         run : 
           Rscript -e 'source("FPL_API.R")'
-        env : 
-          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-
+        
       - name: Commit results
         run: |
           git config --local user.email "actions@github.com"
