@@ -14,6 +14,8 @@ jobs:
       - name: FPL Code
         run : 
           Rscript -e 'source("FPL_API.R")'
+        env : 
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
 
       - name: Commit results
         run: |
