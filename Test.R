@@ -11,4 +11,4 @@ column2 <- c("A", "B")
 # Create the data frame
 Key <- data.frame(column1, column2)
 
-write.csv(key, file = "key.csv")
+write.csv(Key, file = "Key.csv")
