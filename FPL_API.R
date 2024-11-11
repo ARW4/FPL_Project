@@ -331,3 +331,104 @@ write.csv(Gameweek, "Gameweek.csv", row.names =  FALSE)
 write.csv(Historic_Seasons, "Historic_Seasons.csv", row.names =  FALSE)
 write.csv(Player, "Player.csv", row.names =  FALSE)
 write.csv(Standings, "Standings.csv", row.names =  FALSE)
+
+#---------- Autheticating Google Sheets ----------
+# Calling in private key through environment variable and formatting JSON string
+env_private_key <- gsub("\\\\", "*", Sys.getenv("env_private_key"))
+env_private_key <- gsub("\\*n","\n",env_private_key)
+
+# Creating values needed for JSON String
+type <- "service_account"
+project_id <- "fpl-api-433015"
+private_key_id <- "fca98a1709675f36bc44239c90c1a35fdbc2d904"
+client_email <- "gsheets-connection@fpl-api-433015.iam.gserviceaccount.com"
+client_id <- "108907979042551286206"
+auth_uri <- "https://accounts.google.com/o/oauth2/auth"
+token_uri <-  "https://oauth2.googleapis.com/token"
+auth_provider_x509_cert_url <- "https://www.googleapis.com/oauth2/v1/certs"
+client_x509_cert_url <- "https://www.googleapis.com/robot/v1/metadata/x509/gsheets-connection%40fpl-api-433015.iam.gserviceaccount.com"
+universe_domain <- "googleapis.com"
+
+# Creating JSON string from the values created above
+json_string = list(type = "service_account",
+                   project_id = "fpl-api-433015",
+                   private_key_id = "fca98a1709675f36bc44239c90c1a35fdbc2d904",
+                   private_key = env_private_key,
+                   client_email = "gsheets-connection@fpl-api-433015.iam.gserviceaccount.com",
+                   client_id = "108907979042551286206",
+                   auth_uri = "https://accounts.google.com/o/oauth2/auth",
+                   token_uri =  "https://oauth2.googleapis.com/token",
+                   auth_provider_x509_cert_url = "https://www.googleapis.com/oauth2/v1/certs",
+                   client_x509_cert_url = "https://www.googleapis.com/robot/v1/metadata/x509/gsheets-connection%40fpl-api-433015.iam.gserviceaccount.com",
+                   universe_domain = "googleapis.com"
+)
+
+# Removing objects
+rm(auth_provider_x509_cert_url,auth_uri,client_email,client_id,client_x509_cert_url,env_private_key,private_key_id,project_id,token_uri,type,universe_domain)
+
+# Converting the list of values into JSON, Preety and Auto_unbox - TRUE to match format needed
+json_string <- toJSON(json_string, pretty = TRUE ,auto_unbox = TRUE)
+
+# writeLines(json_string, "my_data.json")
+
+# Authenticating google service account using JSON string
+gs4_auth(path = json_string)
+
+#----------- Uploading to googlesheets ----------
+
+# Standings table
+range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Standings",
+            range = NULL
+)
+
+write_sheet(Standings, 
+            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Standings"
+)
+
+#Fixtures table
+range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Fixtures",
+            range = NULL
+)
+
+write_sheet(Fixtures, 
+            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Fixtures"
+)
+
+# Player table
+range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Player",
+            range = NULL
+)
+
+write_sheet(Player, 
+            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Player"
+)
+
+#Gameweek table
+range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Gameweek",
+            range = NULL
+)
+
+write_sheet(Gameweek, 
+            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Gameweek"
+)
+
+# Historic Seasons table
+range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Historic Seasons",
+            range = NULL
+)
+
+write_sheet(`Historic_Seasons`, 
+            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Historic Seasons"
+)
+
+#---------- End of Script ----------
