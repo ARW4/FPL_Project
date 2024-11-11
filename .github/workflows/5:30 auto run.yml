@@ -12,8 +12,6 @@ jobs:
       - uses: r-lib/actions/setup-renv@v2
       
       - name: FPL Code
-        env : 
-          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         run : 
           Rscript -e 'source("FPL_API.R", env_private_key = Sys.getenv("PRIVATE_KEY")'
 
