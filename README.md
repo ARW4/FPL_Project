@@ -11,7 +11,7 @@ The aim of this project was to create a complete end to end data pipeline that w
 <br>[API Call (R Script)](#API-Call)
 <br>[Looping API Call (R Script)](#Looping-API-Call)
 <br>[Web Scraping (R Script)](#Web-Scraping)
-<br>[Github Actions](#Github-Actions)
+<br>[Github Actions](#Automation)
 <br>[Tableau Dashboard](#FPL-Dashboard)
 
 ## Data Sources 🛜
@@ -132,6 +132,7 @@ Standings <- data.frame(
 ````
 
 ## Github Actions 🎬
+### Automation
 In order to have the r script run automatically on a schedule I decided to use Github Actions. A YAML file is needed to create workflows. 
 - Firstly a virtual machine is started and installs R and all the packages needed for the R Script to run.
 - Specifying "runs-on: ubunto-latest" means that the virtual machine is running linux. Linus is the cheapest opperating system to run actions on and is more than adequate for the purpose of running the r script.
