@@ -22,7 +22,7 @@ It was a challenging to find the official documentation for the FPL API. However
 
 There are a variety of different endpoints available. The list of the endpoints I used are in the table below, however for a more extensive list of endpoints use the link [https://www.game-change.co.uk/2023/02/10/a-complete-guide-to-the-fantasy-premier-league-fpl-api/#google_vignette.](https://www.oliverlooney.com/blogs/FPL-APIs-Explained)
 
-The base URL is bootstrap-static/ and using the endpoints in the table returns you the fields stated in the table.
+The base URL for the endpoints used in this project is https://fantasy.premierleague.com/api/bootstrap-static/
 | End Point Used | Notes |
 |---- |---- |
 |element-summary/"{id}"//|used to retrieve data on players throughout the current and previous season.<br>Data for current season is at the matchday level, whilst data for historic seasons is aggregated to the season level.|
