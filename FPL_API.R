@@ -376,10 +376,7 @@ json_string <- toJSON(json_string, pretty = TRUE ,auto_unbox = TRUE)
 # gs4_auth(path = json_string)
 
 
-gs4_auth(
-  path = json_string,
-  scopes = c("https://www.googleapis.com/auth/spreadsheets")
-)
+gs4_auth(path = json_string)
 
 #----------- Uploading to googlesheets ----------
 
