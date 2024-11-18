@@ -5,12 +5,16 @@
 The aim of this project was to create a complete end to end data pipeline that would have fully fully automated data refreshes. This read me outlines the process of making this happen and also some of the challanges along the way. If you would like to skip straight to the dashboard use the link [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-HiddenGems).
 
 ### Contents:
-##[API](#API)  
-[Webscrapping](#Webscrapping)  
-[R Script](#R-Script)  
+[Data Sources](#Data Sources 🛜)
+[API](#API)  
+[Webscrapping](#Web-Scraping)  
+[R Packages](#R-packages)
+[API Call](#API-Call)
+[Looping API Call](#Looping-API-Call)
+[R Packages](#R-packages)
+[R Packages](#R-packages)
 
-
-## API & Webscrapping 🛜
+## Data Sources 🛜
 ### API
 It was a challeng to find the documentation for the FPL API, however I was able to find information through others that have already connect to it. 
 My main source of information regarding the API was [https://www.game-change.co.uk/2023/02/10/a-complete-guide-to-the-fantasy-premier-league-fpl-api/#google_vignette.](https://www.oliverlooney.com/blogs/FPL-APIs-Explained)
@@ -24,7 +28,7 @@ The base URL is bootstrap-static/ and using the endpoints in the table returns y
 |bootstrap-static/|used to get an overview of teams and player info.|
 |fixtures/|returns all the data regarding all completed and future matches.|
 
-### Webscraping
+### Web Scraping
 The API that returns data regarding the current league standings was not successfully giving updated data. Given this situation I decided to retrieve the premier league standings table through webscraping in R.
 After looking through a few options the website that gave the data in the kindest format was the bbc webiste (https://www.bbc.co.uk/sport/football/premier-league/table)
 
@@ -39,7 +43,7 @@ The below table shows the packages that were used for this project and a breif n
 | tidyverse | collection of packages that help with transforming data |
 | progress | Creates a progress bar, used when looping through API calls |
 | rvest | Used for webscraping data |
-### API call
+### API Call
 To extract data from the endpoints the foollwing structure of r code was used.
 
 Using the endpoint to make a "GET" API call. 
@@ -63,7 +67,7 @@ Fixtures <- data.frame(item)
 ````
 This structure of making the API Call and converting the downloaded data into a data frame is used for all calls made in the project.
 
-### Looping API call
+### Looping API Call
 The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using their player id. In order to download the data for all players possible it was neccessary to create a loop.<br>
 1 - Using a pre-existing data frame that contained all the player IDs to create a new data frame
 ````r
@@ -112,7 +116,7 @@ for (id in IDs$id) {
   }
 }
 ````
-### Webscraping
+### Web Scraping
 Using the rvest package made it very easy to webscrape the premier league standings data. 
 The first line of code is simply creating an object called html that includes the URL with the data. The next code creates a data frame title "Standings" from the table of data within the html retrieved from the download.
 ````r
