@@ -45,7 +45,7 @@ The table below shows the packages that were used for this project and a brief n
 | progress | Creates a progress bar. Improves user experience when building loops as gives an idea on how long code will take to run. |[Documentation](https://cran.r-project.org/web/packages/progress/progress.pdf)|
 | rvest | Used for webscraping data |[Documentation](https://cran.r-project.org/web/packages/rvest/rvest.pdf)|
 ### API Call
-To extract data from the endpoints the foollwing structure of r code was used.
+To extract data from the endpoints the foollwing structure of code was used.
 
 Using the endpoint to make a "GET" API call. 
 ````r
