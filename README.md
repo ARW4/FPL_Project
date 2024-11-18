@@ -36,14 +36,14 @@ After looking through a few options the website that gave the data in the kindes
 ## R Script ®️
 ### R Packages
 The table below shows the packages that were used for this project and a brief note on the purpose and use that each package had.
-| R Package | Useage |
-|---- |---- | 
-| conflicted | Used to resolve conflicts from functions between packages |
-| httr | Used for making API Calls |
-| jsonlite | Converts json into R objects | 
-| tidyverse | collection of packages that help with transforming data |
-| progress | Creates a progress bar, used when looping through API calls |
-| rvest | Used for webscraping data |
+| R Package | Useage | Link |
+|---- |---- |---- | 
+| conflicted | Used to resolve conflicts from functions between packages | https://conflicted.r-lib.org|
+| httr | Used for making API Calls | |
+| jsonlite | Converts json into R objects | |
+| tidyverse | collection of packages that help with transforming data | |
+| progress | Creates a progress bar, used when looping through API calls | |
+| rvest | Used for webscraping data | |
 ### API Call
 To extract data from the endpoints the foollwing structure of r code was used.
 
