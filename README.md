@@ -30,7 +30,7 @@ The base URL for the endpoints used in this project is https://fantasy.premierle
 |fixtures/|Returns all the data regarding all completed and future matches.|
 
 ### Web Scraping
-The API that returns data regarding the current league standings was not successfully giving updated data. Given this situation I decided to retrieve the premier league standings table through webscraping in R.
+I found that the API which returns data regarding the current league standings was not returning up to date information. Hence, I decided to retrieve the premier league standings table through webscraping.
 After looking through a few options the website that gave the data in the kindest format was the bbc webiste (https://www.bbc.co.uk/sport/football/premier-league/table)
 
 ## R Script ®️
