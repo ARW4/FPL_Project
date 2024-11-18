@@ -13,6 +13,7 @@ This read me outlines the process of making this happen and also some of the cha
 <br>[API Call (R Script)](#API-Call)
 <br>[Looping API Call (R Script)](#Looping-API-Call)
 <br>[Web Scraping (R Script)](#Web-Scraping)
+<br>[Google Sheets](#Google-Sheets)
 <br>[Github Actions](#Github-Actions)
 <br>[Tableau Dashboard](#FPL-Dashboard)
 
