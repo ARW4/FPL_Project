@@ -4,14 +4,14 @@
 ## Project overview ⚽
 The aim of this project was to create a complete end to end data pipeline that would have fully fully automated data refreshes. This read me outlines the process of making this happen and also some of the challanges along the way. If you would like to skip straight to the dashboard use the link [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-HiddenGems).
 
-## Contents:
+## Contents 📖
 [API](#API)
 <br>[Webscrapping](#Web-Scraping)
 <br>[R Packages](#R-packages)
 <br>[API Call (R Script)](#API-Call)
 <br>[Looping API Call (R Script)](#Looping-API-Call)
-<br>[R Packages](#R-packages)
-<br>[R Packages](#R-packages)
+<br>[Web Scraping (R Script)](#Web-Scraping)
+<br>[Github Actions](#Github-actions-🎬)
 
 ## Data Sources 🛜
 ### API
@@ -130,7 +130,7 @@ Standings <- data.frame(
 )
 ````
 
-## Github actions 🎬
+## Github Actions 🎬
 In order to have the r script run automatically on a schedule I decided to use Github Actions. A YAML file is needed to create workflows. 
 - Firstly a virtual machine is started and installs R and all the packages needed for the R Script to run.
 - Specifying "runs-on: ubunto-latest" means that the virtual machine is running linux. Linus is the cheapest opperating system to run actions on and is more than adequate for the purpose of running the r script.
