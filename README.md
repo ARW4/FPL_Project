@@ -6,7 +6,12 @@ The aim of this project was to create a complete end to end data pipeline that w
 
 ### Contents:
 [API](#API)  
-[Emphasis](#emphasis)  
+[Webscrapping](#Webscrapping)  
+[R Script](#R Script)  
+[Webscrapping](#Webscrapping)  
+[API](#API)  
+[Webscrapping](#Webscrapping)  
+
 ...snip...
 <a name="headers"/>
 ## Headers
