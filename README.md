@@ -35,7 +35,7 @@ After looking through a few options the website that gave the data in the kindes
 
 ## R Script ®️
 ### R Packages
-The table below shows the packages that were used for this project and a brief note on the purpose and use that the packages had.
+The table below shows the packages that were used for this project and a brief note on the purpose and use that each package had.
 | R Package | Useage |
 |---- |---- | 
 | conflicted | Used to resolve conflicts from functions between packages |
