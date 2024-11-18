@@ -14,7 +14,8 @@ The aim of this project was to create a complete end to end data pipeline that w
 [R Packages](#R-packages)
 [R Packages](#R-packages)
 
-## Data Sources 🛜
+🛜
+## Data Sources
 ### API
 It was a challeng to find the documentation for the FPL API, however I was able to find information through others that have already connect to it. 
 My main source of information regarding the API was [https://www.game-change.co.uk/2023/02/10/a-complete-guide-to-the-fantasy-premier-league-fpl-api/#google_vignette.](https://www.oliverlooney.com/blogs/FPL-APIs-Explained)
