@@ -18,7 +18,7 @@ This read me outlines the process of making this happen and also some of the cha
 
 ## Data Sources 🛜
 ### API
-It was a challeng to find the documentation for the FPL API, however I was able to find information through others that have already connect to it.
+It was a challenging to find the official documentation for the FPL API. However, I was able to find information through others that have already connect to it.
 
 There are a variety of different endpoints available. The list of the endpoints I used are in the table below, however for a more extensive list of endpoints use the link below.
 
