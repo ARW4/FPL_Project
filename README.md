@@ -5,13 +5,13 @@
 The aim of this project was to create a complete end to end data pipeline that would have fully fully automated data refreshes. This read me outlines the process of making this happen and also some of the challanges along the way. If you would like to skip straight to the dashboard use the link [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-HiddenGems).
 
 ### Contents:
-[API](#API)  
-[Webscrapping](#Web-Scraping)  
-[R Packages](#R-packages)
-[API Call (R Script)](#API-Call)
-[Looping API Call (R Script)](#Looping-API-Call)
-[R Packages](#R-packages)
-[R Packages](#R-packages)
+[API](#API)
+<br>[Webscrapping](#Web-Scraping)
+<br>[R Packages](#R-packages)
+<br>[API Call (R Script)](#API-Call)
+<br>[Looping API Call (R Script)](#Looping-API-Call)
+<br>[R Packages](#R-packages)
+<br>[R Packages](#R-packages)
 
 ## Data Sources 🛜
 ### API
