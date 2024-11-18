@@ -8,11 +8,7 @@ The aim of this project was to create a complete end to end data pipeline that w
 [API](#API)  
 [Webscrapping](#Webscrapping)  
 [R Script](#R-Script)  
-[Webscrapping](#Webscrapping)  
-[API](#API)  
-[Webscrapping](#Webscrapping)  
-...snip...
-<a name="headers"/>
+
 
 ## API & Webscrapping 🛜
 ### API
