@@ -12,7 +12,7 @@ The aim of this project was to create a complete end to end data pipeline that w
 <br>[Looping API Call (R Script)](#Looping-API-Call)
 <br>[Web Scraping (R Script)](#Web-Scraping)
 <br>[Github Actions](#Github-Actions)
-<br>[Tableau Dashboard](#Tableau-Dashboard)
+<br>[Tableau Dashboard](#FPL-Dashboard)
 
 ## Data Sources 🛜
 ### API
