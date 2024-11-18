@@ -160,6 +160,7 @@ range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12
             sheet = "Standings",
             range = NULL
 )````
+
 2 - Writing the new data into the sheet
 ````r
 write_sheet(Standings, 
