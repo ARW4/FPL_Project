@@ -46,7 +46,7 @@ The table below shows the packages that were used for this project and a brief n
 | rvest | Used for webscraping data |[Documentation](https://cran.r-project.org/web/packages/rvest/rvest.pdf)|
 ### API Call
 The same structure of code was used for each API call. The steps folow the following logic:
-Download raw data -> Convert the raw data into JSON -> Convert the JSON into text -> Create a data frame with the resulting text
+<br>Download raw data -> Convert the raw data into JSON -> Convert the JSON into text -> Create a data frame with the resulting text
 
 Using the endpoint to make a "GET" API call. 
 ````r
