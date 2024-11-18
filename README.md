@@ -20,9 +20,7 @@ This read me outlines the process of making this happen and also some of the cha
 ### API
 It was a challenging to find the official documentation for the FPL API. However, I was able to find information through others that have already connect to it.
 
-There are a variety of different endpoints available. The list of the endpoints I used are in the table below, however for a more extensive list of endpoints use the link below.
-
-[https://www.game-change.co.uk/2023/02/10/a-complete-guide-to-the-fantasy-premier-league-fpl-api/#google_vignette.](https://www.oliverlooney.com/blogs/FPL-APIs-Explained)
+There are a variety of different endpoints available. The list of the endpoints I used are in the table below, however for a more extensive list of endpoints use the link [https://www.game-change.co.uk/2023/02/10/a-complete-guide-to-the-fantasy-premier-league-fpl-api/#google_vignette.](https://www.oliverlooney.com/blogs/FPL-APIs-Explained)
 
 The base URL is bootstrap-static/ and using the endpoints in the table returns you the fields stated in the table.
 | End Point Used | Notes |
