@@ -38,7 +38,7 @@ After looking through a few options the website that gave the data in the kindes
 The table below shows the packages that were used for this project and a brief note on the purpose and use that each package had.
 | R Package | Useage | Link |
 |---- |---- |---- | 
-| conflicted | Used to resolve conflicts from functions between packages |https://cran.r-project.org/web/packages/conflicted/conflicted.pdf|
+| conflicted | Used to resolve conflicts from functions between packages |[link](https://cran.r-project.org/web/packages/conflicted/conflicted.pdf)|
 | httr | Used for making API Calls |https://cran.r-project.org/web/packages/httr/httr.pdf|
 | jsonlite | Converts json into R objects |https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf|
 | tidyverse | collection of packages that help with transforming data |https://cran.r-project.org/web/packages/tidyverse/tidyverse.pdf|
