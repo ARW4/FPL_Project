@@ -69,7 +69,7 @@ Fixtures <- data.frame(item)
 
 ### Looping API Call
 The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using the player id. In order to download the data for all players possible it was neccessary to create a loop that cycles through all possible player ids and downloads the respective data.<br>
-1 - Using a pre-existing data frame that contained all the player IDs to create a new data frame
+<br><br>1 - Using a pre-existing data frame that contained all the player IDs to create a new data frame
 ````r
 # Creating a data frame only containing completed matchday IDs
 IDs <- subset(Player_Info, select = 'Player ID')
