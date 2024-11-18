@@ -335,48 +335,10 @@ write.csv(Player, "Player.csv", row.names =  FALSE)
 write.csv(Standings, "Standings.csv", row.names =  FALSE)
 
 #---------- Autheticating Google Sheets ----------
-# Calling in private key through environment variable and formatting JSON string
-#env_private_key <- Sys.getenv("PRIVATE_KEY")
-#env_private_key <- gsub("\\\\", "*",Key)
-#env_private_key <- gsub("\\*n","\n",env_private_key)
-
-# Creating values needed for JSON String
-#type <- "service_account"
-#project_id <- "fpl-api-433015"
-#private_key_id <- "fca98a1709675f36bc44239c90c1a35fdbc2d904"
-#client_email <- "gsheets-connection@fpl-api-433015.iam.gserviceaccount.com"
-#client_id <- "108907979042551286206"
-#auth_uri <- "https://accounts.google.com/o/oauth2/auth"
-#token_uri <-  "https://oauth2.googleapis.com/token"
-#auth_provider_x509_cert_url <- "https://www.googleapis.com/oauth2/v1/certs"
-#client_x509_cert_url <- "https://www.googleapis.com/robot/v1/metadata/x509/gsheets-connection%40fpl-api-433015.iam.gserviceaccount.com"
-#universe_domain <- "googleapis.com"
-
-# Creating JSON string from the values created above
-#json_string = list(type = "service_account",
-#                  project_id = "fpl-api-433015",
-#                  private_key_id = "fca98a1709675f36bc44239c90c1a35fdbc2d904",
-#                  private_key = env_private_key,
-#                  client_email = "gsheets-connection@fpl-api-433015.iam.gserviceaccount.com",
-#                  client_id = "108907979042551286206",
-#                  auth_uri = "https://accounts.google.com/o/oauth2/auth",
-#                  token_uri =  "https://oauth2.googleapis.com/token",
-#                  auth_provider_x509_cert_url = "https://www.googleapis.com/oauth2/v1/certs",
-#                  client_x509_cert_url = "https://www.googleapis.com/robot/v1/metadata/x509/gsheets-connection%40fpl-api-433015.iam.gserviceaccount.com",
-#                  universe_domain = "googleapis.com"
-#)
-
-# Removing objects
-#rm(auth_provider_x509_cert_url,auth_uri,client_email,client_id,client_x509_cert_url,env_private_key,private_key_id,project_id,token_uri,type,universe_domain)
-
-# Converting the list of values into JSON, Preety and Auto_unbox - TRUE to match format needed
-#json_string <- toJSON(json_string, pretty = TRUE ,auto_unbox = TRUE)
-
-# Authenticating google service account using JSON string
-# gs4_auth(path = json_string)
-
+# Calling in credentials through github secrest.
 json_string <- Sys.getenv("PRIVATE_KEY")
 
+# Authenticating google
 gs4_auth(path = json_string)
 
 #----------- Uploading to googlesheets ----------
