@@ -45,7 +45,8 @@ The table below shows the packages that were used for this project and a brief n
 | progress | Creates a progress bar. Improves user experience when building loops as gives an idea on how long code will take to run. |[Documentation](https://cran.r-project.org/web/packages/progress/progress.pdf)|
 | rvest | Used for webscraping data |[Documentation](https://cran.r-project.org/web/packages/rvest/rvest.pdf)|
 ### API Call
-To extract data from the endpoints the foollwing structure of code was used.
+The same structure of code was used for each API call. The steps folow the following logic:
+Download raw data -> Convert the raw data into JSON -> Convert the JSON into text -> Create a data frame with the resulting text
 
 Using the endpoint to make a "GET" API call. 
 ````r
@@ -66,7 +67,6 @@ Creates a data frame with the parsed JSON Data
 ````r
 Fixtures <- data.frame(item)
 ````
-This structure of making the API Call and converting the downloaded data into a data frame is used for all calls made in the project.
 
 ### Looping API Call
 The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using their player id. In order to download the data for all players possible it was neccessary to create a loop.<br>
