@@ -132,7 +132,7 @@ Standings <- data.frame(
 ````
 
 ## Github Actions 🎬
-### Github-Actions
+### Github Actions
 In order to have the r script run automatically on a schedule I decided to use Github Actions. A YAML file is needed to create workflows. 
 - Firstly a virtual machine is started and installs R and all the packages needed for the R Script to run.
 - Specifying "runs-on: ubunto-latest" means that the virtual machine is running linux. Linus is the cheapest opperating system to run actions on and is more than adequate for the purpose of running the r script.
