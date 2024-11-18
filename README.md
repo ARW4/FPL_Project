@@ -1,6 +1,5 @@
 # FPL Data Pipeline Project
-![](https://fantasy.premierleague.com/img/share/facebook-share.png)
-
+<img width="452" alt="Data Pipeline Diagram" src="https://github.com/user-attachments/assets/0c6f0ff0-00e0-47eb-aa64-c0643a3f337a">
 **An FPL data project using R, Github Actions and Tableau**
 
 ## Project overview ⚽
