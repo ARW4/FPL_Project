@@ -145,6 +145,28 @@ In order to save to google sheets I needed to first have a way of authenticating
 <br>1 - Login to Google Cloud Platform (GCP) and create a service account. Download as JSON.
 <br>2 - Enable the google sheets API
 <br>3 - Create a repository or environment secret in your github repository (Settings -> Security -> Secrets and variables -> Actions)
+<br>In terms of code. Authentication of credentials is done by using the following
+````r
+# Calling in credentials through github secrest.
+json_string <- Sys.getenv("PRIVATE_KEY")
+
+# Authenticating google
+gs4_auth(path = json_string)
+````
+<br>To then update the data already in google sheets I used the following approach of:
+1 - Clearing the data
+````r
+range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Standings",
+            range = NULL
+)````
+2 - Writing the new data into the sheet
+````r
+write_sheet(Standings, 
+            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Standings"
+)
+````
 
 
 ## Github Actions 🎬
