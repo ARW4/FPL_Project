@@ -38,12 +38,12 @@ After looking through a few options the website that gave the data in the kindes
 The table below shows the packages that were used for this project and a brief note on the purpose and use that each package had.
 | R Package | Useage | Link |
 |---- |---- |---- | 
-| conflicted | Used to resolve conflicts from functions between packages | https://conflicted.r-lib.org|
-| httr | Used for making API Calls | |
-| jsonlite | Converts json into R objects | |
-| tidyverse | collection of packages that help with transforming data | |
-| progress | Creates a progress bar, used when looping through API calls | |
-| rvest | Used for webscraping data | |
+| conflicted | Used to resolve conflicts from functions between packages |https://cran.r-project.org/web/packages/conflicted/conflicted.pdf|
+| httr | Used for making API Calls |https://cran.r-project.org/web/packages/httr/httr.pdf|
+| jsonlite | Converts json into R objects |https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf|
+| tidyverse | collection of packages that help with transforming data |https://cran.r-project.org/web/packages/tidyverse/tidyverse.pdf|
+| progress | Creates a progress bar. Improves user experience when building loops as gives an idea on how long code will take to run. |https://cran.r-project.org/web/packages/progress/progress.pdf|
+| rvest | Used for webscraping data |https://cran.r-project.org/web/packages/rvest/rvest.pdf|
 ### API Call
 To extract data from the endpoints the foollwing structure of r code was used.
 
