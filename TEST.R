@@ -1,4 +1,4 @@
-env_private_key = Sys.getenv("Private_Key")
+env_private_key = Sys.getenv("PRIVATE_KEY")
 
 env_private_key <- substr(env_private_key,0,100)
 
