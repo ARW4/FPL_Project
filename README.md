@@ -45,7 +45,7 @@ The table below shows the packages that were used for this project and a brief n
 | progress | Creates a progress bar. Improves user experience when building loops as gives an idea on how long code will take to run. |[Documentation](https://cran.r-project.org/web/packages/progress/progress.pdf)|
 | rvest | Used for webscraping data |[Documentation](https://cran.r-project.org/web/packages/rvest/rvest.pdf)|
 ### API Call
-The same structure of code was used for each API call. The logic of extracting and converting the API data is as follows:
+The same structure of code was used for each API call. The steps below outline the logic of extracting and converting the API data into usable data frames
 
 1 - Using the endpoint to make a "GET" API call. 
 ````r
@@ -68,7 +68,7 @@ Fixtures <- data.frame(item)
 ````
 
 ### Looping API Call
-The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using their player id. In order to download the data for all players possible it was neccessary to create a loop.<br>
+The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using the player id. In order to download the data for all players possible it was neccessary to create a loop that cycles through all possible player ids and downloads the respective data.<br>
 1 - Using a pre-existing data frame that contained all the player IDs to create a new data frame
 ````r
 # Creating a data frame only containing completed matchday IDs
