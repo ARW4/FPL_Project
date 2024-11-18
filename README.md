@@ -159,7 +159,8 @@ gs4_auth(path = json_string)
 range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
             sheet = "Standings",
             range = NULL
-)````
+)
+````
 
 2 - Writing the new data into the sheet
 ````r
