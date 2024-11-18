@@ -141,7 +141,10 @@ Standings <- data.frame(
 ### Google Sheets
 Once the R script extracts all the data required from the API and creates data frames I needed a way of saving the files prior to the virtual machine closing (See Github Actions for brief explanation on virtual machine). I chose to upload to google sheets primarily because it is possible to automate the refresh of data for a Tableau Public Dashboard only by using google sheets. 
 
-In order to save to google sheets I needed to first have a way of authenticating to my google account using R. The following link provides a more detailed guide to [Authenticating google in R](https://www.obrien.page/blog/2023/03_10_google_and_github_actions/)
+In order to save to google sheets I needed to first have a way of authenticating to my google account using R. The following link provides a detailed guide into [authenticating google in R](https://www.obrien.page/blog/2023/03_10_google_and_github_actions/). Briefly the steps are outlined below:
+1 - Login to Google Cloud Platform (GCP) and create a service account. Download as JSON.
+2 - Enable the google sheets API
+3 - Create a repository or environment secret in your github repository (Settings -> Security -> Secrets and variables -> Actions)
 
 
 ## Github Actions 🎬
