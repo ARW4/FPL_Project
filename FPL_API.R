@@ -218,6 +218,7 @@ rm(Element)
 # Creating a data frame only containing completed matchday IDs
 IDs <- subset(Player, select = 'Player ID')
 IDs <- IDs %>% rename(id = `Player ID`)
+IDs <- head(IDs)
 
 # Creating an empty data frames
 Player_Gameweeks_data_frames <- list()
@@ -275,6 +276,7 @@ Gameweek <- subset(Gameweek, select = -c(was_home, team_h_score, team_a_score, e
 # Creating a data frame only containing completed matchday IDs
 IDs <- subset(Player, select = 'Player ID')
 IDs <- IDs %>% rename(id = `Player ID`)
+IDs <- head(IDs)
 
 # Creating an empty data frames
 Player_Gameweeks_data_frames <- list()
