@@ -47,22 +47,22 @@ The table below shows the packages that were used for this project and a brief n
 ### API Call
 The same structure of code was used for each API call. The logic of extracting and converting the API data is as follows:
 
-Using the endpoint to make a "GET" API call. 
+1 - Using the endpoint to make a "GET" API call. 
 ````r
 res = VERB("GET", url = "https://fantasy.premierleague.com/api/fixtures/")
 ````
 
-Converts the reponse of the API call into json
+2 - Convert the reponse of the API call into json
 ````r
 res2 <- content(res, "text", encoding = "UTF-8")
 ````
 
-Converts the response from JSON
+3 - Convert the response from JSON
 ````r
 item <- fromJSON(res2)
 ````
 
-Creates a data frame with the parsed JSON Data
+4 - Create a data frame with the parsed JSON Data
 ````r
 Fixtures <- data.frame(item)
 ````
