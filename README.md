@@ -69,20 +69,18 @@ Fixtures <- data.frame(item)
 
 ### Looping API Call
 The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using the player id. In order to download the data for all players possible it was neccessary to create a loop that cycles through all possible player ids and downloads the respective data.<br>
-<br>1 - Using a pre-existing data frame that contained all the player IDs to create a new data frame
+<br>1 - Create a new data frame using the Player IDs table. The data frame is one column and includes all possible player ids
 ````r
 # Creating a data frame only containing completed matchday IDs
 IDs <- subset(Player_Info, select = 'Player ID')
 IDs <- IDs %>% rename(id = `Player ID`)
 ````
-2 - Creating an empty data frame that we will append all the nex data frames created for each player
+2 - Creating an empty data frame that we will append all the individual data frames created for each player
 ````r
 # Creating an empty data frames
 Player_Gameweeks_data_frames <- list()
 ````
-3 - Constructing the looping api call, during the loop I found that calling historic data for all players was not possible as there were some players that where new to the league as of the current season. These players would return no data and cause the loop to fail. Hence there was the need for error handelling. This can be seen below with the syntax: if (nrow(df) > 0) 
-This now only appends a data frame if there is more than 0 rows of data, solving the problem.
-Within the loop new data frames are being appended to the empty data frames created in step 1.
+3 - Using the structure of code outlined above to extract and clean the API data. However, due to the looping I needed to add a step at the end that would combine the data frame for each individual player id to the overal data frame created in step 2.
 ````r
 for (id in IDs$id) {
   
@@ -116,8 +114,13 @@ for (id in IDs$id) {
   }
 }
 ````
+#### Error Handeling
+In constructing the loop I found that calling historical data for all players was not possible as there were some players that where new to the league as of the current season. These players would return no data and cause the loop to fail.<br>
+The syntax: if (nrow(df) > 0) controls the errors as it will only append a data frame if there is more than 0 rows of data.
+
 ### Web Scraping
-Using the rvest package made it very easy to webscrape the premier league standings data. 
+As explained above the need for web scraping was a result of the API Standings data not being reliable. In order to webscrape I wanted to find a site that would be a reliable source of data, Stable URL (I.e. not likely to change) and return the data in an easy format to manage. Given this set of criteria I decided that teh BBC website would be suitable (https://www.bbc.co.uk/sport/football/premier-league/table).
+
 The first line of code is simply creating an object called html that includes the URL with the data. The next code creates a data frame title "Standings" from the table of data within the html retrieved from the download.
 ````r
 # Webscraping the data from the URL provided
