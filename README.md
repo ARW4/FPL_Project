@@ -44,6 +44,7 @@ The table below shows the packages that were used for this project and a brief n
 | tidyverse | collection of packages that help with transforming data |[Documentation](https://cran.r-project.org/web/packages/tidyverse/tidyverse.pdf)|
 | progress | Creates a progress bar. Improves user experience when building loops as gives an idea on how long code will take to run. |[Documentation](https://cran.r-project.org/web/packages/progress/progress.pdf)|
 | rvest | Used for webscraping data |[Documentation](https://cran.r-project.org/web/packages/rvest/rvest.pdf)|
+|googlesheets4|Authenticates google to be able to save files directly to google sheets|[Documentation](https://cran.r-project.org/web/packages/googlesheets4/googlesheets4.pdf)|
 ### API Call
 The same structure of code was used for each API call. The steps below outline the logic of extracting and converting the API data into usable data frames
 
@@ -121,11 +122,13 @@ The syntax: if (nrow(df) > 0) controls the errors as it will only append a data 
 ### Web Scraping
 As explained above the need for web scraping was a result of the API Standings data not being reliable. In order to webscrape I wanted to find a site that would be a reliable source of data, Stable URL (I.e. not likely to change) and return the data in an easy format to manage. Given this set of criteria I decided that teh BBC website would be suitable (https://www.bbc.co.uk/sport/football/premier-league/table).
 
-The first line of code is simply creating an object called html that includes the URL with the data. The next code creates a data frame title "Standings" from the table of data within the html retrieved from the download.
+1 - Create an object called html that includes the URL with the data. Doing this means that if there is the need to change URL it can be done easily.
 ````r
 # Webscraping the data from the URL provided
 html <- read_html("https://www.bbc.co.uk/sport/football/premier-league/table")
-
+````
+2 - Creates a data frame title "Standings" from the table of data within the html retrieved from the download. Part of the reason why I decided to use the BBC website is because the html_element was a table and this made it easy to create the data frame. 
+````r
 # Creating a data frame from the data web scraped. In this case the html element is a table.
 Standings <- data.frame(
   html %>% 
@@ -134,9 +137,16 @@ Standings <- data.frame(
 )
 ````
 
+### Google Sheets
+Once the R script extracts all the data required from the API and creates data frames I needed a way of saving the files prior to the virtual machine closing (See Github Actions for brief explanation on virtual machine). I chose to upload to google sheets primarily because it is possible to automate the refresh of data for a Tableau Public Dashboard only by using google sheets. 
+
+
 ## Github Actions 🎬
 ### Github Actions
-In order to have the r script run automatically on a schedule I decided to use Github Actions. A YAML file is needed to create workflows. 
+Github actions work such that you are able to use a virtual machine, install the required software, run a progrem (in this case the R script) and then close the machine down. 
+
+The logcic of how the data refresh can be automated is as follows:
+1 - A YAML file is needed to create workflows. 
 - Firstly a virtual machine is started and installs R and all the packages needed for the R Script to run.
 - Specifying "runs-on: ubunto-latest" means that the virtual machine is running linux. Linus is the cheapest opperating system to run actions on and is more than adequate for the purpose of running the r script.
 - The YAML code then also states the schedule on which the workflow will run. The worfklow hence runs at 5:30 am everyday.
