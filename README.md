@@ -45,8 +45,7 @@ The table below shows the packages that were used for this project and a brief n
 | progress | Creates a progress bar. Improves user experience when building loops as gives an idea on how long code will take to run. |[Documentation](https://cran.r-project.org/web/packages/progress/progress.pdf)|
 | rvest | Used for webscraping data |[Documentation](https://cran.r-project.org/web/packages/rvest/rvest.pdf)|
 ### API Call
-The same structure of code was used for each API call. The steps folow the following logic:
-<br>Download raw data -> Convert the raw data into JSON -> Convert the JSON into text -> Create a data frame with the resulting text
+The same structure of code was used for each API call. The logic of extracting and converting the API data is as follows:
 
 Using the endpoint to make a "GET" API call. 
 ````r
