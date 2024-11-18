@@ -5,12 +5,8 @@
 The aim of this project was to create a complete end to end data pipeline that would have fully fully automated data refreshes. This read me outlines the process of making this happen and also some of the challanges along the way. If you would like to skip straight to the dashboard use the link [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-HiddenGems).
 
 ### Contents:
-##### Table of Contents  
-[Headers](#headers)  
+[API & Webscrapping](#API & Webscrapping)  
 [Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
-## Headers
 
 ## API & Webscrapping 🛜
 ### API
