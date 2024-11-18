@@ -25,9 +25,9 @@ There are a variety of different endpoints available. The list of the endpoints 
 The base URL for the endpoints used in this project is https://fantasy.premierleague.com/api/bootstrap-static/
 | End Point Used | Notes |
 |---- |---- |
-|element-summary/"{id}"//|used to retrieve data on players throughout the current and previous season.<br>Data for current season is at the matchday level, whilst data for historic seasons is aggregated to the season level.|
-|bootstrap-static/|used to get an overview of teams and player info.|
-|fixtures/|returns all the data regarding all completed and future matches.|
+|element-summary/"{id}"//|Used to retrieve data on players throughout the current and previous season.<br>Data for current season is at the matchday level, whilst data for historic seasons is aggregated to the season level.|
+|bootstrap-static/|Used to get an overview of teams and player info.|
+|fixtures/|Returns all the data regarding all completed and future matches.|
 
 ### Web Scraping
 The API that returns data regarding the current league standings was not successfully giving updated data. Given this situation I decided to retrieve the premier league standings table through webscraping in R.
