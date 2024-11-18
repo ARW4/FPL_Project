@@ -11,10 +11,8 @@ The aim of this project was to create a complete end to end data pipeline that w
 [Webscrapping](#Webscrapping)  
 [API](#API)  
 [Webscrapping](#Webscrapping)  
-
 ...snip...
 <a name="headers"/>
-## Headers
 
 ## API & Webscrapping 🛜
 ### API
