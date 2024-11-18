@@ -7,6 +7,9 @@ The aim of this project was to create a complete end to end data pipeline that w
 ### Contents:
 [API & Webscrapping](#API & Webscrapping)  
 [Emphasis](#emphasis)  
+...snip...
+<a name="headers"/>
+## Headers
 
 ## API & Webscrapping 🛜
 ### API
