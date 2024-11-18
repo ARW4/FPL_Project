@@ -5,7 +5,7 @@
 The aim of this project was to create a complete end to end data pipeline that would have fully fully automated data refreshes. This read me outlines the process of making this happen and also some of the challanges along the way. If you would like to skip straight to the dashboard use the link [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-HiddenGems).
 
 ### Contents:
-[Data Sources](#Data-Sources)
+[Data Sources](#Data-Sources-🛜)
 [API](#API)  
 [Webscrapping](#Web-Scraping)  
 [R Packages](#R-packages)
@@ -14,8 +14,7 @@ The aim of this project was to create a complete end to end data pipeline that w
 [R Packages](#R-packages)
 [R Packages](#R-packages)
 
-🛜
-## Data Sources
+## Data Sources 🛜
 ### API
 It was a challeng to find the documentation for the FPL API, however I was able to find information through others that have already connect to it. 
 My main source of information regarding the API was [https://www.game-change.co.uk/2023/02/10/a-complete-guide-to-the-fantasy-premier-league-fpl-api/#google_vignette.](https://www.oliverlooney.com/blogs/FPL-APIs-Explained)
