@@ -154,22 +154,20 @@ json_string <- Sys.getenv("PRIVATE_KEY")
 gs4_auth(path = json_string)
 ````
 <br>To then update the data already in google sheets I used the following approach of:
-1 - Clearing the data
+<br>1 - Clearing the data
 ````r
 range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
             sheet = "Standings",
             range = NULL
 )
 ````
-
-2 - Writing the new data into the sheet
+<br>2 - Writing the new data into the sheet
 ````r
 write_sheet(Standings, 
             "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
             sheet = "Standings"
 )
 ````
-
 
 ## Github Actions 🎬
 ### Github Actions
