@@ -238,7 +238,7 @@ gs4_auth(path = json_string)
 <br>
 For more detail into authenticating google sheets in github actions using R use the following link: https://www.obrien.page/blog/2023/03_10_google_and_github_actions/
 <br> 
-<br> Given google has authenticated, to save to google sheets.
+<br> Given google has authenticated, to save to google sheets use the following steps:
 
 1 - Calling in the Google Sheets URL from an Repository Variable 
 ````r
