@@ -23,7 +23,7 @@ I have learnt alot from taking on this project and have a far greater understand
 <br>[Web Scraping (R Script)](#Web-Scraping)
 <br>[Google Sheets](#Google-Sheets)
 <br>[Github Actions](#Github-Actions)
-<br>[Google Cloud Platform](#Google-Cloud-Platform-(GCP))
+<br>[Google Cloud Platform](#Google-Cloud-Platform)
 <br>[Tableau Dashboard](#FPL-Dashboard)
 
 ## Data Sources 🛜
