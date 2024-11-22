@@ -23,7 +23,7 @@ I have learnt alot from taking on this project and have a far greater understand
 <br>[Web Scraping (R Script)](#Web-Scraping)
 <br>[Google Sheets](#Google-Sheets)
 <br>[Github Actions](#Github-Actions)
-<br>[Google Cloud Platform](#Google-Cloud-Platform)
+<br>[Google Cloud Platform (GCP)](#GCP)
 <br>[Tableau Dashboard](#FPL-Dashboard)
 
 ## Data Sources 🛜
@@ -202,8 +202,8 @@ jobs:
           git push origin || echo "No changes to commit"
 ````
 
-## Google Cloud Platform
-### (GCP)
+## Google Cloud Platform ☁️
+### GCP
 #### Using Github actions and R to Authenticating Google Sheets using a service account
 Using github actions means that I was able to automate the running of my script on a pre determined schedule. This was essential as I wanted the data pipelien to be fully automated. After automating the running of the script I then needed a way of saving the tables created somewhere that I could use for a Tableau dashboard. Tableau Public allows for data to refresh only when using the google sheets connector, hence the reason why I decided to save the data to google sheets. 
 
