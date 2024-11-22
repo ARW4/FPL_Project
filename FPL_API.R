@@ -343,8 +343,10 @@ gs4_auth(path = json_string)
 
 #----------- Uploading to googlesheets ----------
 
-# Standings table
+# Calling in the Google Sheets url as a repository variable
 Google_Sheets_Url <- Sys.getenv("GOOGLE_SHEETS_URL")
+
+# Standings table
 
 range_clear(Google_Sheets_Url,
             sheet = "Standings",
