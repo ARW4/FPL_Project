@@ -347,7 +347,6 @@ gs4_auth(path = json_string)
 Google_Sheets_Url <- Sys.getenv("GOOGLE_SHEETS_URL")
 
 # Standings table
-
 range_clear(Google_Sheets_Url,
             sheet = "Standings",
             range = NULL
