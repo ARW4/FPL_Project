@@ -171,7 +171,7 @@ jobs:
       - uses: r-lib/actions/setup-renv@v2
 ````
 <br> Running the script:
-- loading in the private key that is saved in the repository (see [Authenticating Google Sheets](#Authenticating-Google-Sheets)
+- loading in the private key that is saved in the repository (see [Authenticating Google Sheets](#R-Code))
 - Run the R script that is in the repository
 ````yaml
       - name: FPL Code
