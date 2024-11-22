@@ -201,18 +201,18 @@ jobs:
 ## Google Cloud Platform ☁️
 ### GCP
 #### Using Github actions and R to Authenticating Google Sheets using a service account
-Using github actions means that I was able to automate the running of my script on a pre determined schedule. This was essential as I wanted the data pipelien to be fully automated. After automating the running of the script I then needed a way of saving the tables created somewhere that I could use for a Tableau dashboard. Tableau Public allows for data to refresh only when using the google sheets connector, hence the reason why I decided to save the data to google sheets. 
+Using github actions means that I was able to automate the running of my script on a pre determined schedule. This was essential as I wanted the data pipelien to be fully automated. After automating the running of the script I then needed a way of saving the tables created somewhere that I could use for a Tableau dashboard. Tableau Public allows for data to refresh only when using the google sheets connector, hence the reason why I decided to save the data to google sheets. <br>
 
-1 - Create a new project in GCP or select an existing one you would like to use
-2 - Create Credentials:
-    - Create Credentials > API Key
-    - Create credentials > Service Account (This step will download the service account credentials in JSON format)
-3 - Using the menu in the top left of the GCP console navigate to APIs & Services > Enable APIs & Services. Here you need to enable the following APIs
-    - Google Sheets API
-    - Google Drive API
-    - IAM Servcie Account Credentials API
-    - Identity and Access MAnagement (IAM)API
-
+<br>1 - Create a new project in GCP or select an existing one you would like to use
+<br>2 - Create Credentials:
+    <br>- Create Credentials > API Key
+    <br>- Create credentials > Service Account (This step will download the service account credentials in JSON format)
+<br>3 - Using the menu in the top left of the GCP console navigate to APIs & Services > Enable APIs & Services. Here you need to enable the following APIs
+    <br>- Google Sheets API
+    <br>- Google Drive API
+    <br>- IAM Servcie Account Credentials API
+    <br>- Identity and Access MAnagement (IAM)API
+<br><br>
 Using the Credentials saved as JSON you can now past this into github secrets. Navigate to:
 <br> Your Repository > Settings > Secrets and variables > Actions > New repository secret
 <br> Name your secret appropriately and this is the name that you will substitute into the YAMl code above. In my repository the secret is called PRIVATE_KEY, this is reflected in the YAML code as secrets.PRIVATE_KEY
