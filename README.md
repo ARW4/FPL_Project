@@ -220,6 +220,7 @@ Using the Credentials saved as JSON you can now past this into github secrets. N
 <br> What authenitcating looks like in terms of R code is rather simple:
 - You need to call in the credentials.
 - you can then use the googlesheets4 package to authenticate (gs4_auth())
+
 ````r
 # Calling in credentials through github secrest.
 json_string <- Sys.getenv("PRIVATE_KEY")
@@ -233,6 +234,7 @@ For more detail into [authenticating google in R](https://www.obrien.page/blog/2
 <br> Given google has authenticated, to save to google sheets.
 1 - Clear the data in the sheets
 <br>1 - Clearing the data
+
 ````r
 range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
             sheet = "Standings",
