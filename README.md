@@ -3,10 +3,10 @@
 
 ## Project overview ⚽
 The aim of this project was to create an end to end data pipeline solution. This idea was born out of working for a client that was thinking about how it could use Google Cloud Platform (GCP) to create a fully automated data pipeline. Prior to this project I had not extensively used GCP and hence this project was to better my understanding of its ability. I am pleased that I was able to create the Pieplien and have documented the process below. There are a few outcomes from this project: 
-1 - A dashboard that you can view [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings).
-2 - I was able to continue developping on my ability using R and R Studio.
-3 - I learnt how to use Github Actions and Secrets
-4 - I was able to have a better understanding of how GCP can be used to help create a data pipeline.
+<br>1 - A dashboard that you can view [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings).
+<br>2 - I was able to continue developping on my ability using R and R Studio.
+<br>3 - I learnt how to use Github Actions and Secrets
+<br>4 - I was able to have a better understanding of how GCP can be used to help create a data pipeline.
 
 I have learnt alot from taking on this project and I hope that you enjoy reading about my process as much as I enjoyed tackling this project :) 
 
