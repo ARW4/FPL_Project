@@ -122,7 +122,7 @@ for (id in IDs$id) {
 }
 ````
 #### Error Handling
-In constructing the loop I found that calling historical data for all players was not possible as there where some players that where new to the league as of the current season. These players would return no data and cause the loop to fail.<br>
+In constructing the loop I found that calling historical data for all players was not possible as there were some players that were new to the league as of the current season. These players would return no data and cause the loop to fail.<br>
 The syntax: if (nrow(df) > 0) controls the errors as it will only append a data frame if there is more than 0 rows of data.
 
 ### Web Scraping
