@@ -227,6 +227,7 @@ json_string <- Sys.getenv("PRIVATE_KEY")
 # Authenticating google
 gs4_auth(path = json_string)
 ````
+<br>
 For more detail into [authenticating google in R](https://www.obrien.page/blog/2023/03_10_google_and_github_actions/) click the link. 
 <br> 
 <br> Given google has authenticated, to save to google sheets.
