@@ -1,8 +1,7 @@
 name: schedule
 
 on:
-  schedule:
-  - cron: "30 5 * * *"
+  workflow_dispatch:
 
 jobs:
   import-data:
@@ -15,6 +14,11 @@ jobs:
       - name: FPL Code
         env: 
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          STANDINGS_URL: ${{ vars.STANDINGS }}
+          FIXTURES_URL: ${{ vars.FIXTURES }}
+          PLAYER_URL: ${{ vars.PLAYER_TABLE }}
+          GAMEWEEK_URL: ${{ vars.GAMEWEEK_TABLE }}
+          HISTORIC_URL: ${{ vars.HISTORIC_SEASONS }}
         run : 
           Rscript -e 'source("FPL_API.R")'
         
