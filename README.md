@@ -2,17 +2,17 @@
 <img width="1000" alt="Data Pipeline Diagram" src="https://github.com/user-attachments/assets/0c6f0ff0-00e0-47eb-aa64-c0643a3f337a">
 
 ## Project overview ⚽
-The aim of this project was to create an end to end data pipeline solution. This idea was born out of working for a client that was thinking about how it could use Google Cloud Platform (GCP) to create a fully automated data pipeline. Prior to this project I had not extensively used GCP and hence this project was to better my understanding of its ability. I am pleased that I was able to create the Pieplien and have documented the process below. There are a few outcomes from this project:<br>
+The aim of this project was to create an end to end data pipeline solution. This idea was born out of working for a client that was thinking about how it could use Google Cloud Platform (GCP) to create a fully automated data pipeline. Prior to this project I had not extensively used GCP and hence this project was to better my understanding of its ability. I am pleased that I was able to create the Pipeline and have documented the process below. There are a few outcomes from this project:<br>
 - A dashboard that you can view [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings).
-- I was able to continue developping on my ability using R and R Studio.
+- I was able to continue developing on my ability using R and R Studio.
 - I learnt how to use Github Actions and Secrets
 - I was able to have a better understanding of how GCP can be used to help create a data pipeline.
 
-I have learnt alot from taking on this project and I hope that you enjoy reading about my process as much as I enjoyed tackling this project :) 
+I have learnt a lot from taking on this project and I hope that you enjoy reading about my process as much as I enjoyed tackling this project :) 
 
 ## Contents 📖
 [API](#API)
-<br>[Webscrapping](#Web-Scraping)
+<br>[Web Scraping](#Web-Scraping)
 <br>[R Packages](#R-packages)
 <br>[API Call (R Script)](#API-Call)
 <br>[Looping API Call (R Script)](#Looping-API-Call)
@@ -36,20 +36,20 @@ The base URL for the endpoints used in this project is https://fantasy.premierle
 |fixtures/|Returns all the data regarding all completed and future matches.|
 
 ### Web Scraping
-I found that the API which returns data regarding the current league standings was not returning up to date information. Hence, I decided to retrieve the premier league standings table through webscraping.
-After looking through a few options the website that gave the data in the kindest format was the bbc webiste (https://www.bbc.co.uk/sport/football/premier-league/table)
+I found that the API which returns data regarding the current league standings was not returning up to date information. Hence, I decided to retrieve the premier league standings table through web scraping.
+After looking through a few options the website that gave the data in the kindest format was the bbc website (https://www.bbc.co.uk/sport/football/premier-league/table)
 
 ## R Script ®️
 ### R Packages
 The table below shows the packages that were used for this project and a brief note on the purpose and use that each package had.
-| R Package | Useage | Link |
+| R Package | Usage | Link |
 |---- |---- |---- | 
 | conflicted | Used to resolve conflicts from functions between packages |[Documentation](https://cran.r-project.org/web/packages/conflicted/conflicted.pdf)|
 | httr | Used for making API Calls |[Documentation](https://cran.r-project.org/web/packages/httr/httr.pdf)|
-| jsonlite | Converts json into R objects |[Documentation](https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf)|
+| jsonlite | Converts Json into R objects |[Documentation](https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf)|
 | tidyverse | collection of packages that help with transforming data |[Documentation](https://cran.r-project.org/web/packages/tidyverse/tidyverse.pdf)|
 | progress | Creates a progress bar. Improves user experience when building loops as gives an idea on how long code will take to run. |[Documentation](https://cran.r-project.org/web/packages/progress/progress.pdf)|
-| rvest | Used for webscraping data |[Documentation](https://cran.r-project.org/web/packages/rvest/rvest.pdf)|
+| rvest | Used for web scraping data |[Documentation](https://cran.r-project.org/web/packages/rvest/rvest.pdf)|
 |googlesheets4|Authenticates google to be able to save files directly to google sheets|[Documentation](https://cran.r-project.org/web/packages/googlesheets4/googlesheets4.pdf)|
 ### API Call
 The same structure of code was used for each API call. The steps below outline the logic of extracting and converting the API data into usable data frames
@@ -59,7 +59,7 @@ The same structure of code was used for each API call. The steps below outline t
 res = VERB("GET", url = "https://fantasy.premierleague.com/api/fixtures/")
 ````
 
-2 - Convert the reponse of the API call into json
+2 - Convert the response of the API call into Json
 ````r
 res2 <- content(res, "text", encoding = "UTF-8")
 ````
@@ -75,7 +75,7 @@ Fixtures <- data.frame(item)
 ````
 
 ### Looping API Call
-The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using the player id. In order to download the data for all players possible it was neccessary to create a loop that cycles through all possible player ids and downloads the respective data.<br>
+The endpoint used for retrieving the player stats is such that you can only call data from one player at a time using the player id. In order to download the data for all players possible it was necessary to create a loop that cycles through all possible player ids and downloads the respective data.<br>
 <br>1 - Create a new data frame using the Player IDs table. The data frame is one column and includes all possible player ids
 ````r
 # Creating a data frame only containing completed matchday IDs
@@ -87,7 +87,7 @@ IDs <- IDs %>% rename(id = `Player ID`)
 # Creating an empty data frames
 Player_Gameweeks_data_frames <- list()
 ````
-3 - Using the structure of code outlined above to extract and clean the API data. However, due to the looping I needed to add a step at the end that would combine the data frame for each individual player id to the overal data frame created in step 2.
+3 - Using the structure of code outlined above to extract and clean the API data. However, due to the looping I needed to add a step at the end that would combine the data frame for each individual player id to the overall data frame created in step 2.
 ````r
 for (id in IDs$id) {
   
@@ -121,12 +121,12 @@ for (id in IDs$id) {
   }
 }
 ````
-#### Error Handeling
+#### Error Handling
 In constructing the loop I found that calling historical data for all players was not possible as there were some players that where new to the league as of the current season. These players would return no data and cause the loop to fail.<br>
 The syntax: if (nrow(df) > 0) controls the errors as it will only append a data frame if there is more than 0 rows of data.
 
 ### Web Scraping
-As explained above the need for web scraping was a result of the API Standings data not being reliable. In order to webscrape I wanted to find a site that would be a reliable source of data, Stable URL (I.e. not likely to change) and return the data in an easy format to manage. Given this set of criteria I decided that teh BBC website would be suitable (https://www.bbc.co.uk/sport/football/premier-league/table).
+As explained above the need for web scraping was a result of the API Standings data not being reliable. In order to web scrape I wanted to find a site that would be a reliable source of data, Stable URL (I.e. not likely to change) and return the data in an easy format to manage. Given this set of criteria I decided that the BBC website would be suitable (https://www.bbc.co.uk/sport/football/premier-league/table).
 
 1 - Create an object called html that includes the URL with the data. Doing this means that if there is the need to change URL it can be done easily.
 ````r
@@ -145,7 +145,7 @@ Standings <- data.frame(
 
 ## Github Actions 🎬
 ### Github Actions
-Github actions work such that you are able to use a virtual machine, install the required software, run a progrem (in this case the R script) and then close the machine down. 
+Github actions work such that you are able to use a virtual machine, install the required software, run a program (in this case the R script) and then close the machine down. 
 
 To run the github action I wrote the YAML script which can be found in the .github/workflows folder of this repository. The following is an explanation of the steps within the YAML script
 <br> Creating the schedule:
@@ -183,7 +183,7 @@ jobs:
 <br> Saving the output & closing virtual machine:
 - The r script creates csv files that need to be saved back to the repository before the virtual machine uninstalls and closes.
 - Github actions does this by committing the results using the local email and username
-- The YAML code specifies to only udate the files in the repository if there are changes to commit. If there are no updates to the data then the results will not be committed. 
+- The YAML code specifies to only update the files in the repository if there are changes to commit. If there are no updates to the data then the results will not be committed. 
 ````yaml
       - name: Commit results
         run: |
@@ -201,7 +201,7 @@ jobs:
 ## Google Cloud Platform ☁️
 ### GCP
 ### Using Github actions and R to Authenticating Google Sheets using a service account
-Using github actions means that I was able to automate the running of my script on a pre determined schedule. This was essential as I wanted the data pipelien to be fully automated. After automating the running of the script I then needed a way of saving the tables created somewhere that I could use for a Tableau dashboard. Tableau Public allows for data to refresh only when using the google sheets connector, hence the reason why I decided to save the data to google sheets. <br>
+Using github actions means that I was able to automate the running of my script on a pre determined schedule. This was essential as I wanted the data pipeline to be fully automated. After automating the running of the script I then needed a way of saving the tables created somewhere that I could use for a Tableau dashboard. Tableau Public allows for data to refresh only when using the google sheets connector, hence the reason why I decided to save the data to google sheets. <br>
 
 - Create a new project in GCP or select an existing one you would like to use
 - Create Credentials:
@@ -211,7 +211,7 @@ Using github actions means that I was able to automate the running of my script 
   - Google Sheets API
   - Google Drive API
   - IAM Servcie Account Credentials API
-  - Identity and Access MAnagement (IAM)API
+  - Identity and Access Management (IAM)API
 
 ### Using the Credentials saved as JSON you can now past this into github secrets.
 - Navigate to your Repository > Settings > Secrets and variables > Actions > New repository secret
@@ -219,7 +219,7 @@ Using github actions means that I was able to automate the running of my script 
 
 ### R Code
 Everything in GCP and Github is set up to be able to run a script that authenticates google and saves data frames to google sheets.
-What authenitcating looks like in terms of R code is rather simple:
+What authenticating looks like in terms of R code is rather simple:
   - You need to call in the credentials.
   - you can then use the googlesheets4 package to authenticate (gs4_auth())
 
