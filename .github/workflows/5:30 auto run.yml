@@ -14,11 +14,7 @@ jobs:
       - name: FPL Code
         env: 
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          STANDINGS_URL: ${{ vars.STANDINGS }}
-          FIXTURES_URL: ${{ vars.FIXTURES }}
-          PLAYER_URL: ${{ vars.PLAYER_TABLE }}
-          GAMEWEEK_URL: ${{ vars.GAMEWEEK_TABLE }}
-          HISTORIC_URL: ${{ vars.HISTORIC_SEASONS }}
+          GOOGLE_SHEETS_URL: ${{ vars.GOOGLE_SHEETS_URL }}
         run : 
           Rscript -e 'source("FPL_API.R")'
         
