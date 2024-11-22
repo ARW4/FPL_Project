@@ -4,7 +4,7 @@
 ## Project overview ⚽
 The aim of this project was to create a complete end to end data pipeline that would have fully fully automated data refreshes. 
 <br><br>
-This read me outlines the process of making this happen and also some of the challanges along the way. If you would like to skip straight to the dashboard use the link [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-HiddenGems).
+If you would like to skip straight to the dashboard use the link [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings).
 
 ## Learnings
 I began this project knowing how to use R to make API calls, transform data and create tables whilst also being able to use Tableau to visualise data.  The aspects of this project which were new to me included: 
@@ -207,9 +207,21 @@ jobs:
 #### Using Github actions and R to Authenticating Google Sheets using a service account
 Using github actions means that I was able to automate the running of my script on a pre determined schedule. This was essential as I wanted the data pipelien to be fully automated. After automating the running of the script I then needed a way of saving the tables created somewhere that I could use for a Tableau dashboard. Tableau Public allows for data to refresh only when using the google sheets connector, hence the reason why I decided to save the data to google sheets. 
 
-1 - Create a project IN GCP
+1 - Create a new project in GCP or select an existing one you would like to use
+2 - Create Credentials:
+    - Create Credentials > API Key
+    - Create credentials > Service Account (This step will download the service account credentials in JSON format)
+3 - Using the menu in the top left of the GCP console navigate to APIs & Services > Enable APIs & Services. Here you need to enable the following APIs
+    - Google Sheets API
+    - Google Drive API
+    - IAM Servcie Account Credentials API
+    - Identity and Access MAnagement (IAM)API
 
-What authenitcating looks like in terms of R code is rather simple:
+Using the Credentials saved as JSON you can now past this into github secrets. Navigate to:
+<br> Your Repository > Settings > Secrets and variables > Actions > New repository secret
+<br> Name your secret appropriately and this is the name that you will substitute into the YAMl code above. In my repository the secret is called PRIVATE_KEY, this is reflected in the YAML code as secrets.PRIVATE_KEY
+<br> Everything in GCP and Github is set up to be able to run a script that authenticates google and saves data frames to google sheets.
+<br> What authenitcating looks like in terms of R code is rather simple:
 - You need to call in the credentials.
 - you can then use the googlesheets4 package to authenticate (gs4_auth())
 ````r
@@ -219,21 +231,10 @@ json_string <- Sys.getenv("PRIVATE_KEY")
 # Authenticating google
 gs4_auth(path = json_string)
 ````
- 
-
-In order to save to google sheets I needed to first have a way of authenticating to my google account using R. The following link provides a detailed guide into [authenticating google in R](https://www.obrien.page/blog/2023/03_10_google_and_github_actions/). Briefly the steps are outlined below:
-<br>1 - Login to Google Cloud Platform (GCP) and create a service account. Download as JSON.
-<br>2 - Enable the google sheets API
-<br>3 - Create a repository or environment secret in your github repository (Settings -> Security -> Secrets and variables -> Actions)
-<br>In terms of code. Authentication of credentials is done by using the following
-````r
-# Calling in credentials through github secrest.
-json_string <- Sys.getenv("PRIVATE_KEY")
-
-# Authenticating google
-gs4_auth(path = json_string)
-````
-<br>To then update the data already in google sheets I used the following approach of:
+For more detail into [authenticating google in R](https://www.obrien.page/blog/2023/03_10_google_and_github_actions/) click the link. 
+<br> 
+<br> Given google has authenticated, to save to google sheets.
+1 - Clear the data in the sheets
 <br>1 - Clearing the data
 ````r
 range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
@@ -241,14 +242,18 @@ range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12
             range = NULL
 )
 ````
-<br>2 - Writing the new data into the sheet
+2 - Writing the new data into the sheet
 ````r
 write_sheet(Standings, 
             "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
             sheet = "Standings"
 )
 ````
-
 ## Tableau Dashboard 📊
 ### FPL Dashboard
+ [Link to the dashboard on Tableau Public](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings)
+![FPL - Standings](https://github.com/user-attachments/assets/b837cfb3-25c5-4f44-ac37-6c1f059c20ec)
+![FPL - Club Detail](https://github.com/user-attachments/assets/02d83c62-e014-43ea-beb6-f457f3fb4ead)
+![FPL - Player Detail](https://github.com/user-attachments/assets/2f7018c7-a109-4461-8ade-d793074238da)
+![FPL - Hidden Gems](https://github.com/user-attachments/assets/11c71e2f-0711-4cf0-8878-fcdff2067958)
 
