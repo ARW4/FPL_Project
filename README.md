@@ -6,6 +6,14 @@ The aim of this project was to create a complete end to end data pipeline that w
 <br><br>
 This read me outlines the process of making this happen and also some of the challanges along the way. If you would like to skip straight to the dashboard use the link [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-HiddenGems).
 
+## Learnings
+I began this project knowing how to use R to make API calls, transform data and create tables whilst also being able to use Tableau to visualise data.  The aspects of this project which were new to me included: 
+- Github Actions
+- Google Cloud Platform
+- Using a service account to authenticate credentials
+
+I have learnt alot from taking on this project and have a far greater understanding of what is involved with creating an end to end data pipeline. I hope you enjoy the read as much as I enjoyed this project :) 
+
 ## Contents 📖
 [API](#API)
 <br>[Webscrapping](#Web-Scraping)
@@ -15,6 +23,7 @@ This read me outlines the process of making this happen and also some of the cha
 <br>[Web Scraping (R Script)](#Web-Scraping)
 <br>[Google Sheets](#Google-Sheets)
 <br>[Github Actions](#Github-Actions)
+<br>[Google Cloud Platform](#Google-Cloud-Platform-(GCP))
 <br>[Tableau Dashboard](#FPL-Dashboard)
 
 ## Data Sources 🛜
@@ -142,19 +151,21 @@ Standings <- data.frame(
 ### Github Actions
 Github actions work such that you are able to use a virtual machine, install the required software, run a progrem (in this case the R script) and then close the machine down. 
 
-The logcic of how the data refresh can be automated is as follows:
-1 - A YAML file is needed to create workflows. 
-- Firstly a virtual machine is started and installs R and all the packages needed for the R Script to run.
-- Specifying "runs-on: ubunto-latest" means that the virtual machine is running linux. Linus is the cheapest opperating system to run actions on and is more than adequate for the purpose of running the r script.
-- The YAML code then also states the schedule on which the workflow will run. The worfklow hence runs at 5:30 am everyday.
-- "Steps: uses" specifies to set up r using the renv file in the repository
+To run the github action I wrote the YAML script which can be found in the .github/workflows folder of this repository. The following is an explanation of the steps within the YAML script
+<br> Creating the schedule:
+- Creating the title for the action called "schedule"
+- Determining that the action run on a schedule at 5:30 every morning
 ````yaml
 name: schedule
 
 on:
   schedule:
   - cron : "30 5 * * *"
-
+````
+<br> Creating the job:
+ - running the action on ubuntu-latest means that it will run on the latest version of linux
+ - specifying to download R to run on the virtual machine followed by setting up the R environment using the renv.lock file in the repository. Loading in the environment means that all the packages needed for the R script are already installed.
+````yaml
 jobs:
   import-data:
     runs-on: ubuntu-latest
@@ -163,12 +174,20 @@ jobs:
       - uses: r-lib/actions/setup-r@v2
       - uses: r-lib/actions/setup-renv@v2
 ````
-Following on from loading the virtual machine up is the need to run R script saved in the repository
+<br> Running the script:
+- loading in the private key that is saved in the repository (see #Authenticating-Google-Sheets)
+- Run the R script that is in the repository
 ````yaml
       - name: FPL Code
-        run : Rscript -e 'source("FPL_API.R")'
+        env: 
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        run : 
+          Rscript -e 'source("FPL_API.R")'
 ````
-The r script creates csv files that need to be saved back to the repository before the virtual machine uninstalls and closes. The YAML code only updates the csv if there is an update from the file already saved in the repository
+<br> Saving the output & closing virtual machine:
+- The r script creates csv files that need to be saved back to the repository before the virtual machine uninstalls and closes.
+- Github actions does this by committing the results using the local email and username
+- The YAML code specifies to only udate the files in the repository if there are changes to commit. If there are no updates to the data then the results will not be committed. 
 ````yaml
       - name: Commit results
         run: |
@@ -182,8 +201,24 @@ The r script creates csv files that need to be saved back to the repository befo
           git commit -m 'Data updated' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
 ````
-### Authenticating Google Sheets
-Once the R script extracts all the data required from the API and creates data frames I needed a way of saving the files prior to the virtual machine closing (See Github Actions for brief explanation on virtual machine). I chose to upload to google sheets primarily because it is possible to automate the refresh of data for a Tableau Public Dashboard only by using google sheets. 
+
+### Google Cloud Platform (GCP)
+#### Using Github actions and R to Authenticating Google Sheets using a service account
+Using github actions means that I was able to automate the running of my script on a pre determined schedule. This was essential as I wanted the data pipelien to be fully automated. After automating the running of the script I then needed a way of saving the tables created somewhere that I could use for a Tableau dashboard. Tableau Public allows for data to refresh only when using the google sheets connector, hence the reason why I decided to save the data to google sheets. 
+
+1 - Create a project IN GCP
+
+What authenitcating looks like in terms of R code is rather simple:
+- You need to call in the credentials.
+- you can then use the googlesheets4 package to authenticate (gs4_auth())
+````r
+# Calling in credentials through github secrest.
+json_string <- Sys.getenv("PRIVATE_KEY")
+
+# Authenticating google
+gs4_auth(path = json_string)
+````
+ 
 
 In order to save to google sheets I needed to first have a way of authenticating to my google account using R. The following link provides a detailed guide into [authenticating google in R](https://www.obrien.page/blog/2023/03_10_google_and_github_actions/). Briefly the steps are outlined below:
 <br>1 - Login to Google Cloud Platform (GCP) and create a service account. Download as JSON.
