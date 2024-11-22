@@ -344,7 +344,8 @@ gs4_auth(path = json_string)
 #----------- Uploading to googlesheets ----------
 
 # Standings table
-range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+Standings_url <- Sys.getenv("STANDINGS_URL)
+range_clear(Standings_url,
             sheet = "Standings",
             range = NULL
 )
