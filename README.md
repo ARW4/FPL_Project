@@ -240,7 +240,7 @@ For more detail into authenticating google sheets in github actions using R use 
 <br> 
 <br> Given google has authenticated, to save to google sheets use the following steps:
 
-1 - Calling in the Google Sheets URL from an Repository Variable 
+1 - Calling in the Google Sheets URL from a repository variable 
 ````r
 Google_Sheets_Url <- Sys.getenv("GOOGLE_SHEETS_URL")
   ````
