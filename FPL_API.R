@@ -344,58 +344,59 @@ gs4_auth(path = json_string)
 #----------- Uploading to googlesheets ----------
 
 # Standings table
-Standings_url <- Sys.getenv("STANDINGS_URL)
-range_clear(Standings_url,
+Google_Sheets_Url <- "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661"
+
+range_clear(Google_Sheets_Url,
             sheet = "Standings",
             range = NULL
 )
 
 write_sheet(Standings, 
-            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            Google_Sheets_Url,
             sheet = "Standings"
 )
 
 #Fixtures table
-range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+range_clear(Google_Sheets_Url,
             sheet = "Fixtures",
             range = NULL
 )
 
 write_sheet(Fixtures, 
-            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            Google_Sheets_Url,
             sheet = "Fixtures"
 )
 
 # Player table
-range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+range_clear(Google_Sheets_Url,
             sheet = "Player",
             range = NULL
 )
 
 write_sheet(Player, 
-            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            Google_Sheets_Url,
             sheet = "Player"
 )
 
 #Gameweek table
-range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+range_clear(Google_Sheets_Url,
             sheet = "Gameweek",
             range = NULL
 )
 
 write_sheet(Gameweek, 
-            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            Google_Sheets_Url,
             sheet = "Gameweek"
 )
 
 # Historic Seasons table
-range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+range_clear(Google_Sheets_Url,
             sheet = "Historic Seasons",
             range = NULL
 )
 
 write_sheet(`Historic_Seasons`, 
-            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            Google_Sheets_Url,
             sheet = "Historic Seasons"
 )
 
