@@ -205,13 +205,13 @@ Using github actions means that I was able to automate the running of my script 
 
 <br>1 - Create a new project in GCP or select an existing one you would like to use
 <br>2 - Create Credentials:
-    <br>"\t"- Create Credentials > API Key
-    <br>"\t"- Create credentials > Service Account (This step will download the service account credentials in JSON format)
+    - Create Credentials > API Key
+    - Create credentials > Service Account (This step will download the service account credentials in JSON format)
 <br>3 - Using the menu in the top left of the GCP console navigate to APIs & Services > Enable APIs & Services. Here you need to enable the following APIs
-    <br>"\t"- Google Sheets API
-    <br>"\t"- Google Drive API
-    <br>"\t"- IAM Servcie Account Credentials API
-    <br>"\t"- Identity and Access MAnagement (IAM)API
+    - Google Sheets API
+    - Google Drive API
+    - IAM Servcie Account Credentials API
+    - Identity and Access MAnagement (IAM)API
 <br><br>
 Using the Credentials saved as JSON you can now past this into github secrets. Navigate to:
 <br> Your Repository > Settings > Secrets and variables > Actions > New repository secret
