@@ -212,12 +212,12 @@ Using github actions means that I was able to automate the running of my script 
   - Google Drive API
   - IAM Servcie Account Credentials API
   - Identity and Access MAnagement (IAM)API
-<br>
-Using the Credentials saved as JSON you can now past this into github secrets.
 
+#### Using the Credentials saved as JSON you can now past this into github secrets.
 - Navigate to your Repository > Settings > Secrets and variables > Actions > New repository secret
 - Name your secret appropriately and this is the name that you will substitute into the YAMl code above. In my repository the secret is called PRIVATE_KEY, this is reflected in the YAML code as secrets.PRIVATE_KEY
 
+#### R Code
 Everything in GCP and Github is set up to be able to run a script that authenticates google and saves data frames to google sheets.
 What authenitcating looks like in terms of R code is rather simple:
   - You need to call in the credentials.
