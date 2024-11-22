@@ -138,37 +138,6 @@ Standings <- data.frame(
 )
 ````
 
-### Google Sheets
-Once the R script extracts all the data required from the API and creates data frames I needed a way of saving the files prior to the virtual machine closing (See Github Actions for brief explanation on virtual machine). I chose to upload to google sheets primarily because it is possible to automate the refresh of data for a Tableau Public Dashboard only by using google sheets. 
-
-In order to save to google sheets I needed to first have a way of authenticating to my google account using R. The following link provides a detailed guide into [authenticating google in R](https://www.obrien.page/blog/2023/03_10_google_and_github_actions/). Briefly the steps are outlined below:
-<br>1 - Login to Google Cloud Platform (GCP) and create a service account. Download as JSON.
-<br>2 - Enable the google sheets API
-<br>3 - Create a repository or environment secret in your github repository (Settings -> Security -> Secrets and variables -> Actions)
-<br>In terms of code. Authentication of credentials is done by using the following
-````r
-# Calling in credentials through github secrest.
-json_string <- Sys.getenv("PRIVATE_KEY")
-
-# Authenticating google
-gs4_auth(path = json_string)
-````
-<br>To then update the data already in google sheets I used the following approach of:
-<br>1 - Clearing the data
-````r
-range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
-            sheet = "Standings",
-            range = NULL
-)
-````
-<br>2 - Writing the new data into the sheet
-````r
-write_sheet(Standings, 
-            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
-            sheet = "Standings"
-)
-````
-
 ## Github Actions 🎬
 ### Github Actions
 Github actions work such that you are able to use a virtual machine, install the required software, run a progrem (in this case the R script) and then close the machine down. 
@@ -212,6 +181,36 @@ The r script creates csv files that need to be saved back to the repository befo
           git add Fixtures.csv
           git commit -m 'Data updated' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
+````
+### Authenticating Google Sheets
+Once the R script extracts all the data required from the API and creates data frames I needed a way of saving the files prior to the virtual machine closing (See Github Actions for brief explanation on virtual machine). I chose to upload to google sheets primarily because it is possible to automate the refresh of data for a Tableau Public Dashboard only by using google sheets. 
+
+In order to save to google sheets I needed to first have a way of authenticating to my google account using R. The following link provides a detailed guide into [authenticating google in R](https://www.obrien.page/blog/2023/03_10_google_and_github_actions/). Briefly the steps are outlined below:
+<br>1 - Login to Google Cloud Platform (GCP) and create a service account. Download as JSON.
+<br>2 - Enable the google sheets API
+<br>3 - Create a repository or environment secret in your github repository (Settings -> Security -> Secrets and variables -> Actions)
+<br>In terms of code. Authentication of credentials is done by using the following
+````r
+# Calling in credentials through github secrest.
+json_string <- Sys.getenv("PRIVATE_KEY")
+
+# Authenticating google
+gs4_auth(path = json_string)
+````
+<br>To then update the data already in google sheets I used the following approach of:
+<br>1 - Clearing the data
+````r
+range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Standings",
+            range = NULL
+)
+````
+<br>2 - Writing the new data into the sheet
+````r
+write_sheet(Standings, 
+            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            sheet = "Standings"
+)
 ````
 
 ## Tableau Dashboard 📊
