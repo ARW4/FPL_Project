@@ -5,7 +5,7 @@
 The aim of this project was to create an end to end data pipeline solution. This idea was born out of working for a client that was thinking about how it could use Google Cloud Platform (GCP) to create a fully automated data pipeline. Prior to this project I had not extensively used GCP and hence this project was to better my understanding of its ability. I am pleased that I was able to create the Pipeline and have documented the process below. There are a few outcomes from this project:<br>
 - A dashboard that you can view [here](https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings).
 - I was able to continue developing on my ability using R and R Studio.
-- I learnt how to use Github Actions and Secrets
+- I learnt how to use Github Actions, Secrets and Variables
 - I was able to have a better understanding of how GCP can be used to help create a data pipeline.
 
 I have learnt a lot from taking on this project and I hope that you enjoy reading about my process as much as I enjoyed tackling this project :) 
@@ -177,6 +177,7 @@ jobs:
       - name: FPL Code
         env: 
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          GOOGLE_SHEETS_URL: ${{ vars.GOOGLE_SHEETS_URL }}
         run : 
           Rscript -e 'source("FPL_API.R")'
 ````
@@ -217,6 +218,10 @@ Using github actions means that I was able to automate the running of my script 
 - Navigate to your Repository > Settings > Secrets and variables > Actions > New repository secret
 - Name your secret appropriately and this is the name that you will substitute into the YAMl code above. In my repository the secret is called PRIVATE_KEY, this is reflected in the YAML code as secrets.PRIVATE_KEY
 
+### Saving Google Sheets URL as Repository variable
+- Navigate to your Repository > Settings > Secrets and variables > Actions > Variables > New repository variable
+- Name your variable appropriately and this is the name that you will substitute into the YAMl code above. In my repository the variable is called GOOGLE_SHEETS_URL, this is reflected in the YAML code as vars.GOOGLE_SHEETS_URL
+
 ### R Code
 Everything in GCP and Github is set up to be able to run a script that authenticates google and saves data frames to google sheets.
 What authenticating looks like in terms of R code is rather simple:
@@ -224,7 +229,7 @@ What authenticating looks like in terms of R code is rather simple:
   - you can then use the googlesheets4 package to authenticate (gs4_auth())
 
 ````r
-# Calling in credentials through github secrest.
+# Calling in credentials through github secrets.
 json_string <- Sys.getenv("PRIVATE_KEY")
 
 # Authenticating google
@@ -234,19 +239,25 @@ gs4_auth(path = json_string)
 For more detail into authenticating google sheets in github actions using R use the following link: https://www.obrien.page/blog/2023/03_10_google_and_github_actions/
 <br> 
 <br> Given google has authenticated, to save to google sheets.
-<br> 1 - Clear the data in the sheets
+<br> 1 - Calling in the Google Sheets URL from an Repository Variable 
+````r
+Google_Sheets_Url <- Sys.getenv("GOOGLE_SHEETS_URL")
+  ````
+<br> 2 - Clear the data in the sheets
 
 
 ````r
-range_clear("https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+
+range_clear(Google_Sheets_Url,
             sheet = "Standings",
             range = NULL
+)
 )
 ````
 2 - Writing the new data into the sheet
 ````r
 write_sheet(Standings, 
-            "https://docs.google.com/spreadsheets/d/1k4H0SsvqbTOAaFBflMGQ-tie-12nODJJoDEJf-eQ6Vc/edit?gid=339894661#gid=339894661",
+            Google_Sheets_Url,
             sheet = "Standings"
 )
 ````
