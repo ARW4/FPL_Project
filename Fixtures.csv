@@ -219,20 +219,20 @@
 108,11,TRUE,"2024-11-10",1,2,2,4,"Away","Ipswich Town","Tottenham Hotspur",10
 103,11,TRUE,"2024-11-10",1,1,5,4,"Home","Chelsea","Arsenal",6
 103,11,TRUE,"2024-11-10",1,1,5,4,"Away","Arsenal","Chelsea",1
-117,12,FALSE,"2024-11-23",NA,NA,4,2,"Home","Leicester City","Chelsea",11
-117,12,FALSE,"2024-11-23",NA,NA,4,2,"Away","Chelsea","Leicester City",6
-111,12,FALSE,"2024-11-23",NA,NA,3,5,"Home","Arsenal","Nottingham Forest",1
-111,12,FALSE,"2024-11-23",NA,NA,3,5,"Away","Nottingham Forest","Arsenal",16
-112,12,FALSE,"2024-11-23",NA,NA,2,4,"Home","Aston Villa","Crystal Palace",2
-112,12,FALSE,"2024-11-23",NA,NA,2,4,"Away","Crystal Palace","Aston Villa",7
-113,12,FALSE,"2024-11-23",NA,NA,2,3,"Home","AFC Bournemouth","Brighton & Hove Albion",3
-113,12,FALSE,"2024-11-23",NA,NA,2,3,"Away","Brighton & Hove Albion","AFC Bournemouth",5
-114,12,FALSE,"2024-11-23",NA,NA,2,2,"Home","Everton","Brentford",8
-114,12,FALSE,"2024-11-23",NA,NA,2,2,"Away","Brentford","Everton",4
-115,12,FALSE,"2024-11-23",NA,NA,2,3,"Home","Fulham","Wolverhampton Wanderers",9
-115,12,FALSE,"2024-11-23",NA,NA,2,3,"Away","Wolverhampton Wanderers","Fulham",20
-118,12,FALSE,"2024-11-23",NA,NA,4,5,"Home","Manchester City","Tottenham Hotspur",13
-118,12,FALSE,"2024-11-23",NA,NA,4,5,"Away","Tottenham Hotspur","Manchester City",18
+117,12,TRUE,"2024-11-23",1,2,4,2,"Home","Leicester City","Chelsea",11
+117,12,TRUE,"2024-11-23",1,2,4,2,"Away","Chelsea","Leicester City",6
+111,12,TRUE,"2024-11-23",3,0,3,5,"Home","Arsenal","Nottingham Forest",1
+111,12,TRUE,"2024-11-23",3,0,3,5,"Away","Nottingham Forest","Arsenal",16
+112,12,TRUE,"2024-11-23",2,2,2,4,"Home","Aston Villa","Crystal Palace",2
+112,12,TRUE,"2024-11-23",2,2,2,4,"Away","Crystal Palace","Aston Villa",7
+113,12,TRUE,"2024-11-23",1,2,2,3,"Home","AFC Bournemouth","Brighton & Hove Albion",3
+113,12,TRUE,"2024-11-23",1,2,2,3,"Away","Brighton & Hove Albion","AFC Bournemouth",5
+114,12,TRUE,"2024-11-23",0,0,2,2,"Home","Everton","Brentford",8
+114,12,TRUE,"2024-11-23",0,0,2,2,"Away","Brentford","Everton",4
+115,12,TRUE,"2024-11-23",1,4,2,3,"Home","Fulham","Wolverhampton Wanderers",9
+115,12,TRUE,"2024-11-23",1,4,2,3,"Away","Wolverhampton Wanderers","Fulham",20
+118,12,TRUE,"2024-11-23",0,4,4,5,"Home","Manchester City","Tottenham Hotspur",13
+118,12,TRUE,"2024-11-23",0,4,4,5,"Away","Tottenham Hotspur","Manchester City",18
 120,12,FALSE,"2024-11-24",NA,NA,5,2,"Home","Southampton","Liverpool",17
 120,12,FALSE,"2024-11-24",NA,NA,5,2,"Away","Liverpool","Southampton",12
 116,12,FALSE,"2024-11-24",NA,NA,3,2,"Home","Ipswich Town","Manchester United",10
