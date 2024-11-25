@@ -1,5 +1,5 @@
 "Position","Team","Abbreviation","Team Strength","Played","Won","Drawn","Lost","Goals For","Goals Against","Goal Difference","Points","Team ID"
-1,"Liverpool","LIV",5,11,9,1,1,21,6,15,28,12
+1,"Liverpool","LIV",5,12,10,1,1,24,8,16,31,12
 2,"Manchester City","MCI",5,12,7,2,3,22,17,5,23,13
 3,"Chelsea","CHE",4,12,6,4,2,23,14,9,22,6
 4,"Arsenal","ARS",5,12,6,4,2,21,12,9,22,1
@@ -10,12 +10,12 @@
 9,"Newcastle United","NEW",3,11,5,3,3,13,11,2,18,15
 10,"Fulham","FUL",3,12,5,3,4,17,17,0,18,9
 11,"Brentford","BRE",3,12,5,2,5,22,22,0,17,4
-12,"Manchester United","MUN",3,11,4,3,4,12,12,0,15,14
+12,"Manchester United","MUN",3,12,4,4,4,13,13,0,16,14
 13,"AFC Bournemouth","BOU",3,12,4,3,5,16,17,-1,15,3
 14,"West Ham United","WHU",3,11,3,3,5,13,19,-6,12,19
 15,"Everton","EVE",3,12,2,5,5,10,17,-7,11,8
 16,"Leicester City","LEI",3,12,2,4,6,15,23,-8,10,11
 17,"Wolverhampton Wanderers","WOL",3,12,2,3,7,20,28,-8,9,20
-18,"Crystal Palace","CRY",3,12,1,5,6,10,17,-7,8,7
-19,"Ipswich Town","IPS",3,11,1,5,5,12,22,-10,8,10
-20,"Southampton","SOU",2,11,1,1,9,7,21,-14,4,17
+18,"Ipswich Town","IPS",3,12,1,6,5,13,23,-10,9,10
+19,"Crystal Palace","CRY",3,12,1,5,6,10,17,-7,8,7
+20,"Southampton","SOU",2,12,1,1,10,9,24,-15,4,17
