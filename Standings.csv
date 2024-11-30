@@ -1,9 +1,9 @@
 "Position","Team","Abbreviation","Team Strength","Played","Won","Drawn","Lost","Goals For","Goals Against","Goal Difference","Points","Team ID"
 1,"Liverpool","LIV",5,12,10,1,1,24,8,16,31,12
-2,"Manchester City","MCI",5,12,7,2,3,22,17,5,23,13
-3,"Chelsea","CHE",4,12,6,4,2,23,14,9,22,6
-4,"Arsenal","ARS",5,12,6,4,2,21,12,9,22,1
-5,"Brighton & Hove Albion","BHA",3,12,6,4,2,21,16,5,22,5
+2,"Brighton & Hove Albion","BHA",3,13,6,5,2,22,17,5,23,5
+3,"Manchester City","MCI",5,12,7,2,3,22,17,5,23,13
+4,"Chelsea","CHE",4,12,6,4,2,23,14,9,22,6
+5,"Arsenal","ARS",5,12,6,4,2,21,12,9,22,1
 6,"Tottenham Hotspur","TOT",4,12,6,1,5,27,13,14,19,18
 7,"Nottingham Forest","NFO",3,12,5,4,3,15,13,2,19,16
 8,"Aston Villa","AVL",3,12,5,4,3,19,19,0,19,2
@@ -18,4 +18,4 @@
 17,"Wolverhampton Wanderers","WOL",3,12,2,3,7,20,28,-8,9,20
 18,"Ipswich Town","IPS",3,12,1,6,5,13,23,-10,9,10
 19,"Crystal Palace","CRY",3,12,1,5,6,10,17,-7,8,7
-20,"Southampton","SOU",2,12,1,1,10,9,24,-15,4,17
+20,"Southampton","SOU",2,13,1,2,10,10,25,-15,5,17
