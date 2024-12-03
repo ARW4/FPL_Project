@@ -7,16 +7,20 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.core.os_manager import ChromeType
 from selenium.webdriver.chrome.options import Options
-import time
 import os
-
+import time
 
 #https://sites.google.com/chromium.org/driver/
 
 # Ensure that the driver .exe file is saved in the some directory as the code
 #service = Service(executable_path="chromedriver.exe")
-service = Service(os.environ['CHROMEWEBDRIVER'])
-driver = webdriver.Chrome(service=service)
+#driver = webdriver.Chrome(service=service)
+chrome_options = Options()
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-dev-shm-usage')
+driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
+driver = webdriver.Chrome(service=driver_path, options=chrome_options)
 
 driver.maximize_window()
 
@@ -25,7 +29,7 @@ website = "https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_172
 driver.get(website)
 
 # Create delay until element is an option
-wait = WebDriverWait(driver, 30)
+wait = WebDriverWait(driver, 10)
 
 # Click on Reject Cookies
 wait.until(
@@ -48,14 +52,13 @@ wait.until(
 ).click()
 
 # Type in email
-tableau_email = os.environ["TABLEAU_EMAIL"]
 input_element = driver.find_element(By.XPATH, "//*[@id='email']")
-input_element.send_keys (tableau_email)
+input_element.send_keys ("alexrobinwood@icloud.com")
 
 # Type in password
-tableau_password = os.enviorn["TABLEAU_PASSWORD"]
 input_element = driver.find_element(By.XPATH, "//*[@id='password']")
-input_element.send_keys (tableau_password)
+input_element.send_keys ("tovdod-zafXaj-4kokwu")
+#wait.until(EC.text_to_be_present_in_element((By.XPATH, "//*[@id='password']"), "tovdod-zafXaj-4kokwu"))
 
 # Click signin button
 input_element = driver.find_element(By.XPATH, "//*[@id='signInButton']")
