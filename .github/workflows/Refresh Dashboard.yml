@@ -22,8 +22,27 @@ jobs:
           TABLEAU_PASSWORD: ${{ secrets.TABLEAU_PASSWORD }}
         run: python -c "import sys; print(sys.version)"
 
+      - name: Download ChromeDriver
+        uses: actions/download-artifact@v3
+        with:
+          path: chromedriver.zip
+          name: chromedriver
+
+      - name: Extract ChromeDriver
+        run: unzip chromedriver.zip
+
+      - name: Set up ChromeDriver
+        run: |
+          export PATH=$PATH:./
+          chmod +x ./chromedriver
+
       - name: Install Selenium
         run: pip install selenium
 
       - name: Install webdriver-manager
         run: pip install webdriver-manager
+
+
+
+
+     
