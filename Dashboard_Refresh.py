@@ -31,16 +31,6 @@ driver.get(website)
 # Create delay until element is an option
 wait = WebDriverWait(driver, 300)
 
-# Click on Reject Cookies
-#wait.until(
-    #EC.element_to_be_clickable(
-        #(
-            #By.XPATH,
-           # "//*[@id='onetrust-reject-all-handler']",
-       # )
- #   )
-#).click()
-
 # Click on Sign in button
 wait.until(
     EC.element_to_be_clickable(
