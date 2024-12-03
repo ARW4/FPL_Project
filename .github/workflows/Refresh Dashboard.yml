@@ -22,8 +22,8 @@ jobs:
           TABLEAU_PASSWORD: ${{ secrets.TABLEAU_PASSWORD }}
         run: python -c "import sys; print(sys.version)"
 
-      - name: Install Packages
+      - name: Install Selenium
         run: pip install selenium
 
-      - name: Run script
-        run: python Dashboard_Refresh.py
+      - name: Install webdriver-manager
+        run: pip install webdriver-manager
