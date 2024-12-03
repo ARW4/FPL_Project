@@ -32,7 +32,7 @@ jobs:
         run: pip install webdriver-manager
 
       - name: Run script
-        run: python Refresh_Dashboard.py
+        run: python Dashboard_Refresh.py
 
 
 
