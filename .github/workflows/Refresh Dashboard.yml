@@ -1,7 +1,10 @@
 name: Dashboard Refresh
 
 on:
-  workflow_dispatch:
+   workflow_run:
+    workflows: ["Manual Run"]
+    types:
+      - completed
 
 jobs:
   dashboard_refresh:
