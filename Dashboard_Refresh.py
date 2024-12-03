@@ -4,14 +4,24 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.core.os_manager import ChromeType
+from selenium.webdriver.chrome.options import Options
 import time
 import os
+
 
 #https://sites.google.com/chromium.org/driver/
 
 # Ensure that the driver .exe file is saved in the some directory as the code
-service = Service(executable_path="chromedriver.exe")
-driver = webdriver.Chrome(service=service)
+#service = Service(executable_path="chromedriver.exe")
+#driver = webdriver.Chrome(service=service)
+chrome_options = Options()
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-dev-shm-usage')
+driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
+driver = webdriver.Chrome(service=driver_path, options=chrome_options)
 
 driver.maximize_window()
 
