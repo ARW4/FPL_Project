@@ -1,10 +1,7 @@
 name: Dashboard Refresh
 
 on:
-   workflow_run:
-    workflows: ["5:30 Schedule"]
-    types:
-      - completed
+   workflow_dispatch:
 
 jobs:
   dashboard_refresh:
