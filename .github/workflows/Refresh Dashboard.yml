@@ -1,4 +1,4 @@
-name: Python package
+name: Dashboard Refresh
 
 on:
   workflow_dispatch:
