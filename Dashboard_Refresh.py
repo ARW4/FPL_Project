@@ -15,7 +15,7 @@ import os
 
 # Ensure that the driver .exe file is saved in the some directory as the code
 #service = Service(executable_path="chromedriver.exe")
-service = Service(environ['CHROMEWEBDRIVER'])
+service = Service(os.environ['CHROMEWEBDRIVER'])
 driver = webdriver.Chrome(service=service)
 
 driver.maximize_window()
