@@ -22,9 +22,6 @@ jobs:
           TABLEAU_PASSWORD: ${{ secrets.TABLEAU_PASSWORD }}
         run: python -c "import sys; print(sys.version)"
 
-      - name: install chromium
-        run: sudo snap install chromium
-
       - name: Install Selenium
         run: pip install selenium
 
