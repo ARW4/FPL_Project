@@ -20,9 +20,7 @@ jobs:
         run: python -c "import sys; print(sys.version)"
 
       - name: Install Packages
-        run: pip install selenium
-
-      - name: Login Details
         env:
           TABLEAU_EMAIL: ${{ secrets.TABLEAU_EMAIL }}
           TABLEAU_PASSWORD: ${{ secrest.TABLEAU_PASSWORD }}
+        run: pip install selenium
