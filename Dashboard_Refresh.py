@@ -53,11 +53,13 @@ wait.until(
 
 # Type in email
 input_element = driver.find_element(By.XPATH, "//*[@id='email']")
-input_element.send_keys ("alexrobinwood@icloud.com")
+email = os.environ["TABLEAU_EMAIL"]
+input_element.send_keys ("email")
 
 # Type in password
 input_element = driver.find_element(By.XPATH, "//*[@id='password']")
-input_element.send_keys ("tovdod-zafXaj-4kokwu")
+password = os.environ["TABLEAU_PASSWORD"]
+input_element.send_keys ("password")
 #wait.until(EC.text_to_be_present_in_element((By.XPATH, "//*[@id='password']"), "tovdod-zafXaj-4kokwu"))
 
 # Click signin button
