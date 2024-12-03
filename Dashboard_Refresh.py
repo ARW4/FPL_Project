@@ -29,7 +29,7 @@ website = "https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_172
 driver.get(website)
 
 # Create delay until element is an option
-wait = WebDriverWait(driver, 10)
+wait = WebDriverWait(driver, 30)
 
 # Click on Reject Cookies
 wait.until(
