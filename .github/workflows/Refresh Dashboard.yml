@@ -27,3 +27,6 @@ jobs:
 
       - name: Install webdriver-manager
         run: pip install webdriver-manager
+
+      - name: Run Script
+        run: python Dashboard_Refresh.py
