@@ -21,3 +21,6 @@ jobs:
 
       - name: Install Packages
         run: pip install selenium
+
+      - name: Login Details
+      
