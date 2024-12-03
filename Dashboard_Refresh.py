@@ -29,7 +29,7 @@ website = "https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_172
 driver.get(website)
 
 # Create delay until element is an option
-wait = WebDriverWait(driver, 300)
+wait = WebDriverWait(driver, 20)
 
 # Click on Sign in button
 wait.until(
@@ -43,12 +43,12 @@ wait.until(
 
 # Type in email
 input_element = driver.find_element(By.XPATH, "//*[@id='email']")
-environ_email = os.environ["TABLEAU_EMAIL"]
+environ_email = os.getenv["TABLEAU_EMAIL"]
 input_element.send_keys (environ_email)
 
 # Type in password
 input_element = driver.find_element(By.XPATH, "//*[@id='password']")
-environ_password = os.environ["TABLEAU_PASSWORD"]
+environ_password = os.getenv["TABLEAU_PASSWORD"]
 input_element.send_keys (environ_password)
 
 # Click signin button
