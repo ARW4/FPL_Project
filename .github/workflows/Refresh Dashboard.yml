@@ -14,7 +14,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           # Semantic version range syntax or exact version of a Python version
-          python-version: '3.12.6'
+          python-version: '3.12.2'
       # You can test your matrix by printing the current Python version
       - name: Display Python version
         env: 
@@ -22,11 +22,11 @@ jobs:
           TABLEAU_PASSWORD: ${{ secrets.TABLEAU_PASSWORD }}
         run: python -c "import sys; print(sys.version)"
 
-      - name: Install Selenium
-        run: pip install selenium
-
-      - name: Install webdriver-manager
-        run: pip install webdriver-manager
+      - name: Install Dependencies
+        run: |
+          sudo snap install chromium
+          pip install selenium
+          pip install webdriver-manager
 
       - name: Run Script
         run: python Dashboard_Refresh.py
