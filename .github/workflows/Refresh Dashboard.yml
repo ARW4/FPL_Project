@@ -30,8 +30,3 @@ jobs:
 
       - name: Run script
         run: python Dashboard_Refresh.py
-
-
-
-
-     
