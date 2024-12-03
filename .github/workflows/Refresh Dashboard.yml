@@ -19,7 +19,7 @@ jobs:
       - name: Display Python version
         env: 
           TABLEAU_EMAIL: ${{ secrets.TABLEAU_EMAIL }}
-          TABLEAU_PASSWORD: ${{ secrest.TABLEAU_PASSWORD }}
+          TABLEAU_PASSWORD: ${{ secrets.TABLEAU_PASSWORD }}
         run: python -c "import sys; print(sys.version)"
 
       - name: Install Packages
