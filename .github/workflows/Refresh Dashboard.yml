@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  dashboard_refresh:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,6 +21,12 @@ jobs:
           TABLEAU_EMAIL: ${{ secrets.TABLEAU_EMAIL }}
           TABLEAU_PASSWORD: ${{ secrets.TABLEAU_PASSWORD }}
         run: python -c "import sys; print(sys.version)"
+
+      - uses: actions/checkout@v3
+      - name: Set Up Chrome
+        uses: actions/setup-chrome@v3
+        with:
+          chrome-version: '118.0.0'
 
       - name: Install Selenium
         run: pip install selenium
