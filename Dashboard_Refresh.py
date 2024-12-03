@@ -32,14 +32,14 @@ driver.get(website)
 wait = WebDriverWait(driver, 100)
 
 # Click on Reject Cookies
-wait.until(
-    EC.element_to_be_clickable(
-        (
-            By.XPATH,
-            "//*[@id='onetrust-reject-all-handler']",
-        )
-    )
-).click()
+#wait.until(
+    #EC.element_to_be_clickable(
+        #(
+            #By.XPATH,
+           # "//*[@id='onetrust-reject-all-handler']",
+       # )
+ #   )
+#).click()
 
 # Click on Sign in button
 wait.until(
