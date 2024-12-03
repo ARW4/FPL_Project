@@ -23,4 +23,6 @@ jobs:
         run: pip install selenium
 
       - name: Login Details
-      
+        env:
+          TABLEAU_EMAIL: ${{ secrets.TABLEAU_EMAIL }}
+          TABLEAU_PASSWORD: ${{ secrest.TABLEAU_PASSWORD }}
