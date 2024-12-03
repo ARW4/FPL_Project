@@ -33,6 +33,3 @@ jobs:
 
       - name: Install webdriver-manager
         run: pip install webdriver-manager
-
-      - name: Run script
-        run: python Dashboard_Refresh.py
