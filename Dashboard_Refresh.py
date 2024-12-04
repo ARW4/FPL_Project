@@ -48,7 +48,8 @@ input_element.send_keys(environ_email)
 
 # Type in password
 input_element = driver.find_element(By.XPATH, "//*[@id='password']")
-input_element.send_keys("tovdod-zafXaj-4kokwu")
+environ_password = os.environ["TABLEAU_PASSWORD"]
+input_element.send_keys(environ_password)
 
 # Click signin button
 input_element = driver.find_element(By.XPATH, "//*[@id='signInButton']")
