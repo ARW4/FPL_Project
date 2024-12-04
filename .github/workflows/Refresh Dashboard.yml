@@ -23,6 +23,6 @@ jobs:
 
       - name: Run Script
         env: 
-          TABLEAU_EMAIL: ${{ secrets.TABLEAU_EMAIL }}
-          TABLEAU_PASSWORD: ${{ secrets.TABLEAU_PASSWORD }}
+          TABLEAU_EMAIL: ${{ vars.TABLEAU_EMAIL }}
+          TABLEAU_PASSWORD: ${{ vars.TABLEAU_PASSWORD }}
         run: python Dashboard_Refresh.py
