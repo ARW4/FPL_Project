@@ -43,13 +43,13 @@ wait.until(
 
 # Type in email
 input_element = driver.find_element(By.XPATH, "//*[@id='email']")
-user_email = os.environ.get("TABLEAU_EMAIL")
-input_element.send_keys (user_email)
+#user_email = os.environ.get("TABLEAU_EMAIL")
+input_element.send_keys ("alexrobinwood"icloud.com")
 
 # Type in password
 input_element = driver.find_element(By.XPATH, "//*[@id='password']")
-user_password = os.environ.get("TABLEAU_PASSWORD")
-input_element.send_keys (user_password)
+#user_password = os.environ.get("TABLEAU_PASSWORD")
+input_element.send_keys ("tovdod-zafXaj-4kokwu")
 
 # Click signin button
 input_element = driver.find_element(By.XPATH, "//*[@id='signInButton']")
