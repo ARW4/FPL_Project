@@ -1,4 +1,4 @@
-name: Dashboard Refresh
+name: Refresh Dashboard
 
 on:
    workflow_dispatch:
