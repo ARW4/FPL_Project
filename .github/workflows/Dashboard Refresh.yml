@@ -1,0 +1,28 @@
+name: Refresh Dashboard
+
+on:
+   workflow_dispatch:
+
+jobs:
+  dashboard_refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository content
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.2'
+
+      - name: Install Dependencies
+        run: |
+          sudo snap install chromium
+          pip install selenium
+          pip install webdriver-manager
+
+      - name: Run Script
+        env: 
+          TABLEAU_EMAIL: ${{ vars.TABLEAU_EMAIL }}
+          TABLEAU_PASSWORD: ${{ vars.TABLEAU_PASSWORD }}
+        run: python Dashboard_Refresh.py
