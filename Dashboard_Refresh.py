@@ -31,6 +31,16 @@ driver.get(website)
 # Create delay until element is an option
 wait = WebDriverWait(driver, 300)
 
+# Click on Reject Cookies
+#wait.until(
+    #EC.element_to_be_clickable(
+        #(
+            #By.XPATH,
+           # "//*[@id='onetrust-reject-all-handler']",
+       # )
+ #   )
+#).click()
+
 # Click on Sign in button
 wait.until(
     EC.element_to_be_clickable(
@@ -43,11 +53,12 @@ wait.until(
 
 # Type in email
 input_element = driver.find_element(By.XPATH, "//*[@id='email']")
-input_element.send_keys("alexrobinwood@icloud.com")
+input_element.send_keys ("alexrobinwood@icloud.com")
 
 # Type in password
 input_element = driver.find_element(By.XPATH, "//*[@id='password']")
-input_element.send_keys("tovdod-zafXaj-4kokwu")
+input_element.send_keys ("tovdod-zafXaj-4kokwu")
+#wait.until(EC.text_to_be_present_in_element((By.XPATH, "//*[@id='password']"), "tovdod-zafXaj-4kokwu"))
 
 # Click signin button
 input_element = driver.find_element(By.XPATH, "//*[@id='signInButton']")
