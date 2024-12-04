@@ -2,7 +2,7 @@ name: Dashboard Data Refresh
 
 on:
    workflow_run:
-    workflows: ["Manual Run"]
+    workflows: ["5:30 Schedule"]
     types:
       - completed
 
