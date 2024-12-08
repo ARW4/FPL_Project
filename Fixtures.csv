@@ -281,14 +281,14 @@
 135,14,TRUE,"2024-12-05",3,1,2,3,"Away","Brighton & Hove Albion","Fulham",5
 133,14,TRUE,"2024-12-05",1,0,4,3,"Home","AFC Bournemouth","Tottenham Hotspur",3
 133,14,TRUE,"2024-12-05",1,0,4,3,"Away","Tottenham Hotspur","AFC Bournemouth",18
-141,15,FALSE,"2024-12-07",NA,NA,2,4,"Home","Aston Villa","Southampton",2
-141,15,FALSE,"2024-12-07",NA,NA,2,4,"Away","Southampton","Aston Villa",17
-142,15,FALSE,"2024-12-07",NA,NA,3,3,"Home","Brentford","Newcastle United",4
-142,15,FALSE,"2024-12-07",NA,NA,3,3,"Away","Newcastle United","Brentford",15
-143,15,FALSE,"2024-12-07",NA,NA,5,2,"Home","Crystal Palace","Manchester City",7
-143,15,FALSE,"2024-12-07",NA,NA,5,2,"Away","Manchester City","Crystal Palace",13
-148,15,FALSE,"2024-12-07",NA,NA,3,3,"Home","Manchester United","Nottingham Forest",14
-148,15,FALSE,"2024-12-07",NA,NA,3,3,"Away","Nottingham Forest","Manchester United",16
+141,15,TRUE,"2024-12-07",1,0,2,4,"Home","Aston Villa","Southampton",2
+141,15,TRUE,"2024-12-07",1,0,2,4,"Away","Southampton","Aston Villa",17
+142,15,TRUE,"2024-12-07",4,2,3,3,"Home","Brentford","Newcastle United",4
+142,15,TRUE,"2024-12-07",4,2,3,3,"Away","Newcastle United","Brentford",15
+143,15,TRUE,"2024-12-07",2,2,5,2,"Home","Crystal Palace","Manchester City",7
+143,15,TRUE,"2024-12-07",2,2,5,2,"Away","Manchester City","Crystal Palace",13
+148,15,TRUE,"2024-12-07",2,3,3,3,"Home","Manchester United","Nottingham Forest",14
+148,15,TRUE,"2024-12-07",2,3,3,3,"Away","Nottingham Forest","Manchester United",16
 145,15,FALSE,"2024-12-08",NA,NA,5,3,"Home","Fulham","Arsenal",9
 145,15,FALSE,"2024-12-08",NA,NA,5,3,"Away","Arsenal","Fulham",1
 146,15,FALSE,"2024-12-08",NA,NA,2,2,"Home","Ipswich Town","AFC Bournemouth",10
