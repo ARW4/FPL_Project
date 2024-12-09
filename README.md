@@ -273,3 +273,18 @@ write_sheet(Standings,
 ![FPL - Hidden Gems](https://github.com/user-attachments/assets/11c71e2f-0711-4cf0-8878-fcdff2067958)
 
 ## Refreshing Dashboard
+I wanted to make sure that the refreshing of the data in the dashboard was done automatically. I explored a few options for this, I decided on using python and Selenium to create a bot that would log into my tableau public account and click on the refresh data option. The main reason for me choosing this method was that I knew it would work and I really wanted to practice using python and Selenium.
+<br> The python code that makes the data refresh possible can be found [here](https://github.com/ARW4/FPL_Project/blob/main/Dashboard_Refresh.py). 
+
+The section of code below is needed to create the google chrome driver
+````python
+# Ensure that the driver .exe file is saved in the some directory as the code
+#service = Service(executable_path="chromedriver.exe")
+#driver = webdriver.Chrome(service=service)
+chrome_options = Options()
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-dev-shm-usage')
+driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
+driver = webdriver.Chrome(service=driver_path, options=chrome_options)
+````
