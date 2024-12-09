@@ -21,6 +21,7 @@ I have learnt a lot from taking on this project and I hope that you enjoy readin
 <br>[Github Actions](#Github-Actions)
 <br>[Google Cloud Platform (GCP)](#GCP)
 <br>[Tableau Dashboard](#FPL-Dashboard)
+<br>[Refreshing Dashboard](#Refreshing-Dashboard)
 
 ## Data Sources 🛜
 ### API
@@ -271,3 +272,4 @@ write_sheet(Standings,
 ![FPL - Player Detail](https://github.com/user-attachments/assets/2f7018c7-a109-4461-8ade-d793074238da)
 ![FPL - Hidden Gems](https://github.com/user-attachments/assets/11c71e2f-0711-4cf0-8878-fcdff2067958)
 
+## Refreshing Dashboard
