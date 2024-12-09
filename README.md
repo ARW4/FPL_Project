@@ -288,3 +288,41 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
 driver = webdriver.Chrome(service=driver_path, options=chrome_options)
 ````
+
+One of the things I found through building the code was that if the browser was minimized or maximised the element I needed the bot to click on would be different. Hence I added a step to maximise the window.
+````python
+driver.maximize_window()
+````
+
+After maximising the window I needed to navigate to the Tableau Public website
+````python
+# URL to navigate to
+website = "https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings"
+driver.get(website)
+````
+
+Next I need to click the signin button to be able to input my Email and Password. I began by trying to use element ID to dictate which web welement to select however I found that using XPATH was more consistent.
+````python
+# Click on Sign in button
+wait.until(
+    EC.element_to_be_clickable(
+        (
+            By.XPATH,
+            "//*[@id='root']/div/header/div/div[2]/div/button",
+        )
+    )
+).click()
+````
+
+In order to input my Email and Password into the python code I used Github secrets/variables so that users wouldn't be able to see them. 
+````python
+# Type in email
+input_element = driver.find_element(By.XPATH, "//*[@id='email']")
+environ_email = os.environ["TABLEAU_EMAIL"]
+input_element.send_keys (environ_email)
+
+# Type in password
+input_element = driver.find_element(By.XPATH, "//*[@id='password']")
+environ_password = os.environ["TABLEAU_PASSWORD"]
+input_element.send_keys (environ_password)
+````
