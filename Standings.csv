@@ -1,21 +1,21 @@
 "Position","Team","Abbreviation","Team Strength","Played","Won","Drawn","Lost","Goals For","Goals Against","Goal Difference","Points","Team ID"
 1,"Liverpool","LIV",5,14,11,2,1,29,11,18,35,12
-2,"Chelsea","CHE",4,14,8,4,2,31,15,16,28,6
-3,"Arsenal","ARS",5,14,8,4,2,28,14,14,28,1
+2,"Chelsea","CHE",4,15,9,4,2,35,18,17,31,6
+3,"Arsenal","ARS",5,15,8,5,2,29,15,14,29,1
 4,"Manchester City","MCI",5,15,8,3,4,27,21,6,27,13
 5,"Nottingham Forest","NFO",3,15,7,4,4,19,18,1,25,16
 6,"Aston Villa","AVL",3,15,7,4,4,23,23,0,25,2
-7,"Brentford","BRE",3,15,7,2,6,31,28,3,23,4
-8,"Brighton & Hove Albion","BHA",3,14,6,5,3,23,20,3,23,5
-9,"Fulham","FUL",3,14,6,4,4,21,19,2,22,9
-10,"AFC Bournemouth","BOU",3,14,6,3,5,21,19,2,21,3
-11,"Tottenham Hotspur","TOT",4,14,6,2,6,28,15,13,20,18
+7,"Brighton & Hove Albion","BHA",3,15,6,6,3,25,22,3,24,5
+8,"AFC Bournemouth","BOU",3,15,7,3,5,23,20,3,24,3
+9,"Brentford","BRE",3,15,7,2,6,31,28,3,23,4
+10,"Fulham","FUL",3,15,6,5,4,22,20,2,23,9
+11,"Tottenham Hotspur","TOT",4,15,6,2,7,31,19,12,20,18
 12,"Newcastle United","NEW",3,15,5,5,5,19,21,-2,20,15
 13,"Manchester United","MUN",3,15,5,4,6,19,18,1,19,14
 14,"West Ham United","WHU",3,14,4,3,7,18,27,-9,15,19
 15,"Everton","EVE",3,14,3,5,6,14,21,-7,14,8
-16,"Crystal Palace","CRY",3,15,2,7,6,14,20,-6,13,7
-17,"Leicester City","LEI",3,14,3,4,7,19,28,-9,13,11
-18,"Ipswich Town","IPS",3,14,1,6,7,13,25,-12,9,10
+16,"Leicester City","LEI",3,15,3,5,7,21,30,-9,14,11
+17,"Crystal Palace","CRY",3,15,2,7,6,14,20,-6,13,7
+18,"Ipswich Town","IPS",3,15,1,6,8,14,27,-13,9,10
 19,"Wolverhampton Wanderers","WOL",3,14,2,3,9,22,36,-14,9,20
 20,"Southampton","SOU",2,15,1,2,12,11,31,-20,5,17
