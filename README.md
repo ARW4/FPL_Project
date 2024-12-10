@@ -1,5 +1,5 @@
 # FPL Data Pipeline Project
-![FPL Data Pipeline](https://github.com/user-attachments/assets/6dd9fa9a-6a2e-4528-bcd8-49ae29627c54)
+<img width="1000" alt="Data Pipeline Diagram" src="https://github.com/user-attachments/assets/0c6f0ff0-00e0-47eb-aa64-c0643a3f337a">
 
 ## Project overview ⚽
 The aim of this project was to create an end to end data pipeline solution. This idea was born out of working for a client that was thinking about how it could use Google Cloud Platform (GCP) to create a fully automated data pipeline. Prior to this project I had not extensively used GCP and hence this project was to better my understanding of its ability. I am pleased that I was able to create the Pipeline and have documented the process below. There are a few outcomes from this project:<br>
