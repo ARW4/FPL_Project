@@ -1,5 +1,4 @@
 # FPL Data Pipeline Project
-![FPL Data Pipeline](https://github.com/user-attachments/assets/03b95acc-e240-4515-b9e7-a98b7cd12d1d)
 ![Picture1](https://github.com/user-attachments/assets/ec767eaf-dea5-4274-9280-37eb80aa1ca8)
 
 ## Project overview ⚽
