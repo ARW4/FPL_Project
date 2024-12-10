@@ -1,5 +1,4 @@
 # FPL Data Pipeline Project
-<img width="1000" alt="Data Pipeline Diagram" src="https://github.com/user-attachments/assets/0c6f0ff0-00e0-47eb-aa64-c0643a3f337a">
 ![FPL Data Pipeline](https://github.com/user-attachments/assets/6dd9fa9a-6a2e-4528-bcd8-49ae29627c54)
 
 ## Project overview ⚽
