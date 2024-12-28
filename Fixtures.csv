@@ -355,10 +355,10 @@
 180,18,TRUE,"2024-12-26",2,0,3,2,"Away","Manchester United","Wolverhampton Wanderers",14
 175,18,TRUE,"2024-12-26",3,1,2,5,"Home","Liverpool","Leicester City",12
 175,18,TRUE,"2024-12-26",3,1,2,5,"Away","Leicester City","Liverpool",11
-173,18,FALSE,"2024-12-27",NA,NA,2,3,"Home","Brighton & Hove Albion","Brentford",5
-173,18,FALSE,"2024-12-27",NA,NA,2,3,"Away","Brentford","Brighton & Hove Albion",4
-171,18,FALSE,"2024-12-27",NA,NA,2,5,"Home","Arsenal","Ipswich Town",1
-171,18,FALSE,"2024-12-27",NA,NA,2,5,"Away","Ipswich Town","Arsenal",10
+173,18,TRUE,"2024-12-27",0,0,2,3,"Home","Brighton & Hove Albion","Brentford",5
+173,18,TRUE,"2024-12-27",0,0,2,3,"Away","Brentford","Brighton & Hove Albion",4
+171,18,TRUE,"2024-12-27",1,0,2,5,"Home","Arsenal","Ipswich Town",1
+171,18,TRUE,"2024-12-27",1,0,2,5,"Away","Ipswich Town","Arsenal",10
 187,19,FALSE,"2024-12-29",NA,NA,4,2,"Home","Leicester City","Manchester City",11
 187,19,FALSE,"2024-12-29",NA,NA,4,2,"Away","Manchester City","Leicester City",13
 183,19,FALSE,"2024-12-29",NA,NA,2,3,"Home","Crystal Palace","Southampton",7
