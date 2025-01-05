@@ -379,20 +379,20 @@
 188,19,TRUE,"2024-12-30",0,2,3,3,"Away","Newcastle United","Manchester United",15
 182,19,TRUE,"2025-01-01",1,3,4,4,"Home","Brentford","Arsenal",4
 182,19,TRUE,"2025-01-01",1,3,4,4,"Away","Arsenal","Brentford",1
-199,20,FALSE,"2025-01-04",NA,NA,3,4,"Home","Tottenham Hotspur","Newcastle United",18
-199,20,FALSE,"2025-01-04",NA,NA,3,4,"Away","Newcastle United","Tottenham Hotspur",15
-191,20,FALSE,"2025-01-04",NA,NA,2,4,"Home","Aston Villa","Leicester City",2
-191,20,FALSE,"2025-01-04",NA,NA,2,4,"Away","Leicester City","Aston Villa",11
-192,20,FALSE,"2025-01-04",NA,NA,2,3,"Home","AFC Bournemouth","Everton",3
-192,20,FALSE,"2025-01-04",NA,NA,2,3,"Away","Everton","AFC Bournemouth",8
-194,20,FALSE,"2025-01-04",NA,NA,4,3,"Home","Crystal Palace","Chelsea",7
-194,20,FALSE,"2025-01-04",NA,NA,4,3,"Away","Chelsea","Crystal Palace",6
-197,20,FALSE,"2025-01-04",NA,NA,2,4,"Home","Manchester City","West Ham United",13
-197,20,FALSE,"2025-01-04",NA,NA,2,4,"Away","West Ham United","Manchester City",19
-198,20,FALSE,"2025-01-04",NA,NA,2,2,"Home","Southampton","Brentford",17
-198,20,FALSE,"2025-01-04",NA,NA,2,2,"Away","Brentford","Southampton",4
-193,20,FALSE,"2025-01-04",NA,NA,4,3,"Home","Brighton & Hove Albion","Arsenal",5
-193,20,FALSE,"2025-01-04",NA,NA,4,3,"Away","Arsenal","Brighton & Hove Albion",1
+199,20,TRUE,"2025-01-04",1,2,3,4,"Home","Tottenham Hotspur","Newcastle United",18
+199,20,TRUE,"2025-01-04",1,2,3,4,"Away","Newcastle United","Tottenham Hotspur",15
+191,20,TRUE,"2025-01-04",2,1,2,4,"Home","Aston Villa","Leicester City",2
+191,20,TRUE,"2025-01-04",2,1,2,4,"Away","Leicester City","Aston Villa",11
+192,20,TRUE,"2025-01-04",1,0,2,3,"Home","AFC Bournemouth","Everton",3
+192,20,TRUE,"2025-01-04",1,0,2,3,"Away","Everton","AFC Bournemouth",8
+194,20,TRUE,"2025-01-04",1,1,4,3,"Home","Crystal Palace","Chelsea",7
+194,20,TRUE,"2025-01-04",1,1,4,3,"Away","Chelsea","Crystal Palace",6
+197,20,TRUE,"2025-01-04",4,1,2,4,"Home","Manchester City","West Ham United",13
+197,20,TRUE,"2025-01-04",4,1,2,4,"Away","West Ham United","Manchester City",19
+198,20,TRUE,"2025-01-04",0,5,2,2,"Home","Southampton","Brentford",17
+198,20,TRUE,"2025-01-04",0,5,2,2,"Away","Brentford","Southampton",4
+193,20,TRUE,"2025-01-04",1,1,4,3,"Home","Brighton & Hove Albion","Arsenal",5
+193,20,TRUE,"2025-01-04",1,1,4,3,"Away","Arsenal","Brighton & Hove Albion",1
 195,20,FALSE,"2025-01-05",NA,NA,2,3,"Home","Fulham","Ipswich Town",9
 195,20,FALSE,"2025-01-05",NA,NA,2,3,"Away","Ipswich Town","Fulham",10
 196,20,FALSE,"2025-01-05",NA,NA,3,5,"Home","Liverpool","Manchester United",12
