@@ -397,8 +397,8 @@
 195,20,TRUE,"2025-01-05",2,2,2,3,"Away","Ipswich Town","Fulham",10
 196,20,TRUE,"2025-01-05",2,2,3,5,"Home","Liverpool","Manchester United",12
 196,20,TRUE,"2025-01-05",2,2,3,5,"Away","Manchester United","Liverpool",14
-200,20,FALSE,"2025-01-06",NA,NA,3,2,"Home","Wolverhampton Wanderers","Nottingham Forest",20
-200,20,FALSE,"2025-01-06",NA,NA,3,2,"Away","Nottingham Forest","Wolverhampton Wanderers",16
+200,20,TRUE,"2025-01-06",0,3,3,2,"Home","Wolverhampton Wanderers","Nottingham Forest",20
+200,20,TRUE,"2025-01-06",0,3,3,2,"Away","Nottingham Forest","Wolverhampton Wanderers",16
 202,21,FALSE,"2025-01-14",NA,NA,4,4,"Home","Brentford","Manchester City",4
 202,21,FALSE,"2025-01-14",NA,NA,4,4,"Away","Manchester City","Brentford",13
 208,21,FALSE,"2025-01-14",NA,NA,3,4,"Home","Chelsea","AFC Bournemouth",6
