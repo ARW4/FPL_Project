@@ -240,16 +240,19 @@ for (id in IDs$id) {
   
   # Creating a data frame with the parsed JSON data
   df <- data.frame(item$history)
+
+  #Error handeling, Only proceeds if there is data for the player id
+  if (nrow(df) > 0) {
   
-  # creating a new column
-  df[,"Player_ID"] <- id
+    # creating a new column
+    df[,"Player_ID"] <- id
   
-  # Creates a new data frame with the gameweek data and labels it accordingly
-  Player_Gameweeks_data_frames[[id]] <- df
+    # Creates a new data frame with the gameweek data and labels it accordingly
+    Player_Gameweeks_data_frames[[id]] <- df
   
-  # Combining all the individual data frames created into one
-  `Gameweek` <- bind_rows(Player_Gameweeks_data_frames)
-  
+    # Combining all the individual data frames created into one
+    `Gameweek` <- bind_rows(Player_Gameweeks_data_frames)
+  }
   pb_1$tick()
 }
 
