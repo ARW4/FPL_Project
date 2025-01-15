@@ -397,14 +397,14 @@
 196,20,TRUE,"2025-01-05",2,2,3,5,"Away","Manchester United","Liverpool",14
 200,20,TRUE,"2025-01-06",0,3,3,2,"Home","Wolverhampton Wanderers","Nottingham Forest",20
 200,20,TRUE,"2025-01-06",0,3,3,2,"Away","Nottingham Forest","Wolverhampton Wanderers",16
-202,21,FALSE,"2025-01-14",NA,NA,4,4,"Home","Brentford","Manchester City",4
-202,21,FALSE,"2025-01-14",NA,NA,4,4,"Away","Manchester City","Brentford",13
-208,21,FALSE,"2025-01-14",NA,NA,3,4,"Home","Chelsea","AFC Bournemouth",6
-208,21,FALSE,"2025-01-14",NA,NA,3,4,"Away","AFC Bournemouth","Chelsea",3
-207,21,FALSE,"2025-01-14",NA,NA,3,2,"Home","West Ham United","Fulham",19
-207,21,FALSE,"2025-01-14",NA,NA,3,2,"Away","Fulham","West Ham United",9
-206,21,FALSE,"2025-01-14",NA,NA,5,3,"Home","Nottingham Forest","Liverpool",16
-206,21,FALSE,"2025-01-14",NA,NA,5,3,"Away","Liverpool","Nottingham Forest",12
+202,21,TRUE,"2025-01-14",2,2,4,4,"Home","Brentford","Manchester City",4
+202,21,TRUE,"2025-01-14",2,2,4,4,"Away","Manchester City","Brentford",13
+208,21,TRUE,"2025-01-14",2,2,3,4,"Home","Chelsea","AFC Bournemouth",6
+208,21,TRUE,"2025-01-14",2,2,3,4,"Away","AFC Bournemouth","Chelsea",3
+207,21,TRUE,"2025-01-14",3,2,3,2,"Home","West Ham United","Fulham",19
+207,21,TRUE,"2025-01-14",3,2,3,2,"Away","Fulham","West Ham United",9
+206,21,TRUE,"2025-01-14",1,1,5,3,"Home","Nottingham Forest","Liverpool",16
+206,21,TRUE,"2025-01-14",1,1,5,3,"Away","Liverpool","Nottingham Forest",12
 203,21,FALSE,"2025-01-15",NA,NA,3,3,"Home","Everton","Aston Villa",8
 203,21,FALSE,"2025-01-15",NA,NA,3,3,"Away","Aston Villa","Everton",2
 205,21,FALSE,"2025-01-15",NA,NA,3,2,"Home","Leicester City","Crystal Palace",11
