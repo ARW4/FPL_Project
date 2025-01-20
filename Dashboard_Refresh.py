@@ -15,11 +15,21 @@ import time
 # Ensure that the driver .exe file is saved in the some directory as the code
 #service = Service(executable_path="chromedriver.exe")
 #driver = webdriver.Chrome(service=service)
+chrome_version = "118.0.6072.19"
+
 chrome_options = Options()
+
 chrome_options.add_argument('--no-sandbox')
+
 chrome_options.add_argument('--headless')
+
 chrome_options.add_argument('--disable-dev-shm-usage')
-driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
+
+driver_path = Service(ChromeDriverManager(
+    chrome_type=ChromeType.CHROMIUM,
+    version=chrome_version
+).install())
+
 driver = webdriver.Chrome(service=driver_path, options=chrome_options)
 
 driver.maximize_window()
