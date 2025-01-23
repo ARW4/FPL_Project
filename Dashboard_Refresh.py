@@ -17,7 +17,7 @@ import time
 
 # Configure Chrome options
 chrome_options = Options()
-chrome_options.add_argument("--headless") # runs without user interface
+#chrome_options.add_argument("--headless") # runs without user interface
 
 # Create a new Chrome instance
 driver = webdriver.Chrome(options=chrome_options)
