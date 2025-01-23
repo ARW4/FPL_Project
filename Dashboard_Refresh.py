@@ -11,7 +11,7 @@ import time
 
 # For running locally
         #https://sites.google.com/chromium.org/driver/
-        # Ensure that the driver .exe file is saved in the some directory as the code
+        # Ensure that the driver .exe file is saved in the same directory as the code
         #service = Service(executable_path="chromedriver.exe")
         #driver = webdriver.Chrome(service=service)
 
