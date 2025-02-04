@@ -2,9 +2,9 @@
 1,"Liverpool","LIV",5,23,17,5,1,56,21,35,56,12
 2,"Arsenal","ARS",4,24,14,8,2,49,22,27,50,1
 3,"Nottingham Forest","NFO",4,24,14,5,5,40,27,13,47,16
-4,"Manchester City","MCI",4,24,12,5,7,48,35,13,41,13
-5,"Newcastle United","NEW",4,24,12,5,7,42,29,13,41,15
-6,"Chelsea","CHE",4,23,11,7,5,45,30,15,40,6
+4,"Chelsea","CHE",4,24,12,7,5,47,31,16,43,6
+5,"Manchester City","MCI",4,24,12,5,7,48,35,13,41,13
+6,"Newcastle United","NEW",4,24,12,5,7,42,29,13,41,15
 7,"AFC Bournemouth","BOU",4,24,11,7,6,41,28,13,40,3
 8,"Aston Villa","AVL",3,24,10,7,7,34,37,-3,37,2
 9,"Fulham","FUL",3,24,9,9,6,36,32,4,36,9
@@ -13,7 +13,7 @@
 12,"Crystal Palace","CRY",3,24,7,9,8,28,30,-2,30,7
 13,"Manchester United","MUN",3,24,8,5,11,28,34,-6,29,14
 14,"Tottenham Hotspur","TOT",3,24,8,3,13,48,37,11,27,18
-15,"West Ham United","WHU",3,23,7,6,10,28,44,-16,27,19
+15,"West Ham United","WHU",3,24,7,6,11,29,46,-17,27,19
 16,"Everton","EVE",3,23,6,8,9,23,28,-5,26,8
 17,"Wolverhampton Wanderers","WOL",3,24,5,4,15,34,52,-18,19,20
 18,"Leicester City","LEI",3,24,4,5,15,25,53,-28,17,11
