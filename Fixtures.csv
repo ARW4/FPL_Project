@@ -1,4 +1,6 @@
 "Match ID","Matchday","Finished","Kick-off Time","Home Team Score","Away Team Score","Difficulty For Home Team","Difficulty For Away Team","Home or Away","Team","Opponent","Team ID"
+289,NA,FALSE,NA,NA,NA,3,4,"Home","Newcastle United","Crystal Palace",15
+289,NA,FALSE,NA,NA,NA,3,4,"Away","Crystal Palace","Newcastle United",7
 1,1,TRUE,"2024-08-16",1,0,3,3,"Home","Manchester United","Fulham",14
 1,1,TRUE,"2024-08-16",1,0,3,3,"Away","Fulham","Manchester United",9
 4,1,TRUE,"2024-08-17",0,2,5,2,"Home","Ipswich Town","Liverpool",10
@@ -499,6 +501,8 @@
 246,25,FALSE,"2025-02-16",NA,NA,2,5,"Away","Wolverhampton Wanderers","Liverpool",20
 249,25,FALSE,"2025-02-16",NA,NA,3,3,"Home","Tottenham Hotspur","Manchester United",18
 249,25,FALSE,"2025-02-16",NA,NA,3,3,"Away","Manchester United","Tottenham Hotspur",14
+282,25,FALSE,"2025-02-19",NA,NA,5,3,"Home","Aston Villa","Liverpool",2
+282,25,FALSE,"2025-02-19",NA,NA,5,3,"Away","Liverpool","Aston Villa",12
 257,26,FALSE,"2025-02-21",NA,NA,2,2,"Home","Leicester City","Brentford",11
 257,26,FALSE,"2025-02-21",NA,NA,2,2,"Away","Brentford","Leicester City",4
 254,26,FALSE,"2025-02-22",NA,NA,3,3,"Home","Everton","Manchester United",8
@@ -559,16 +563,12 @@
 276,28,FALSE,"2025-03-09",NA,NA,4,3,"Away","Arsenal","Manchester United",1
 279,28,FALSE,"2025-03-10",NA,NA,3,2,"Home","West Ham United","Newcastle United",19
 279,28,FALSE,"2025-03-10",NA,NA,3,2,"Away","Newcastle United","West Ham United",15
-282,29,FALSE,"2025-03-15",NA,NA,5,3,"Home","Aston Villa","Liverpool",2
-282,29,FALSE,"2025-03-15",NA,NA,5,3,"Away","Liverpool","Aston Villa",12
 284,29,FALSE,"2025-03-15",NA,NA,2,3,"Home","Everton","West Ham United",8
 284,29,FALSE,"2025-03-15",NA,NA,2,3,"Away","West Ham United","Everton",19
 286,29,FALSE,"2025-03-15",NA,NA,3,2,"Home","Ipswich Town","Nottingham Forest",10
 286,29,FALSE,"2025-03-15",NA,NA,3,2,"Away","Nottingham Forest","Ipswich Town",16
 288,29,FALSE,"2025-03-15",NA,NA,3,4,"Home","Manchester City","Brighton & Hove Albion",13
 288,29,FALSE,"2025-03-15",NA,NA,3,4,"Away","Brighton & Hove Albion","Manchester City",5
-289,29,FALSE,"2025-03-15",NA,NA,3,4,"Home","Newcastle United","Crystal Palace",15
-289,29,FALSE,"2025-03-15",NA,NA,3,4,"Away","Crystal Palace","Newcastle United",7
 290,29,FALSE,"2025-03-15",NA,NA,2,2,"Home","Southampton","Wolverhampton Wanderers",17
 290,29,FALSE,"2025-03-15",NA,NA,2,2,"Away","Wolverhampton Wanderers","Southampton",20
 283,29,FALSE,"2025-03-15",NA,NA,2,3,"Home","AFC Bournemouth","Brentford",3
