@@ -479,8 +479,8 @@
 231,24,TRUE,"2025-02-02",5,1,4,4,"Away","Manchester City","Arsenal",13
 234,24,TRUE,"2025-02-03",2,1,2,4,"Home","Chelsea","West Ham United",6
 234,24,TRUE,"2025-02-03",2,1,2,4,"Away","West Ham United","Chelsea",19
-144,24,FALSE,"2025-02-12",NA,NA,5,3,"Home","Everton","Liverpool",8
-144,24,FALSE,"2025-02-12",NA,NA,5,3,"Away","Liverpool","Everton",12
+144,24,TRUE,"2025-02-12",2,2,5,3,"Home","Everton","Liverpool",8
+144,24,TRUE,"2025-02-12",2,2,5,3,"Away","Liverpool","Everton",12
 242,25,FALSE,"2025-02-14",NA,NA,4,3,"Home","Brighton & Hove Albion","Chelsea",5
 242,25,FALSE,"2025-02-14",NA,NA,4,3,"Away","Chelsea","Brighton & Hove Albion",6
 245,25,FALSE,"2025-02-15",NA,NA,4,2,"Home","Leicester City","Arsenal",11
