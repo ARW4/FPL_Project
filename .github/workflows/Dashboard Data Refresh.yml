@@ -1,4 +1,4 @@
-name: Dashboard Data Refresh
+name: Dashboard Refresh
 
 on:
    workflow_run:
