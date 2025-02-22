@@ -8,8 +8,8 @@
 7,"Newcastle United","NEW",4,25,12,5,8,42,33,9,41,15
 8,"Fulham","FUL",3,25,10,9,6,38,33,5,39,9
 9,"Aston Villa","AVL",3,26,10,9,7,37,40,-3,39,2
-10,"Brighton & Hove Albion","BHA",3,25,9,10,6,38,38,0,37,5
-11,"Brentford","BRE",3,25,10,4,11,43,42,1,34,4
+10,"Brentford","BRE",3,26,11,4,11,47,42,5,37,4
+11,"Brighton & Hove Albion","BHA",3,25,9,10,6,38,38,0,37,5
 12,"Tottenham Hotspur","TOT",3,25,9,3,13,49,37,12,30,18
 13,"Crystal Palace","CRY",3,25,7,9,9,29,32,-3,30,7
 14,"Everton","EVE",3,25,7,9,9,27,31,-4,30,8
@@ -17,5 +17,5 @@
 16,"West Ham United","WHU",3,25,7,6,12,29,47,-18,27,19
 17,"Wolverhampton Wanderers","WOL",3,25,5,4,16,35,54,-19,19,20
 18,"Ipswich Town","IPS",3,25,3,8,14,23,50,-27,17,10
-19,"Leicester City","LEI",3,25,4,5,16,25,55,-30,17,11
+19,"Leicester City","LEI",3,26,4,5,17,25,59,-34,17,11
 20,"Southampton","SOU",2,25,2,3,20,19,57,-38,9,17
