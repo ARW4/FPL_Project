@@ -517,10 +517,10 @@
 260,26,TRUE,"2025-02-22",0,4,3,2,"Away","Brighton & Hove Albion","Southampton",5
 252,26,TRUE,"2025-02-22",2,1,4,3,"Home","Aston Villa","Chelsea",2
 252,26,TRUE,"2025-02-22",2,1,4,3,"Away","Chelsea","Aston Villa",6
-259,26,FALSE,"2025-02-23",NA,NA,3,4,"Home","Newcastle United","Nottingham Forest",15
-259,26,FALSE,"2025-02-23",NA,NA,3,4,"Away","Nottingham Forest","Newcastle United",16
-258,26,FALSE,"2025-02-23",NA,NA,5,4,"Home","Manchester City","Liverpool",13
-258,26,FALSE,"2025-02-23",NA,NA,5,4,"Away","Liverpool","Manchester City",12
+259,26,TRUE,"2025-02-23",4,3,3,4,"Home","Newcastle United","Nottingham Forest",15
+259,26,TRUE,"2025-02-23",4,3,3,4,"Away","Nottingham Forest","Newcastle United",16
+258,26,TRUE,"2025-02-23",0,2,5,4,"Home","Manchester City","Liverpool",13
+258,26,TRUE,"2025-02-23",0,2,5,4,"Away","Liverpool","Manchester City",12
 262,27,FALSE,"2025-02-25",NA,NA,3,3,"Home","Brighton & Hove Albion","AFC Bournemouth",5
 262,27,FALSE,"2025-02-25",NA,NA,3,3,"Away","AFC Bournemouth","Brighton & Hove Albion",3
 263,27,FALSE,"2025-02-25",NA,NA,3,3,"Home","Crystal Palace","Aston Villa",7
