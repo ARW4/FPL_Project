@@ -8,20 +8,22 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.core.os_manager import ChromeType
 from selenium.webdriver.chrome.options import Options
 import os
-import time
+import tim
+from selenium.websriver import *;
 
 #https://sites.google.com/chromium.org/driver/
 
 # Ensure that the driver .exe file is saved in the some directory as the code
 #service = Service(executable_path="chromedriver.exe")
 #driver = webdriver.Chrome(service=service)
-chrome_options = Options()
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--disable-dev-shm-usage')
-driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
-driver = webdriver.Chrome(service=driver_path, options=chrome_options)
+#chrome_options = Options()
+#chrome_options.add_argument('--no-sandbox')
+#chrome_options.add_argument('--headless')
+#chrome_options.add_argument('--disable-dev-shm-usage')
+#driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
+#driver = webdriver.Chrome(service=driver_path, options=chrome_options)
 
+driver=Chrome()
 driver.maximize_window()
 
 # URL to navigate to
