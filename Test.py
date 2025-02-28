@@ -32,17 +32,17 @@ except Exception as e:
     exit()
 
 # Step 2: Click "Accept Cookies"
-try:
-    wait.until(
-        EC.element_to_be_clickable(
-            (By.XPATH, '//*[@id="onetrust-accept-btn-handler"]')
-        )
-    ).click()
-    print("Step 2: Cookies accepted.")
-except Exception as e:
-    print(f"Step 2 failed: {str(e)}")
-    driver.quit()
-exit()
+#try:
+#    wait.until(
+#        EC.element_to_be_clickable(
+#            (By.XPATH, '//*[@id="onetrust-accept-btn-handler"]')
+#        )
+#    ).click()
+#    print("Step 2: Cookies accepted.")
+#except Exception as e:
+#    print(f"Step 2 failed: {str(e)}")
+#    driver.quit()
+#exit()
 
 # Step 3: Click Sign-In button
 try:
