@@ -17,7 +17,7 @@ driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).insta
 driver = webdriver.Chrome(service=driver_path, options=chrome_options)
 
 # Setting the wait function
-wait = WebDriverWait(driver, 20)
+wait = WebDriverWait(driver, 50)
 # Provide website
 website = "https://public.tableau.com/app/discover"
 dashboard = "https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings"
