@@ -21,9 +21,15 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          sudo snap install chromium
-          pip install selenium
-          pip install webdriver-manager
+           sudo apt-get update
+           sudo apt-get install -y wget gnupg ca-certificates
+           wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+           sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+           sudo apt-get update
+           sudo apt-get install -y google-chrome-stable
+           sudo snap install chromium
+           pip install selenium
+           pip install webdriver-manager
 
       - name: Run Script
         env: 
