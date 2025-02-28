@@ -1,7 +1,7 @@
 name: Dashboard Refresh
 
 on:
-   workflow_run:
+   #workflow_run:
    workflow_dispatch:
     #workflows: ["5:30 Schedule", "Manual Run"]
     #types:
