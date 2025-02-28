@@ -35,20 +35,20 @@ except Exception as e:
 try:
     wait.until(
         EC.element_to_be_clickable(
-            (By.ID, "onetrust-accept-btn-handler")
+            (By.XPATH, '//*[@id="onetrust-accept-btn-handler"]')
         )
     ).click()
     print("Step 2: Cookies accepted.")
 except Exception as e:
     print(f"Step 2 failed: {str(e)}")
     driver.quit()
-    exit()
+exit()
 
 # Step 3: Click Sign-In button
 try:
     wait.until(
         EC.element_to_be_clickable(
-            (By.CSS_SELECTOR, '[data-testid="AuthSection-sign-in-button"]')
+            (By.XPATH, '//*[@id="root"]/div/header/div/div[2]/div/button')
         )
     ).click()
     print("Step 3: Sign-In button clicked.")
@@ -59,7 +59,7 @@ except Exception as e:
 
 # Step 4: Enter Email
 try:
-    input_element = driver.find_element(By.ID, "email")
+    input_element = driver.find_element(By.XPATH, '//*[@id="email"]')
     environ_email = os.environ["TABLEAU_EMAIL"]
     input_element.send_keys(environ_email)
     print("Step 4: Email entered.")
@@ -70,7 +70,7 @@ except Exception as e:
 
 # Step 5: Enter Password
 try:
-    input_element = driver.find_element(By.ID, "password")
+    input_element = driver.find_element(By.XPATH, '//*[@id="password"]')
     environ_password = os.environ["TABLEAU_PASSWORD"]
     input_element.send_keys(environ_password)
     print("Step 5: Password entered.")
@@ -83,7 +83,7 @@ except Exception as e:
 try:
     wait.until(
         EC.element_to_be_clickable(
-            (By.ID, "signInButton")
+            (By.XPATH, '//*[@id="signInButton"]')
         )
     ).click()
     print("Step 6: Sign-In submitted.")
@@ -105,7 +105,7 @@ except Exception as e:
 try:
     wait.until(
         EC.element_to_be_clickable(
-            (By.CSS_SELECTOR, 'button[aria-label="Request Data Refresh"]')
+            (By.XPATH, '//*[@id="root"]/div/div[2]/div/div[2]/div[3]/div[2]/div[2]/div[2]/button')
         )
     ).click()
     print("Step 8: Data refresh button clicked.")
