@@ -1,101 +1,79 @@
-#pip install selenium
+# Import modules and packages
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.core.os_manager import ChromeType
 from selenium.webdriver.chrome.options import Options
-import os
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 import time
+import os
 
-#https://sites.google.com/chromium.org/driver/
-
-# Ensure that the driver .exe file is saved in the some directory as the code
-#service = Service(executable_path="chromedriver.exe")
-#driver = webdriver.Chrome(service=service)
+# Set driver
 chrome_options = Options()
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--disable-dev-shm-usage')
+chrome_options.add_argument('--headless')  # Example: Headless mode
 driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
 driver = webdriver.Chrome(service=driver_path, options=chrome_options)
 
-driver.maximize_window()
+# Setting the wait function
+wait = WebDriverWait(driver,20)
 
-# URL to navigate to
-website = "https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings"
+# provide website
+website = "https://public.tableau.com/app/discover"
+dashboard = "https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings"
+
 driver.get(website)
 
-# Create delay until element is an option
-wait = WebDriverWait(driver, 300)
-
-# Click on Sign in button
+# Click on accept cookies in button
 wait.until(
     EC.element_to_be_clickable(
-        (
-            By.XPATH,
-            "//*[@id='root']/div/header/div/div[2]/div/button",
-        )
+        (By.ID,
+         "onetrust-accept-btn-handler",
+         )
     )
 ).click()
 
-# Type in email
-input_element = driver.find_element(By.XPATH, "//*[@id='email']")
+# Click Signin button
+wait.until(
+    EC.element_to_be_clickable(
+        (By.CSS_SELECTOR,
+         '[data-testid="AuthSection-sign-in-button"]',
+         )
+    )
+).click()
+
+
+# Enter Email
+input_element = driver.find_element(By.ID, "email")
 environ_email = os.environ["TABLEAU_EMAIL"]
 input_element.send_keys (environ_email)
 
-# Type in password
-input_element = driver.find_element(By.XPATH, "//*[@id='password']")
-environ_password = os.environ["TABLEAU_PASSWORD"]
-input_element.send_keys (environ_password)
+# Enter Password
+input_element = driver.find_element(By.ID, "password ")
+environ_email = os.environ["TABLEAU_EMAIL"]
+input_element.send_keys (environ_email)
 
-# Click signin button
-input_element = driver.find_element(By.XPATH, "//*[@id='signInButton']")
-input_element.click()
-
-# Click profile avatar
+# Click on accept cookies in button
 wait.until(
     EC.element_to_be_clickable(
-        (
-            By.XPATH,
-            "//*[@id='root']/div/header/div/div[2]/div/div/img",
-        )
+        (By.ID,
+         "signInButton",
+         )
     )
 ).click()
 
-# Click my profile
-wait.until(
-    EC.element_to_be_clickable(
-        (
-            By.XPATH,
-            "//*[@id='vizCardMenu']/ul/li[1]/div/span",
-        )
-    )
-).click()
+driver.get(dashboard)
 
-# Click dashboard
+# Click Refresh button
 wait.until(
     EC.element_to_be_clickable(
-        (
-            By.XPATH,
-            "//*[@id='root']/div/div[4]/div[3]/div/div/div/div/div[1]/div[1]/div/div/a/img",
-        )
-    )
-).click()
-
-# Click refresh data button
-wait.until(
-    EC.element_to_be_clickable(
-        (
-            By.XPATH,
-            "//*[@id='root']/div/div[4]/div[3]/div[2]/div[2]/div[2]/button",
-        )
+        (By.CSS_SELECTOR,
+         'button[aria-label="Request Data Refresh"]',
+         )
     )
 ).click()
 
 time.sleep(20)
 
-#close down the browser#
 driver.quit()
