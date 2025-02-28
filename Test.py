@@ -12,7 +12,7 @@ import os
 
 # Set driver
 chrome_options = Options()
-chrome_options.add_argument('--headless')
+#chrome_options.add_argument('--headless')
 driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
 driver = webdriver.Chrome(service=driver_path, options=chrome_options)
 
@@ -32,17 +32,17 @@ except Exception as e:
     exit()
 
 # Step 2: Click "Accept Cookies"
-#try:
-#    wait.until(
-#        EC.element_to_be_clickable(
-#            (By.XPATH, '//*[@id="onetrust-accept-btn-handler"]')
-#        )
-#    ).click()
-#    print("Step 2: Cookies accepted.")
-#except Exception as e:
-#    print(f"Step 2 failed: {str(e)}")
-#    driver.quit()
-#exit()
+try:
+    wait.until(
+        EC.element_to_be_clickable(
+            (By.XPATH, '/html/body/div[22]/div[3]/div/div/div[2]/div/div/button[2]')
+        )
+    ).click()
+    print("Step 2: Cookies accepted.")
+except Exception as e:
+    print(f"Step 2 failed: {str(e)}")
+    driver.quit()
+exit()
 
 # Step 3: Click Sign-In button
 try:
