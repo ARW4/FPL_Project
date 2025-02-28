@@ -8,7 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.core.os_manager import ChromeType
 from selenium.webdriver.chrome.options import Options
 import os
-import tim
+import time
 from selenium.websriver import *;
 
 #https://sites.google.com/chromium.org/driver/
