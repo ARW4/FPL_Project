@@ -22,6 +22,7 @@ wait = WebDriverWait(driver, 20)
 website = "https://public.tableau.com/app/discover"
 dashboard = "https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings"
 
+
 # Step 1: Open the website
 try:
     driver.get(website)
