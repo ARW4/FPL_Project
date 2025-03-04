@@ -22,7 +22,6 @@ jobs:
       - name: Set up Chrome
         uses: browser-actions/setup-chrome@v1
         with:
-         chrome-version: 133.0.6943.142
          install-chromedriver: true
 
       - name: Install Python Dependencies
