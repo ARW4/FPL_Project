@@ -98,7 +98,6 @@ wait.until(
 print("Step 7: Data refresh button clicked.")
 
 # Step 8: Wait for some time to allow the data refresh to process
-try:
 time.sleep(20)
 print("Step 8: Waited for 20 seconds.")
 
