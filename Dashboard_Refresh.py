@@ -10,11 +10,13 @@ from selenium.webdriver.common.by import By
 import time
 import os
 
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.maximize_window()
 # Set driver
-chrome_options = Options()
-chrome_options.add_argument('--headless')
-driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
-driver = webdriver.Chrome(service=driver_path, options=chrome_options)
+#chrome_options = Options()
+#chrome_options.add_argument('--headless')
+#driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
+#driver = webdriver.Chrome(service=driver_path, options=chrome_options)
 
 # Setting the wait function
 wait = WebDriverWait(driver, 20)
@@ -22,13 +24,12 @@ wait = WebDriverWait(driver, 20)
 website = "https://public.tableau.com/app/discover"
 dashboard = "https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings"
 
-
-# Step 1: Open the website
+# Step 1: "Navigate to Dashboard"
 try:
-    driver.get(website)
-    print("Step 1: Website opened successfully.")
+    driver.get(dashboard)
+    print("Step 1: Dashboard opened.")
 except Exception as e:
-    print(f"Step 1 failed: {str(e)}")
+    print(f"Step 1 failed {str(e)}")
     driver.quit()
     exit()
 
@@ -41,7 +42,7 @@ try:
     ).click()
     print("Step 2: Cookies accepted.")
 except Exception as e:
-    print(f"Step 2 failed: {str(e)}")
+    print(f"Step 2 failed {str(e)}")
     driver.quit()
     exit()
 
@@ -54,7 +55,7 @@ try:
     ).click()
     print("Step 3: Sign-In button clicked.")
 except Exception as e:
-    print(f"Step 3 failed: {str(e)}")
+    print(f"Step 3 failed {str(e)}")
     driver.quit()
     exit()
 
@@ -65,7 +66,7 @@ try:
     input_element.send_keys(environ_email)
     print("Step 4: Email entered.")
 except Exception as e:
-    print(f"Step 4 failed: {str(e)}")
+    print(f"Step 4 failed {str(e)}")
     driver.quit()
     exit()
 
@@ -76,29 +77,33 @@ try:
     input_element.send_keys(environ_password)
     print("Step 5: Password entered.")
 except Exception as e:
-    print(f"Step 5 failed: {str(e)}")
+    print(f"Step 5 failed {str(e)}")
     driver.quit()
     exit()
 
-# Step 6: Click Sign-In button to submit
+# Step 6: Click remember me button
+try:
+    wait.until(
+        EC.element_to_be_clickable(
+            (By.ID, "rememberCheckbox")
+        )
+    ).click()
+    print("Step 6: Sign-In submitted.")
+except Exception as e:
+    print(f"Step 6 failed {str(e)}")
+    driver.quit()
+    exit()
+
+# Step 7: Click Sign-In button to submit
 try:
     wait.until(
         EC.element_to_be_clickable(
             (By.ID, "signInButton")
         )
     ).click()
-    print("Step 6: Sign-In submitted.")
+    print("Step 7: Sign-In submitted.")
 except Exception as e:
-    print(f"Step 6 failed: {str(e)}")
-    driver.quit()
-    exit()
-
-# Step 7: Navigate to the Dashboard
-try:
-    driver.get(dashboard)
-    print("Step 7: Dashboard opened.")
-except Exception as e:
-    print(f"Step 7 failed: {str(e)}")
+    print(f"Step 7 failed {str(e)}")
     driver.quit()
     exit()
 
@@ -111,7 +116,7 @@ try:
     ).click()
     print("Step 8: Data refresh button clicked.")
 except Exception as e:
-    print(f"Step 8 failed: {str(e)}")
+    print(f"Step 8 failed {str(e)}")
     driver.quit()
     exit()
 
@@ -120,7 +125,7 @@ try:
     time.sleep(20)
     print("Step 9: Waited for 20 seconds.")
 except Exception as e:
-    print(f"Step 9 failed: {str(e)}")
+    print(f"Step 9 failed {str(e)}")
     driver.quit()
     exit()
 
@@ -129,6 +134,6 @@ try:
     driver.quit()
     print("Step 10: Driver quit successfully.")
 except Exception as e:
-    print(f"Step 10 failed: {str(e)}")
+    print(f"Step 10 failed {str(e)}")
     driver.quit()
     exit()
