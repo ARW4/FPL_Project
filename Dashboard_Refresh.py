@@ -31,8 +31,8 @@ driver.maximize_window()
 
 # Setting the wait function
 wait = WebDriverWait(driver, 20)
+
 # Provide website
-website = "https://public.tableau.com/app/discover"
 dashboard = "https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings"
 
 # Step 1: "Navigate to Dashboard"
