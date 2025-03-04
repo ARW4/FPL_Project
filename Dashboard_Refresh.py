@@ -10,13 +10,16 @@ from selenium.webdriver.common.by import By
 import time
 import os
 
+# Set Driver
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--disable-gpu")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+
+# Maximize Window
 driver.maximize_window()
-# Set driver
-#chrome_options = Options()
-#chrome_options.add_argument('--headless')
-#driver_path = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
-#driver = webdriver.Chrome(service=driver_path, options=chrome_options)
 
 # Setting the wait function
 wait = WebDriverWait(driver, 20)
