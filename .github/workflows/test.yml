@@ -20,7 +20,7 @@ jobs:
           python-version: '3.12.2'
       
       - name: Set up Chrome
-        uses: browser-actions/setup-chrome@v1with:
+        uses: browser-actions/setup-chrome@v1
         with:
          chrome-version: 133.0.6943.142
          install-chromedriver: true
