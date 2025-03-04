@@ -18,11 +18,15 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12.2'
+      
+      - name: Set up Chrome
+        uses: browser-actions/setup-chrome@v1with:
+        with:
+         chrome-version: 133.0.6943.142
+         install-chromedriver: true
 
-      - name: Install Dependencies and Chrome Setup
+      - name: Install Python Dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y chromium-browser chromium-chromedriver
           pip install selenium
           pip install webdriver-manager
 
