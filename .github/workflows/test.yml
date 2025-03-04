@@ -1,4 +1,4 @@
-name: Dashboard Refresh
+name: Test
 
 on:
    #workflow_run:
