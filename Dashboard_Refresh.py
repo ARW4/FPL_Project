@@ -101,6 +101,6 @@ print("Step 7: Data refresh button clicked.")
 time.sleep(20)
 print("Step 8: Waited for 20 seconds.")
 
-# Step 10: Quit the driver
+# Step 9: Quit the driver
 driver.quit()
-print("Step 10: Driver quit successfully.")
+print("Step 9: Driver quit successfully.")
