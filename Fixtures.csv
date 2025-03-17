@@ -571,12 +571,12 @@
 290,29,TRUE,"2025-03-15",1,2,2,2,"Away","Wolverhampton Wanderers","Southampton",20
 283,29,TRUE,"2025-03-15",1,2,2,3,"Home","AFC Bournemouth","Brentford",3
 283,29,TRUE,"2025-03-15",1,2,2,3,"Away","Brentford","AFC Bournemouth",4
-281,29,FALSE,"2025-03-16",NA,NA,4,4,"Home","Arsenal","Chelsea",1
-281,29,FALSE,"2025-03-16",NA,NA,4,4,"Away","Chelsea","Arsenal",6
-285,29,FALSE,"2025-03-16",NA,NA,3,3,"Home","Fulham","Tottenham Hotspur",9
-285,29,FALSE,"2025-03-16",NA,NA,3,3,"Away","Tottenham Hotspur","Fulham",18
-287,29,FALSE,"2025-03-16",NA,NA,3,2,"Home","Leicester City","Manchester United",11
-287,29,FALSE,"2025-03-16",NA,NA,3,2,"Away","Manchester United","Leicester City",14
+281,29,TRUE,"2025-03-16",1,0,4,4,"Home","Arsenal","Chelsea",1
+281,29,TRUE,"2025-03-16",1,0,4,4,"Away","Chelsea","Arsenal",6
+285,29,TRUE,"2025-03-16",2,0,3,3,"Home","Fulham","Tottenham Hotspur",9
+285,29,TRUE,"2025-03-16",2,0,3,3,"Away","Tottenham Hotspur","Fulham",18
+287,29,TRUE,"2025-03-16",0,3,3,2,"Home","Leicester City","Manchester United",11
+287,29,TRUE,"2025-03-16",0,3,3,2,"Away","Manchester United","Leicester City",14
 291,30,FALSE,"2025-04-01",NA,NA,3,4,"Home","Arsenal","Fulham",1
 291,30,FALSE,"2025-04-01",NA,NA,3,4,"Away","Fulham","Arsenal",9
 295,30,FALSE,"2025-04-01",NA,NA,2,2,"Home","Wolverhampton Wanderers","West Ham United",20
