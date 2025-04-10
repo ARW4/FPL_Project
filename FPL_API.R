@@ -28,7 +28,7 @@ item <- fromJSON(res2)
 Teams <- data.frame(item$teams)
 
 # Selecting which fields to keep
-Teams <- subset(Teams, select = c(id, name, short_name, strength))
+#Teams <- subset(Teams, select = c(id, name, short_name, strength))
 
 # Renaming fields
 Teams <- Teams %>% rename (`Team ID` = id,
