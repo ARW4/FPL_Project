@@ -15,7 +15,7 @@ library(rvest)
 library(googlesheets4)
 
 # Printing stage complete
-print("Dependencies Complete")
+message("Dependencies Complete")
 
 #---------- Team Info ----------
 # A GET call to the FPL API
@@ -67,7 +67,7 @@ Teams <- Teams %>% mutate(Team = case_when(
 rm(item,res,res2)
 
 # Printing stage complete
-print("Team Info Complete")
+message("Team Info Complete")
 
 #---------- Standings (df) ---------
 # Webscraping the data from the URL provided
@@ -96,7 +96,7 @@ Standings <- Standings %>% rename(`Goals For` = Goals.For,
 )
 
 # Printing stage complete
-print("Standings Complete")
+message("Standings Complete")
 
 #---------- Fixtures (df) ----------
 
@@ -172,7 +172,7 @@ Fixtures <- inner_join(Fixtures, df, join_by(Team == Team))
 rm(df, Teams)
 
 # Printing stage complete
-print("Fixtures Complete")
+message("Fixtures Complete")
 
 #---------- Player_Info (df) ----------
 
@@ -225,7 +225,7 @@ Player <- Player %>% rename(Position = singular_name)#
 rm(Element)
 
 # Printing stage complete
-print("Player Info Complete")
+message("Player Info Complete")
 
 #---------- Player_Gameweek_Stats (df) ----------
 # Creating a data frame only containing completed matchday IDs
@@ -286,7 +286,7 @@ Gameweek <- Gameweek %>% rename(Fixture = fixture, `Opponent Team` = opponent_te
 Gameweek <- subset(Gameweek, select = -c(was_home, team_h_score, team_a_score, element, Fixture))
 
 # Printing stage complete
-print("Player Gameweek Complete")
+message("Player Gameweek Complete")
 
 #---------- Player_Historic_Stats (df) ----------
 
@@ -344,7 +344,7 @@ Historic_Seasons <- Historic_Seasons %>% rename(Season = season_name, `Start Cos
 Historic_Seasons <- subset(Historic_Seasons, select = -c(element_code))
 
 # Printing stage complete
-print("Player Historic Gameweek Complete")
+message("Player Historic Gameweek Complete")
 
 #---------- Creating CSV files ----------
 write.csv(Fixtures, "Fixtures.csv", row.names =  FALSE)
@@ -354,7 +354,7 @@ write.csv(Player, "Player.csv", row.names =  FALSE)
 write.csv(Standings, "Standings.csv", row.names =  FALSE)
 
 # Printing stage complete
-print("Creating CSV Files Complete")
+message("Creating CSV Files Complete")
 
 #---------- Autheticating Google Sheets ----------
 # Calling in credentials through github secrest.
@@ -364,7 +364,7 @@ json_string <- Sys.getenv("PRIVATE_KEY")
 gs4_auth(path = json_string)
 
 # Printing stage complete
-print("Authenticating Google Sheets Complete")
+message("Authenticating Google Sheets Complete")
 
 #----------- Uploading to googlesheets ----------
 
@@ -427,8 +427,8 @@ write_sheet(`Historic_Seasons`,
 )
 
 # Printing stage complete
-print("Saving To Google Sheets Complete")
+message("Saving To Google Sheets Complete")
 #---------- End of Script ----------
 
 # Printing stage complete
-print("END OF SCRIPT :)")
+message("END OF SCRIPT :)")
