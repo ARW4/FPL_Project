@@ -28,7 +28,7 @@ item <- fromJSON(res2)
 Teams <- data.frame(item$teams)
 
 # Selecting which fields to keep
-#Teams <- subset(Teams, select = c(id, name, short_name, strength))
+Teams <- subset(Teams, select = c(id, name, short_name, strength))
 
 # Renaming fields
 Teams <- Teams %>% rename (`Team ID` = id,
@@ -63,6 +63,9 @@ Teams <- Teams %>% mutate(Team = case_when(
 # Removing objects from environment
 rm(item,res,res2)
 
+# Printing stage complete
+print("Team Info Complete")
+
 #---------- Standings (df) ---------
 # Webscraping the data from the URL provided
 html <- read_html("https://www.bbc.co.uk/sport/football/premier-league/table")
@@ -81,7 +84,7 @@ rm(html)
 Standings <- left_join(Standings, Teams, join_by( Team == Team))
 
 # Keeping only relevent fields
-Standings <- subset(Standings, select = c(Position, Team, Abbreviation, `Team Strength`, Played, Won, Drawn, Lost, Goals.For, Goals.Against, Goal.Difference, Points, `Team ID`))
+#Standings <- subset(Standings, select = c(Position, Team, Abbreviation, `Team Strength`, Played, Won, Drawn, Lost, Goals.For, Goals.Against, Goal.Difference, Points, `Team ID`))
 
 # Renaming Columns
 Standings <- Standings %>% rename(`Goals For` = Goals.For,
@@ -89,6 +92,8 @@ Standings <- Standings %>% rename(`Goals For` = Goals.For,
                                   `Goal Difference` = Goal.Difference
 )
 
+# Printing stage complete
+print("Standings Complete")
 
 #---------- Fixtures (df) ----------
 
@@ -163,6 +168,9 @@ Fixtures <- inner_join(Fixtures, df, join_by(Team == Team))
 
 rm(df, Teams)
 
+# Printing stage complete
+print("Fixtures Complete")
+
 #---------- Player_Info (df) ----------
 
 # A GET call to the FPL API
@@ -213,6 +221,8 @@ Player <- Player %>% rename(Position = singular_name)#
 
 rm(Element)
 
+# Printing stage complete
+print("Player Info Complete")
 
 #---------- Player_Gameweek_Stats (df) ----------
 # Creating a data frame only containing completed matchday IDs
@@ -272,6 +282,8 @@ Gameweek <- Gameweek %>% rename(Fixture = fixture, `Opponent Team` = opponent_te
 
 Gameweek <- subset(Gameweek, select = -c(was_home, team_h_score, team_a_score, element, Fixture))
 
+# Printing stage complete
+print("Player Gameweek Complete")
 
 #---------- Player_Historic_Stats (df) ----------
 
@@ -328,6 +340,9 @@ Historic_Seasons <- Historic_Seasons %>% rename(Season = season_name, `Start Cos
 # Removing fields
 Historic_Seasons <- subset(Historic_Seasons, select = -c(element_code))
 
+# Printing stage complete
+print("Player Historic Gameweek Complete")
+
 #---------- Creating CSV files ----------
 write.csv(Fixtures, "Fixtures.csv", row.names =  FALSE)
 write.csv(Gameweek, "Gameweek.csv", row.names =  FALSE)
@@ -335,12 +350,18 @@ write.csv(Historic_Seasons, "Historic_Seasons.csv", row.names =  FALSE)
 write.csv(Player, "Player.csv", row.names =  FALSE)
 write.csv(Standings, "Standings.csv", row.names =  FALSE)
 
+# Printing stage complete
+print("Creating CSV Files Complete")
+
 #---------- Autheticating Google Sheets ----------
 # Calling in credentials through github secrest.
 json_string <- Sys.getenv("PRIVATE_KEY")
 
 # Authenticating google
 gs4_auth(path = json_string)
+
+# Printing stage complete
+print("Authenticating Google Sheets Complete")
 
 #----------- Uploading to googlesheets ----------
 
@@ -402,4 +423,9 @@ write_sheet(`Historic_Seasons`,
             sheet = "Historic Seasons"
 )
 
+# Printing stage complete
+print("Saving To Google Sheets Complete")
 #---------- End of Script ----------
+
+# Printing stage complete
+print("END OF SCRIPT :)")
