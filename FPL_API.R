@@ -14,6 +14,9 @@ library(progress)
 library(rvest)
 library(googlesheets4)
 
+# Printing stage complete
+print("Dependencies Complete")
+
 #---------- Team Info ----------
 # A GET call to the FPL API
 res = VERB("GET", url = "https://fantasy.premierleague.com/api/bootstrap-static/")
