@@ -1,7 +1,8 @@
 name: 5:30 Schedule
 
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: '30 5 * * *' # Runs at 05:30 UTC every day
 
 jobs:
   import-data:
