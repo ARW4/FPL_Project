@@ -1,8 +1,7 @@
 name: 5:30 Schedule
 
 on:
-  schedule:
-  - cron: "30 5 * * *"
+  workflow_dispatch:
 
 jobs:
   import-data:
@@ -10,28 +9,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: "4.5.0"
       - uses: r-lib/actions/setup-renv@v2
-
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apy-get install -y build-essential
-
-      - name: Set R options for binary packages
-        run: echo "options(repos = c(CRAN = 'https://cloud.r-project.org'), pkgType = 'binary')" >> ~/.Rprofile
-
-      - name: Install R packages
-        run: Rscript -e 'install.packages("bit", dependencies = TRUE, repos = "https://cloud.r-project.org")'
+      
+      - name: Install System Dependencies
+        run: sudo apt-get update && sudo apt-get install -y build-essential
       
       - name: FPL Code
         env: 
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           GOOGLE_SHEETS_URL: ${{ vars.GOOGLE_SHEETS_URL }}
-        run : 
-          Rscript -e 'source("FPL_API.R")'
-        
+        run : Rscript -e 'source("FPL_API.R")'
+      
       - name: Commit results
         run: |
           git config --local user.email "actions@github.com"
