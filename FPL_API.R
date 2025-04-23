@@ -83,6 +83,9 @@ Standings <- data.frame(
 # Removing obejects from environment
 rm(html)
 
+# Removing the letters at the start of the Team Column
+Standings$Team <- gsub("\\d","",Standings$Team)
+
 # Joining tables based on team names
 Standings <- left_join(Standings, Teams, join_by( Team == Team))
 
