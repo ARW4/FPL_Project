@@ -84,7 +84,7 @@ Standings <- data.frame(
 rm(html)
 
 # Creating the position column
-Standings$Position <- str_extract_all(Standings$Team, "[0-9]+")
+Standings$Position <- as.numeric(str_extract_all(Standings$Team, "[0-9]+"))
 
 # Removing the letters at the start of the Team Column
 Standings$Team <- gsub("\\d","",Standings$Team)
