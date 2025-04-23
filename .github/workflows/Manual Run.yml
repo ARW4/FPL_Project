@@ -9,15 +9,31 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: r-lib/actions/setup-r@v2
+
+      - name: Install System Dependencies
+        run: sudo apt-get update && sudo apt-get install -y build-essential
+
       - uses: r-lib/actions/setup-renv@v2
-      
+
+      - name: Update renv (Optional)
+        run: R -e 'install.packages("renv")'
+
+      - name: Clean renv Cache (Optional)
+        run: R -e 'renv::clear_cache()'
+
+      - name: Restore R Packages
+        run: R -e 'renv::restore()'
+
+      - name: Explicitly Install bit (If restore fails)
+        run: R -e 'install.packages("bit")'
+        if: failure() # Only run if the previous step fails
+
       - name: FPL Code
-        env: 
+        env:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           GOOGLE_SHEETS_URL: ${{ vars.GOOGLE_SHEETS_URL }}
-        run : 
-          Rscript -e 'source("FPL_API.R")'
-        
+        run : Rscript -e 'source("FPL_API.R")'
+
       - name: Commit results
         run: |
           git config --local user.email "actions@github.com"
