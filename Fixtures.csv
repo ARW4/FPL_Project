@@ -673,10 +673,10 @@
 339,34,TRUE,"2025-04-26",1,2,3,1,"Away","Fulham","Southampton",9
 340,34,TRUE,"2025-04-26",3,0,1,3,"Home","Wolverhampton Wanderers","Leicester City",20
 340,34,TRUE,"2025-04-26",3,0,1,3,"Away","Leicester City","Wolverhampton Wanderers",11
-332,34,FALSE,"2025-04-27",NA,NA,2,3,"Home","AFC Bournemouth","Manchester United",3
-332,34,FALSE,"2025-04-27",NA,NA,2,3,"Away","Manchester United","AFC Bournemouth",14
-335,34,FALSE,"2025-04-27",NA,NA,2,5,"Home","Liverpool","Tottenham Hotspur",12
-335,34,FALSE,"2025-04-27",NA,NA,2,5,"Away","Tottenham Hotspur","Liverpool",18
+332,34,TRUE,"2025-04-27",1,1,2,3,"Home","AFC Bournemouth","Manchester United",3
+332,34,TRUE,"2025-04-27",1,1,2,3,"Away","Manchester United","AFC Bournemouth",14
+335,34,TRUE,"2025-04-27",5,1,2,5,"Home","Liverpool","Tottenham Hotspur",12
+335,34,TRUE,"2025-04-27",5,1,2,5,"Away","Tottenham Hotspur","Liverpool",18
 338,34,FALSE,"2025-05-01",NA,NA,3,4,"Home","Nottingham Forest","Brentford",16
 338,34,FALSE,"2025-05-01",NA,NA,3,4,"Away","Brentford","Nottingham Forest",4
 349,35,FALSE,"2025-05-02",NA,NA,3,4,"Home","Manchester City","Wolverhampton Wanderers",13
