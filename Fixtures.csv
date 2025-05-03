@@ -679,8 +679,8 @@
 335,34,TRUE,"2025-04-27",5,1,2,5,"Away","Tottenham Hotspur","Liverpool",18
 338,34,TRUE,"2025-05-01",0,2,3,4,"Home","Nottingham Forest","Brentford",16
 338,34,TRUE,"2025-05-01",0,2,3,4,"Away","Brentford","Nottingham Forest",4
-349,35,FALSE,"2025-05-02",NA,NA,3,4,"Home","Manchester City","Wolverhampton Wanderers",13
-349,35,FALSE,"2025-05-02",NA,NA,3,4,"Away","Wolverhampton Wanderers","Manchester City",20
+349,35,TRUE,"2025-05-02",1,0,3,4,"Home","Manchester City","Wolverhampton Wanderers",13
+349,35,TRUE,"2025-05-02",1,0,3,4,"Away","Wolverhampton Wanderers","Manchester City",20
 342,35,FALSE,"2025-05-03",NA,NA,3,4,"Home","Aston Villa","Fulham",2
 342,35,FALSE,"2025-05-03",NA,NA,3,4,"Away","Fulham","Aston Villa",9
 347,35,FALSE,"2025-05-03",NA,NA,2,3,"Home","Everton","Ipswich Town",8

@@ -1,8 +1,8 @@
 "Team","Played","Won","Drawn","Lost","Goals For","Goals Against","Goal Difference","Points","Form..Last.6.games..Oldest.first","Position","Team ID","Abbreviation","Team Strength"
 "Liverpool",34,25,7,2,80,32,48,82,"WResult WinWResult WinLResult LossWResult WinWResult WinWResult Win",1,12,"LIV",5
 "Arsenal",34,18,13,3,63,29,34,67,"WResult WinWResult WinDResult DrawDResult DrawWResult WinDResult Draw",2,1,"ARS",5
-"Newcastle United",34,19,5,10,65,44,21,62,"WResult WinWResult WinWResult WinWResult WinLResult LossWResult Win",3,15,"NEW",4
-"Manchester City",34,18,7,9,66,43,23,61,"DResult DrawWResult WinDResult DrawWResult WinWResult WinWResult Win",4,13,"MCI",4
+"Manchester City",35,19,7,9,67,43,24,64,"WResult WinDResult DrawWResult WinWResult WinWResult WinWResult Win",3,13,"MCI",4
+"Newcastle United",34,19,5,10,65,44,21,62,"WResult WinWResult WinWResult WinWResult WinLResult LossWResult Win",4,15,"NEW",4
 "Chelsea",34,17,9,8,59,40,19,60,"LResult LossWResult WinDResult DrawDResult DrawWResult WinWResult Win",5,6,"CHE",3
 "Nottingham Forest",34,18,6,10,53,41,12,60,"WResult WinWResult WinLResult LossLResult LossWResult WinLResult Loss",6,16,"NFO",4
 "Aston Villa",34,16,9,9,54,49,5,57,"WResult WinWResult WinWResult WinWResult WinWResult WinLResult Loss",7,2,"AVL",3
@@ -11,7 +11,7 @@
 "AFC Bournemouth",34,13,11,10,53,41,12,50,"LResult LossLResult LossDResult DrawWResult WinDResult DrawDResult Draw",10,3,"BOU",3
 "Brentford",34,14,7,13,58,50,8,49,"WResult WinLResult LossDResult DrawDResult DrawWResult WinWResult Win",11,4,"BRE",3
 "Crystal Palace",34,11,12,11,43,47,-4,45,"DResult DrawWResult WinLResult LossLResult LossDResult DrawDResult Draw",12,7,"CRY",3
-"Wolverhampton Wanderers",34,12,5,17,51,61,-10,41,"WResult WinWResult WinWResult WinWResult WinWResult WinWResult Win",13,20,"WOL",3
+"Wolverhampton Wanderers",35,12,5,18,51,62,-11,41,"WResult WinWResult WinWResult WinWResult WinWResult WinLResult Loss",13,20,"WOL",3
 "Manchester United",34,10,9,15,39,47,-8,39,"WResult WinLResult LossDResult DrawLResult LossLResult LossDResult Draw",14,14,"MUN",3
 "Everton",34,8,14,12,34,41,-7,38,"DResult DrawLResult LossDResult DrawWResult WinLResult LossLResult Loss",15,8,"EVE",3
 "Tottenham Hotspur",34,11,4,19,62,56,6,37,"LResult LossLResult LossWResult WinLResult LossLResult LossLResult Loss",16,18,"TOT",3
