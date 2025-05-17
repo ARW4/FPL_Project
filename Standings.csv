@@ -2,9 +2,9 @@
 "Liverpool",36,25,8,3,83,37,46,83,"LResult LossWResult WinWResult WinWResult WinLResult LossDResult Draw",1,12,"LIV",5
 "Arsenal",36,18,14,4,66,33,33,68,"DResult DrawDResult DrawWResult WinDResult DrawLResult LossDResult Draw",2,1,"ARS",5
 "Newcastle United",36,20,6,10,68,45,23,66,"WResult WinWResult WinLResult LossWResult WinDResult DrawWResult Win",3,15,"NEW",4
-"Manchester City",36,19,8,9,67,43,24,65,"DResult DrawWResult WinWResult WinWResult WinWResult WinDResult Draw",4,13,"MCI",4
-"Chelsea",36,18,9,9,62,43,19,63,"DResult DrawDResult DrawWResult WinWResult WinWResult WinLResult Loss",5,6,"CHE",3
-"Aston Villa",36,18,9,9,56,49,7,63,"WResult WinWResult WinWResult WinLResult LossWResult WinWResult Win",6,2,"AVL",3
+"Chelsea",37,19,9,9,63,43,20,66,"DResult DrawWResult WinWResult WinWResult WinLResult LossWResult Win",4,6,"CHE",3
+"Aston Villa",37,19,9,9,58,49,9,66,"WResult WinWResult WinLResult LossWResult WinWResult WinWResult Win",5,2,"AVL",3
+"Manchester City",36,19,8,9,67,43,24,65,"DResult DrawWResult WinWResult WinWResult WinWResult WinDResult Draw",6,13,"MCI",4
 "Nottingham Forest",36,18,8,10,56,44,12,62,"LResult LossLResult LossWResult WinLResult LossDResult DrawDResult Draw",7,16,"NFO",4
 "Brentford",36,16,7,13,63,53,10,55,"DResult DrawDResult DrawWResult WinWResult WinWResult WinWResult Win",8,4,"BRE",3
 "Brighton & Hove Albion",36,14,13,9,59,56,3,55,"LResult LossDResult DrawLResult LossWResult WinDResult DrawWResult Win",9,5,"BHA",3
@@ -14,8 +14,8 @@
 "Everton",36,9,15,12,39,44,-5,42,"DResult DrawWResult WinLResult LossLResult LossDResult DrawWResult Win",13,8,"EVE",3
 "Wolverhampton Wanderers",36,12,5,19,51,64,-13,41,"WResult WinWResult WinWResult WinWResult WinLResult LossLResult Loss",14,20,"WOL",3
 "West Ham United",36,10,10,16,42,59,-17,40,"DResult DrawLResult LossDResult DrawLResult LossDResult DrawWResult Win",15,19,"WHU",3
-"Manchester United",36,10,9,17,42,53,-11,39,"DResult DrawLResult LossLResult LossDResult DrawLResult LossLResult Loss",16,14,"MUN",3
-"Tottenham Hotspur",36,11,5,20,63,59,4,38,"WResult WinLResult LossLResult LossLResult LossDResult DrawLResult Loss",17,18,"TOT",3
+"Manchester United",37,10,9,18,42,54,-12,39,"LResult LossLResult LossDResult DrawLResult LossLResult LossLResult Loss",16,14,"MUN",3
+"Tottenham Hotspur",37,11,5,21,63,61,2,38,"LResult LossLResult LossLResult LossDResult DrawLResult LossLResult Loss",17,18,"TOT",3
 "Ipswich Town",36,4,10,22,35,77,-42,22,"LResult LossDResult DrawLResult LossLResult LossDResult DrawLResult Loss",18,10,"IPS",2
 "Leicester City",36,5,7,24,31,78,-47,22,"LResult LossDResult DrawLResult LossLResult LossWResult WinDResult Draw",19,11,"LEI",2
 "Southampton",36,2,6,28,25,82,-57,12,"LResult LossLResult LossDResult DrawLResult LossLResult LossDResult Draw",20,17,"SOU",2
