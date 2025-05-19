@@ -1,21 +1,21 @@
 "Team","Played","Won","Drawn","Lost","Goals For","Goals Against","Goal Difference","Points","Form..Last.6.games..Oldest.first","Position","Team ID","Abbreviation","Team Strength"
 "Liverpool",36,25,8,3,83,37,46,83,"LResult LossWResult WinWResult WinWResult WinLResult LossDResult Draw",1,12,"LIV",5
-"Arsenal",36,18,14,4,66,33,33,68,"DResult DrawDResult DrawWResult WinDResult DrawLResult LossDResult Draw",2,1,"ARS",5
-"Newcastle United",36,20,6,10,68,45,23,66,"WResult WinWResult WinLResult LossWResult WinDResult DrawWResult Win",3,15,"NEW",4
+"Arsenal",37,19,14,4,67,33,34,71,"DResult DrawWResult WinDResult DrawLResult LossDResult DrawWResult Win",2,1,"ARS",5
+"Newcastle United",37,20,6,11,68,46,22,66,"WResult WinLResult LossWResult WinDResult DrawWResult WinLResult Loss",3,15,"NEW",4
 "Chelsea",37,19,9,9,63,43,20,66,"DResult DrawWResult WinWResult WinWResult WinLResult LossWResult Win",4,6,"CHE",3
 "Aston Villa",37,19,9,9,58,49,9,66,"WResult WinWResult WinLResult LossWResult WinWResult WinWResult Win",5,2,"AVL",3
 "Manchester City",36,19,8,9,67,43,24,65,"DResult DrawWResult WinWResult WinWResult WinWResult WinDResult Draw",6,13,"MCI",4
-"Nottingham Forest",36,18,8,10,56,44,12,62,"LResult LossLResult LossWResult WinLResult LossDResult DrawDResult Draw",7,16,"NFO",4
-"Brentford",36,16,7,13,63,53,10,55,"DResult DrawDResult DrawWResult WinWResult WinWResult WinWResult Win",8,4,"BRE",3
+"Nottingham Forest",37,19,8,10,58,45,13,65,"LResult LossWResult WinLResult LossDResult DrawDResult DrawWResult Win",7,16,"NFO",4
+"Brentford",37,16,7,14,65,56,9,55,"DResult DrawWResult WinWResult WinWResult WinWResult WinLResult Loss",8,4,"BRE",3
 "Brighton & Hove Albion",36,14,13,9,59,56,3,55,"LResult LossDResult DrawLResult LossWResult WinDResult DrawWResult Win",9,5,"BHA",3
-"AFC Bournemouth",36,14,11,11,55,43,12,53,"DResult DrawWResult WinDResult DrawDResult DrawWResult WinLResult Loss",10,3,"BOU",3
-"Fulham",36,14,9,13,51,50,1,51,"WResult WinLResult LossLResult LossWResult WinLResult LossLResult Loss",11,9,"FUL",3
+"Fulham",37,15,9,13,54,52,2,54,"LResult LossLResult LossWResult WinLResult LossLResult LossWResult Win",10,9,"FUL",3
+"AFC Bournemouth",36,14,11,11,55,43,12,53,"DResult DrawWResult WinDResult DrawDResult DrawWResult WinLResult Loss",11,3,"BOU",3
 "Crystal Palace",36,12,13,11,46,48,-2,49,"LResult LossLResult LossDResult DrawDResult DrawDResult DrawWResult Win",12,7,"CRY",3
-"Everton",36,9,15,12,39,44,-5,42,"DResult DrawWResult WinLResult LossLResult LossDResult DrawWResult Win",13,8,"EVE",3
+"Everton",37,10,15,12,41,44,-3,45,"WResult WinLResult LossLResult LossDResult DrawWResult WinWResult Win",13,8,"EVE",3
 "Wolverhampton Wanderers",36,12,5,19,51,64,-13,41,"WResult WinWResult WinWResult WinWResult WinLResult LossLResult Loss",14,20,"WOL",3
-"West Ham United",36,10,10,16,42,59,-17,40,"DResult DrawLResult LossDResult DrawLResult LossDResult DrawWResult Win",15,19,"WHU",3
+"West Ham United",37,10,10,17,43,61,-18,40,"LResult LossDResult DrawLResult LossDResult DrawWResult WinLResult Loss",15,19,"WHU",3
 "Manchester United",37,10,9,18,42,54,-12,39,"LResult LossLResult LossDResult DrawLResult LossLResult LossLResult Loss",16,14,"MUN",3
 "Tottenham Hotspur",37,11,5,21,63,61,2,38,"LResult LossLResult LossLResult LossDResult DrawLResult LossLResult Loss",17,18,"TOT",3
-"Ipswich Town",36,4,10,22,35,77,-42,22,"LResult LossDResult DrawLResult LossLResult LossDResult DrawLResult Loss",18,10,"IPS",2
-"Leicester City",36,5,7,24,31,78,-47,22,"LResult LossDResult DrawLResult LossLResult LossWResult WinDResult Draw",19,11,"LEI",2
-"Southampton",36,2,6,28,25,82,-57,12,"LResult LossLResult LossDResult DrawLResult LossLResult LossDResult Draw",20,17,"SOU",2
+"Leicester City",37,6,7,24,33,78,-45,25,"DResult DrawLResult LossLResult LossWResult WinDResult DrawWResult Win",18,11,"LEI",2
+"Ipswich Town",37,4,10,23,35,79,-44,22,"DResult DrawLResult LossLResult LossDResult DrawLResult LossLResult Loss",19,10,"IPS",2
+"Southampton",37,2,6,29,25,84,-59,12,"LResult LossDResult DrawLResult LossLResult LossDResult DrawLResult Loss",20,17,"SOU",2
