@@ -733,8 +733,8 @@
 368,37,TRUE,"2025-05-18",2,0,2,1,"Away","Ipswich Town","Leicester City",10
 361,37,TRUE,"2025-05-18",1,0,4,5,"Home","Arsenal","Newcastle United",1
 361,37,TRUE,"2025-05-18",1,0,4,5,"Away","Newcastle United","Arsenal",15
-364,37,FALSE,"2025-05-19",NA,NA,5,3,"Home","Brighton & Hove Albion","Liverpool",5
-364,37,FALSE,"2025-05-19",NA,NA,5,3,"Away","Liverpool","Brighton & Hove Albion",12
+364,37,TRUE,"2025-05-19",3,2,5,3,"Home","Brighton & Hove Albion","Liverpool",5
+364,37,TRUE,"2025-05-19",3,2,5,3,"Away","Liverpool","Brighton & Hove Albion",12
 366,37,FALSE,"2025-05-20",NA,NA,3,3,"Home","Crystal Palace","Wolverhampton Wanderers",7
 366,37,FALSE,"2025-05-20",NA,NA,3,3,"Away","Wolverhampton Wanderers","Crystal Palace",20
 369,37,FALSE,"2025-05-20",NA,NA,3,4,"Home","Manchester City","AFC Bournemouth",13
