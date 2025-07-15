@@ -30,7 +30,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), opti
 driver.maximize_window()
 
 # Setting the wait function
-wait = WebDriverWait(driver, 20)
+wait = WebDriverWait(driver, 30)
 
 # Provide website
 dashboard = "https://public.tableau.com/app/profile/alexrwood/viz/FPLDashboard_17254712584930/FPL-Standings"
