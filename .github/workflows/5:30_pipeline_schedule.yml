@@ -1,4 +1,4 @@
-name: 5:30 Schedule
+name: 5:30_pipeline_schedule
 
 on:
   schedule:
