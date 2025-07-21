@@ -1,8 +1,8 @@
-name: Dashboard Data Refresh
+name: dashboard_data_refresh
 
 on:
    workflow_run:
-    workflows: ["5:30 Schedule", "Manual Run"]
+    workflows: ["5:30_pipeline_schedule", "manual_run"]
     types:
       - completed
 
