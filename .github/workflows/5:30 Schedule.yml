@@ -16,7 +16,7 @@ jobs:
         env: 
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           GOOGLE_SHEETS_URL: ${{ vars.GOOGLE_SHEETS_URL }}
-        run : Rscript -e 'source("FPL_API.R")'
+        run : Rscript -e 'source("fpl_api_data.R")'
       
       - name: Commit results
         run: |
