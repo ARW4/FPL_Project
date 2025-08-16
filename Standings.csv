@@ -1,21 +1,21 @@
 "Team","Played","Won","Drawn","Lost","Goals For","Goals Against","Goal Difference","Points","Form..Last.6.games..Oldest.first","Position","Team ID","Abbreviation","Team Strength"
-"AFC Bournemouth",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",1,3,"BOU",3
-"Arsenal",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",2,1,"ARS",5
+"Liverpool",1,1,0,0,4,2,2,3,"No ResultNo ResultNo ResultNo ResultNo ResultWResult Win",1,12,"LIV",5
+"Arsenal",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",2,1,"ARS",4
 "Aston Villa",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",3,2,"AVL",3
-"Brentford",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",4,4,"BRE",3
-"Brighton & Hove Albion",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",5,5,"BHA",3
+"Brentford",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",4,5,"BRE",3
+"Brighton & Hove Albion",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",5,6,"BHA",3
 "Burnley",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",6,NA,NA,NA
-"Chelsea",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",7,6,"CHE",3
-"Crystal Palace",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",8,7,"CRY",3
-"Everton",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",9,8,"EVE",3
-"Fulham",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",10,9,"FUL",3
+"Chelsea",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",7,7,"CHE",4
+"Crystal Palace",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",8,8,"CRY",3
+"Everton",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",9,9,"EVE",3
+"Fulham",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",10,10,"FUL",3
 "Leeds United",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",11,NA,NA,NA
-"Liverpool",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",12,12,"LIV",5
-"Manchester City",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",13,13,"MCI",4
-"Manchester United",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",14,14,"MUN",3
-"Newcastle United",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",15,15,"NEW",4
-"Nottingham Forest",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",16,16,"NFO",4
-"Sunderland",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",17,NA,NA,NA
-"Tottenham Hotspur",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",18,18,"TOT",3
-"West Ham United",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",19,19,"WHU",3
-"Wolverhampton Wanderers",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",20,20,"WOL",3
+"Manchester City",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",12,13,"MCI",4
+"Manchester United",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",13,14,"MUN",3
+"Newcastle United",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",14,15,"NEW",4
+"Nottingham Forest",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",15,16,"NFO",3
+"Sunderland",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",16,NA,NA,NA
+"Tottenham Hotspur",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",17,18,"TOT",3
+"West Ham United",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",18,19,"WHU",3
+"Wolverhampton Wanderers",0,0,0,0,0,0,0,0,"No ResultNo ResultNo ResultNo ResultNo ResultNo Result",19,20,"WOL",3
+"AFC Bournemouth",1,0,0,1,2,4,-2,0,"No ResultNo ResultNo ResultNo ResultNo ResultLResult Loss",20,4,"BOU",3
