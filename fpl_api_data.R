@@ -63,7 +63,7 @@ Teams <- Teams %>% mutate(Team = case_when(
   Team == "Wolves" ~ "Wolverhampton Wanderers",
   Team == "Sunderland" ~ "Sunderland",
   Team == "Burnley" ~ "Burnley",
-  Team == "Leeds" ~ "Leeds"
+  Team == "Leeds" ~ "Leeds United"
 ))
 
 # Removing objects from environment
