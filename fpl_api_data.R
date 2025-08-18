@@ -60,7 +60,10 @@ Teams <- Teams %>% mutate(Team = case_when(
   Team == "Southampton" ~ "Southampton",
   Team == "Spurs" ~ "Tottenham Hotspur",
   Team == "West Ham" ~ "West Ham United",
-  Team == "Wolves" ~ "Wolverhampton Wanderers"
+  Team == "Wolves" ~ "Wolverhampton Wanderers",
+  Team == "Sunderland" ~ "Sunderland",
+  Team == "Burnley" ~ "Burnley",
+  Team == "Leeds" ~ "Leeds"
 ))
 
 # Removing objects from environment
@@ -93,7 +96,7 @@ Standings$Team <- gsub("\\d","",Standings$Team)
 Standings <- left_join(Standings, Teams, join_by( Team == Team))
 
 # Keeping only relevent fields
-#Standings <- subset(Standings, select = c(Position, Team, Abbreviation, `Team Strength`, Played, Won, Drawn, Lost, Goals.For, Goals.Against, Goal.Difference, Points, `Team ID`))
+Standings <- subset(Standings, select = -Form..Last.6.games..Oldest.first)
 
 # Renaming Columns
 Standings <- Standings %>% rename(`Goals For` = Goals.For,
