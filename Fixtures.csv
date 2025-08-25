@@ -31,12 +31,12 @@
 14,2,TRUE,"2025-08-23",2,0,2,2,"Away","Sunderland","Burnley",17
 11,2,TRUE,"2025-08-23",5,0,2,4,"Home","Arsenal","Leeds United",1
 11,2,TRUE,"2025-08-23",5,0,2,4,"Away","Leeds United","Arsenal",11
-15,2,FALSE,"2025-08-24",NA,NA,3,3,"Home","Crystal Palace","Nottingham Forest",8
-15,2,FALSE,"2025-08-24",NA,NA,3,3,"Away","Nottingham Forest","Crystal Palace",16
-16,2,FALSE,"2025-08-24",NA,NA,3,3,"Home","Everton","Brighton & Hove Albion",9
-16,2,FALSE,"2025-08-24",NA,NA,3,3,"Away","Brighton & Hove Albion","Everton",6
-17,2,FALSE,"2025-08-24",NA,NA,3,3,"Home","Fulham","Manchester United",10
-17,2,FALSE,"2025-08-24",NA,NA,3,3,"Away","Manchester United","Fulham",14
+15,2,TRUE,"2025-08-24",1,1,3,3,"Home","Crystal Palace","Nottingham Forest",8
+15,2,TRUE,"2025-08-24",1,1,3,3,"Away","Nottingham Forest","Crystal Palace",16
+16,2,TRUE,"2025-08-24",2,0,3,3,"Home","Everton","Brighton & Hove Albion",9
+16,2,TRUE,"2025-08-24",2,0,3,3,"Away","Brighton & Hove Albion","Everton",6
+17,2,TRUE,"2025-08-24",1,1,3,3,"Home","Fulham","Manchester United",10
+17,2,TRUE,"2025-08-24",1,1,3,3,"Away","Manchester United","Fulham",14
 19,2,FALSE,"2025-08-25",NA,NA,4,4,"Home","Newcastle United","Liverpool",15
 19,2,FALSE,"2025-08-25",NA,NA,4,4,"Away","Liverpool","Newcastle United",12
 23,3,FALSE,"2025-08-30",NA,NA,3,4,"Home","Chelsea","Fulham",7
