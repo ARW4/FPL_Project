@@ -37,8 +37,8 @@
 16,2,TRUE,"2025-08-24",2,0,3,3,"Away","Brighton & Hove Albion","Everton",6
 17,2,TRUE,"2025-08-24",1,1,3,3,"Home","Fulham","Manchester United",10
 17,2,TRUE,"2025-08-24",1,1,3,3,"Away","Manchester United","Fulham",14
-19,2,FALSE,"2025-08-25",NA,NA,4,4,"Home","Newcastle United","Liverpool",15
-19,2,FALSE,"2025-08-25",NA,NA,4,4,"Away","Liverpool","Newcastle United",12
+19,2,TRUE,"2025-08-25",2,3,4,4,"Home","Newcastle United","Liverpool",15
+19,2,TRUE,"2025-08-25",2,3,4,4,"Away","Liverpool","Newcastle United",12
 23,3,FALSE,"2025-08-30",NA,NA,3,4,"Home","Chelsea","Fulham",7
 23,3,FALSE,"2025-08-30",NA,NA,3,4,"Away","Fulham","Chelsea",10
 26,3,FALSE,"2025-08-30",NA,NA,2,3,"Home","Manchester United","Burnley",14
