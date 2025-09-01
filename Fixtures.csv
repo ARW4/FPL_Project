@@ -51,14 +51,14 @@
 30,3,TRUE,"2025-08-30",2,3,2,3,"Away","Everton","Wolverhampton Wanderers",9
 24,3,TRUE,"2025-08-30",0,0,3,2,"Home","Leeds United","Newcastle United",11
 24,3,TRUE,"2025-08-30",0,0,3,2,"Away","Newcastle United","Leeds United",15
-22,3,FALSE,"2025-08-31",NA,NA,4,3,"Home","Brighton & Hove Albion","Manchester City",6
-22,3,FALSE,"2025-08-31",NA,NA,4,3,"Away","Manchester City","Brighton & Hove Albion",13
-27,3,FALSE,"2025-08-31",NA,NA,2,3,"Home","Nottingham Forest","West Ham United",16
-27,3,FALSE,"2025-08-31",NA,NA,2,3,"Away","West Ham United","Nottingham Forest",19
-25,3,FALSE,"2025-08-31",NA,NA,4,5,"Home","Liverpool","Arsenal",12
-25,3,FALSE,"2025-08-31",NA,NA,4,5,"Away","Arsenal","Liverpool",1
-21,3,FALSE,"2025-08-31",NA,NA,3,4,"Home","Aston Villa","Crystal Palace",2
-21,3,FALSE,"2025-08-31",NA,NA,3,4,"Away","Crystal Palace","Aston Villa",8
+22,3,TRUE,"2025-08-31",2,1,4,3,"Home","Brighton & Hove Albion","Manchester City",6
+22,3,TRUE,"2025-08-31",2,1,4,3,"Away","Manchester City","Brighton & Hove Albion",13
+27,3,TRUE,"2025-08-31",0,3,2,3,"Home","Nottingham Forest","West Ham United",16
+27,3,TRUE,"2025-08-31",0,3,2,3,"Away","West Ham United","Nottingham Forest",19
+25,3,TRUE,"2025-08-31",1,0,4,5,"Home","Liverpool","Arsenal",12
+25,3,TRUE,"2025-08-31",1,0,4,5,"Away","Arsenal","Liverpool",1
+21,3,TRUE,"2025-08-31",0,3,3,4,"Home","Aston Villa","Crystal Palace",2
+21,3,TRUE,"2025-08-31",0,3,3,4,"Away","Crystal Palace","Aston Villa",8
 31,4,FALSE,"2025-09-13",NA,NA,3,4,"Home","Arsenal","Nottingham Forest",1
 31,4,FALSE,"2025-09-13",NA,NA,3,4,"Away","Nottingham Forest","Arsenal",16
 32,4,FALSE,"2025-09-13",NA,NA,3,3,"Home","AFC Bournemouth","Brighton & Hove Albion",4
