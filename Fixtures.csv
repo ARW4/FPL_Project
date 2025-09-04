@@ -81,8 +81,6 @@
 38,4,FALSE,"2025-09-14",NA,NA,3,4,"Away","Manchester United","Manchester City",14
 46,5,FALSE,"2025-09-20",NA,NA,2,5,"Home","Liverpool","Everton",12
 46,5,FALSE,"2025-09-20",NA,NA,2,5,"Away","Everton","Liverpool",9
-42,5,FALSE,"2025-09-20",NA,NA,3,3,"Home","AFC Bournemouth","Newcastle United",4
-42,5,FALSE,"2025-09-20",NA,NA,3,3,"Away","Newcastle United","AFC Bournemouth",15
 43,5,FALSE,"2025-09-20",NA,NA,3,3,"Home","Brighton & Hove Albion","Tottenham Hotspur",6
 43,5,FALSE,"2025-09-20",NA,NA,3,3,"Away","Tottenham Hotspur","Brighton & Hove Albion",18
 44,5,FALSE,"2025-09-20",NA,NA,3,2,"Home","Burnley","Nottingham Forest",3
@@ -95,14 +93,14 @@
 47,5,FALSE,"2025-09-20",NA,NA,3,3,"Away","Chelsea","Manchester United",7
 45,5,FALSE,"2025-09-20",NA,NA,3,3,"Home","Fulham","Brentford",10
 45,5,FALSE,"2025-09-20",NA,NA,3,3,"Away","Brentford","Fulham",5
+42,5,FALSE,"2025-09-21",NA,NA,3,3,"Home","AFC Bournemouth","Newcastle United",4
+42,5,FALSE,"2025-09-21",NA,NA,3,3,"Away","Newcastle United","AFC Bournemouth",15
 48,5,FALSE,"2025-09-21",NA,NA,3,2,"Home","Sunderland","Aston Villa",17
 48,5,FALSE,"2025-09-21",NA,NA,3,2,"Away","Aston Villa","Sunderland",2
 41,5,FALSE,"2025-09-21",NA,NA,4,4,"Home","Arsenal","Manchester City",1
 41,5,FALSE,"2025-09-21",NA,NA,4,4,"Away","Manchester City","Arsenal",13
 52,6,FALSE,"2025-09-27",NA,NA,3,3,"Home","Brentford","Manchester United",5
 52,6,FALSE,"2025-09-27",NA,NA,3,3,"Away","Manchester United","Brentford",14
-51,6,FALSE,"2025-09-27",NA,NA,3,4,"Home","Aston Villa","Fulham",2
-51,6,FALSE,"2025-09-27",NA,NA,3,4,"Away","Fulham","Aston Villa",10
 53,6,FALSE,"2025-09-27",NA,NA,3,4,"Home","Chelsea","Brighton & Hove Albion",7
 53,6,FALSE,"2025-09-27",NA,NA,3,4,"Away","Brighton & Hove Albion","Chelsea",6
 54,6,FALSE,"2025-09-27",NA,NA,4,3,"Home","Crystal Palace","Liverpool",8
@@ -113,8 +111,10 @@
 57,6,FALSE,"2025-09-27",NA,NA,2,4,"Away","Burnley","Manchester City",3
 59,6,FALSE,"2025-09-27",NA,NA,2,3,"Home","Nottingham Forest","Sunderland",16
 59,6,FALSE,"2025-09-27",NA,NA,2,3,"Away","Sunderland","Nottingham Forest",17
-60,6,FALSE,"2025-09-28",NA,NA,2,3,"Home","Tottenham Hotspur","Wolverhampton Wanderers",18
-60,6,FALSE,"2025-09-28",NA,NA,2,3,"Away","Wolverhampton Wanderers","Tottenham Hotspur",20
+60,6,FALSE,"2025-09-27",NA,NA,2,3,"Home","Tottenham Hotspur","Wolverhampton Wanderers",18
+60,6,FALSE,"2025-09-27",NA,NA,2,3,"Away","Wolverhampton Wanderers","Tottenham Hotspur",20
+51,6,FALSE,"2025-09-28",NA,NA,3,4,"Home","Aston Villa","Fulham",2
+51,6,FALSE,"2025-09-28",NA,NA,3,4,"Away","Fulham","Aston Villa",10
 58,6,FALSE,"2025-09-28",NA,NA,4,4,"Home","Newcastle United","Arsenal",15
 58,6,FALSE,"2025-09-28",NA,NA,4,4,"Away","Arsenal","Newcastle United",1
 55,6,FALSE,"2025-09-29",NA,NA,2,3,"Home","Everton","West Ham United",9
@@ -125,14 +125,14 @@
 67,7,FALSE,"2025-10-04",NA,NA,3,2,"Away","Tottenham Hotspur","Leeds United",18
 61,7,FALSE,"2025-10-04",NA,NA,2,4,"Home","Arsenal","West Ham United",1
 61,7,FALSE,"2025-10-04",NA,NA,2,4,"Away","West Ham United","Arsenal",19
-66,7,FALSE,"2025-10-04",NA,NA,3,3,"Home","Everton","Crystal Palace",9
-66,7,FALSE,"2025-10-04",NA,NA,3,3,"Away","Crystal Palace","Everton",8
 68,7,FALSE,"2025-10-04",NA,NA,2,3,"Home","Manchester United","Sunderland",14
 68,7,FALSE,"2025-10-04",NA,NA,2,3,"Away","Sunderland","Manchester United",17
 65,7,FALSE,"2025-10-04",NA,NA,4,4,"Home","Chelsea","Liverpool",7
 65,7,FALSE,"2025-10-04",NA,NA,4,4,"Away","Liverpool","Chelsea",12
 62,7,FALSE,"2025-10-05",NA,NA,2,4,"Home","Aston Villa","Burnley",2
 62,7,FALSE,"2025-10-05",NA,NA,2,4,"Away","Burnley","Aston Villa",3
+66,7,FALSE,"2025-10-05",NA,NA,3,3,"Home","Everton","Crystal Palace",9
+66,7,FALSE,"2025-10-05",NA,NA,3,3,"Away","Crystal Palace","Everton",8
 69,7,FALSE,"2025-10-05",NA,NA,3,4,"Home","Newcastle United","Nottingham Forest",15
 69,7,FALSE,"2025-10-05",NA,NA,3,4,"Away","Nottingham Forest","Newcastle United",16
 70,7,FALSE,"2025-10-05",NA,NA,3,3,"Home","Wolverhampton Wanderers","Brighton & Hove Albion",20
@@ -161,16 +161,16 @@
 80,8,FALSE,"2025-10-20",NA,NA,3,2,"Away","Brentford","West Ham United",5
 87,9,FALSE,"2025-10-24",NA,NA,2,2,"Home","Leeds United","West Ham United",11
 87,9,FALSE,"2025-10-24",NA,NA,2,2,"Away","West Ham United","Leeds United",19
-84,9,FALSE,"2025-10-25",NA,NA,4,3,"Home","Brentford","Liverpool",5
-84,9,FALSE,"2025-10-25",NA,NA,4,3,"Away","Liverpool","Brentford",12
-81,9,FALSE,"2025-10-25",NA,NA,3,4,"Home","Arsenal","Crystal Palace",1
-81,9,FALSE,"2025-10-25",NA,NA,3,4,"Away","Crystal Palace","Arsenal",8
 85,9,FALSE,"2025-10-25",NA,NA,2,4,"Home","Chelsea","Sunderland",7
 85,9,FALSE,"2025-10-25",NA,NA,2,4,"Away","Sunderland","Chelsea",17
 89,9,FALSE,"2025-10-25",NA,NA,3,4,"Home","Newcastle United","Fulham",15
 89,9,FALSE,"2025-10-25",NA,NA,3,4,"Away","Fulham","Newcastle United",10
 88,9,FALSE,"2025-10-25",NA,NA,3,3,"Home","Manchester United","Brighton & Hove Albion",14
 88,9,FALSE,"2025-10-25",NA,NA,3,3,"Away","Brighton & Hove Albion","Manchester United",6
+84,9,FALSE,"2025-10-25",NA,NA,4,3,"Home","Brentford","Liverpool",5
+84,9,FALSE,"2025-10-25",NA,NA,4,3,"Away","Liverpool","Brentford",12
+81,9,FALSE,"2025-10-26",NA,NA,3,4,"Home","Arsenal","Crystal Palace",1
+81,9,FALSE,"2025-10-26",NA,NA,3,4,"Away","Crystal Palace","Arsenal",8
 82,9,FALSE,"2025-10-26",NA,NA,4,4,"Home","Aston Villa","Manchester City",2
 82,9,FALSE,"2025-10-26",NA,NA,4,4,"Away","Manchester City","Aston Villa",13
 83,9,FALSE,"2025-10-26",NA,NA,3,3,"Home","AFC Bournemouth","Nottingham Forest",4
