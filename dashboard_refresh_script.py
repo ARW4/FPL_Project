@@ -54,11 +54,8 @@ try:
     print("Step 1.2: Cookies accepted.")
 except Exception as e:
     print(f"Step 2 failed {str(e)}")
-    driver.quit()
-    exit()
 
 # Step 2: Click Sign-In button
-
 wait.until(
     EC.element_to_be_clickable(
         (By.CSS_SELECTOR, '[data-testid="AuthSection-sign-in-button"]')
