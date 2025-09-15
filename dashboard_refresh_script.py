@@ -56,12 +56,20 @@ except Exception as e:
     print(f"Step 2 failed {str(e)}")
 
 # Step 2: Click Sign-In button
-wait.until(
-    EC.element_to_be_clickable(
-        (By.CSS_SELECTOR, '[data-testid="AuthSection-sign-in-button"]')
-    )
-).click()
-print("Step 2: Sign-In button clicked.")
+try:
+    wait.until(
+        EC.element_to_be_clickable(
+            (By.CSS_SELECTOR, '[data-testid="AuthSection-sign-in-button"]')
+        )
+    ).click()
+    print("Step 2: Sign-In button clicked.")
+except Exception as e:
+    print(f"Step 2 failed {str(e)}")
+    # Save page source for debugging
+    with open("page_source.html", "w", encoding="utf-8") as f:
+        f.write(driver.page_source)
+    driver.quit()
+    exit(1)
 
 # Step 3: Enter Email
 input_element = driver.find_element(By.ID, "email")
