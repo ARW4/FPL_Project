@@ -75,10 +75,10 @@
 40,4,TRUE,"2025-09-13",0,3,3,2,"Away","Tottenham Hotspur","West Ham United",18
 33,4,TRUE,"2025-09-13",2,2,3,3,"Home","Brentford","Chelsea",5
 33,4,TRUE,"2025-09-13",2,2,3,3,"Away","Chelsea","Brentford",7
-34,4,FALSE,"2025-09-14",NA,NA,4,2,"Home","Burnley","Liverpool",3
-34,4,FALSE,"2025-09-14",NA,NA,4,2,"Away","Liverpool","Burnley",12
-38,4,FALSE,"2025-09-14",NA,NA,3,4,"Home","Manchester City","Manchester United",13
-38,4,FALSE,"2025-09-14",NA,NA,3,4,"Away","Manchester United","Manchester City",14
+34,4,TRUE,"2025-09-14",0,1,4,2,"Home","Burnley","Liverpool",3
+34,4,TRUE,"2025-09-14",0,1,4,2,"Away","Liverpool","Burnley",12
+38,4,TRUE,"2025-09-14",3,0,3,4,"Home","Manchester City","Manchester United",13
+38,4,TRUE,"2025-09-14",3,0,3,4,"Away","Manchester United","Manchester City",14
 46,5,FALSE,"2025-09-20",NA,NA,2,5,"Home","Liverpool","Everton",12
 46,5,FALSE,"2025-09-20",NA,NA,2,5,"Away","Everton","Liverpool",9
 43,5,FALSE,"2025-09-20",NA,NA,3,3,"Home","Brighton & Hove Albion","Tottenham Hotspur",6
