@@ -32,4 +32,4 @@ jobs:
         env: 
           TABLEAU_EMAIL: ${{ vars.TABLEAU_EMAIL }}
           TABLEAU_PASSWORD: ${{ vars.TABLEAU_PASSWORD }}
-        run: python Dashboard_Refresh.py
+        run: python dashboard_refresh_script.py
