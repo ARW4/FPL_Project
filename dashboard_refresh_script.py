@@ -52,7 +52,7 @@ try:
         )
     ).click()
     print("Step 1.2: Cookies accepted.")
-except Exeption as e:
+except Exception as e:
     print(f"Step 2 failed {str(e)}")
     driver.quit()
     exit()
