@@ -1,10 +1,7 @@
 name: dashboard_data_refresh
 
 on:
-   workflow_run:
-    workflows: ["5:30_pipeline_schedule", "manual_run"]
-    types:
-      - completed
+   workflow_dispatch:
 
 jobs:
   dashboard_refresh:
