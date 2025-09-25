@@ -23,6 +23,9 @@ library("furrr")
 
 ## ----import_data----------------------------------------------------------------------------------------------------------
 #---------- Autheticating Google Sheets ----------
+# Google sheets url
+Google_Sheets_Url <- Sys.getenv("GOOGLE_SHEETS_URL")
+
 # Calling in credentials through github secrest.
 json_string <- Sys.getenv("PRIVATE_KEY")
 
@@ -33,11 +36,11 @@ gs4_auth(path = json_string)
 message("Authenticating Google Sheets Complete")
 
 # Loading tables 
-import_gameweek <- data.frame(read_sheet(ss,sheet = "Gameweek"))
-import_player <- data.frame(read_sheet(ss,sheet = "Player"))
-import_standings <- data.frame(read_sheet(ss,sheet = "Standings"))
-import_fixtures <- data.frame(read_sheet(ss,sheet = "Fixtures"))
-import_historic <- data.frame(read_sheet(ss,sheet = "Historic Seasons"))
+import_gameweek <- data.frame(read_sheet(Google_Sheets_Url,sheet = "Gameweek"))
+import_player <- data.frame(read_sheet(Google_Sheets_Url,sheet = "Player"))
+import_standings <- data.frame(read_sheet(Google_Sheets_Url,sheet = "Standings"))
+import_fixtures <- data.frame(read_sheet(Google_Sheets_Url,sheet = "Fixtures"))
+import_historic <- data.frame(read_sheet(Google_Sheets_Url,sheet = "Historic Seasons"))
 
 
 
@@ -786,9 +789,6 @@ write.csv(Starting_XI_Predictions, "Starting_XI_Predictions.csv")
 Player_Predictions <- df_predictions
 
 write.csv(Player_Predictions, "Player_Predictions.csv")
-
-# Saving to google sheets
-Google_Sheets_Url <- Sys.getenv("GOOGLE_SHEETS_URL")
 
 range_clear(Google_Sheets_Url,
             sheet = "Starting XI",
