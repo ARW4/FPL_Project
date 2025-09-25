@@ -772,7 +772,7 @@ plan(sequential)
 
 
 ## -------------------------------------------------------------------------------------------------------------------------
-csv_predicted_best_picks <- df_top_team_per_formation %>%
+Starting_XI_Predictions <- df_top_team_per_formation %>%
   group_by(formation, position,max_team_cost) %>%
   arrange(desc(predicted_points)) %>%
   mutate(
@@ -781,11 +781,11 @@ csv_predicted_best_picks <- df_top_team_per_formation %>%
     ) %>%
   ungroup()
 
-write.csv(csv_predicted_best_picks, "predicted_best_picks.csv")
+write.csv(Starting_XI_Predictions, "Starting_XI_Predictions.csv")
 
-csv_predicted_points <- df_predictions
+Player_Predictions <- df_predictions
 
-write.csv(csv_predicted_points, "player_predictions.csv")
+write.csv(Player_Predictions, "Player_Predictions.csv")
 
 # Saving to google sheets
 Google_Sheets_Url <- Sys.getenv("GOOGLE_SHEETS_URL")
@@ -794,7 +794,7 @@ range_clear(Google_Sheets_Url,
             sheet = "Starting XI",
             range = NULL
 )
-write_sheet(csv_predicted_best_picks, 
+write_sheet(Starting_XI_Predictions, 
             Google_Sheets_Url,
             sheet = "Starting XI"
 )
@@ -802,7 +802,7 @@ range_clear(Google_Sheets_Url,
             sheet = "Player Predictions",
             range = NULL
 )
-write_sheet(csv_predicted_best_picks, 
+write_sheet(Player_Predictions, 
             Google_Sheets_Url,
             sheet = "Player Predictions"
 )
