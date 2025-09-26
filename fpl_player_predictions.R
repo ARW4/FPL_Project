@@ -626,7 +626,7 @@ rm(list = objects_to_remove)
 ## -------------------------------------------------------------------------------------------------------------------------
 player_value <- import_player %>%
   mutate(full_name = paste0(first_name,", ",second_name)) %>%
-  select(full_name, current_cost)
+  select(full_name, current_cost, chance_of_playing_next_round)
 
 df_predictions_with_value <- df_predictions %>%
   left_join(player_value,
@@ -634,6 +634,7 @@ df_predictions_with_value <- df_predictions %>%
   mutate(value = current_cost/10) %>%
   select(-current_cost) %>%
   group_by(position) %>%
+  filter(chance_of_playing_next_round != 0) %>%
   filter(
         (position == "Goalkeeper" & rank(-predicted_points) <= 5) |
         (position == "Defender" & rank(-predicted_points) <= 15) |
