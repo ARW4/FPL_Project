@@ -99,20 +99,20 @@
 48,5,TRUE,"2025-09-21",1,1,3,2,"Away","Aston Villa","Sunderland",2
 41,5,TRUE,"2025-09-21",1,1,4,4,"Home","Arsenal","Manchester City",1
 41,5,TRUE,"2025-09-21",1,1,4,4,"Away","Manchester City","Arsenal",13
-52,6,FALSE,"2025-09-27",NA,NA,3,3,"Home","Brentford","Manchester United",5
-52,6,FALSE,"2025-09-27",NA,NA,3,3,"Away","Manchester United","Brentford",14
-53,6,FALSE,"2025-09-27",NA,NA,3,4,"Home","Chelsea","Brighton & Hove Albion",7
-53,6,FALSE,"2025-09-27",NA,NA,3,4,"Away","Brighton & Hove Albion","Chelsea",6
-54,6,FALSE,"2025-09-27",NA,NA,4,3,"Home","Crystal Palace","Liverpool",8
-54,6,FALSE,"2025-09-27",NA,NA,4,3,"Away","Liverpool","Crystal Palace",12
-56,6,FALSE,"2025-09-27",NA,NA,3,2,"Home","Leeds United","AFC Bournemouth",11
-56,6,FALSE,"2025-09-27",NA,NA,3,2,"Away","AFC Bournemouth","Leeds United",4
-57,6,FALSE,"2025-09-27",NA,NA,2,4,"Home","Manchester City","Burnley",13
-57,6,FALSE,"2025-09-27",NA,NA,2,4,"Away","Burnley","Manchester City",3
-59,6,FALSE,"2025-09-27",NA,NA,2,3,"Home","Nottingham Forest","Sunderland",16
-59,6,FALSE,"2025-09-27",NA,NA,2,3,"Away","Sunderland","Nottingham Forest",17
-60,6,FALSE,"2025-09-27",NA,NA,2,3,"Home","Tottenham Hotspur","Wolverhampton Wanderers",18
-60,6,FALSE,"2025-09-27",NA,NA,2,3,"Away","Wolverhampton Wanderers","Tottenham Hotspur",20
+52,6,TRUE,"2025-09-27",3,1,3,3,"Home","Brentford","Manchester United",5
+52,6,TRUE,"2025-09-27",3,1,3,3,"Away","Manchester United","Brentford",14
+53,6,TRUE,"2025-09-27",1,3,3,4,"Home","Chelsea","Brighton & Hove Albion",7
+53,6,TRUE,"2025-09-27",1,3,3,4,"Away","Brighton & Hove Albion","Chelsea",6
+54,6,TRUE,"2025-09-27",2,1,4,3,"Home","Crystal Palace","Liverpool",8
+54,6,TRUE,"2025-09-27",2,1,4,3,"Away","Liverpool","Crystal Palace",12
+56,6,TRUE,"2025-09-27",2,2,3,2,"Home","Leeds United","AFC Bournemouth",11
+56,6,TRUE,"2025-09-27",2,2,3,2,"Away","AFC Bournemouth","Leeds United",4
+57,6,TRUE,"2025-09-27",5,1,2,4,"Home","Manchester City","Burnley",13
+57,6,TRUE,"2025-09-27",5,1,2,4,"Away","Burnley","Manchester City",3
+59,6,TRUE,"2025-09-27",0,1,2,3,"Home","Nottingham Forest","Sunderland",16
+59,6,TRUE,"2025-09-27",0,1,2,3,"Away","Sunderland","Nottingham Forest",17
+60,6,TRUE,"2025-09-27",1,1,2,3,"Home","Tottenham Hotspur","Wolverhampton Wanderers",18
+60,6,TRUE,"2025-09-27",1,1,2,3,"Away","Wolverhampton Wanderers","Tottenham Hotspur",20
 51,6,FALSE,"2025-09-28",NA,NA,3,4,"Home","Aston Villa","Fulham",2
 51,6,FALSE,"2025-09-28",NA,NA,3,4,"Away","Fulham","Aston Villa",10
 58,6,FALSE,"2025-09-28",NA,NA,4,4,"Home","Newcastle United","Arsenal",15
