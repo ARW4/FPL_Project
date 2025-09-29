@@ -1,8 +1,8 @@
-name: 5:30_pipeline_schedule
+name: 23:00_pipeline_schedule
 
 on:
   schedule:
-    - cron: '30 5 * * *' # Runs at 05:30 UTC every day
+    - cron: '00 23 * * *' # Runs at 05:30 UTC every day
     
 jobs:
   import-data:
