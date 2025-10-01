@@ -599,7 +599,7 @@ for (def in min_def:max_def) {
         Defender = def,
         Midfielder = mid,
         Forward = fwd,
-        formation_name = paste0(def, "-", mid, "-", fwd),
+        formation_name = paste0(def, mid, fwd),
         stringsAsFactors = FALSE
       )
       df_formation <- bind_rows(df_formation, new_row)
