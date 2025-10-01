@@ -2,6 +2,9 @@ name: Generating Predictions
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ['23:00_pipeline_schedule']
+    types: [completed]
     
 jobs:
   import-data:
