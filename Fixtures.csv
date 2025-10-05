@@ -129,16 +129,16 @@
 68,7,TRUE,"2025-10-04",2,0,2,3,"Away","Sunderland","Manchester United",17
 65,7,TRUE,"2025-10-04",2,1,4,4,"Home","Chelsea","Liverpool",7
 65,7,TRUE,"2025-10-04",2,1,4,4,"Away","Liverpool","Chelsea",12
-62,7,FALSE,"2025-10-05",NA,NA,2,4,"Home","Aston Villa","Burnley",2
-62,7,FALSE,"2025-10-05",NA,NA,2,4,"Away","Burnley","Aston Villa",3
-66,7,FALSE,"2025-10-05",NA,NA,3,3,"Home","Everton","Crystal Palace",9
-66,7,FALSE,"2025-10-05",NA,NA,3,3,"Away","Crystal Palace","Everton",8
-69,7,FALSE,"2025-10-05",NA,NA,3,4,"Home","Newcastle United","Nottingham Forest",15
-69,7,FALSE,"2025-10-05",NA,NA,3,4,"Away","Nottingham Forest","Newcastle United",16
-70,7,FALSE,"2025-10-05",NA,NA,3,3,"Home","Wolverhampton Wanderers","Brighton & Hove Albion",20
-70,7,FALSE,"2025-10-05",NA,NA,3,3,"Away","Brighton & Hove Albion","Wolverhampton Wanderers",6
-64,7,FALSE,"2025-10-05",NA,NA,4,3,"Home","Brentford","Manchester City",5
-64,7,FALSE,"2025-10-05",NA,NA,4,3,"Away","Manchester City","Brentford",13
+62,7,TRUE,"2025-10-05",2,1,2,4,"Home","Aston Villa","Burnley",2
+62,7,TRUE,"2025-10-05",2,1,2,4,"Away","Burnley","Aston Villa",3
+66,7,TRUE,"2025-10-05",2,1,3,3,"Home","Everton","Crystal Palace",9
+66,7,TRUE,"2025-10-05",2,1,3,3,"Away","Crystal Palace","Everton",8
+69,7,TRUE,"2025-10-05",2,0,3,4,"Home","Newcastle United","Nottingham Forest",15
+69,7,TRUE,"2025-10-05",2,0,3,4,"Away","Nottingham Forest","Newcastle United",16
+70,7,TRUE,"2025-10-05",1,1,3,3,"Home","Wolverhampton Wanderers","Brighton & Hove Albion",20
+70,7,TRUE,"2025-10-05",1,1,3,3,"Away","Brighton & Hove Albion","Wolverhampton Wanderers",6
+64,7,TRUE,"2025-10-05",0,1,4,3,"Home","Brentford","Manchester City",5
+64,7,TRUE,"2025-10-05",0,1,4,3,"Away","Manchester City","Brentford",13
 77,8,FALSE,"2025-10-18",NA,NA,3,3,"Home","Nottingham Forest","Chelsea",16
 77,8,FALSE,"2025-10-18",NA,NA,3,3,"Away","Chelsea","Nottingham Forest",7
 71,8,FALSE,"2025-10-18",NA,NA,3,3,"Home","Brighton & Hove Albion","Newcastle United",6
