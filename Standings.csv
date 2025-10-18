@@ -1,21 +1,21 @@
 "Team","Played","Won","Drawn","Lost","Goals For","Goals Against","Goal Difference","Points","Position","Team ID","Abbreviation","Team Strength"
-"Arsenal",7,5,1,1,14,3,11,16,1,1,"ARS",4
-"Liverpool",7,5,0,2,13,9,4,15,2,12,"LIV",5
-"Tottenham Hotspur",7,4,2,1,13,5,8,14,3,18,"TOT",3
-"AFC Bournemouth",7,4,2,1,11,8,3,14,4,4,"BOU",3
-"Manchester City",7,4,1,2,15,6,9,13,5,13,"MCI",4
-"Crystal Palace",7,3,3,1,9,5,4,12,6,8,"CRY",3
-"Chelsea",7,3,2,2,13,9,4,11,7,7,"CHE",4
-"Everton",7,3,2,2,9,7,2,11,8,9,"EVE",3
-"Sunderland",7,3,2,2,7,6,1,11,9,17,"SUN",2
-"Manchester United",7,3,1,3,9,11,-2,10,10,14,"MUN",3
-"Newcastle United",7,2,3,2,6,5,1,9,11,15,"NEW",4
-"Brighton & Hove Albion",7,2,3,2,10,10,0,9,12,6,"BHA",3
+"Arsenal",8,6,1,1,15,3,12,19,1,1,"ARS",4
+"Manchester City",8,5,1,2,17,6,11,16,2,13,"MCI",4
+"Liverpool",7,5,0,2,13,9,4,15,3,12,"LIV",5
+"AFC Bournemouth",8,4,3,1,14,11,3,15,4,4,"BOU",3
+"Tottenham Hotspur",7,4,2,1,13,5,8,14,5,18,"TOT",3
+"Chelsea",8,4,2,2,16,9,7,14,6,7,"CHE",4
+"Sunderland",8,4,2,2,9,6,3,14,7,17,"SUN",2
+"Crystal Palace",8,3,4,1,12,8,4,13,8,8,"CRY",3
+"Brighton & Hove Albion",8,3,3,2,12,11,1,12,9,6,"BHA",3
+"Everton",8,3,2,3,9,9,0,11,10,9,"EVE",3
+"Manchester United",7,3,1,3,9,11,-2,10,11,14,"MUN",3
+"Newcastle United",8,2,3,3,7,7,0,9,12,15,"NEW",4
 "Aston Villa",7,2,3,2,6,7,-1,9,13,2,"AVL",3
-"Fulham",7,2,2,3,8,11,-3,8,14,10,"FUL",3
-"Leeds United",7,2,2,3,7,11,-4,8,15,11,"LEE",2
+"Fulham",8,2,2,4,8,12,-4,8,14,10,"FUL",3
+"Leeds United",8,2,2,4,7,13,-6,8,15,11,"LEE",2
 "Brentford",7,2,1,4,9,12,-3,7,16,5,"BRE",3
-"Nottingham Forest",7,1,2,4,5,12,-7,5,17,16,"NFO",3
-"Burnley",7,1,1,5,7,15,-8,4,18,3,"BUR",2
+"Burnley",8,2,1,5,9,15,-6,7,17,3,"BUR",2
+"Nottingham Forest",8,1,2,5,5,15,-10,5,18,16,"NFO",3
 "West Ham United",7,1,1,5,6,16,-10,4,19,19,"WHU",3
-"Wolverhampton Wanderers",7,0,2,5,5,14,-9,2,20,20,"WOL",3
+"Wolverhampton Wanderers",8,0,2,6,5,16,-11,2,20,20,"WOL",3
