@@ -157,8 +157,8 @@
 79,8,TRUE,"2025-10-19",1,2,3,3,"Away","Aston Villa","Tottenham Hotspur",2
 75,8,TRUE,"2025-10-19",1,2,3,5,"Home","Liverpool","Manchester United",12
 75,8,TRUE,"2025-10-19",1,2,3,5,"Away","Manchester United","Liverpool",14
-80,8,FALSE,"2025-10-20",NA,NA,3,2,"Home","West Ham United","Brentford",19
-80,8,FALSE,"2025-10-20",NA,NA,3,2,"Away","Brentford","West Ham United",5
+80,8,TRUE,"2025-10-20",0,2,3,2,"Home","West Ham United","Brentford",19
+80,8,TRUE,"2025-10-20",0,2,3,2,"Away","Brentford","West Ham United",5
 87,9,FALSE,"2025-10-24",NA,NA,2,2,"Home","Leeds United","West Ham United",11
 87,9,FALSE,"2025-10-24",NA,NA,2,2,"Away","West Ham United","Leeds United",19
 85,9,FALSE,"2025-10-25",NA,NA,2,4,"Home","Chelsea","Sunderland",7
