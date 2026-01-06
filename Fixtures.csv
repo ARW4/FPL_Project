@@ -399,8 +399,8 @@
 195,20,TRUE,"2026-01-04",2,2,4,3,"Away","Liverpool","Fulham",12
 197,20,TRUE,"2026-01-04",1,1,3,4,"Home","Manchester City","Chelsea",13
 197,20,TRUE,"2026-01-04",1,1,3,4,"Away","Chelsea","Manchester City",7
-210,21,FALSE,"2026-01-06",NA,NA,2,2,"Home","West Ham United","Nottingham Forest",19
-210,21,FALSE,"2026-01-06",NA,NA,2,2,"Away","Nottingham Forest","West Ham United",16
+210,21,TRUE,"2026-01-06",1,2,2,2,"Home","West Ham United","Nottingham Forest",19
+210,21,TRUE,"2026-01-06",1,2,2,2,"Away","Nottingham Forest","West Ham United",16
 202,21,FALSE,"2026-01-07",NA,NA,3,4,"Home","AFC Bournemouth","Tottenham Hotspur",4
 202,21,FALSE,"2026-01-07",NA,NA,3,4,"Away","Tottenham Hotspur","AFC Bournemouth",18
 203,21,FALSE,"2026-01-07",NA,NA,2,3,"Home","Brentford","Sunderland",5
