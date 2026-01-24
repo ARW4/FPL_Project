@@ -439,16 +439,16 @@
 211,22,TRUE,"2026-01-18",0,1,2,3,"Away","Everton","Aston Villa",9
 212,22,TRUE,"2026-01-19",1,1,3,3,"Home","Brighton & Hove Albion","AFC Bournemouth",6
 212,22,TRUE,"2026-01-19",1,1,3,3,"Away","AFC Bournemouth","Brighton & Hove Albion",4
-230,23,FALSE,"2026-01-24",NA,NA,2,2,"Home","West Ham United","Sunderland",19
-230,23,FALSE,"2026-01-24",NA,NA,2,2,"Away","Sunderland","West Ham United",17
-224,23,FALSE,"2026-01-24",NA,NA,3,2,"Home","Burnley","Tottenham Hotspur",3
-224,23,FALSE,"2026-01-24",NA,NA,3,2,"Away","Tottenham Hotspur","Burnley",18
-227,23,FALSE,"2026-01-24",NA,NA,3,3,"Home","Fulham","Brighton & Hove Albion",10
-227,23,FALSE,"2026-01-24",NA,NA,3,3,"Away","Brighton & Hove Albion","Fulham",6
-228,23,FALSE,"2026-01-24",NA,NA,2,4,"Home","Manchester City","Wolverhampton Wanderers",13
-228,23,FALSE,"2026-01-24",NA,NA,2,4,"Away","Wolverhampton Wanderers","Manchester City",20
-222,23,FALSE,"2026-01-24",NA,NA,4,4,"Home","AFC Bournemouth","Liverpool",4
-222,23,FALSE,"2026-01-24",NA,NA,4,4,"Away","Liverpool","AFC Bournemouth",12
+230,23,TRUE,"2026-01-24",3,1,2,2,"Home","West Ham United","Sunderland",19
+230,23,TRUE,"2026-01-24",3,1,2,2,"Away","Sunderland","West Ham United",17
+224,23,TRUE,"2026-01-24",2,2,3,2,"Home","Burnley","Tottenham Hotspur",3
+224,23,TRUE,"2026-01-24",2,2,3,2,"Away","Tottenham Hotspur","Burnley",18
+227,23,TRUE,"2026-01-24",2,1,3,3,"Home","Fulham","Brighton & Hove Albion",10
+227,23,TRUE,"2026-01-24",2,1,3,3,"Away","Brighton & Hove Albion","Fulham",6
+228,23,TRUE,"2026-01-24",2,0,2,4,"Home","Manchester City","Wolverhampton Wanderers",13
+228,23,TRUE,"2026-01-24",2,0,2,4,"Away","Wolverhampton Wanderers","Manchester City",20
+222,23,TRUE,"2026-01-24",3,2,4,4,"Home","AFC Bournemouth","Liverpool",4
+222,23,TRUE,"2026-01-24",3,2,4,4,"Away","Liverpool","AFC Bournemouth",12
 223,23,FALSE,"2026-01-25",NA,NA,2,3,"Home","Brentford","Nottingham Forest",5
 223,23,FALSE,"2026-01-25",NA,NA,2,3,"Away","Nottingham Forest","Brentford",16
 225,23,FALSE,"2026-01-25",NA,NA,3,3,"Home","Crystal Palace","Chelsea",8
