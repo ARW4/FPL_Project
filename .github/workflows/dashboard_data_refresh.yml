@@ -2,8 +2,8 @@ name: dashboard_data_refresh
 
 on:
    workflow_dispatch:
-  schedule:
-    - cron: '00 1 * * *' # Runs at 01:00 UTC every day
+   schedule:
+      - cron: '00 1 * * *' # Runs at 01:00 UTC every day
 
 jobs:
   dashboard_refresh:
