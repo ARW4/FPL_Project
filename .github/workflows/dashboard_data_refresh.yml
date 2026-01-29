@@ -1,7 +1,9 @@
 name: dashboard_data_refresh
 
 on:
-   workflow_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 1 * * *' # Runs at 01:00 UTC every day
 
 jobs:
   dashboard_refresh:
@@ -24,12 +26,13 @@ jobs:
         run: |
           pip install selenium
           pip install webdriver-manager
+          sudo apt-get install xvfb
 
       - name: Run Script
         env: 
           TABLEAU_EMAIL: ${{ vars.TABLEAU_EMAIL }}
           TABLEAU_PASSWORD: ${{ vars.TABLEAU_PASSWORD }}
-        run: python dashboard_refresh_script.py
+        run: xvfb-run python dashboard_refresh_script.py
 
       - name: Upload page source if present
         if: always()  # Always try to upload, even if previous step failed

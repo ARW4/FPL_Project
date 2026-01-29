@@ -13,11 +13,10 @@ import shutil
 
 # Set Driver
 chrome_options = Options()
-chrome_options.add_argument("--headless")
+#chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-gpu")
-chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
-chrome_options.add_argument("--remote-debugging-port=9222")
+chrome_options.add_argument("--window-size=1920,1080")
 
 # Create a temporary directory for user data
 temp_user_data_dir = tempfile.mkdtemp()
@@ -25,9 +24,6 @@ chrome_options.add_argument(f"--user-data-dir={temp_user_data_dir}")
 
 # Initialize the WebDriver
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-
-# Maximize Window
-driver.maximize_window()
 
 # Setting the wait function
 wait = WebDriverWait(driver, 50)
