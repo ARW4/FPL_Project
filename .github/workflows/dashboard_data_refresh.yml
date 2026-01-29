@@ -30,7 +30,7 @@ jobs:
         env: 
           TABLEAU_EMAIL: ${{ vars.TABLEAU_EMAIL }}
           TABLEAU_PASSWORD: ${{ vars.TABLEAU_PASSWORD }}
-        run: xvfb-python dashboard_refresh_script.py
+        run: xvfb-run python dashboard_refresh_script.py
 
       - name: Upload page source if present
         if: always()  # Always try to upload, even if previous step failed
