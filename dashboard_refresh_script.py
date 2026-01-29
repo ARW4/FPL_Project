@@ -45,15 +45,15 @@ except Exception as e:
     exit()
 
 # Step 1.2: Click "Accept Cookies" -- Only need this step if running on local device
-#try:
-#    wait.until(
-#        EC.element_to_be_clickable(
-#            (By.ID, "onetrust-accept-btn-handler")
-#        )
-#    ).click()
-#    print("Step 1.2: Cookies accepted.")
-#except Exception as e:
-#    print(f"Step 2 failed {str(e)}")
+try:
+    wait.until(
+        EC.element_to_be_clickable(
+            (By.ID, "onetrust-accept-btn-handler")
+        )
+    ).click()
+    print("Step 1.2: Cookies accepted.")
+except:
+    pass
 
 # Step 2: Click Sign-In button
 try:
