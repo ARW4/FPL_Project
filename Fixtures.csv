@@ -497,10 +497,10 @@
 250,25,TRUE,"2026-02-07",1,3,3,2,"Away","Chelsea","Wolverhampton Wanderers",7
 249,25,TRUE,"2026-02-07",2,3,3,4,"Home","Newcastle United","Brentford",15
 249,25,TRUE,"2026-02-07",2,3,3,4,"Away","Brentford","Newcastle United",5
-243,25,FALSE,"2026-02-08",NA,NA,3,3,"Home","Brighton & Hove Albion","Crystal Palace",6
-243,25,FALSE,"2026-02-08",NA,NA,3,3,"Away","Crystal Palace","Brighton & Hove Albion",8
-247,25,FALSE,"2026-02-08",NA,NA,4,4,"Home","Liverpool","Manchester City",12
-247,25,FALSE,"2026-02-08",NA,NA,4,4,"Away","Manchester City","Liverpool",13
+243,25,TRUE,"2026-02-08",0,1,3,3,"Home","Brighton & Hove Albion","Crystal Palace",6
+243,25,TRUE,"2026-02-08",0,1,3,3,"Away","Crystal Palace","Brighton & Hove Albion",8
+247,25,TRUE,"2026-02-08",1,2,4,4,"Home","Liverpool","Manchester City",12
+247,25,TRUE,"2026-02-08",1,2,4,4,"Away","Manchester City","Liverpool",13
 253,26,FALSE,"2026-02-10",NA,NA,2,3,"Home","Chelsea","Leeds United",7
 253,26,FALSE,"2026-02-10",NA,NA,2,3,"Away","Leeds United","Chelsea",11
 255,26,FALSE,"2026-02-10",NA,NA,3,3,"Home","Everton","AFC Bournemouth",9
