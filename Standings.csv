@@ -1,11 +1,11 @@
 "Team","Played","Won","Drawn","Lost","Goals For","Goals Against","Goal Difference","Points","Position","Team ID","Abbreviation","Team Strength"
-"Arsenal",25,17,5,3,49,17,32,56,1,1,"ARS",5
+"Arsenal",26,17,6,3,50,18,32,57,1,1,"ARS",5
 "Manchester City",26,16,5,5,54,24,30,53,2,13,"MCI",4
 "Aston Villa",26,15,5,6,37,27,10,50,3,2,"AVL",3
 "Manchester United",26,12,9,5,47,37,10,45,4,14,"MUN",3
 "Chelsea",26,12,8,6,47,30,17,44,5,7,"CHE",3
 "Liverpool",26,12,6,8,41,35,6,42,6,12,"LIV",4
-"Brentford",25,12,3,10,39,34,5,39,7,5,"BRE",3
+"Brentford",26,12,4,10,40,35,5,40,7,5,"BRE",3
 "Everton",26,10,7,9,29,30,-1,37,8,9,"EVE",3
 "AFC Bournemouth",26,9,10,7,43,45,-2,37,9,4,"BOU",3
 "Newcastle United",26,10,6,10,37,37,0,36,10,15,"NEW",3
