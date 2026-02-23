@@ -541,8 +541,8 @@
 268,27,TRUE,"2026-02-22",1,3,2,4,"Away","Fulham","Sunderland",10
 269,27,TRUE,"2026-02-22",1,4,4,3,"Home","Tottenham Hotspur","Arsenal",18
 269,27,TRUE,"2026-02-22",1,4,4,3,"Away","Arsenal","Tottenham Hotspur",1
-265,27,FALSE,"2026-02-23",NA,NA,3,3,"Home","Everton","Manchester United",9
-265,27,FALSE,"2026-02-23",NA,NA,3,3,"Away","Manchester United","Everton",14
+265,27,TRUE,"2026-02-23",0,1,3,3,"Home","Everton","Manchester United",9
+265,27,TRUE,"2026-02-23",0,1,3,3,"Away","Manchester United","Everton",14
 280,28,FALSE,"2026-02-27",NA,NA,3,2,"Home","Wolverhampton Wanderers","Aston Villa",20
 280,28,FALSE,"2026-02-27",NA,NA,3,2,"Away","Aston Villa","Wolverhampton Wanderers",2
 272,28,FALSE,"2026-02-28",NA,NA,2,3,"Home","AFC Bournemouth","Sunderland",4
