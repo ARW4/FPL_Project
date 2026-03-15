@@ -1,21 +1,21 @@
 "Team","Played","Won","Drawn","Lost","Goals For","Goals Against","Goal Difference","Points","Position","Team ID","Abbreviation","Team Strength"
 "Arsenal",31,21,7,3,61,22,39,70,1,1,"ARS",5
 "Manchester City",30,18,7,5,60,28,32,61,2,13,"MCI",4
-"Manchester United",29,14,9,6,51,40,11,51,3,14,"MUN",4
-"Aston Villa",29,15,6,8,39,34,5,51,4,2,"AVL",3
-"Chelsea",30,13,9,8,53,35,18,48,5,7,"CHE",4
-"Liverpool",29,14,6,9,48,39,9,48,6,12,"LIV",4
+"Manchester United",30,15,9,6,54,41,13,54,3,14,"MUN",4
+"Aston Villa",30,15,6,9,40,37,3,51,4,2,"AVL",3
+"Liverpool",30,14,7,9,49,40,9,49,5,12,"LIV",4
+"Chelsea",30,13,9,8,53,35,18,48,6,7,"CHE",4
 "Brentford",29,13,5,11,44,40,4,44,7,5,"BRE",3
 "Everton",30,12,7,11,34,35,-1,43,8,9,"EVE",3
 "Newcastle United",30,12,6,12,43,43,0,42,9,15,"NEW",3
 "AFC Bournemouth",30,9,14,7,44,46,-2,41,10,4,"BOU",3
-"Brighton & Hove Albion",30,10,10,10,39,36,3,40,11,6,"BHA",3
-"Fulham",29,12,4,13,40,43,-3,40,12,10,"FUL",3
+"Fulham",30,12,5,13,40,43,-3,41,11,10,"FUL",3
+"Brighton & Hove Albion",30,10,10,10,39,36,3,40,12,6,"BHA",3
 "Sunderland",30,10,10,10,30,35,-5,40,13,17,"SUN",3
-"Crystal Palace",29,10,8,11,33,35,-2,38,14,8,"CRY",3
-"Leeds United",29,7,10,12,37,48,-11,31,15,11,"LEE",3
-"Tottenham Hotspur",29,7,8,14,39,46,-7,29,16,18,"TOT",3
-"West Ham United",30,7,8,15,36,55,-19,29,17,19,"WHU",3
-"Nottingham Forest",29,7,7,15,28,43,-15,28,18,16,"NFO",3
+"Crystal Palace",30,10,9,11,33,35,-2,39,14,8,"CRY",3
+"Leeds United",30,7,11,12,37,48,-11,32,15,11,"LEE",3
+"Tottenham Hotspur",30,7,9,14,40,47,-7,30,16,18,"TOT",3
+"Nottingham Forest",30,7,8,15,28,43,-15,29,17,16,"NFO",3
+"West Ham United",30,7,8,15,36,55,-19,29,18,19,"WHU",3
 "Burnley",30,4,8,18,32,58,-26,20,19,3,"BUR",2
 "Wolverhampton Wanderers",30,3,7,20,22,52,-30,16,20,20,"WOL",2
