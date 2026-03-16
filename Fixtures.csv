@@ -601,8 +601,8 @@
 298,30,TRUE,"2026-03-15",0,0,2,3,"Away","Fulham","Nottingham Forest",10
 296,30,TRUE,"2026-03-15",1,1,3,4,"Home","Liverpool","Tottenham Hotspur",12
 296,30,TRUE,"2026-03-15",1,1,3,4,"Away","Tottenham Hotspur","Liverpool",18
-292,30,FALSE,"2026-03-16",NA,NA,2,4,"Home","Brentford","Wolverhampton Wanderers",5
-292,30,FALSE,"2026-03-16",NA,NA,2,4,"Away","Wolverhampton Wanderers","Brentford",20
+292,30,TRUE,"2026-03-16",2,2,2,4,"Home","Brentford","Wolverhampton Wanderers",5
+292,30,TRUE,"2026-03-16",2,2,2,4,"Away","Wolverhampton Wanderers","Brentford",20
 302,31,FALSE,"2026-03-20",NA,NA,3,3,"Home","AFC Bournemouth","Manchester United",4
 302,31,FALSE,"2026-03-20",NA,NA,3,3,"Away","Manchester United","AFC Bournemouth",14
 303,31,FALSE,"2026-03-21",NA,NA,3,3,"Home","Brighton & Hove Albion","Liverpool",6
