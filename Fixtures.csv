@@ -605,14 +605,14 @@
 292,30,TRUE,"2026-03-16",2,2,2,4,"Away","Wolverhampton Wanderers","Brentford",20
 302,31,TRUE,"2026-03-20",2,2,3,3,"Home","AFC Bournemouth","Manchester United",4
 302,31,TRUE,"2026-03-20",2,2,3,3,"Away","Manchester United","AFC Bournemouth",14
-303,31,FALSE,"2026-03-21",NA,NA,3,3,"Home","Brighton & Hove Albion","Liverpool",6
-303,31,FALSE,"2026-03-21",NA,NA,3,3,"Away","Liverpool","Brighton & Hove Albion",12
-305,31,FALSE,"2026-03-21",NA,NA,1,3,"Home","Fulham","Burnley",10
-305,31,FALSE,"2026-03-21",NA,NA,1,3,"Away","Burnley","Fulham",3
-304,31,FALSE,"2026-03-21",NA,NA,3,3,"Home","Everton","Chelsea",9
-304,31,FALSE,"2026-03-21",NA,NA,3,3,"Away","Chelsea","Everton",7
-306,31,FALSE,"2026-03-21",NA,NA,3,3,"Home","Leeds United","Brentford",11
-306,31,FALSE,"2026-03-21",NA,NA,3,3,"Away","Brentford","Leeds United",5
+303,31,TRUE,"2026-03-21",2,1,3,3,"Home","Brighton & Hove Albion","Liverpool",6
+303,31,TRUE,"2026-03-21",2,1,3,3,"Away","Liverpool","Brighton & Hove Albion",12
+305,31,TRUE,"2026-03-21",3,1,1,3,"Home","Fulham","Burnley",10
+305,31,TRUE,"2026-03-21",3,1,1,3,"Away","Burnley","Fulham",3
+304,31,TRUE,"2026-03-21",3,0,3,3,"Home","Everton","Chelsea",9
+304,31,TRUE,"2026-03-21",3,0,3,3,"Away","Chelsea","Everton",7
+306,31,TRUE,"2026-03-21",0,0,3,3,"Home","Leeds United","Brentford",11
+306,31,TRUE,"2026-03-21",0,0,3,3,"Away","Brentford","Leeds United",5
 308,31,FALSE,"2026-03-22",NA,NA,2,4,"Home","Newcastle United","Sunderland",15
 308,31,FALSE,"2026-03-22",NA,NA,2,4,"Away","Sunderland","Newcastle United",17
 301,31,FALSE,"2026-03-22",NA,NA,2,4,"Home","Aston Villa","West Ham United",2
