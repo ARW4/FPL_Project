@@ -1,10 +1,4 @@
 "Match ID","Matchday","Finished","Kick-off Time","Home Team Score","Away Team Score","Difficulty For Home Team","Difficulty For Away Team","Home or Away","Team","Opponent","Team ID"
-332,NA,FALSE,NA,NA,NA,2,3,"Home","AFC Bournemouth","Leeds United",4
-332,NA,FALSE,NA,NA,NA,2,3,"Away","Leeds United","AFC Bournemouth",11
-333,NA,FALSE,NA,NA,NA,3,4,"Home","Brighton & Hove Albion","Chelsea",6
-333,NA,FALSE,NA,NA,NA,3,4,"Away","Chelsea","Brighton & Hove Albion",7
-334,NA,FALSE,NA,NA,NA,4,2,"Home","Burnley","Manchester City",3
-334,NA,FALSE,NA,NA,NA,4,2,"Away","Manchester City","Burnley",13
 307,NA,FALSE,NA,NA,NA,3,5,"Home","Manchester City","Crystal Palace",13
 307,NA,FALSE,NA,NA,NA,3,5,"Away","Crystal Palace","Manchester City",8
 1,1,TRUE,"2025-08-15",4,2,3,4,"Home","Liverpool","AFC Bournemouth",12
@@ -665,6 +659,12 @@
 327,33,FALSE,"2026-04-19",NA,NA,4,5,"Away","Arsenal","Manchester City",1
 324,33,FALSE,"2026-04-20",NA,NA,2,3,"Home","Crystal Palace","West Ham United",8
 324,33,FALSE,"2026-04-20",NA,NA,2,3,"Away","West Ham United","Crystal Palace",19
+333,33,FALSE,"2026-04-21",NA,NA,3,4,"Home","Brighton & Hove Albion","Chelsea",6
+333,33,FALSE,"2026-04-21",NA,NA,3,4,"Away","Chelsea","Brighton & Hove Albion",7
+332,33,FALSE,"2026-04-22",NA,NA,2,3,"Home","AFC Bournemouth","Leeds United",4
+332,33,FALSE,"2026-04-22",NA,NA,2,3,"Away","Leeds United","AFC Bournemouth",11
+334,33,FALSE,"2026-04-22",NA,NA,4,2,"Home","Burnley","Manchester City",3
+334,33,FALSE,"2026-04-22",NA,NA,4,2,"Away","Manchester City","Burnley",13
 338,34,FALSE,"2026-04-24",NA,NA,2,3,"Home","Sunderland","Nottingham Forest",17
 338,34,FALSE,"2026-04-24",NA,NA,2,3,"Away","Nottingham Forest","Sunderland",16
 335,34,FALSE,"2026-04-25",NA,NA,3,3,"Home","Fulham","Aston Villa",10
