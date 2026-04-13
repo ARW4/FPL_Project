@@ -637,8 +637,8 @@
 319,32,TRUE,"2026-04-12",1,0,2,3,"Away","Tottenham Hotspur","Sunderland",18
 314,32,TRUE,"2026-04-12",0,3,4,3,"Home","Chelsea","Manchester City",7
 314,32,TRUE,"2026-04-12",0,3,4,3,"Away","Manchester City","Chelsea",13
-317,32,FALSE,"2026-04-13",NA,NA,2,4,"Home","Manchester United","Leeds United",14
-317,32,FALSE,"2026-04-13",NA,NA,2,4,"Away","Leeds United","Manchester United",11
+317,32,TRUE,"2026-04-13",1,2,2,4,"Home","Manchester United","Leeds United",14
+317,32,TRUE,"2026-04-13",1,2,2,4,"Away","Leeds United","Manchester United",11
 322,33,FALSE,"2026-04-18",NA,NA,3,3,"Home","Brentford","Fulham",5
 322,33,FALSE,"2026-04-18",NA,NA,3,3,"Away","Fulham","Brentford",10
 326,33,FALSE,"2026-04-18",NA,NA,2,3,"Home","Leeds United","Wolverhampton Wanderers",11
