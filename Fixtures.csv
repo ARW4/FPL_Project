@@ -639,16 +639,16 @@
 314,32,TRUE,"2026-04-12",0,3,4,3,"Away","Manchester City","Chelsea",13
 317,32,TRUE,"2026-04-13",1,2,2,4,"Home","Manchester United","Leeds United",14
 317,32,TRUE,"2026-04-13",1,2,2,4,"Away","Leeds United","Manchester United",11
-322,33,FALSE,"2026-04-18",NA,NA,3,3,"Home","Brentford","Fulham",5
-322,33,FALSE,"2026-04-18",NA,NA,3,3,"Away","Fulham","Brentford",10
-326,33,FALSE,"2026-04-18",NA,NA,1,3,"Home","Leeds United","Wolverhampton Wanderers",11
-326,33,FALSE,"2026-04-18",NA,NA,1,3,"Away","Wolverhampton Wanderers","Leeds United",20
-328,33,FALSE,"2026-04-18",NA,NA,3,3,"Home","Newcastle United","AFC Bournemouth",15
-328,33,FALSE,"2026-04-18",NA,NA,3,3,"Away","AFC Bournemouth","Newcastle United",4
-330,33,FALSE,"2026-04-18",NA,NA,3,2,"Home","Tottenham Hotspur","Brighton & Hove Albion",18
-330,33,FALSE,"2026-04-18",NA,NA,3,2,"Away","Brighton & Hove Albion","Tottenham Hotspur",6
-323,33,FALSE,"2026-04-18",NA,NA,3,3,"Home","Chelsea","Manchester United",7
-323,33,FALSE,"2026-04-18",NA,NA,3,3,"Away","Manchester United","Chelsea",14
+322,33,TRUE,"2026-04-18",0,0,3,3,"Home","Brentford","Fulham",5
+322,33,TRUE,"2026-04-18",0,0,3,3,"Away","Fulham","Brentford",10
+326,33,TRUE,"2026-04-18",3,0,1,3,"Home","Leeds United","Wolverhampton Wanderers",11
+326,33,TRUE,"2026-04-18",3,0,1,3,"Away","Wolverhampton Wanderers","Leeds United",20
+328,33,TRUE,"2026-04-18",1,2,3,3,"Home","Newcastle United","AFC Bournemouth",15
+328,33,TRUE,"2026-04-18",1,2,3,3,"Away","AFC Bournemouth","Newcastle United",4
+330,33,TRUE,"2026-04-18",2,2,3,2,"Home","Tottenham Hotspur","Brighton & Hove Albion",18
+330,33,TRUE,"2026-04-18",2,2,3,2,"Away","Brighton & Hove Albion","Tottenham Hotspur",6
+323,33,TRUE,"2026-04-18",0,1,3,3,"Home","Chelsea","Manchester United",7
+323,33,TRUE,"2026-04-18",0,1,3,3,"Away","Manchester United","Chelsea",14
 321,33,FALSE,"2026-04-19",NA,NA,2,4,"Home","Aston Villa","Sunderland",2
 321,33,FALSE,"2026-04-19",NA,NA,2,4,"Away","Sunderland","Aston Villa",17
 325,33,FALSE,"2026-04-19",NA,NA,3,3,"Home","Everton","Liverpool",9
