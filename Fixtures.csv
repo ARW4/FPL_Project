@@ -661,10 +661,10 @@
 324,33,TRUE,"2026-04-20",0,0,2,3,"Away","West Ham United","Crystal Palace",19
 333,33,TRUE,"2026-04-21",3,0,3,4,"Home","Brighton & Hove Albion","Chelsea",6
 333,33,TRUE,"2026-04-21",3,0,3,4,"Away","Chelsea","Brighton & Hove Albion",7
-332,33,FALSE,"2026-04-22",NA,NA,2,3,"Home","AFC Bournemouth","Leeds United",4
-332,33,FALSE,"2026-04-22",NA,NA,2,3,"Away","Leeds United","AFC Bournemouth",11
-334,33,FALSE,"2026-04-22",NA,NA,4,2,"Home","Burnley","Manchester City",3
-334,33,FALSE,"2026-04-22",NA,NA,4,2,"Away","Manchester City","Burnley",13
+332,33,TRUE,"2026-04-22",2,2,2,3,"Home","AFC Bournemouth","Leeds United",4
+332,33,TRUE,"2026-04-22",2,2,2,3,"Away","Leeds United","AFC Bournemouth",11
+334,33,TRUE,"2026-04-22",0,1,4,2,"Home","Burnley","Manchester City",3
+334,33,TRUE,"2026-04-22",0,1,4,2,"Away","Manchester City","Burnley",13
 338,34,FALSE,"2026-04-24",NA,NA,2,3,"Home","Sunderland","Nottingham Forest",17
 338,34,FALSE,"2026-04-24",NA,NA,2,3,"Away","Nottingham Forest","Sunderland",16
 335,34,FALSE,"2026-04-25",NA,NA,3,3,"Home","Fulham","Aston Villa",10
