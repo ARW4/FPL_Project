@@ -28,16 +28,15 @@ res2 <- content(res, "text", encoding = "UTF-8")
 item <- fromJSON(res2)
 
 # Creating a data frame with the parsed JSON data
-Teams <- data.frame(item$teams)
-
-# Selecting which fields to keep
-Teams <- subset(Teams, select = c(id, name, short_name, strength))
-
-# Renaming fields
-Teams <- Teams %>% rename (`Team ID` = id,
-                           Team = name,
-                           Abbreviation = short_name,
-                           `Team Strength` = strength)
+Teams <- data.frame(item$teams) %>% 
+  group_by(id) %>% 
+  mutate(strength = max(strength_overall_home, strength_overall_away)) %>% 
+  ungroup() %>% 
+  select(id, name, short_name, strength)%>% 
+  rename (`Team ID` = id,
+          Team = name,
+          Abbreviation = short_name,
+          `Team Strength` = strength)
 
 # Renames the values within the fields so that they can be mapped to other tables later on
 Teams <- Teams %>% mutate(Team = case_when(
@@ -63,7 +62,10 @@ Teams <- Teams %>% mutate(Team = case_when(
   Team == "Wolves" ~ "Wolverhampton Wanderers",
   Team == "Sunderland" ~ "Sunderland",
   Team == "Burnley" ~ "Burnley",
-  Team == "Leeds" ~ "Leeds United"
+  Team == "Leeds" ~ "Leeds United",
+  Team == "Coventry City" ~ "Coventry City",
+  Team == "Hull City" ~ "Hull City",
+  Team == "Ipswich Town" ~ "Ipswich Town",
 ))
 
 # Removing objects from environment

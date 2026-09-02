@@ -3,6 +3,7 @@
 .Rhistory
 .RData
 .Ruserdata
+.Renviron
 
 # VS Code
 .vscode/
@@ -10,3 +11,5 @@
 # System / OS files
 .DS_Store
 Thumbs.db
+fpl-api.json
+*.json
