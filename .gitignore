@@ -1,0 +1,12 @@
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# VS Code
+.vscode/
+
+# System / OS files
+.DS_Store
+Thumbs.db
