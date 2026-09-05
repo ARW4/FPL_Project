@@ -39,8 +39,8 @@
 18,2,TRUE,"2026-08-30",5,2,2,4,"Away","Ipswich Town","Manchester United",12
 20,2,TRUE,"2026-08-31",0,1,4,4,"Home","Aston Villa","Arsenal",2
 20,2,TRUE,"2026-08-31",0,1,4,4,"Away","Arsenal","Aston Villa",1
-21,3,FALSE,"2026-09-04",NA,NA,4,2,"Home","Ipswich Town","Liverpool",12
-21,3,FALSE,"2026-09-04",NA,NA,4,2,"Away","Liverpool","Ipswich Town",14
+21,3,FALSE,"2026-09-04",0,2,4,2,"Home","Ipswich Town","Liverpool",12
+21,3,FALSE,"2026-09-04",0,2,4,2,"Away","Liverpool","Ipswich Town",14
 27,3,FALSE,"2026-09-05",NA,NA,3,3,"Home","Newcastle United","AFC Bournemouth",17
 27,3,FALSE,"2026-09-05",NA,NA,3,3,"Away","AFC Bournemouth","Newcastle United",3
 22,3,FALSE,"2026-09-05",NA,NA,2,3,"Home","Brentford","Sunderland",4
