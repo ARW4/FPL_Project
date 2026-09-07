@@ -1,16 +1,16 @@
 "Team","Played","Won","Drawn","Lost","Goals For","Goals Against","Goal Difference","Points","Position","Team ID","Abbreviation","Team Strength"
 "Manchester City",3,3,0,0,7,2,5,9,1,15,"MCI",5
-"Hull City",3,2,1,0,3,0,3,7,2,11,"HUL",2
-"Arsenal",2,2,0,0,4,0,4,6,3,1,"ARS",5
-"Chelsea",2,2,0,0,7,5,2,6,4,6,"CHE",4
+"Arsenal",3,3,0,0,6,1,5,9,2,1,"ARS",5
+"Hull City",3,2,1,0,3,0,3,7,3,11,"HUL",2
+"Chelsea",3,2,0,1,8,7,1,6,4,6,"CHE",4
 "Brentford",3,1,2,0,5,2,3,5,5,4,"BRE",3
 "Liverpool",3,1,2,0,6,4,2,5,6,14,"LIV",4
 "Newcastle United",3,1,2,0,6,4,2,5,7,17,"NEW",3
-"Leeds United",3,1,2,0,3,2,1,5,8,13,"LEE",3
-"Brighton & Hove Albion",3,1,1,1,8,5,3,4,9,5,"BHA",3
-"Everton",2,1,1,0,3,1,2,4,10,9,"EVE",3
-"Sunderland",3,1,1,1,3,3,0,4,11,20,"SUN",3
-"Manchester United",2,1,0,1,5,4,1,3,12,16,"MUN",4
+"Everton",3,1,2,0,5,3,2,5,8,9,"EVE",3
+"Leeds United",3,1,2,0,3,2,1,5,9,13,"LEE",3
+"Brighton & Hove Albion",3,1,1,1,8,5,3,4,10,5,"BHA",3
+"Manchester United",3,1,1,1,7,6,1,4,11,16,"MUN",4
+"Sunderland",3,1,1,1,3,3,0,4,12,20,"SUN",3
 "Crystal Palace",3,1,0,2,4,8,-4,3,13,8,"CRY",3
 "Ipswich Town",3,1,0,2,4,8,-4,3,14,12,"IPS",2
 "Bournemouth",3,0,2,1,4,5,-1,2,15,NA,NA,NA
