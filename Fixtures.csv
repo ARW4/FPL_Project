@@ -77,8 +77,8 @@
 38,4,FALSE,"2026-09-13",0,5,2,2,"Away","Brighton & Hove Albion","Coventry City",5
 39,4,FALSE,"2026-09-13",0,1,4,4,"Home","Manchester United","Manchester City",16
 39,4,FALSE,"2026-09-13",0,1,4,4,"Away","Manchester City","Manchester United",15
-40,4,FALSE,"2026-09-14",NA,NA,2,3,"Home","Leeds United","Newcastle United",13
-40,4,FALSE,"2026-09-14",NA,NA,2,3,"Away","Newcastle United","Leeds United",17
+40,4,FALSE,"2026-09-14",4,1,2,3,"Home","Leeds United","Newcastle United",13
+40,4,FALSE,"2026-09-14",4,1,2,3,"Away","Newcastle United","Leeds United",17
 41,5,FALSE,"2026-09-18",NA,NA,4,3,"Home","Brentford","Chelsea",4
 41,5,FALSE,"2026-09-18",NA,NA,4,3,"Away","Chelsea","Brentford",6
 48,5,FALSE,"2026-09-19",NA,NA,3,3,"Home","Tottenham Hotspur","Aston Villa",19
