@@ -81,16 +81,16 @@
 40,4,TRUE,"2026-09-14",4,1,2,3,"Away","Newcastle United","Leeds United",17
 41,5,FALSE,"2026-09-18",3,0,4,3,"Home","Brentford","Chelsea",4
 41,5,FALSE,"2026-09-18",3,0,4,3,"Away","Chelsea","Brentford",6
-48,5,FALSE,"2026-09-19",NA,NA,3,3,"Home","Tottenham Hotspur","Aston Villa",19
-48,5,FALSE,"2026-09-19",NA,NA,3,3,"Away","Aston Villa","Tottenham Hotspur",2
-42,5,FALSE,"2026-09-19",NA,NA,4,3,"Home","Brighton & Hove Albion","Arsenal",5
-42,5,FALSE,"2026-09-19",NA,NA,4,3,"Away","Arsenal","Brighton & Hove Albion",1
-43,5,FALSE,"2026-09-19",NA,NA,2,3,"Home","Everton","Ipswich Town",9
-43,5,FALSE,"2026-09-19",NA,NA,2,3,"Away","Ipswich Town","Everton",12
-46,5,FALSE,"2026-09-19",NA,NA,2,3,"Home","Newcastle United","Hull City",17
-46,5,FALSE,"2026-09-19",NA,NA,2,3,"Away","Hull City","Newcastle United",11
-47,5,FALSE,"2026-09-19",NA,NA,2,3,"Home","Nottingham Forest","Coventry City",18
-47,5,FALSE,"2026-09-19",NA,NA,2,3,"Away","Coventry City","Nottingham Forest",7
+48,5,FALSE,"2026-09-19",2,3,3,3,"Home","Tottenham Hotspur","Aston Villa",19
+48,5,FALSE,"2026-09-19",2,3,3,3,"Away","Aston Villa","Tottenham Hotspur",2
+42,5,FALSE,"2026-09-19",3,0,4,3,"Home","Brighton & Hove Albion","Arsenal",5
+42,5,FALSE,"2026-09-19",3,0,4,3,"Away","Arsenal","Brighton & Hove Albion",1
+43,5,FALSE,"2026-09-19",1,0,2,3,"Home","Everton","Ipswich Town",9
+43,5,FALSE,"2026-09-19",1,0,2,3,"Away","Ipswich Town","Everton",12
+46,5,FALSE,"2026-09-19",2,1,2,3,"Home","Newcastle United","Hull City",17
+46,5,FALSE,"2026-09-19",2,1,2,3,"Away","Hull City","Newcastle United",11
+47,5,FALSE,"2026-09-19",0,1,2,3,"Home","Nottingham Forest","Coventry City",18
+47,5,FALSE,"2026-09-19",0,1,2,3,"Away","Coventry City","Nottingham Forest",7
 49,5,FALSE,"2026-09-20",NA,NA,4,3,"Home","AFC Bournemouth","Liverpool",3
 49,5,FALSE,"2026-09-20",NA,NA,4,3,"Away","Liverpool","AFC Bournemouth",14
 44,5,FALSE,"2026-09-20",NA,NA,3,3,"Home","Leeds United","Crystal Palace",13
