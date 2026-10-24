@@ -139,8 +139,8 @@
 69,7,TRUE,"2026-10-18",0,1,4,3,"Away","Arsenal","Nottingham Forest",1
 70,7,TRUE,"2026-10-19",3,1,2,3,"Home","Tottenham Hotspur","Coventry City",19
 70,7,TRUE,"2026-10-19",3,1,2,3,"Away","Coventry City","Tottenham Hotspur",7
-77,8,FALSE,"2026-10-23",NA,NA,3,2,"Home","Ipswich Town","Nottingham Forest",12
-77,8,FALSE,"2026-10-23",NA,NA,3,2,"Away","Nottingham Forest","Ipswich Town",18
+77,8,FALSE,"2026-10-23",1,1,3,2,"Home","Ipswich Town","Nottingham Forest",12
+77,8,FALSE,"2026-10-23",1,1,3,2,"Away","Nottingham Forest","Ipswich Town",18
 72,8,FALSE,"2026-10-24",NA,NA,4,3,"Home","Aston Villa","Manchester City",2
 72,8,FALSE,"2026-10-24",NA,NA,4,3,"Away","Manchester City","Aston Villa",15
 71,8,FALSE,"2026-10-24",NA,NA,3,5,"Home","Arsenal","Everton",1
