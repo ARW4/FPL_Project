@@ -175,8 +175,8 @@
 90,9,FALSE,"2026-10-31",2,0,2,3,"Away","Crystal Palace","Tottenham Hotspur",8
 81,9,FALSE,"2026-10-31",1,1,2,3,"Home","Aston Villa","Fulham",2
 81,9,FALSE,"2026-10-31",1,1,2,3,"Away","Fulham","Aston Villa",10
-87,9,FALSE,"2026-11-01",NA,NA,4,4,"Home","Liverpool","Arsenal",14
-87,9,FALSE,"2026-11-01",NA,NA,4,4,"Away","Arsenal","Liverpool",1
+87,9,FALSE,"2026-11-01",0,1,4,4,"Home","Liverpool","Arsenal",14
+87,9,FALSE,"2026-11-01",0,1,4,4,"Away","Arsenal","Liverpool",1
 89,9,FALSE,"2026-11-02",NA,NA,3,3,"Home","Newcastle United","Everton",17
 89,9,FALSE,"2026-11-02",NA,NA,3,3,"Away","Everton","Newcastle United",9
 94,10,FALSE,"2026-11-06",NA,NA,2,3,"Home","Everton","Coventry City",9
